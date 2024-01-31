@@ -81,7 +81,7 @@ const Notification = () => {
           alt=""
           src="/artboard-44x-1@2x.png"
         />
-        <b className="absolute top-[255.6px] left-[calc(52%_-_730.1px)] capitalize mb-3">
+        <b className="absolute top-[255.6px] left-[calc(60%_-_730.1px)] capitalize mb-3">
           UPL INTERNSHIP
         </b>
       </div>
@@ -90,7 +90,7 @@ const Notification = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
 
           </b>
-          <div className="absolute top-[100.8px] left-[calc(50%_-_690px)] text-base text-justify w-[1299.7px] h-[261px]">
+          <div className="absolute top-[100.8px] left-[calc(58%_-_690px)] text-base text-justify w-[1169.7px] h-[261px]">
             The UPL Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development.
             Participants in this program will engage in a dynamic six-month stint, actively working on live projects with diverse clients associated with SNIPE TECH PVT LTD. This work will be conducted online, allowing interns to contribute directly from their college premises. The enhanced skills acquired during this period can be effectively leveraged by candidates in various job placement avenues, enhancing their ability to succeed in campus interviews. This program is designed to instill confidence in technology and processes, enabling participants to emerge as highly successful software engineers.
             By providing hands-on experience and exposure to real-world projects, the UPL Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
@@ -109,9 +109,9 @@ const Notification = () => {
       </div>
       <div className="absolute w-full top-[750px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue bg-gray-800 text-white ">
 
-        <div className="absolute top-3 left-[-55.9px] w-[601.6px] h-[334.6px] text-center">
+        <div className="absolute top-3 left-[-95.9px] w-[601.6px] h-[334.6px] text-center">
 
-          <div className="leading-[90%] mt-2 left-[100px] font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue ">
+          <div className="leading-[90%] mt-2 left-[70px] font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue ">
             Internship process:
           </div>
          {/*  <ul className="list-inside pl-6">
@@ -123,14 +123,14 @@ const Notification = () => {
             <li className="mb-2 text-lg">Step 6: Issue Internship Certificate</li>
           </ul> */}
           <img
-                className="absolute top-[140px] right-[calc(50%_-_850px)]  w-[83s0.8px] h-[555.6px] object-fill"
+                className="absolute top-[120px] right-[calc(50%_-_850px)]  w-[83s0.8px] h-[555.6px] object-fill"
                 alt=""
                 src="/Group 3763.png"
               />
 
         </div>
 
-        <div className="absolute top-[790.6px] left-[calc(50%_-_650.4px)] w-[1194.8px] h-[516.4px] text-19xl">
+        <div className="absolute top-[790.6px] left-[calc(55%_-_650.4px)] w-[1194.8px] h-[516.4px] text-19xl">
     <div className="leading-[290%] font-semibold inline-block w-[545.8px] h-[106.1px] text-blue mb-[-20px]">
       Benefits:
           </div>
