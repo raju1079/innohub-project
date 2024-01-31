@@ -90,7 +90,7 @@ const AnimalHusbandry = () => {
           {/*  <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
             
           </b> */}
-          <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+          <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base text-justify inline-block w-[1199.7px] h-[261px]">
             Animal husbandry, a vital component of agriculture, involves breeding and raising domestic animals like cattle, poultry, sheep, goats, and pigs for diverse purposes such as food production and labor.
             Key objectives include selective breeding for enhanced traits, ensuring animal health through disease prevention and veterinary care,
             and providing balanced nutrition. Livestock housing with proper ventilation and temperature control, along with effective reproduction management, contributes to the well-being of animals.
@@ -108,8 +108,14 @@ const AnimalHusbandry = () => {
           >
             <div className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[551.3px] h-[516.4px]">
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-gainsboro-200 w-[517.8px] h-[482.9px]" />
+              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
+            <img
+                className="absolute top-[46px] left-[calc(50%_-_546.4px)]  w-[484.8px] h-[459.6px] object-fill rounded-md"
+                alt=""
+                src="/AnimalHusbandryimg1.jpg"
+              />
+
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
                 Smart Feeding Systems: AI Optimization for Livestock Nutrition
@@ -122,7 +128,13 @@ const AnimalHusbandry = () => {
             <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
               <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
                 <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-                <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-gainsboro-200 w-[517.8px] h-[482.9px]" />
+                <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
+              <img
+                className="absolute top-[50px] right-[calc(50%_-_258.4px)]  w-[490.8px] h-[447.6px] object-fill rounded-md"
+                alt=""
+                src="/AnimalHusbandryimg2.jpg"
+              />
+
               </div>
               <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
                 <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">

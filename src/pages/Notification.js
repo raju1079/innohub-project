@@ -33,7 +33,7 @@ const Notification = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2710px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="w-full relative bg-gray h-[2470px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -73,16 +73,16 @@ const Notification = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[366px] overflow-hidden text-29xl">
+      <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[366px] overflow-hidden text-29xl ">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
-        <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
+        <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden " />
         <img
           className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[375.6px] object-cover"
           alt=""
           src="/artboard-44x-1@2x.png"
         />
-        <b className="absolute top-[243.6px] left-[calc(52%_-_624.1px)] capitalize">
-          UPL INTERNSHIP:
+        <b className="absolute top-[255.6px] left-[calc(52%_-_730.1px)] capitalize mb-3">
+          UPL INTERNSHIP
         </b>
       </div>
       <div className="absolute w-full top-[356px] right-[0px] left-[0px] h-[394px] overflow-hidden text-13xl">
@@ -90,13 +90,12 @@ const Notification = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
 
           </b>
-          <div className="absolute top-[69.8px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+          <div className="absolute top-[100.8px] left-[calc(50%_-_690px)] text-base text-justify w-[1299.7px] h-[261px]">
             The UPL Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development.
             Participants in this program will engage in a dynamic six-month stint, actively working on live projects with diverse clients associated with SNIPE TECH PVT LTD. This work will be conducted online, allowing interns to contribute directly from their college premises. The enhanced skills acquired during this period can be effectively leveraged by candidates in various job placement avenues, enhancing their ability to succeed in campus interviews. This program is designed to instill confidence in technology and processes, enabling participants to emerge as highly successful software engineers.
             By providing hands-on experience and exposure to real-world projects, the UPL Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
-            <div>ELIGIBILITY:
-
-              BE, BTech, MCA, BCA, MTech, MSC, </div>
+            <div className="text-2xl leading-[100%] mt-10 left-[calc(52%_-_320.1px)] font-semibold w-[900.8px] h-[70px] mb-2 text-blue text-8xl " >Eligibility :
+              BE, B.Tech, MCA, BCA, M.Tech, MSc. </div>
 
 
           </div>
@@ -108,24 +107,32 @@ const Notification = () => {
       <div>
 
       </div>
-      <div className="absolute w-full top-[700px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue bg-gray-800 text-white">
-        <div className="absolute top-5 left-4 w-[601.6px] h-[334.6px]">
-          <div className="leading-[90%] capitalize font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue">
-            INTERNSHIP PROCESS:
+      <div className="absolute w-full top-[750px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue bg-gray-800 text-white ">
+
+        <div className="absolute top-3 left-[-55.9px] w-[601.6px] h-[334.6px] text-center">
+
+          <div className="leading-[90%] mt-2 left-[100px] font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue ">
+            Internship process:
           </div>
-          <ul className="list-inside pl-6">
+         {/*  <ul className="list-inside pl-6">
             <li className="mb-2 text-lg">Step 1: Screening Written Test & Interview</li>
             <li className="mb-2 text-lg">Step 2: Training (2 Month Weekly 8 to 10 Hrs.)</li>
             <li className="mb-2 text-lg">Step 3: Working in Live Project (6 Month Weekly 10 to 15 Hrs.)</li>
             <li className="mb-2 text-lg">Step 4: Campus Interview Training</li>
             <li className="mb-2 text-lg">Step 5: Mock Written Test & Interview</li>
             <li className="mb-2 text-lg">Step 6: Issue Internship Certificate</li>
-          </ul>
+          </ul> */}
+          <img
+                className="absolute top-[140px] right-[calc(50%_-_850px)]  w-[83s0.8px] h-[555.6px] object-fill"
+                alt=""
+                src="/Group 3763.png"
+              />
+
         </div>
 
-        <div className="absolute top-[400.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-19xl">
-          <div className="leading-[290%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]  text-blue mb-4">
-            BENEFITS
+        <div className="absolute top-[790.6px] left-[calc(50%_-_650.4px)] w-[1194.8px] h-[516.4px] text-19xl">
+    <div className="leading-[290%] font-semibold inline-block w-[545.8px] h-[106.1px] text-blue mb-[-20px]">
+      Benefits:
           </div>
           <ul className="list-inside pl-6">
             <li className="mb-2 text-lg">Technology</li>
@@ -139,7 +146,7 @@ const Notification = () => {
         </div>
       </div>
 
-      <div className="absolute top-[2290px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[2050px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
 
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe

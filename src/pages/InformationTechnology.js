@@ -90,7 +90,7 @@ const InformationTechnology = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
             
           </b> */}
-        <div className="absolute top-[69.8px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+        <div className="absolute top-[69.8px] left-[calc(50%_-_599.85px)] text-base  text-justify inline-block w-[1199.7px] h-[261px]">
           Leveraging artificial intelligence (AI) technologies in IT development and maintenance processes aims to streamline tasks, enhance efficiency, and reduce manual effort.
           AI tools are applied across various aspects of the development lifecycle. In requirements analysis and planning, natural language processing (NLP) aids in understanding project needs,
           while AI algorithms automate project planning by analysing historical data and dependencies. For code development and review, tools like OpenAI Codex generate code snippets and AI-driven static code analysis automates review processes.
@@ -113,8 +113,14 @@ const InformationTechnology = () => {
           >
             <div className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[551.3px] h-[516.4px]">
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-gainsboro-200 w-[517.8px] h-[482.9px]" />
+              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
+            <img
+                className="absolute top-[55px] left-[calc(50%_-_545.4px)]  w-[482.8px] h-[445.6px] object-fill rounded-md"
+                alt=""
+                src="/InformationTechimg1.jpg"
+              />
+
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
                 AI-Powered Requirement Analysis for Software Development: A Comparative Study
@@ -127,7 +133,12 @@ const InformationTechnology = () => {
           <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
             <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-gainsboro-200 w-[517.8px] h-[482.9px]" />
+              <div className="absolute top-[33.5px] left-[calc(50%_-_238.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
+              <img
+                className="absolute top-[49px] left-[calc(50%_-_223.4px)]  w-[490.8px] h-[454.6px] object-fill rounded-md"
+                alt=""
+                src="/InformationTechimg2.avif"
+              />
             </div>
             <div className="absolute top-[88.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">

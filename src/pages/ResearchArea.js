@@ -112,8 +112,9 @@ const ResearchArea = () => {
       <div className="absolute w-full top-[500px] right-[0px] left-[0px] h-[607px] overflow-hidden text-5xl">
         <div className="absolute top-[84px] left-[calc(50%_-_536px)] flex flex-row items-start justify-start gap-[126px]">
           <div
-            className="w-[173px] relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0 cursor-pointer"
-            onClick={onFrameContainerClick}
+              className="w-[173px]  hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0 cursor-pointer"
+              onClick={onFrameContainerClick}
+            
           >
             <b className="absolute top-[115.3px] left-[23.3px] capitalize inline-block w-[126.4px] h-[32.4px]">
               Education
@@ -124,8 +125,9 @@ const ResearchArea = () => {
               src="/graduationcapgraduationcapeducation.svg"
             />
           </div>
-          <div className="w-[175px] relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
+          <div className="w-[175px]  hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
            onClick={onHealthCareClick}
+           
            >
             <b className="absolute top-[120px] left-[16px] capitalize inline-block w-[143.1px] h-[32.4px]">
               {" "}

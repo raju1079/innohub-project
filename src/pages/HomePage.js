@@ -45,25 +45,27 @@ const HomePage = () => {
         />
         <div className="absolute top-[40px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
           <div
-            className="relative capitalize font-medium cursor-pointer"
+             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 
+             Save Changes
+           </button>"
             onClick={onResearchAreaTextClick}
           >
             Research area
           </div>
           <div
-            className="relative capitalize font-medium cursor-pointer"
+                        className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  "
             //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
-            className="relative capitalize font-medium cursor-pointer"
+            className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
             //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
           <div
-            className="relative capitalize font-medium cursor-pointer"
+             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
             onClick={onAboutUsTextClick}
           >
             About us
@@ -87,12 +89,12 @@ const HomePage = () => {
           src="/artboard-44x-1@2x.png"
           data-scroll-to="artboard44x1"
         />
-        <img
+         <img
           className="absolute top-[453.6px] left-[calc(50%_-_722.8px)] w-[1442.8px] h-[257.4px] object-contain"
           alt=""
           src="/Artboard 4@4x 3.png"
-        /> 
-        <div className="absolute top-[373.6px] left-[calc(52%_-_624.1px)] capitalize inline-block w-[924.2px] h-[191.8px]">
+        />  
+        <div className="absolute top-[363.6px] left-[calc(53%_-_624.1px)] capitalize  w-[924.2px] h-[191.8px]">
           <p className="m-0">
             <b>Explore the World of Innovation</b>
           </p>

@@ -105,8 +105,13 @@ const Agriculture = () => {
           >
             <div className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[551.3px] h-[516.4px]">
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-gainsboro-200 w-[517.8px] h-[482.9px]" />
+              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
+            <img
+              className="absolute top-[53px] left-[calc(50%_-_546.4px)]  w-[485.8px] h-[444.6px] object-fill rounded-md"
+              alt=""
+              src="/Agricultureimg1.jpg"
+            />
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
                 Precision Agriculture: Integrating AI for Optimal Resource Management
@@ -121,8 +126,19 @@ const Agriculture = () => {
           <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
             <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-gainsboro-200 w-[517.8px] h-[482.9px]" />
+              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
+              {/*  <img
+                className="absolute top-[85px] left-[calc(50%_-_555.4px)]  w-[500.8px] h-[375.6px] object-fill"
+                alt=""
+                src="/Agricultureimg2.jpg"
+              />
+ */}
             </div>
+            <img
+              className="absolute top-[57px] right-[calc(50%_-_579.4px)]  w-[480.8px] h-[429.6px] object-fill rounded-md"
+              alt=""
+              src="/Agricultureimgs2.jpg"
+            />
             <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
                 AI-Driven Crop Monitoring and Disease Detection in Smart Farming
