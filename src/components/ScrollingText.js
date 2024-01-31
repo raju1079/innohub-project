@@ -14,7 +14,7 @@ const ScrollingText = () => {
 
   return (
     <div
-      className="scrolling-text-box"
+      className="scrolling-text-box text-base"
       onClick={handleBoxClick}
     >
       <marquee behavior="scroll" direction="left">

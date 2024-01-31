@@ -29,12 +29,12 @@ const ProjectIT1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[4464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="w-full relative bg-gray h-[3464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
-          className="absolute h-[37.56%] top-[31.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[228.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
           onClick={onGroupClick}
         />
         <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
@@ -46,13 +46,13 @@ const ProjectIT1 = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -62,8 +62,8 @@ const ProjectIT1 = () => {
           >
             About us
           </div>
-          <div className="w-[141px] relative rounded-xl bg-cold-grey-white h-10 overflow-hidden shrink-0 text-5xl text-blue">
-            <div className="absolute top-[calc(50%_-_18px)] left-[calc(50%_-_44px)] capitalize font-semibold">
+          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
@@ -80,85 +80,85 @@ const ProjectIT1 = () => {
       </div>
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
-          <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
-          <div className="absolute top-[1028.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
-          "ReqAI Analytica" is an advanced requirement analysis tool powered by Artificial Intelligence, designed to streamline and optimize the initial phase of software development projects. It integrates cutting-edge AI techniques to improve accuracy, efficiency, and adaptability in understanding and extracting project requirements.
+          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
+          <div className="absolute top-[538.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+            "ReqAI Analytica" is an advanced requirement analysis tool powered by Artificial Intelligence, designed to streamline and optimize the initial phase of software development projects. It integrates cutting-edge AI techniques to improve accuracy, efficiency, and adaptability in understanding and extracting project requirements.
 
           </div>
-          <div className="absolute top-[1302.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[702.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
-            AI-Driven Requirement Extraction: Utilizes advanced NLP algorithms and machine learning models to extract and categorize requirements from diverse textual sources.
+              AI-Driven Requirement Extraction: Utilizes advanced NLP algorithms and machine learning models to extract and categorize requirements from diverse textual sources.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Comparative Analysis Module: Incorporates a comparative analysis module inspired by the research project, allowing users to assess the effectiveness of AI-driven methods against traditional approaches.
+              Comparative Analysis Module: Incorporates a comparative analysis module inspired by the research project, allowing users to assess the effectiveness of AI-driven methods against traditional approaches.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Real-time Adaptability: Adapts dynamically to changing project specifications, ensuring that the tool remains responsive to evolving requirements throughout the development lifecycle.
+              Real-time Adaptability: Adapts dynamically to changing project specifications, ensuring that the tool remains responsive to evolving requirements throughout the development lifecycle.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Scalability and Performance Metrics: Provides scalability metrics and performance indicators, offering insights into the tool's efficiency across projects of varying sizes and complexities.
+              Scalability and Performance Metrics: Provides scalability metrics and performance indicators, offering insights into the tool's efficiency across projects of varying sizes and complexities.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            User-Friendly Interface:  Boasts an intuitive user interface that facilitates seamless interaction, making it accessible for both technical and non-technical stakeholders involved in requirement analysis.
+              User-Friendly Interface:  Boasts an intuitive user interface that facilitates seamless interaction, making it accessible for both technical and non-technical stakeholders involved in requirement analysis.
 
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Data Visualization Dashboard:  Presents comprehensive data visualization dashboards, allowing users to interpret and understand key metrics easily.
+              Data Visualization Dashboard:  Presents comprehensive data visualization dashboards, allowing users to interpret and understand key metrics easily.
 
             </p>
           </div>
-          <div className="absolute top-[666.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[126.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[910.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[410.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
             AI Tool Name: ReqAI Analytica
           </div>
-          <div className="absolute top-[975.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[475.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[1232.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[632.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[1770.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
-      <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
-        Target Audience:
-      </p> 
-     
-      <ul>
-        <li>Software Development Teams: Targeting development teams in various industries seeking to enhance their requirement analysis processes.</li>
-        <li>Project Managers: Providing a valuable tool for project managers to efficiently plan and execute software development projects.</li>
-        <li>Consulting Firms: Offering consulting firms a powerful tool to streamline their client's requirement analysis processes.</li>
-      </ul>
+          <div className="absolute top-[1125.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+            <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
+              Target Audience:
+            </p>
+
+            <ul>
+              <li>Software Development Teams: Targeting development teams in various industries seeking to enhance their requirement analysis processes.</li>
+              <li>Project Managers: Providing a valuable tool for project managers to efficiently plan and execute software development projects.</li>
+              <li>Consulting Firms: Offering consulting firms a powerful tool to streamline their client's requirement analysis processes.</li>
+            </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-        Project Impact:
-      </p>
-      <ul>
-        <li>Increased Accuracy: AI-driven requirement analysis leads to a more accurate and precise understanding of project specifications.</li>
-        <li>Efficiency Gains: Reduced time and effort in requirement analysis, allowing teams to focus on other critical aspects of the development process.</li>
-        <li>Adaptability to Change: Dynamic adaptability to changing project requirements, reducing the need for manual adjustments.</li>
-        <li>Enhanced Collaboration: Improved collaboration among team members and stakeholders through a centralized and accessible platform.</li>
-        <li>Predictive Insights: Predictive analytics offer insights into potential challenges, enabling proactive decision-making.</li>
-      </ul>
-            
-           
+              Project Impact:
+            </p>
+            <ul>
+              <li>Increased Accuracy: AI-driven requirement analysis leads to a more accurate and precise understanding of project specifications.</li>
+              <li>Efficiency Gains: Reduced time and effort in requirement analysis, allowing teams to focus on other critical aspects of the development process.</li>
+              <li>Adaptability to Change: Dynamic adaptability to changing project requirements, reducing the need for manual adjustments.</li>
+              <li>Enhanced Collaboration: Improved collaboration among team members and stakeholders through a centralized and accessible platform.</li>
+              <li>Predictive Insights: Predictive analytics offer insights into potential challenges, enabling proactive decision-making.</li>
+            </ul>
+
+
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-             Conculsion
+              Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            "ReqAI Analytica" aims to revolutionize the requirement analysis phase in software development, providing a comprehensive solution that combines the latest AI advancements with user-friendly functionality. The tool addresses the evolving needs of development teams, ensuring a smoother and more efficient path from requirements to successful software delivery.
+              "ReqAI Analytica" aims to revolutionize the requirement analysis phase in software development, providing a comprehensive solution that combines the latest AI advancements with user-friendly functionality. The tool addresses the evolving needs of development teams, ensuring a smoother and more efficient path from requirements to successful software delivery.
 
 
             </p>
@@ -170,23 +170,24 @@ const ProjectIT1 = () => {
               for educational institutions.
             </p> */}
           </div>
-          
-          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold inline-block w-[1219.4px]">
-          AI-Powered Requirement Analysis for Software Development: A Comparative Study"
+
+          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
+            AI-Powered Requirement Analysis for Software Development:<br />
+            <div className=" absolute top-[105px] text-13xl"> A Comparative Study </div>
 
           </div>
-          <div className="absolute top-[734.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          <div className="absolute top-[214.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
             <p className="m-0">
-            
-            In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches. The approach involves an extensive literature review, investigating real-world applications of AI in various software development life cycle phases. Identifying and analysing AI techniques like Natural Language Processing (NLP) and machine learning for requirement analysis, the research develops a comprehensive framework with key evaluation metrics such as accuracy, time efficiency, scalability, and adaptability.
+
+              In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches. The approach involves an extensive literature review, investigating real-world applications of AI in various software development life cycle phases. Identifying and analysing AI techniques like Natural Language Processing (NLP) and machine learning for requirement analysis, the research develops a comprehensive framework with key evaluation metrics such as accuracy, time efficiency, scalability, and adaptability.
 
 
             </p>
-        
+
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[3210px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
+      <div className="absolute w-full top-[2210px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
         <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
           <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
             <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
@@ -195,32 +196,52 @@ const ProjectIT1 = () => {
               <span className="text-darkslategray">{`  `}</span>
             </div>
           </div>
-          <div className="absolute top-[124.4px] left-[calc(50%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-            <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-              The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate, detect, and resolve software bugs before they escalate. Drawing inspiration from predictive maintenance concepts in engineering, this study seeks to enhance the reliability and stability of software systems by implementing AI-driven algorithms. 
+          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
+            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
+              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
+                  The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate, detect, and resolve software bugs before they escalate. Drawing inspiration from predictive maintenance concepts in engineering, this study seeks to enhance the reliability and stability of software systems by implementing AI-driven algorithms.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  Predictive Maintenance in Software Development
+                </div>
               </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
-              "Predictive Maintenance in Software Development: Leveraging AI for Bug Detection and Resolution"
-
+              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
+                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
+                  The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating Artificial Intelligence (AI) to enhance test case generation and adaptability in test automation. The approach involves a thorough literature
+                  review to understand existing methodologies and challenges in traditional testing, identifying gaps that AI can address.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
+                  AI-Driven Testing Strategies
+                </div>
+                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
+                    The research project titled "AI-Driven Documentation and Knowledge Management" aims to revolutionize traditional documentation processes through the application of Artificial Intelligence (AI) for automated knowledge extraction.
+                  </div>
+                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                    AI-Driven Documentation and Knowledge Management
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
+                  The research project titled "Algorithmic Transparency in Hiring" focuses on addressing the challenges associated with trust and fairness in AI-driven recruitment systems. The research aims to develop methodologies and tools to enhance transparency in algorithms used for candidate evaluation and hiring decisions
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  Algorithmic Transparency in Hiring
+                </div>
               </div>
             </div>
-            <div className="absolute top-[0px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
-              The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating Artificial Intelligence (AI) to enhance test case generation and adaptability in test automation.
-              </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
-              "AI-Driven Testing Strategies: Enhancing Test Case Generation and Adaptive Test Automation"
 
-              </div>
-            </div>
           </div>
           <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
         </div>
       </div>
-      <div className="absolute top-[4044px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[3044px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -278,30 +299,32 @@ const ProjectIT1 = () => {
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] capitalize font-medium flex items-center">
-              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor, SVA Arcade 5Th
-              Block, Rajaji Nagara Bengaluru – 560010
+            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+              SNIPE TECH PVT LTD #123,
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon.png"
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] capitalize font-medium">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium">
               hr@snipe.co.in
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon1.png"
           />
         </div>
-        <b className="absolute top-[128px] left-[1089px] text-lg">Contact Us</b>
+        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
         <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
@@ -317,7 +340,7 @@ const ProjectIT1 = () => {
         </div>
         <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
           <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2021 All Rights Reserved
+            © 2017 All Rights Reserved
           </div>
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
@@ -330,22 +353,23 @@ const ProjectIT1 = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Projects
+            Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins">
+          <div className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}>
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Collaboration</div>
+          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
-          className="absolute h-[8.05%] w-[15.86%] top-[43.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
         />
       </div>
     </div>

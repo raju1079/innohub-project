@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Desktop = () => {
+const EduProject = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,12 +29,12 @@ const Desktop = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[4464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <><div className="w-full relative bg-gray h-[3464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
-          className="absolute h-[37.56%] top-[31.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[228.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
           onClick={onGroupClick}
         />
         <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
@@ -46,13 +46,13 @@ const Desktop = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -62,8 +62,8 @@ const Desktop = () => {
           >
             About us
           </div>
-          <div className="w-[141px] relative rounded-xl bg-cold-grey-white h-10 overflow-hidden shrink-0 text-5xl text-blue">
-            <div className="absolute top-[calc(50%_-_18px)] left-[calc(50%_-_44px)] capitalize font-semibold">
+          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
@@ -75,13 +75,12 @@ const Desktop = () => {
         <img
           className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[375.6px] object-cover"
           alt=""
-          src="/artboard-44x-1@2x.png"
-        />
+          src="/artboard-44x-1@2x.png" />
       </div>
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
-          <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
-          <div className="absolute top-[1428.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
+     */}          <div className="absolute top-[828.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
             The primary goal of this project is to develop and implement an
             artificial intelligence-based tool, EduAImentor, that enhances
             personalized learning experiences for students, thereby optimizing
@@ -90,67 +89,20 @@ const Desktop = () => {
             learning paths, real-time feedback, and data-driven insights to
             improve overall academic outcomes.
           </div>
-          <div className="absolute top-[1592.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
-            <p className="m-0">
-              · Adaptive Learning Paths: EduAImentor will analyze individual
-              student learning styles, preferences, and performance data to
-              dynamically adapt learning paths. This ensures that each student
-              receives a customized curriculum that aligns with their strengths,
-              weaknesses, and pace of learning.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Real-time Feedback Mechanism: The tool will provide instant
-              feedback on assessments, assignments, and learning activities,
-              fostering a responsive learning environment. Educators can use
-              this feedback to make timely interventions, addressing individual
-              student needs.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Content Personalization: EduAImentor will curate and recommend
-              personalized learning materials based on each student's progress,
-              interests, and preferred learning modalities. This includes
-              interactive multimedia content, quizzes, and supplementary
-              resources.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Engagement Analytics: Robust analytics will track student
-              engagement levels, identifying patterns and areas of improvement.
-              This data will be valuable for educators to refine their teaching
-              methods and for students to enhance their self-awareness and
-              motivation.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Collaborative Learning Spaces: EduAImentor will facilitate
-              collaborative learning experiences by creating virtual spaces
-              where students can work together on projects, discuss topics, and
-              share resources. This promotes a sense of community and
-              peer-to-peer learning.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Integration with Existing Learning Platforms: The tool will
-              seamlessly integrate with popular learning management systems
-              (LMS) and education platforms, ensuring a smooth adoption process
-              for educational institutions.
-            </p>
-          </div>
-          <div className="absolute top-[666.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+
+          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[1310.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[700.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
             AI Tool Name: EduAImentor
           </div>
-          <div className="absolute top-[1375.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[775.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[1532.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[932.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[2111.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[1000.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
               · Adaptive Learning Paths: EduAImentor will analyze individual
               student learning styles, preferences, and performance data to
@@ -198,13 +150,32 @@ const Desktop = () => {
               for educational institutions.
             </p>
           </div>
-          <div className="absolute top-[2051.7px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
-            Key Features:
+          <div className="absolute top-[1470.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+            Project Impact:
           </div>
-          <div className="absolute top-[0px] left-[calc(50%_-_609.7px)] text-29xl leading-[140%] capitalize font-semibold inline-block w-[1219.4px]">
+          <div className="absolute top-[1508.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[282px]">
+            <ul className="list-disc pl-6">
+              <li>Improved Learning Outcomes: Personalized learning experiences will lead to improved academic performance and a deeper understanding of subjects among students.</li>
+              <li>Enhanced Educator Efficiency: EduAImentor will assist educators in tailoring their teaching strategies, saving time on manual assessment, and enabling more targeted interventions.</li>
+              <li>Increased Student Engagement: The adaptive and interactive nature of EduAImentor will boost student motivation and engagement in the learning process.</li>
+              <li>Data-Driven Decision Making: Institutions will benefit from valuable insights derived from EduAImentor's analytics, guiding informed decisions on curriculum design and teaching methodologies.</li>
+            </ul>
+          </div>
+
+          {/* Conclusion */}
+          <div className="absolute top-[1750.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+            Conclusion:
+          </div>
+          <div className="absolute top-[1808.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[254px]">
+            <p className="m-0">
+              The AI-enhanced personalized learning tool, EduAImentor, has the potential to revolutionize education by providing a tailored and engaging learning experience for students. Its multifaceted features cater to the needs of both educators and students, contributing to improved learning outcomes and a more dynamic and responsive educational environment.
+            </p>
+          </div>
+
+          <div className="absolute top-[-80px] left-[calc(50%_-_609.7px)] text-29xl leading-[140%] font-semibold-350 inline-block w-[1219.4px]">
             AI-Enhanced Personalized Learning for Optimal Student Engagement
           </div>
-          <div className="absolute top-[734.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
             <p className="m-0">
               In this research project, we aim to leverage artificial
               intelligence (AI) to revolutionize the educational experience by
@@ -260,19 +231,19 @@ const Desktop = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[3210px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
-        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
+      <div className="absolute w-full top-[2550px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
+        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]  border-t-[2px] border-solid border-cold-grey-white">
           <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
             <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
             <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
-              <span>See related</span>
+              <span>See related :</span>
               <span className="text-darkslategray">{`  `}</span>
             </div>
           </div>
-          <div className="absolute top-[124.4px] left-[calc(50%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
+          <div className="absolute top-[124.4px] left-[calc(50%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins bg-blueviolet">
             <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
+              {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+              <div className="absolute top-[99.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
                 This research aims to explore how artificial intelligence can
                 facilitate and enhance collaborative learning experiences. The
                 project focuses on developing AI-driven tools and methodologies
@@ -280,24 +251,51 @@ const Desktop = () => {
                 assess individual and collective problem-solving skills in
                 collaborative educational settings.
               </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
-              AI-Enabled Early Intervention for Learning Disabilities Detection
+              <div className="absolute top-[10px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
+                AI-Enabled Early Intervention for Learning Disabilities Detection
               </div>
             </div>
+
+
             <div className="absolute top-[0px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
-              This research focuses on developing AI algorithms for the early detection of learning disabilities in students. By analysing patterns in student performance, behaviour, and engagement, the project aims to create a predictive model that identifies potential learning challenges.
+              {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
+     */}              <div className="absolute top-[99.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
+                This research focuses on developing AI algorithms for the early detection of learning disabilities in students. By analysing patterns in student performance, behaviour, and engagement, the project aims to create a predictive model that identifies potential learning challenges.
               </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
-              Affective Computing in Education: Emotion-Aware AI for Personalized Learning
+              <div className="absolute top-[10px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
+                Affective Computing in Education: Emotion-Aware AI for Personalized Learning
               </div>
             </div>
           </div>
-          <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
+          <div className="absolute top-[400px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px] text-mini font-poppins">
+            {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+            <div className="absolute top-[59.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
+              This research aims to explore how artificial intelligence can
+              facilitate and enhance collaborative learning experiences. The
+              project focuses on developing AI-driven tools and methodologies
+              to optimize group formation, foster effective communication, and
+              assess individual and collective problem-solving skills in
+              collaborative educational settings.
+            </div>
+            <div className="absolute top-[-30px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
+              AI-Enabled Early Intervention for Learning Disabilities Detection
+            </div>
+          </div>
+
+          <div className="absolute top-[400px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px] text-mini font-poppins">
+            {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
+     */}              <div className="absolute top-[59.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
+              This research focuses on developing AI algorithms for the early detection of learning disabilities in students. By analysing patterns in student performance, behaviour, and engagement, the project aims to create a predictive model that identifies potential learning challenges.
+            </div>
+            <div className="absolute top-[-30px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
+              Affective Computing in Education: Emotion-Aware AI for Personalized Learning
+            </div>
+          </div>
         </div>
+
+        <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
       </div>
-      <div className="absolute top-[4044px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+    </div><div className="absolute top-[3344px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -318,67 +316,62 @@ const Desktop = () => {
           <img
             className="absolute top-[0.7px] left-[0px] w-2 h-[14.7px]"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[18.7px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0.7px] left-[45.3px] w-5 h-[14.7px]"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[76px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[102.7px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[129.3px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0.7px] left-[156px] w-[14.7px] h-[14.7px] object-cover"
             alt=""
-            src="/social@2x.png"
-          />
+            src="/social@2x.png" />
         </div>
         <div className="absolute top-[103px] left-[-1px] box-border w-[1442px] h-0.5 border-t-[2px] border-solid border-cold-grey-white" />
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] capitalize font-medium flex items-center">
-              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor, SVA Arcade 5Th
-              Block, Rajaji Nagara Bengaluru – 560010
+            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+              SNIPE TECH PVT LTD #123,
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon.png"
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] capitalize font-medium">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium">
               hr@snipe.co.in
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon1.png"
           />
         </div>
-        <b className="absolute top-[128px] left-[1089px] text-lg">Contact Us</b>
+        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
         <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
@@ -394,7 +387,7 @@ const Desktop = () => {
         </div>
         <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
           <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2021 All Rights Reserved
+            © 2017 All Rights Reserved
           </div>
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
@@ -407,26 +400,28 @@ const Desktop = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Projects
+            Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins">
+          <div className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}>
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Collaboration</div>
+          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
-          className="absolute h-[8.05%] w-[15.86%] top-[43.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
         />
       </div>
-    </div>
+    </>
+
   );
 };
 
-export default Desktop;
+export default EduProject;

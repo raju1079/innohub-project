@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Desktop from "./pages/Desktop";
+import EduProject from "./pages/EduProject";
 import ResearchArea from "./pages/ResearchArea";
 import AboutUs from "./pages/AboutUs";
 import HealthCare from "./pages/HealthCare";
@@ -44,7 +44,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-4":
+      case "/eduproject1":
         title = "";
         metaDescription = "";
         break;
@@ -79,7 +79,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/desktop-4" element={<Desktop />} />
+      <Route path="/eduproject1" element={<EduProject />} />
       <Route path="/researcharea" element={<ResearchArea />} />
       <Route path="/education" element={<Education />} />
       <Route path="/about-us" element={<AboutUs />} />

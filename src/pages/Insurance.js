@@ -36,9 +36,9 @@ const Insurance = () => {
     <div className="w-full relative bg-gray h-[2710px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
-          className="absolute h-[37.56%] top-[31.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[228.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
           onClick={onGroupClick}
         />
         <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
@@ -50,13 +50,13 @@ const Insurance = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -66,8 +66,8 @@ const Insurance = () => {
           >
             About us
           </div>
-          <div className="w-[141px] relative rounded-xl bg-cold-grey-white h-10 overflow-hidden shrink-0 text-5xl text-blue">
-            <div className="absolute top-[calc(50%_-_18px)] left-[calc(50%_-_44px)] capitalize font-semibold">
+          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
@@ -82,7 +82,7 @@ const Insurance = () => {
           src="/artboard-44x-1@2x.png"
         />
         <b className="absolute top-[293.6px] left-[calc(52%_-_624.1px)] capitalize">
-         Insurance
+          Insurance
         </b>
       </div>
       <div className="absolute w-full top-[506px] right-[0px] left-[0px] h-[394px] overflow-hidden text-13xl">
@@ -90,16 +90,16 @@ const Insurance = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
            
           </b> */}
-          <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+        <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
           Research in insurance spans various critical areas, reflecting the dynamic and complex nature of the insurance industry. One key research area involves risk assessment and management, exploring innovative ways to predict and mitigate risks in different insurance sectors. Understanding the impact of emerging technologies, such as Artificial Intelligence and blockchain, on insurance operations is another crucial aspect.
-         Additionally, research can delve into customer behavior and preferences, aiming to enhance personalized insurance offerings and improve customer satisfaction. Analysing regulatory frameworks, especially in the context of evolving global economic conditions, is essential for ensuring compliance and adapting insurance practices to changing legal landscapes. Ultimately, insurance research is imperative to foster innovation,
-         improve operational efficiency, and address emerging challenges in an industry that plays a pivotal role in managing and mitigating risks.
-The significance of insurance research lies in its potential to drive industry evolution, fostering resilience and adaptability. In-depth research informs insurance providers about emerging trends, market demands, and regulatory changes, allowing them to tailor products that meet evolving customer needs. Moreover, research aids in optimizing risk models and developing innovative coverage solutions, ensuring that insurance remains a robust and effective risk management tool.
- As the insurance landscape continues to evolve with technological advancements and shifts in socio-economic dynamics, ongoing research is essential for the industry to proactively respond to challenges, enhance customer experiences, and contribute to overall economic stability.
- The scope of research in insurance is vast, encompassing a wide range of domains that collectively contribute to the industry's growth, sustainability, and ability to navigate an ever-changing landscape.
+          Additionally, research can delve into customer behavior and preferences, aiming to enhance personalized insurance offerings and improve customer satisfaction. Analysing regulatory frameworks, especially in the context of evolving global economic conditions, is essential for ensuring compliance and adapting insurance practices to changing legal landscapes. Ultimately, insurance research is imperative to foster innovation,
+          improve operational efficiency, and address emerging challenges in an industry that plays a pivotal role in managing and mitigating risks.
+          The significance of insurance research lies in its potential to drive industry evolution, fostering resilience and adaptability. In-depth research informs insurance providers about emerging trends, market demands, and regulatory changes, allowing them to tailor products that meet evolving customer needs. Moreover, research aids in optimizing risk models and developing innovative coverage solutions, ensuring that insurance remains a robust and effective risk management tool.
+          As the insurance landscape continues to evolve with technological advancements and shifts in socio-economic dynamics, ongoing research is essential for the industry to proactively respond to challenges, enhance customer experiences, and contribute to overall economic stability.
+          The scope of research in insurance is vast, encompassing a wide range of domains that collectively contribute to the industry's growth, sustainability, and ability to navigate an ever-changing landscape.
 
-          </div>
-       {/*  </div> */}
+        </div>
+        {/*  </div> */}
       </div>
       <div className="absolute w-full top-[950px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
         <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
@@ -113,11 +113,10 @@ The significance of insurance research lies in its potential to drive industry e
             </div>
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
-              Personalized Risk Assessment in Personal Insurance: Integrating AI for Tailored Coverage"
-
+                Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization
               </div>
               <div className="absolute top-[253.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
-              The research project titled "Personalized Risk Assessment in Personal Insurance: Integrating AI for Tailored Coverage" endeavors to revolutionize the landscape of personal insurance by integrating Artificial Intelligence (AI) to refine risk assessment methodologies. The study focuses on harnessing AI algorithms to develop personalized insurance products that intricately cater to the distinct needs, behaviors, and lifestyles of individual policyholders.
+                The research project titled "Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization" endeavors to explore and enhance the efficiency of corporate insurance processes by delving into advanced strategies for risk mitigation and cost optimization. The primary focus is on identifying innovative approaches and leveraging cutting-edge technologies to improve risk management practices within corporations, aiming to result in more economically viable insurance solutions.
               </div>
             </div>
           </div>
@@ -128,11 +127,14 @@ The significance of insurance research lies in its potential to drive industry e
             </div>
             <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
-              Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization
+                Personalized Risk Assessment in Personal Insurance: Integrating AI for Tailored Coverage"
+
+
 
               </div>
               <div className="absolute top-[166.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
-              The research project titled "Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization" endeavors to explore and enhance the efficiency of corporate insurance processes by delving into advanced strategies for risk mitigation and cost optimization. The primary focus is on identifying innovative approaches and leveraging cutting-edge technologies to improve risk management practices within corporations, aiming to result in more economically viable insurance solutions.
+                The research project titled "Personalized Risk Assessment in Personal Insurance: Integrating AI for Tailored Coverage" endeavors to revolutionize the landscape of personal insurance by integrating Artificial Intelligence (AI) to refine risk assessment methodologies. The study focuses on harnessing AI algorithms to develop personalized insurance products that intricately cater to the distinct needs, behaviors, and lifestyles of individual policyholders.
+
               </div>
             </div>
           </div>
@@ -196,30 +198,32 @@ The significance of insurance research lies in its potential to drive industry e
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] capitalize font-medium flex items-center">
-              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor, SVA Arcade 5Th
-              Block, Rajaji Nagara Bengaluru – 560010
+            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+              SNIPE TECH PVT LTD #123,
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon.png"
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] capitalize font-medium">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium">
               hr@snipe.co.in
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon1.png"
           />
         </div>
-        <b className="absolute top-[128px] left-[1089px] text-lg">Contact Us</b>
+        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
         <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
@@ -235,7 +239,7 @@ The significance of insurance research lies in its potential to drive industry e
         </div>
         <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
           <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2021 All Rights Reserved
+            © 2017 All Rights Reserved
           </div>
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
@@ -248,22 +252,23 @@ The significance of insurance research lies in its potential to drive industry e
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Projects
+            Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins">
+          <div className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}>
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Collaboration</div>
+          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
-          className="absolute h-[8.05%] w-[15.86%] top-[43.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
         />
       </div>
     </div>

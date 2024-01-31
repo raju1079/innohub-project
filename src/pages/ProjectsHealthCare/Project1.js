@@ -29,12 +29,12 @@ const Project1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[4464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="w-full relative bg-gray h-[3764px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
-          className="absolute h-[37.56%] top-[31.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[228.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
           onClick={onGroupClick}
         />
         <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
@@ -46,13 +46,13 @@ const Project1 = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -62,8 +62,8 @@ const Project1 = () => {
           >
             About us
           </div>
-          <div className="w-[141px] relative rounded-xl bg-cold-grey-white h-10 overflow-hidden shrink-0 text-5xl text-blue">
-            <div className="absolute top-[calc(50%_-_18px)] left-[calc(50%_-_44px)] capitalize font-semibold">
+          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
@@ -80,110 +80,105 @@ const Project1 = () => {
       </div>
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
-          <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
-          <div className="absolute top-[1028.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
-          The MediGenAI tool encompasses a comprehensive scope within AI-driven precision medicine, targeting key areas such as genomic data analysis,
-         predictive diagnostics, and treatment response optimization. It integrates seamlessly into clinical workflows, offering real-time recommendations for informed treatment decisions and supports proactive healthcare interventions through remote patient monitoring. The tool prioritizes ethical considerations, addressing patient privacy and data security, ensuring transparent and responsible AI use. It also includes a patient education interface to enhance understanding and collaboration. Designed for healthcare professionals, patients seeking personalized care, and healthcare institutions focusing on precision medicine, MediGenAI aims to revolutionize healthcare by enhancing diagnostic accuracy and empowering stakeholders for optimal and personalized medical outcomes.
+          {/*  <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
+          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+            The MediGenAI tool encompasses a comprehensive scope within AI-driven precision medicine, targeting key areas such as genomic data analysis,
+            predictive diagnostics, and treatment response optimization. It integrates seamlessly into clinical workflows, offering real-time recommendations for informed treatment decisions and supports proactive healthcare interventions through remote patient monitoring. The tool prioritizes ethical considerations, addressing patient privacy and data security, ensuring transparent and responsible AI use. It also includes a patient education interface to enhance understanding and collaboration. Designed for healthcare professionals, patients seeking personalized care, and healthcare institutions focusing on precision medicine, MediGenAI aims to revolutionize healthcare by enhancing diagnostic accuracy and empowering stakeholders for optimal and personalized medical outcomes.
 
           </div>
-          <div className="absolute top-[1302.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[782.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
-            Genomic Data Analysis: Advanced AI algorithms for comprehensive analysis of genomic data, identifying genetic markers associated with diseases, treatment responses, and adverse reactions.
+              Genomic Data Analysis: Advanced AI algorithms for comprehensive analysis of genomic data, identifying genetic markers associated with diseases, treatment responses, and adverse reactions.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Predictive Diagnostics: Utilizes machine learning to predict disease risks through the analysis of diverse health data, supporting early disease detection and proactive interventions.
+              Predictive Diagnostics: Utilizes machine learning to predict disease risks through the analysis of diverse health data, supporting early disease detection and proactive interventions.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Treatment Response Optimization: Develops machine learning models to predict individualized treatment responses, optimizing therapy selection for improved efficacy and reduced side effects.
+              Treatment Response Optimization: Develops machine learning models to predict individualized treatment responses, optimizing therapy selection for improved efficacy and reduced side effects.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Clinical Decision Support Systems: Integrates AI into clinical workflows, providing real-time recommendations to healthcare professionals for informed treatment decisions.
+              Clinical Decision Support Systems: Integrates AI into clinical workflows, providing real-time recommendations to healthcare professionals for informed treatment decisions.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Ethical Considerations Module: Ensures robust data protection protocols and transparency in AI algorithms, addressing ethical concerns related to patient privacy and responsible AI use in healthcare.
+              Ethical Considerations Module: Ensures robust data protection protocols and transparency in AI algorithms, addressing ethical concerns related to patient privacy and responsible AI use in healthcare.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-            Remote Patient Monitoring: Implements AI-driven systems for continuous data analysis from wearable devices and sensors, facilitating proactive healthcare interventions based on real-time patient data.
+              Remote Patient Monitoring: Implements AI-driven systems for continuous data analysis from wearable devices and sensors, facilitating proactive healthcare interventions based on real-time patient data.
             </p>
           </div>
-          <div className="absolute top-[666.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[76.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[910.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
             AI Tool Name: EduAImentor
           </div>
-          <div className="absolute top-[975.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[1232.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[702.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[1770.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
-      <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
-        Target Audience:
-      </p> 
-     
-      <ul>
-        <li>Healthcare professionals, including physicians, geneticists, and clinicians.</li>
-        <li>Patients seeking personalized and advanced medical care.</li>
-        <li>Healthcare institutions and research organizations focusing on precision medicine.</li>
-      </ul>
+          <div className="absolute top-[1250.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+            <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
+              Target Audience:
+            </p>
+
+            <ul>
+              <li>Healthcare professionals, including physicians, geneticists, and clinicians.</li>
+              <li>Patients seeking personalized and advanced medical care.</li>
+              <li>Healthcare institutions and research organizations focusing on precision medicine.</li>
+            </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-        Project Impact:
-      </p>
-      <ul>
-        <li>Improved diagnostic accuracy leading to early disease detection.</li>
-        <li>Optimized treatment strategies resulting in enhanced efficacy and reduced side effects.</li>
-        <li>Empowered healthcare professionals with AI-driven decision support.</li>
-        <li>Proactive healthcare interventions through continuous remote patient monitoring.</li>
-        <li>Increased patient engagement and collaboration through educational initiatives.</li>
-      </ul>
-            
-           
+              Project Impact:
+            </p>
+            <ul>
+              <li>Improved diagnostic accuracy leading to early disease detection.</li>
+              <li>Optimized treatment strategies resulting in enhanced efficacy and reduced side effects.</li>
+              <li>Empowered healthcare professionals with AI-driven decision support.</li>
+              <li>Proactive healthcare interventions through continuous remote patient monitoring.</li>
+              <li>Increased patient engagement and collaboration through educational initiatives.</li>
+            </ul>
+
+
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-             Conculsion
+              Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-        
-MediGenAI stands as a groundbreaking tool at the forefront of AI-driven precision medicine, offering a comprehensive solution for personalized treatment strategies. By seamlessly integrating into clinical workflows, providing predictive insights, and addressing ethical considerations, MediGenAI is poised to revolutionize healthcare delivery, empowering both healthcare professionals and patients in the pursuit of optimal and personalized medical care.
+
+              MediGenAI stands as a groundbreaking tool at the forefront of AI-driven precision medicine, offering a comprehensive solution for personalized treatment strategies. By seamlessly integrating into clinical workflows, providing predictive insights, and addressing ethical considerations, MediGenAI is poised to revolutionize healthcare delivery, empowering both healthcare professionals and patients in the pursuit of optimal and personalized medical care.
 
             </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Integration with Existing Learning Platforms: The tool will
-              seamlessly integrate with popular learning management systems
-              (LMS) and education platforms, ensuring a smooth adoption process
-              for educational institutions.
-            </p>
+
           </div>
-          
-          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold inline-block w-[1219.4px]">
-          AI-Driven Precision Medicine: Transforming Healthcare through Personalized Treatment Strategies
-          </div>
-          <div className="absolute top-[734.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+
+          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
+            AI-Driven Precision Medicine: <br />
+            <div className=" absolute top-[65px] text-13xl">Transforming Healthcare through Personalized Treatment Strategies
+            </div>     </div>
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
             <p className="m-0">
-            
-This research project focuses on leveraging AI for precision medicine, tailoring healthcare to individual patients. It involves developing AI algorithms for genomic data analysis, predicting diagnostics for early disease detection, and optimizing treatment responses through machine learning models. The project aims to create AI-powered clinical decision support systems for informed treatment decisions and implement remote patient monitoring systems for proactive interventions. Ethical considerations, including patient privacy and education initiatives for AI understanding, are integral to the research. The goal is to revolutionize healthcare by integrating AI to enhance diagnostic accuracy, predict treatment responses, and empower both patients and healthcare professionals.
+
+              This research project focuses on leveraging AI for precision medicine, tailoring healthcare to individual patients. It involves developing AI algorithms for genomic data analysis, predicting diagnostics for early disease detection, and optimizing treatment responses through machine learning models. The project aims to create AI-powered clinical decision support systems for informed treatment decisions and implement remote patient monitoring systems for proactive interventions. Ethical considerations, including patient privacy and education initiatives for AI understanding, are integral to the research. The goal is to revolutionize healthcare by integrating AI to enhance diagnostic accuracy, predict treatment responses, and empower both patients and healthcare professionals.
 
             </p>
-        
+
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[3210px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
+      <div className="absolute w-full top-[2510px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
         <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
           <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
             <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
@@ -192,32 +187,54 @@ This research project focuses on leveraging AI for precision medicine, tailoring
               <span className="text-darkslategray">{`  `}</span>
             </div>
           </div>
-          <div className="absolute top-[124.4px] left-[calc(50%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-            <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-              This research project seeks to transform the drug discovery process by leveraging the capabilities of artificial intelligence (AI). The primary objective is to accelerate pharmaceutical innovations through 
-              the development and application of AI algorithms in various stages of drug discovery.
+          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
+            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
+              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
+                  This research project seeks to transform the drug discovery process by leveraging the capabilities of artificial intelligence (AI). The primary objective is to accelerate pharmaceutical innovations through
+                  the development and application of AI algorithms in various stages of drug discovery.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  AI-Enhanced Clinical Imaging for Accurate Disease Diagnosis
+                </div>
               </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
-              AI-Enhanced Clinical Imaging for Accurate Disease Diagnosis
+              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
+                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
+                  The research project, "Telemedicine Transformation: AI-Enabled Remote Patient Monitoring," focuses on integrating artificial intelligence into telemedicine for more effective remote patient care. Through AI algorithms analyzing wearable device data and health records, the aim is
+                  to enhance virtual care quality, particularly for patients with chronic conditions.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
+                  Telemedicine Transformation: AI-Enabled Remote Patient Monitoring
+                </div>
+                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
+                    The research project, "AI-Assisted Mental Health Diagnosis and Intervention," aims to integrate artificial intelligence into mental health care, enhancing accuracy, efficiency, and accessibility.
+                  </div>
+                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                    AI-Assisted Mental Health Diagnosis and Intervention
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
+                  This research project focuses on leveraging artificial intelligence (AI) to tailor personalized treatment plans for cancer patients, aiming to
+                  improve treatment outcomes, minimize side effects, and enhance overall patient well-being.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  AI-Based Personalized Treatment Plans for Cancer Patients
+                </div>
               </div>
             </div>
-            <div className="absolute top-[0px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
-              The research project, "Telemedicine Transformation: AI-Enabled Remote Patient Monitoring," focuses on integrating artificial intelligence into telemedicine for more effective remote patient care. Through AI algorithms analyzing wearable device data and health records, the aim is
-             to enhance virtual care quality, particularly for patients with chronic conditions. 
-              </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
-              Telemedicine Transformation: AI-Enabled Remote Patient Monitoring
-              </div>
-            </div>
+
           </div>
           <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
         </div>
       </div>
-      <div className="absolute top-[4044px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[3344px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -275,30 +292,32 @@ This research project focuses on leveraging AI for precision medicine, tailoring
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] capitalize font-medium flex items-center">
-              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor, SVA Arcade 5Th
-              Block, Rajaji Nagara Bengaluru – 560010
+            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+              SNIPE TECH PVT LTD #123,
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon.png"
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] capitalize font-medium">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium">
               hr@snipe.co.in
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon1.png"
           />
         </div>
-        <b className="absolute top-[128px] left-[1089px] text-lg">Contact Us</b>
+        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
         <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
@@ -314,7 +333,7 @@ This research project focuses on leveraging AI for precision medicine, tailoring
         </div>
         <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
           <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2021 All Rights Reserved
+            © 2017 All Rights Reserved
           </div>
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
@@ -327,22 +346,23 @@ This research project focuses on leveraging AI for precision medicine, tailoring
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Projects
+            Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins">
+          <div className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}>
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Collaboration</div>
+          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
-          className="absolute h-[8.05%] w-[15.86%] top-[43.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
         />
       </div>
     </div>

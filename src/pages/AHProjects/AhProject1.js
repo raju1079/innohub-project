@@ -29,12 +29,12 @@ const AhProject1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[4464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="w-full relative bg-gray h-[3164px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
-          className="absolute h-[37.56%] top-[31.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[228.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
           onClick={onGroupClick}
         />
         <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
@@ -46,13 +46,13 @@ const AhProject1 = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-          // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-          // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -62,8 +62,8 @@ const AhProject1 = () => {
           >
             About us
           </div>
-          <div className="w-[141px] relative rounded-xl bg-cold-grey-white h-10 overflow-hidden shrink-0 text-5xl text-blue">
-            <div className="absolute top-[calc(50%_-_18px)] left-[calc(50%_-_44px)] capitalize font-semibold">
+          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
@@ -78,13 +78,13 @@ const AhProject1 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
-          <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
-          <div className="absolute top-[1028.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
+          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
             LivestockGuard Pro encompasses features for real-time disease prediction, risk profiling, preventive guidelines, and continuous system improvement.
           </div>
-          <div className="absolute top-[1202.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
 
               AI-Driven Prediction Models: Utilizes advanced machine learning algorithms for accurate disease prediction in livestock.
@@ -118,29 +118,29 @@ const AhProject1 = () => {
 
             </p>
  */}          </div>
-          <div className="absolute top-[666.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[910.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
             AI Tool Name:LivestockGuard Pro
 
           </div>
-          <div className="absolute top-[975.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[1132.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[1600.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
             <ul>
-              <li>Livestock Managers, Veterinary Experts Agricultural Extension Services IoT and AI Developers.</li>
-              {/* <li>Logistics Companies: Improving operational performance in the final phase of delivery.
+              <li>Livestock Managers</li>
+              <li>Veterinary Experts Agricultural Extension Services IoT and AI Developers
               </li>
-              <li>E-commerce Platforms: Enhancing customer satisfaction through timely and efficient last-mile delivery.
+              {/*  <li>E-commerce Platforms: Enhancing customer satisfaction through timely and efficient last-mile delivery.
               </li> */}
             </ul>
             <p className="m-0">&nbsp;</p>
@@ -178,10 +178,16 @@ const AhProject1 = () => {
             </p>
  */}          </div>
 
-          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold inline-block w-[1219.4px]">
-            Smart Feeding Systems: AI Optimization for Livestock Nutrition
+          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
+            Smart Feeding Systems:<br />
+            <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>
           </div>
-          <div className="absolute top-[734.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+            <p className="m-0">
+
+              The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
+
+            </p>
             <p className="m-0">
 
               NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
@@ -190,7 +196,7 @@ const AhProject1 = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[3210px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
+      <div className="absolute w-full top-[1910px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
         <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
           <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
             <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
@@ -199,30 +205,49 @@ const AhProject1 = () => {
               <span className="text-darkslategray">{`  `}</span>
             </div>
           </div>
-          <div className="absolute top-[124.4px] left-[calc(50%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-            <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-                HeatOptiSync encompasses features for AI-driven heat detection, real-time alerts, and seamless integration with reproductive management software for dairy cattle.
+          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
+            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
+              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
+                  The research project, "AI-Driven Disease Prediction and Prevention in Livestock," focuses on leveraging artificial intelligence to enhance disease prediction and prevention in livestock. The approach involves comprehensive data collection, feature engineering, and the development of machine learning models for early disease prediction.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  AI-Driven Disease Prediction and Prevention in Livestock
+                </div>
               </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
-                Automated Heat Detection in Dairy Cattle: AI for Reproductive Management
+              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
+                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
+                  The research project, "Automated Heat Detection in Dairy Cattle: AI for Reproductive Management," aims to enhance dairy farming practices by integrating artificial intelligence (AI) for automated heat event detection. The project involves data collection on heat patterns, identification of key indicators, development of AI models, and integration with sensor networks.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
+                  Automated Heat Detection in Dairy Cattle: AI for Reproductive Management
+                </div>
+                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
+                    The research project, "AI-Enhanced Precision Poultry Farming for Efficient Egg Production," aims to optimize poultry farming practices, focusing on egg production efficiency. The project involves comprehensive data collection on poultry farming parameters, identification of key factors influencing egg production, and the development of AI models for predictive egg production.
+                  </div>
+                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                    AI-Enhanced Precision Poultry Farming for Efficient Egg Production
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="absolute top-[0px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-              <div className="absolute top-[439.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
-              EggOptiFarm encompasses features for AI-driven predictive modeling, real-time alerts, and decision support systems for optimizing various aspects of poultry farming, specifically egg production
+              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
+                  The research project, "Predictive Analytics for Swine Production: AI-Optimized Growth Models," aims to revolutionize swine farming by integrating AI technologies. The project involves comprehensive data collection on swine growth parameters, identification of key influencing factors, and the development of AI-driven growth prediction models.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  Predictive Analytics for Swine Production: AI-Optimized Growth Models
+                </div>
               </div>
-              <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
-                AI-Enhanced Precision Poultry Farming for Efficient Egg Production
-              </div>
-            </div>
-          </div>
+            </div></div>
           <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
         </div>
       </div>
-      <div className="absolute top-[4044px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[2744px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -280,30 +305,32 @@ const AhProject1 = () => {
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] capitalize font-medium flex items-center">
-              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor, SVA Arcade 5Th
-              Block, Rajaji Nagara Bengaluru – 560010
+            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+              SNIPE TECH PVT LTD #123,
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon.png"
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] capitalize font-medium">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium">
               hr@snipe.co.in
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon1.png"
           />
         </div>
-        <b className="absolute top-[128px] left-[1089px] text-lg">Contact Us</b>
+        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
         <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
@@ -319,7 +346,7 @@ const AhProject1 = () => {
         </div>
         <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
           <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2021 All Rights Reserved
+            © 2017 All Rights Reserved
           </div>
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
@@ -332,22 +359,23 @@ const AhProject1 = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Projects
+            Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins">
+          <div className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}>
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Collaboration</div>
+          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
-          className="absolute h-[8.05%] w-[15.86%] top-[43.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
         />
       </div>
     </div>

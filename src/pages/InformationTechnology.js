@@ -36,9 +36,9 @@ const InformationTechnology = () => {
     <div className="w-full relative bg-gray h-[2710px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
-          className="absolute h-[37.56%] top-[31.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[228.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
           onClick={onGroupClick}
         />
         <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
@@ -50,13 +50,13 @@ const InformationTechnology = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-           // onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -66,8 +66,8 @@ const InformationTechnology = () => {
           >
             About us
           </div>
-          <div className="w-[141px] relative rounded-xl bg-cold-grey-white h-10 overflow-hidden shrink-0 text-5xl text-blue">
-            <div className="absolute top-[calc(50%_-_18px)] left-[calc(50%_-_44px)] capitalize font-semibold">
+          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
@@ -82,7 +82,7 @@ const InformationTechnology = () => {
           src="/artboard-44x-1@2x.png"
         />
         <b className="absolute top-[293.6px] left-[calc(52%_-_624.1px)] capitalize">
-        InformationTechnology
+          InformationTechnology
         </b>
       </div>
       <div className="absolute w-full top-[456px] right-[0px] left-[0px] h-[394px] overflow-hidden text-13xl">
@@ -90,20 +90,20 @@ const InformationTechnology = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
             
           </b> */}
-          <div className="absolute top-[69.8px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+        <div className="absolute top-[69.8px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
           Leveraging artificial intelligence (AI) technologies in IT development and maintenance processes aims to streamline tasks, enhance efficiency, and reduce manual effort.
-         AI tools are applied across various aspects of the development lifecycle. In requirements analysis and planning, natural language processing (NLP) aids in understanding project needs,
-        while AI algorithms automate project planning by analysing historical data and dependencies. For code development and review, tools like OpenAI Codex generate code snippets and AI-driven static code analysis automates review processes. 
-        In testing, AI algorithms automate test case generation and dynamically adapt test suites, reducing maintenance efforts. Automated bug detection analyses code changes and logs, prioritizing potential issues, with predictive maintenance anticipating problems
-         proactively.
-      AI extends its impact to deployment and release management through automated deployment processes and predicting the impact of code changes. 
-      In infrastructure management, AI analyses system usage patterns for autonomous scaling and predicts server issues for proactive maintenance. Security and compliance benefit from continuous AI-driven security scans and behavioural analysis of anomalies. 
-      AI-powered chatbots and automated ticket triage expedite support and issue resolution. Data management involves AI-assisted data cleansing and predictive analytics for system performance insights. 
-      Automation extends to documentation generation based on code comments and knowledge extraction from diverse sources. Continuous improvement employs AI-powered analytics to identify bottlenecks, recommend enhancements, and trends.
-      Adoption of AI platforms, such as integrated AI development environments (AIDEs) and AI-powered DevOps platforms, seamlessly integrates AI tools into the development lifecycle. Finally, AI-driven learning platforms assist in identifying skill gaps, recommending training, and personalizing learning
-       paths for team members.
-          </div>
-       {/*  </div> */}
+          AI tools are applied across various aspects of the development lifecycle. In requirements analysis and planning, natural language processing (NLP) aids in understanding project needs,
+          while AI algorithms automate project planning by analysing historical data and dependencies. For code development and review, tools like OpenAI Codex generate code snippets and AI-driven static code analysis automates review processes.
+          In testing, AI algorithms automate test case generation and dynamically adapt test suites, reducing maintenance efforts. Automated bug detection analyses code changes and logs, prioritizing potential issues, with predictive maintenance anticipating problems
+          proactively.
+          AI extends its impact to deployment and release management through automated deployment processes and predicting the impact of code changes.
+          In infrastructure management, AI analyses system usage patterns for autonomous scaling and predicts server issues for proactive maintenance. Security and compliance benefit from continuous AI-driven security scans and behavioural analysis of anomalies.
+          AI-powered chatbots and automated ticket triage expedite support and issue resolution. Data management involves AI-assisted data cleansing and predictive analytics for system performance insights.
+          Automation extends to documentation generation based on code comments and knowledge extraction from diverse sources. Continuous improvement employs AI-powered analytics to identify bottlenecks, recommend enhancements, and trends.
+          Adoption of AI platforms, such as integrated AI development environments (AIDEs) and AI-powered DevOps platforms, seamlessly integrates AI tools into the development lifecycle. Finally, AI-driven learning platforms assist in identifying skill gaps, recommending training, and personalizing learning
+          paths for team members.
+        </div>
+        {/*  </div> */}
       </div>
       <div className="absolute w-full top-[950px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
         <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
@@ -120,7 +120,7 @@ const InformationTechnology = () => {
                 AI-Powered Requirement Analysis for Software Development: A Comparative Study
               </div>
               <div className="absolute top-[253.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
-              In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches.
+                In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches.
               </div>
             </div>
           </div>
@@ -135,11 +135,11 @@ const InformationTechnology = () => {
               </div>
               <div className="absolute top-[166.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
                 Code Quality and Development Efficiency," seeks to revolutionize software development's code review process by integrating Artificial Intelligence (AI). With a primary goal of enhancing code quality and reducing human-intensive efforts, the project undertakes a thorough investigation into AI algorithms' capabilities for code analysis. It commences with an extensive literature review, exploring successful implementations and challenges in AI-driven code analysis, and evaluating techniques such as static code analysis, machine learning, and natural language processing.
-                To assess the effectiveness of AI-powered automated code review against traditional methods, a comparative framework is developed, defining key metrics including code quality improvement, security vulnerability identification, and time efficiency. The research involves the creation and implementation of a prototype tool incorporating selected AI techniques for automated code analysis, suggestion generation, and version control system integration.
 
-                
 
-                
+
+
+
 
               </div>
             </div>
@@ -204,30 +204,32 @@ const InformationTechnology = () => {
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] capitalize font-medium flex items-center">
-              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor, SVA Arcade 5Th
-              Block, Rajaji Nagara Bengaluru – 560010
+            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+              SNIPE TECH PVT LTD #123,
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon.png"
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] capitalize font-medium">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium">
               hr@snipe.co.in
             </div>
           </div>
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
             alt=""
-            src="/icon.svg"
+            src="/icon1.png"
           />
         </div>
-        <b className="absolute top-[128px] left-[1089px] text-lg">Contact Us</b>
+        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
         <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
           <img
             className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
@@ -243,7 +245,7 @@ const InformationTechnology = () => {
         </div>
         <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
           <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2021 All Rights Reserved
+            © 2017 All Rights Reserved
           </div>
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
@@ -256,22 +258,23 @@ const InformationTechnology = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Projects
+            Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins">
+          <div className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}>
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Collaboration</div>
+          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
-          className="absolute h-[8.05%] w-[15.86%] top-[43.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
-          src="/group-1.svg"
+          src="/poplogo.svg"
         />
       </div>
     </div>
