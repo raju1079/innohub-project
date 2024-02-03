@@ -10,20 +10,20 @@ import EduProject from "./pages/EduProject";
 import ResearchArea from "./pages/ResearchArea";
 import AboutUs from "./pages/AboutUs";
 import HealthCare from "./pages/HealthCare";
-import Logistics from './pages/Logistics';
+import Logistics from "./pages/Logistics";
 import Agriculture from "./pages/Agriculture";
 import AnimalHusbandry from "./pages/AnimalHusbandry";
 import InformationTechnology from "./pages/InformationTechnology";
 import Insurance from "./pages/Insurance";
 import Education from "./pages/Education";
-import Notification from './pages/Notification'
+import Notification from "./pages/Notification";
 import Project1 from "./pages/ProjectsHealthCare/Project1";
 import LogProject1 from "./pages/ProjectsLogistics/LogProject1";
 import ProjectIT1 from "./pages/ProjectsIT/ProjectIT1";
 import AgrProject1 from "./pages/ProjectsAgriculture/AgrProject1";
 import AhProject1 from "./pages/AHProjects/AhProject1";
 import InsProject1 from "./pages/InsProjects/InsProject1";
-
+import Login from "./pages/Login";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -83,19 +83,23 @@ function App() {
       <Route path="/researcharea" element={<ResearchArea />} />
       <Route path="/education" element={<Education />} />
       <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/healthcare" element={<HealthCare/>}/>
-      <Route path="/logistics" element={<Logistics/>}/>
-      <Route path="/agriculture" element={<Agriculture/>}/>
-      <Route path="/animalhusbandry" element={<AnimalHusbandry/>}/>
-      <Route path="/informationtechnology" element={<InformationTechnology/>}/>
-      <Route path="/insurance" element={<Insurance/>}/>
-      <Route path='/notification' element={<Notification/>}/>
-      <Route path='/project1' element={<Project1/>}/>
-      <Route path='/logproject1' element={<LogProject1/>}/>
-      <Route path='/projectit1' element={<ProjectIT1/>}/>
-      <Route path="agrproject1"  element={<AgrProject1/>}/>
-      <Route path="ahproject1" element={<AhProject1/>}/>
-      <Route path="insproject1" element={<InsProject1/>}/>
+      <Route path="/healthcare" element={<HealthCare />} />
+      <Route path="/logistics" element={<Logistics />} />
+      <Route path="/agriculture" element={<Agriculture />} />
+      <Route path="/animalhusbandry" element={<AnimalHusbandry />} />
+      <Route
+        path="/informationtechnology"
+        element={<InformationTechnology />}
+      />
+      <Route path="/insurance" element={<Insurance />} />
+      <Route path="/notification" element={<Notification />} />
+      <Route path="/project1" element={<Project1 />} />
+      <Route path="/logproject1" element={<LogProject1 />} />
+      <Route path="/projectit1" element={<ProjectIT1 />} />
+      <Route path="agrproject1" element={<AgrProject1 />} />
+      <Route path="ahproject1" element={<AhProject1 />} />
+      <Route path="insproject1" element={<InsProject1 />} />
+      <Route path="/Login" element={<Login />} />
     </Routes>
   );
 }

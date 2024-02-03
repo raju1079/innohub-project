@@ -50,13 +50,13 @@ const Insurance = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-          //onClick={onProjectsTextClick}
+            //onClick={onProjectsTextClick}
           >
             Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-          //onClick={onProjectsTextClick}
+            //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -91,13 +91,36 @@ const Insurance = () => {
            
           </b> */}
         <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
-          Research in insurance spans various critical areas, reflecting the dynamic and complex nature of the insurance industry. One key research area involves risk assessment and management, exploring innovative ways to predict and mitigate risks in different insurance sectors. Understanding the impact of emerging technologies, such as Artificial Intelligence and blockchain, on insurance operations is another crucial aspect.
-          Additionally, research can delve into customer behavior and preferences, aiming to enhance personalized insurance offerings and improve customer satisfaction. Analysing regulatory frameworks, especially in the context of evolving global economic conditions, is essential for ensuring compliance and adapting insurance practices to changing legal landscapes. Ultimately, insurance research is imperative to foster innovation,
-          improve operational efficiency, and address emerging challenges in an industry that plays a pivotal role in managing and mitigating risks.
-          The significance of insurance research lies in its potential to drive industry evolution, fostering resilience and adaptability. In-depth research informs insurance providers about emerging trends, market demands, and regulatory changes, allowing them to tailor products that meet evolving customer needs. Moreover, research aids in optimizing risk models and developing innovative coverage solutions, ensuring that insurance remains a robust and effective risk management tool.
-          As the insurance landscape continues to evolve with technological advancements and shifts in socio-economic dynamics, ongoing research is essential for the industry to proactively respond to challenges, enhance customer experiences, and contribute to overall economic stability.
-          The scope of research in insurance is vast, encompassing a wide range of domains that collectively contribute to the industry's growth, sustainability, and ability to navigate an ever-changing landscape.
-
+          Research in insurance spans various critical areas, reflecting the
+          dynamic and complex nature of the insurance industry. One key research
+          area involves risk assessment and management, exploring innovative
+          ways to predict and mitigate risks in different insurance sectors.
+          Understanding the impact of emerging technologies, such as Artificial
+          Intelligence and blockchain, on insurance operations is another
+          crucial aspect. Additionally, research can delve into customer
+          behavior and preferences, aiming to enhance personalized insurance
+          offerings and improve customer satisfaction. Analysing regulatory
+          frameworks, especially in the context of evolving global economic
+          conditions, is essential for ensuring compliance and adapting
+          insurance practices to changing legal landscapes. Ultimately,
+          insurance research is imperative to foster innovation, improve
+          operational efficiency, and address emerging challenges in an industry
+          that plays a pivotal role in managing and mitigating risks. The
+          significance of insurance research lies in its potential to drive
+          industry evolution, fostering resilience and adaptability. In-depth
+          research informs insurance providers about emerging trends, market
+          demands, and regulatory changes, allowing them to tailor products that
+          meet evolving customer needs. Moreover, research aids in optimizing
+          risk models and developing innovative coverage solutions, ensuring
+          that insurance remains a robust and effective risk management tool. As
+          the insurance landscape continues to evolve with technological
+          advancements and shifts in socio-economic dynamics, ongoing research
+          is essential for the industry to proactively respond to challenges,
+          enhance customer experiences, and contribute to overall economic
+          stability. The scope of research in insurance is vast, encompassing a
+          wide range of domains that collectively contribute to the industry's
+          growth, sustainability, and ability to navigate an ever-changing
+          landscape.
         </div>
         {/*  </div> */}
       </div>
@@ -112,17 +135,26 @@ const Insurance = () => {
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
             <img
-                className="absolute top-[48px] left-[calc(50%_-_548.4px)]  w-[490.8px] h-[455.6px] object-fill rounded-md"
-                alt=""
-                src="/Insuranceimg1.jpg"
-              />
-            
+              className="absolute top-[48px] left-[calc(50%_-_548.4px)]  w-[490.8px] h-[455.6px] object-fill rounded-md"
+              alt=""
+              src="/Insuranceimg1.jpg"
+            />
+
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
-                Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization
+                Corporate Insurance Efficiency: A Comprehensive Study on Risk
+                Mitigation and Cost Optimization
               </div>
               <div className="absolute top-[253.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
-                The research project titled "Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization" endeavors to explore and enhance the efficiency of corporate insurance processes by delving into advanced strategies for risk mitigation and cost optimization. The primary focus is on identifying innovative approaches and leveraging cutting-edge technologies to improve risk management practices within corporations, aiming to result in more economically viable insurance solutions.
+                The research project titled "Corporate Insurance Efficiency: A
+                Comprehensive Study on Risk Mitigation and Cost Optimization"
+                endeavors to explore and enhance the efficiency of corporate
+                insurance processes by delving into advanced strategies for risk
+                mitigation and cost optimization. The primary focus is on
+                identifying innovative approaches and leveraging cutting-edge
+                technologies to improve risk management practices within
+                corporations, aiming to result in more economically viable
+                insurance solutions.
               </div>
             </div>
           </div>
@@ -135,17 +167,21 @@ const Insurance = () => {
                 alt=""
                 src="/Insuranceimg2.jpg"
               />
-              </div>
+            </div>
             <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
-                Personalized Risk Assessment in Personal Insurance: Integrating AI for Tailored Coverage"
-
-
-
+                Personalized Risk Assessment in Personal Insurance: Integrating
+                AI for Tailored Coverage"
               </div>
               <div className="absolute top-[166.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
-                The research project titled "Personalized Risk Assessment in Personal Insurance: Integrating AI for Tailored Coverage" endeavors to revolutionize the landscape of personal insurance by integrating Artificial Intelligence (AI) to refine risk assessment methodologies. The study focuses on harnessing AI algorithms to develop personalized insurance products that intricately cater to the distinct needs, behaviors, and lifestyles of individual policyholders.
-
+                The research project titled "Personalized Risk Assessment in
+                Personal Insurance: Integrating AI for Tailored Coverage"
+                endeavors to revolutionize the landscape of personal insurance
+                by integrating Artificial Intelligence (AI) to refine risk
+                assessment methodologies. The study focuses on harnessing AI
+                algorithms to develop personalized insurance products that
+                intricately cater to the distinct needs, behaviors, and
+                lifestyles of individual policyholders.
               </div>
             </div>
           </div>
@@ -210,10 +246,12 @@ const Insurance = () => {
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
             <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
-              SNIPE TECH PVT LTD #123,
-              70Th Cross 2Nd Floor,<br />
-              SVA Arcade 5Th Block,<br />
-              Rajaji Nagara,<br />  Bengaluru – 560010
+              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor,
+              <br />
+              SVA Arcade 5Th Block,
+              <br />
+              Rajaji Nagara,
+              <br /> Bengaluru – 560010
             </div>
           </div>
           <img
@@ -263,12 +301,14 @@ const Insurance = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-          //onClick={onCareersTextClick}
+            //onClick={onCareersTextClick}
           >
             Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins"
-            onClick={onAboutUsTextClick}>
+          <div
+            className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}
+          >
             About us
           </div>
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>

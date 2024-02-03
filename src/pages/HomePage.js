@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ScrollingText from "../components/ScrollingText";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -32,10 +33,14 @@ const HomePage = () => {
     navigate("/desktop-3");
   }, [navigate]);
 
+  // const onLoginTextClick = useCallback(() => {
+  //   navigate("/Login-us");
+  // }, [navigate]);
+
   return (
     <div className="w-full relative bg-gray h-[3378px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[90px] overflow-hidden">
-       <ScrollingText/>      
+        <ScrollingText />
         <img
           className="absolute h-[80.56%] top-[24.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[218.4px] cursor-pointer"
           alt=""
@@ -45,7 +50,7 @@ const HomePage = () => {
         />
         <div className="absolute top-[40px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
           <div
-             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 
+            className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 
              Save Changes
            </button>"
             onClick={onResearchAreaTextClick}
@@ -53,7 +58,7 @@ const HomePage = () => {
             Research area
           </div>
           <div
-                        className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  "
+            className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  "
             //onClick={onProjectsTextClick}
           >
             Collabrations
@@ -65,54 +70,61 @@ const HomePage = () => {
             Blogs
           </div>
           <div
-             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
+            className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
             onClick={onAboutUsTextClick}
           >
             About us
           </div>
           <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-2xl text-blue">
-            <div className="absolute top-[calc(62%_-_18px)] left-[calc(60%_-_44px)] capitalize font-regular ">
-              Sign In
-            </div>
+            <Link
+              to="/Login"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                padding: "29px",
+                backgroundColor: "blue",
+              }}
+            >
+              Login
+            </Link>
           </div>
         </div>
-        
       </div>
-      
+
       <div className="absolute w-[calc(100%_-_3px)] top-[90px] right-[1.6px] left-[1.4px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[711px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
         <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
-       
+
         <img
           className="absolute top-[20px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[493.5px] object-cover object-fit: none;"
           alt=""
           src="/artboard-44x-1@2x.png"
           data-scroll-to="artboard44x1"
         />
-         <img
+        <img
           className="absolute top-[453.6px] left-[calc(50%_-_722.8px)] w-[1442.8px] h-[257.4px] object-contain"
           alt=""
           src="/Artboard 4@4x 3.png"
-        />  
+        />
         <div className="absolute top-[363.6px] left-[calc(53%_-_624.1px)] capitalize  w-[924.2px] h-[191.8px]">
           <p className="m-0">
             <b>Explore the World of Innovation</b>
           </p>
-         {/*  <p className="m-0 text-13xl font-medium">{` `}</p> */}
+          {/*  <p className="m-0 text-13xl font-medium">{` `}</p> */}
         </div>
         <div className="absolute top-[453.6px] left-[calc(52%_-_624.1px)] capitalize font-medium text-thistle inline-block w-[797.4px] h-[191.8px] text-8xl">
           <p className="m-0">Content Creation at UPL Research Center</p>
           <p className="m-0 text-5xl">&nbsp;</p>
         </div>
       </div>
-      
+
       <div className="absolute top-[801px] left-[calc(50%_-_720.5px)] w-[1442.8px] h-[578.8px] text-17xl">
-       {/*  <img
+        {/*  <img
           className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[578.8px] object-contain"
           alt=""
           src="/artboard-44x-2@2x.png"
         /> */}
-        
+
         <div className="absolute top-[39.4px] left-[calc(50%_-_602.8px)] w-[1193.9px] h-[495.1px]">
           <b className="absolute top-[0px] left-[calc(50%_-_594.55px)] capitalize inline-block w-[763.2px] h-[80.2px]">
             Welcome to UPL research center
@@ -272,11 +284,11 @@ const HomePage = () => {
       </div>
       <div className="absolute top-[2652.8px] left-[calc(50%_-_719.1px)] w-[1440px] h-[275px] overflow-hidden">
         <div className="absolute top-[33.1px] left-[120.3px]  w-[1197.7px] h-[216px]">
-        <b className="capitalize inline-block w-[947.2px] h-[54px] text-17xl">
-        Collaborate, Innovate, Transform:
-        </b>
+          <b className="capitalize inline-block w-[947.2px] h-[54px] text-17xl">
+            Collaborate, Innovate, Transform:
+          </b>
 
-       {/* <div className="overflow-hidden text-17xl ">Collaborate, Innovate, Transform:</div> */}
+          {/* <div className="overflow-hidden text-17xl ">Collaborate, Innovate, Transform:</div> */}
           <p className="m-0 text-base">
             Whether you are a researcher, industry partner, or enthusiast, UPL
             RC welcomes you to join us on this journey of discovery. Explore our
@@ -350,10 +362,12 @@ const HomePage = () => {
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
             <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
-              SNIPE TECH PVT LTD #123,
-              70Th Cross 2Nd Floor,<br/> 
-              SVA Arcade 5Th Block,<br/> 
-              Rajaji Nagara,<br/>  Bengaluru – 560010
+              SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor,
+              <br />
+              SVA Arcade 5Th Block,
+              <br />
+              Rajaji Nagara,
+              <br /> Bengaluru – 560010
             </div>
           </div>
           <img
@@ -407,8 +421,10 @@ const HomePage = () => {
           >
             Collabrations
           </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins"
-          onClick={onAboutUsTextClick}>
+          <div
+            className="absolute top-[59.39%] left-[0%] font-poppins"
+            onClick={onAboutUsTextClick}
+          >
             About us
           </div>
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
