@@ -29,7 +29,8 @@ const AgrProject1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[3364px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2664px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -199,60 +200,8 @@ const AgrProject1 = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[2110px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
-        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
-          <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
-            <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
-            <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
-              <span>See related</span>
-              <span className="text-darkslategray">{`  `}</span>
-            </div>
-          </div>
-          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
-            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
-                  The research project, "AI-Driven Crop Monitoring and Disease Detection in Smart Farming," focuses on leveraging artificial intelligence (AI) to enhance crop monitoring and enable early detection of diseases in smart farming systems.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  AI-Driven Crop Monitoring and Disease Detection in Smart Farming
-                </div>
-              </div>
-              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
-                  The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions. The comprehensive approach includes a literature review, data collection and preprocessing, model selection, validation, and addressing spatial and temporal dynamics.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
-                  Machine Learning for Crop Yield Prediction: A Comprehensive Analysis
-                </div>
-                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
-                    The research project, "AI for Soil Health Assessment in Sustainable Agriculture," aims to leverage artificial intelligence (AI) to provide accurate assessments of soil health for sustainable farming.
-                  </div>
-                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                    AI-Based Soil Health Assessment for Sustainable Agriculture
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-                  The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims to leverage artificial intelligence (AI) to revolutionize market predictions in the agribusiness sector.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  AI-Based Market Forecasting for Agribusiness
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
-        </div>
-      </div>
-      <div className="absolute top-[2944px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      
+      <div className="absolute top-[2241px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>

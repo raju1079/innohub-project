@@ -33,7 +33,8 @@ const InformationTechnology = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2710px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2713px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"

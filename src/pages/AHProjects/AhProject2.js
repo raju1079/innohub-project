@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const ProjectIT1 = () => {
+const AhProject1 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,8 +29,7 @@ const ProjectIT1 = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[2824px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="w-full relative bg-gray h-[3164px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -79,77 +78,85 @@ const ProjectIT1 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[538.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
-            "ReqAI Analytica" is an advanced requirement analysis tool powered by Artificial Intelligence, designed to streamline and optimize the initial phase of software development projects. It integrates cutting-edge AI techniques to improve accuracy, efficiency, and adaptability in understanding and extracting project requirements.
-
+          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+            LivestockGuard Pro encompasses features for real-time disease prediction, risk profiling, preventive guidelines, and continuous system improvement.
           </div>
-          <div className="absolute top-[702.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
-              AI-Driven Requirement Extraction: Utilizes advanced NLP algorithms and machine learning models to extract and categorize requirements from diverse textual sources.
+
+              AI-Driven Prediction Models: Utilizes advanced machine learning algorithms for accurate disease prediction in livestock.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Real-time Monitoring: Implements AI-powered real-time monitoring systems using sensors and IoT devices for continuous health surveillance
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Early Warning System: Establishes an early warning system with customizable risk thresholds for immediate preventive actions.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Comparative Analysis Module: Incorporates a comparative analysis module inspired by the research project, allowing users to assess the effectiveness of AI-driven methods against traditional approaches.
+              Disease Risk Profiling: Develops disease risk profiles considering geographical and seasonal variations for targeted preventive measures.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Preventive Guidelines: Provides AI-driven guidelines for preventive measures and intervention strategies tailored to specific livestock farming contexts.
+            </p>
+            {/* <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Cost-Benefit Analysis: Conduct comprehensive assessments considering fuel costs, maintenance, and labor expenses.
 
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Real-time Adaptability: Adapts dynamically to changing project specifications, ensuring that the tool remains responsive to evolving requirements throughout the development lifecycle.
-
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Scalability and Performance Metrics: Provides scalability metrics and performance indicators, offering insights into the tool's efficiency across projects of varying sizes and complexities.
-
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              User-Friendly Interface:  Boasts an intuitive user interface that facilitates seamless interaction, making it accessible for both technical and non-technical stakeholders involved in requirement analysis.
+              Evaluation Feedback Loop: Continuous assessment and refinement based on route efficiency, delivery times, and customer satisfaction.
 
 
             </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Data Visualization Dashboard:  Presents comprehensive data visualization dashboards, allowing users to interpret and understand key metrics easily.
-
-            </p>
-          </div>
-          <div className="absolute top-[126.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+ */}          </div>
+          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[410.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name: ReqAI Analytica
+          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name:LivestockGuard Pro
+
           </div>
-          <div className="absolute top-[475.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[632.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[1125.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
             <ul>
-              <li>Software Development Teams: Targeting development teams in various industries seeking to enhance their requirement analysis processes.</li>
-              <li>Project Managers: Providing a valuable tool for project managers to efficiently plan and execute software development projects.</li>
-              <li>Consulting Firms: Offering consulting firms a powerful tool to streamline their client's requirement analysis processes.</li>
+              <li>Livestock Managers</li>
+              <li>Veterinary Experts Agricultural Extension Services IoT and AI Developers
+              </li>
+              {/*  <li>E-commerce Platforms: Enhancing customer satisfaction through timely and efficient last-mile delivery.
+              </li> */}
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
             <ul>
-              <li>Increased Accuracy: AI-driven requirement analysis leads to a more accurate and precise understanding of project specifications.</li>
-              <li>Efficiency Gains: Reduced time and effort in requirement analysis, allowing teams to focus on other critical aspects of the development process.</li>
-              <li>Adaptability to Change: Dynamic adaptability to changing project requirements, reducing the need for manual adjustments.</li>
-              <li>Enhanced Collaboration: Improved collaboration among team members and stakeholders through a centralized and accessible platform.</li>
-              <li>Predictive Insights: Predictive analytics offer insights into potential challenges, enabling proactive decision-making.</li>
+              <li>Proactive Disease Prevention: Enhances livestock health through early disease prediction and timely preventive measures.  </li>
+
+              <li>Risk-Based Decision-Making: Empowers livestock managers with risk profiles for informed decision-making.</li>
+
+              <li> Education and Adoption: Facilitates widespread adoption through education programs and training initiatives.</li>
+
+              <li> Ethical AI Use: Addresses ethical considerations, ensuring responsible and transparent AI implementation.</li>
+              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
+              </li> */}
             </ul>
 
 
@@ -159,8 +166,7 @@ const ProjectIT1 = () => {
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              "ReqAI Analytica" aims to revolutionize the requirement analysis phase in software development, providing a comprehensive solution that combines the latest AI advancements with user-friendly functionality. The tool addresses the evolving needs of development teams, ensuring a smoother and more efficient path from requirements to successful software delivery.
-
+              LivestockGuard Pro emerges as a vital AI tool, aligning with the project's goals by providing a robust system for AI-driven disease prediction and prevention in livestock. Its features contribute to proactive health management, informed decision-making, and the responsible adoption of AI in livestock farming. LivestockGuard Pro stands as a transformative solution, ensuring the well-being and sustainability of livestock management practices.
 
             </p>
             {/* <p className="m-0">&nbsp;</p>
@@ -169,27 +175,79 @@ const ProjectIT1 = () => {
               seamlessly integrate with popular learning management systems
               (LMS) and education platforms, ensuring a smooth adoption process
               for educational institutions.
-            </p> */}
-          </div>
+            </p>
+ */}          </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-            AI-Powered Requirement Analysis for Software Development:<br />
-            <div className=" absolute top-[105px] text-13xl"> A Comparative Study </div>
-
+            Smart Feeding Systems:<br />
+            <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>
           </div>
-          <div className="absolute top-[214.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
             <p className="m-0">
 
-              In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches. The approach involves an extensive literature review, investigating real-world applications of AI in various software development life cycle phases. Identifying and analysing AI techniques like Natural Language Processing (NLP) and machine learning for requirement analysis, the research develops a comprehensive framework with key evaluation metrics such as accuracy, time efficiency, scalability, and adaptability.
+              The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
 
+            </p>
+            <p className="m-0">
 
+              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
             </p>
 
           </div>
         </div>
       </div>
-      
-      <div className="absolute top-[2405px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute w-full top-[1910px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
+        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
+          <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
+            <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
+            <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
+              <span>See related</span>
+              <span className="text-darkslategray">{`  `}</span>
+            </div>
+          </div>
+          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
+            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
+              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
+                  The research project, "AI-Driven Disease Prediction and Prevention in Livestock," focuses on leveraging artificial intelligence to enhance disease prediction and prevention in livestock. The approach involves comprehensive data collection, feature engineering, and the development of machine learning models for early disease prediction.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  AI-Driven Disease Prediction and Prevention in Livestock
+                </div>
+              </div>
+              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
+                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
+                  The research project, "Automated Heat Detection in Dairy Cattle: AI for Reproductive Management," aims to enhance dairy farming practices by integrating artificial intelligence (AI) for automated heat event detection. The project involves data collection on heat patterns, identification of key indicators, development of AI models, and integration with sensor networks.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
+                  Automated Heat Detection in Dairy Cattle: AI for Reproductive Management
+                </div>
+                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
+                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
+                    The research project, "AI-Enhanced Precision Poultry Farming for Efficient Egg Production," aims to optimize poultry farming practices, focusing on egg production efficiency. The project involves comprehensive data collection on poultry farming parameters, identification of key factors influencing egg production, and the development of AI models for predictive egg production.
+                  </div>
+                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                    AI-Enhanced Precision Poultry Farming for Efficient Egg Production
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
+                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
+                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
+                  The research project, "Predictive Analytics for Swine Production: AI-Optimized Growth Models," aims to revolutionize swine farming by integrating AI technologies. The project involves comprehensive data collection on swine growth parameters, identification of key influencing factors, and the development of AI-driven growth prediction models.
+                </div>
+                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
+                  Predictive Analytics for Swine Production: AI-Optimized Growth Models
+                </div>
+              </div>
+            </div></div>
+          <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
+        </div>
+      </div>
+      <div className="absolute top-[2744px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -324,4 +382,4 @@ const ProjectIT1 = () => {
   );
 };
 
-export default ProjectIT1;
+export default AhProject1;

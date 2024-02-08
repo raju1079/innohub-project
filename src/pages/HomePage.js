@@ -38,7 +38,12 @@ const HomePage = () => {
   // }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[3378px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+      
+
+
+    
+    <div className="xl:w-full relative bg-gray h-[3384px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[90px] overflow-hidden">
         <ScrollingText />
         <img
@@ -80,9 +85,9 @@ const HomePage = () => {
               to="/Login"
               style={{
                 textDecoration: "none",
-                color: "white",
+                /* color: "white",
                 padding: "29px",
-                backgroundColor: "blue",
+                backgroundColor: "blue", */
               }}
             >
               Login
@@ -439,6 +444,7 @@ const HomePage = () => {
         />
       </div>
     </div>
+
   );
 };
 

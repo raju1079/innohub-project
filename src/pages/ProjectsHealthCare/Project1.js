@@ -29,7 +29,8 @@ const Project1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[3764px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2869px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -178,63 +179,8 @@ const Project1 = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[2510px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
-        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
-          <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
-            <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
-            <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
-              <span>See related</span>
-              <span className="text-darkslategray">{`  `}</span>
-            </div>
-          </div>
-          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
-            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
-                  This research project seeks to transform the drug discovery process by leveraging the capabilities of artificial intelligence (AI). The primary objective is to accelerate pharmaceutical innovations through
-                  the development and application of AI algorithms in various stages of drug discovery.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  AI-Enhanced Clinical Imaging for Accurate Disease Diagnosis
-                </div>
-              </div>
-              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
-                  The research project, "Telemedicine Transformation: AI-Enabled Remote Patient Monitoring," focuses on integrating artificial intelligence into telemedicine for more effective remote patient care. Through AI algorithms analyzing wearable device data and health records, the aim is
-                  to enhance virtual care quality, particularly for patients with chronic conditions.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
-                  Telemedicine Transformation: AI-Enabled Remote Patient Monitoring
-                </div>
-                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
-                    The research project, "AI-Assisted Mental Health Diagnosis and Intervention," aims to integrate artificial intelligence into mental health care, enhancing accuracy, efficiency, and accessibility.
-                  </div>
-                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                    AI-Assisted Mental Health Diagnosis and Intervention
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-                  This research project focuses on leveraging artificial intelligence (AI) to tailor personalized treatment plans for cancer patients, aiming to
-                  improve treatment outcomes, minimize side effects, and enhance overall patient well-being.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  AI-Based Personalized Treatment Plans for Cancer Patients
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
-        </div>
-      </div>
-      <div className="absolute top-[3344px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      
+      <div className="absolute top-[2444px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>

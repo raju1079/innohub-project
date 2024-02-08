@@ -33,7 +33,8 @@ const Education = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2710px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2715px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -132,7 +133,8 @@ const Education = () => {
               />
             </div>
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
+              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]
+              ">
                 AI-Enhanced Personalized Learning for Optimal Student Engagement
               </div>
               <div className="absolute top-[183.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
@@ -148,7 +150,7 @@ const Education = () => {
             </div>
           </div>
           <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
-            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
+            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]" >
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
               <img

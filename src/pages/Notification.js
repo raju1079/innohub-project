@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Notification = () => {
   const navigate = useNavigate();
@@ -33,7 +34,8 @@ const Notification = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2470px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2478px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -52,7 +54,7 @@ const Notification = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collabrations
+            collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -67,14 +69,14 @@ const Notification = () => {
             About us
           </div>
           <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
-            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
+            <div className="absolute top-[calc(54%-_18px)] left-[calc(56%-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
         </div>
       </div>
       <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[366px] overflow-hidden text-29xl ">
-        <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
+        <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
         <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden " />
         <img
           className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[375.6px] object-cover"
@@ -82,7 +84,7 @@ const Notification = () => {
           src="/artboard-44x-1@2x.png"
         />
         <b className="absolute top-[255.6px] left-[calc(60%_-_730.1px)] capitalize mb-3">
-          UPL INTERNSHIP
+          InnoHub INTERNSHIP
         </b>
       </div>
       <div className="absolute w-full top-[356px] right-[0px] left-[0px] h-[394px] overflow-hidden text-13xl">
@@ -91,11 +93,17 @@ const Notification = () => {
 
           </b>
           <div className="absolute top-[100.8px] left-[calc(58%_-_690px)] text-base text-justify w-[1169.7px] h-[261px]">
-            The UPL Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development.
+            The InnoHub Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development.
             Participants in this program will engage in a dynamic six-month stint, actively working on live projects with diverse clients associated with SNIPE TECH PVT LTD. This work will be conducted online, allowing interns to contribute directly from their college premises. The enhanced skills acquired during this period can be effectively leveraged by candidates in various job placement avenues, enhancing their ability to succeed in campus interviews. This program is designed to instill confidence in technology and processes, enabling participants to emerge as highly successful software engineers.
-            By providing hands-on experience and exposure to real-world projects, the UPL Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
-            <div className="text-2xl leading-[100%] mt-10 left-[calc(52%_-_320.1px)] font-semibold w-[900.8px] h-[70px] mb-2 text-blue text-8xl " >Eligibility :
-              BE, B.Tech, MCA, BCA, M.Tech, MSc. </div>
+            By providing hands-on experience and exposure to real-world projects, the InnoHub Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
+           
+
+<div className="text-2xl leading-[100%] mt-10 left-[calc(52%_-_320.1px)] font-semibold w-[900.8px] h-[70px] mb-2 text-blue text-8xl">
+  Eligibility: BE, B.Tech, MCA, BCA, M.Tech, MSc.
+  <Link to="/apply-internship" className="ml-4 underline cursor-pointer text-xl text-white">
+   {/*  Click to Apply */}  Apply to Internship
+  </Link>
+</div>
 
 
           </div>
@@ -107,11 +115,11 @@ const Notification = () => {
       <div>
 
       </div>
-      <div className="absolute w-full top-[750px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue bg-gray-800 text-white ">
+      <div className="absolute w-full top-[750px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue bg-gray-80">
 
         <div className="absolute top-3 left-[-95.9px] w-[601.6px] h-[334.6px] text-center">
 
-          <div className="leading-[90%] mt-2 left-[70px] font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue ">
+          <div className=" absolute top-[0px] left-[calc(105%_-_599.55px)] leading-[90%] mt-2 font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue ">
             Internship process:
           </div>
          {/*  <ul className="list-inside pl-6">
@@ -134,7 +142,7 @@ const Notification = () => {
     <div className="leading-[290%] font-semibold inline-block w-[545.8px] h-[106.1px] text-blue mb-[-20px]">
       Benefits:
           </div>
-          <ul className="list-inside pl-6">
+          <ul className="list-inside pl-6 text-white">
             <li className="mb-2 text-lg">Technology</li>
             <li className="mb-2 text-lg">Hands on Project Work</li>
             <li className="mb-2 text-lg">Domain Exposure</li>
@@ -153,7 +161,7 @@ const Notification = () => {
         </b>
         <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>
         <div className="absolute top-[20px] left-[619px] w-[672px] h-10 text-base text-cold-grey-30">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,_255,_255,_0.12),_0px_8px_24px_-4px_rgba(255,_255,_255,_0.08)]" />
+          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,255,_255,_0.12),_0px_8px_24px-4px_rgba(255,_255,_255,_0.08)]" />
           <div className="absolute w-[70.86%] top-[30%] left-[2.29%] inline-block">
             Enter your email Address
           </div>
@@ -261,7 +269,7 @@ const Notification = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collabrations
+            collaborations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>

@@ -29,7 +29,8 @@ const EduProject = () => {
   }, [navigate]);
 
   return (
-    <><div className="w-full relative bg-gray h-[3464px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[3152px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -231,71 +232,7 @@ const EduProject = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[2550px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
-        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]  border-t-[2px] border-solid border-cold-grey-white">
-          <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
-            <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
-            <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
-              <span>See related :</span>
-              <span className="text-darkslategray">{`  `}</span>
-            </div>
-          </div>
-          <div className="absolute top-[124.4px] left-[calc(50%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins bg-blueviolet">
-            <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-              {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-              <div className="absolute top-[99.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-                This research aims to explore how artificial intelligence can
-                facilitate and enhance collaborative learning experiences. The
-                project focuses on developing AI-driven tools and methodologies
-                to optimize group formation, foster effective communication, and
-                assess individual and collective problem-solving skills in
-                collaborative educational settings.
-              </div>
-              <div className="absolute top-[10px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
-                AI-Enabled Early Intervention for Learning Disabilities Detection
-              </div>
-            </div>
-
-
-            <div className="absolute top-[0px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-              {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-     */}              <div className="absolute top-[99.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
-                This research focuses on developing AI algorithms for the early detection of learning disabilities in students. By analysing patterns in student performance, behaviour, and engagement, the project aims to create a predictive model that identifies potential learning challenges.
-              </div>
-              <div className="absolute top-[10px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
-                Affective Computing in Education: Emotion-Aware AI for Personalized Learning
-              </div>
-            </div>
-          </div>
-          <div className="absolute top-[400px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px] text-mini font-poppins">
-            {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-            <div className="absolute top-[59.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-              This research aims to explore how artificial intelligence can
-              facilitate and enhance collaborative learning experiences. The
-              project focuses on developing AI-driven tools and methodologies
-              to optimize group formation, foster effective communication, and
-              assess individual and collective problem-solving skills in
-              collaborative educational settings.
-            </div>
-            <div className="absolute top-[-30px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[114px]">
-              AI-Enabled Early Intervention for Learning Disabilities Detection
-            </div>
-          </div>
-
-          <div className="absolute top-[400px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px] text-mini font-poppins">
-            {/*               <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" />
-     */}              <div className="absolute top-[59.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px]">
-              This research focuses on developing AI algorithms for the early detection of learning disabilities in students. By analysing patterns in student performance, behaviour, and engagement, the project aims to create a predictive model that identifies potential learning challenges.
-            </div>
-            <div className="absolute top-[-30px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 text-blue inline-block w-[576.8px] h-[82.9px]">
-              Affective Computing in Education: Emotion-Aware AI for Personalized Learning
-            </div>
-          </div>
-        </div>
-
-        <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
-      </div>
-    </div><div className="absolute top-[3344px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[2729px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -411,15 +348,13 @@ const EduProject = () => {
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
           className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
           src="/poplogo.svg"
         />
       </div>
-    </>
+    </div>
 
   );
 };

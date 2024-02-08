@@ -29,7 +29,8 @@ const InsProject1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[3224px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2728px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -97,25 +98,7 @@ const InsProject1 = () => {
               Personalized Recommendations: Offers personalized insurance product recommendations based on the comprehensive analysis of individual policyholders' data, optimizing coverage to suit specific requirements.
 
             </p>
-            {/*   <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Monitoring: Offers real-time monitoring features to track changes in risk factors and adjust insurance strategies dynamically.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Risk Assessment Models: Incorporates advanced AI-driven risk assessment models to provide corporations with a nuanced understanding of their specific risk profiles..
-
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Cost Optimization Algorithms: Utilizes machine learning algorithms to analyze historical data and identify opportunities for cost optimization in insurance premiums and coverage.
-            </p>
-   //comment        /*<p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Evaluation Feedback Loop: Continuous assessment and refinement based on route efficiency, delivery times, and customer satisfaction.
-
-
-            </p> */}
+           
           </div>
           <div className="absolute top-[76.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
@@ -151,10 +134,7 @@ const InsProject1 = () => {
             <ul>
               <li>The project aims to bring about a transformative impact on the personal insurance sector by introducing a more customer-centric and responsive approach to risk assessment. "InsureAI" is expected to optimize insurance premiums, accuracy of coverage, and overall customer satisfaction, thereby reshaping industry standards.</li>
 
-              {/*  <li>The research project aims to have a substantial impact on corporate insurance efficiency by introducing "CorpInsureOptimize." The tool's implementation is expected to lead to more informed decision-making, reduced insurance costs, and improved risk mitigation strategies for corporations, thereby enhancing the overall effectiveness of corporate insurance processes.</li>
-
-              <li>The tool aims to empower insurance firms with valuable insights, enhancing their ability to adapt to transformative trends and improve overall business performance. By facilitating informed decision-making, "InsureInsight AI" contributes to the industry's resilience in the face of digital challenges and customer-driven transformations.</li>
- */}
+             
             </ul>
 
 
@@ -187,62 +167,8 @@ const InsProject1 = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[2010px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
-        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
-          <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
-            <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
-            <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
-              <span>See related</span>
-              <span className="text-darkslategray">{`  `}</span>
-            </div>
-          </div>
-          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
-            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[379.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
-                  The research project titled "Corporate Insurance Efficiency: A Comprehensive Study on Risk Mitigation and Cost Optimization" endeavors to explore and enhance the efficiency of corporate insurance processes by delving into advanced strategies for risk mitigation and cost optimization.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  Corporate Insurance Efficiency
-                </div>
-              </div>
-              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[379.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
-                  The research project titled "Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models" aims to explore and analyze the evolving landscape of insurance firms in the face
-                  of digital disruption and changing customer expectations.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
-                  Transformative Trends in Insurance Firms
-                </div>
-                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
-                    The research project titled "Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance" delves into the intricate dynamics between hospitals and the insurance ecosystem. With a primary focus on hospitals as key stakeholders, the study aims to comprehensively examine their roles and the subsequent impact on healthcare financing.
-                  </div>
-                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                    Hospitals as Stakeholders
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-                  The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare, and patient privacy. By focusing on the delicate balance between profitability, patient welfare, and privacy concerns,
-                  the study addresses the multifaceted challenges faced by insurance providers in the healthcare domain.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  Ethical Dimensions of Insurance in Healthcare
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
-        </div>
-      </div>
-      <div className="absolute top-[2804px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+     
+      <div className="absolute top-[2304px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>

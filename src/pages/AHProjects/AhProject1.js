@@ -29,7 +29,8 @@ const AhProject1 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[3164px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2664px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+     w-[1237px] flex flex-col  items-start justify-start  py-0 px-5 ">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -79,7 +80,7 @@ const AhProject1 = () => {
         />
       </div>
       <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
+        <div className="absolute top-[190.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
           {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
           <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
             LivestockGuard Pro encompasses features for real-time disease prediction, risk profiling, preventive guidelines, and continuous system improvement.
@@ -106,18 +107,7 @@ const AhProject1 = () => {
             <p className="m-0">
               Preventive Guidelines: Provides AI-driven guidelines for preventive measures and intervention strategies tailored to specific livestock farming contexts.
             </p>
-            {/* <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Cost-Benefit Analysis: Conduct comprehensive assessments considering fuel costs, maintenance, and labor expenses.
-
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Evaluation Feedback Loop: Continuous assessment and refinement based on route efficiency, delivery times, and customer satisfaction.
-
-
-            </p>
- */}          </div>
+              </div>
           <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
@@ -140,8 +130,7 @@ const AhProject1 = () => {
               <li>Livestock Managers</li>
               <li>Veterinary Experts Agricultural Extension Services IoT and AI Developers
               </li>
-              {/*  <li>E-commerce Platforms: Enhancing customer satisfaction through timely and efficient last-mile delivery.
-              </li> */}
+             
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
@@ -155,9 +144,7 @@ const AhProject1 = () => {
               <li> Education and Adoption: Facilitates widespread adoption through education programs and training initiatives.</li>
 
               <li> Ethical AI Use: Addresses ethical considerations, ensuring responsible and transparent AI implementation.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
-              </li> */}
-            </ul>
+                         </ul>
 
 
             <p className="m-0">&nbsp;</p>
@@ -169,14 +156,7 @@ const AhProject1 = () => {
               LivestockGuard Pro emerges as a vital AI tool, aligning with the project's goals by providing a robust system for AI-driven disease prediction and prevention in livestock. Its features contribute to proactive health management, informed decision-making, and the responsible adoption of AI in livestock farming. LivestockGuard Pro stands as a transformative solution, ensuring the well-being and sustainability of livestock management practices.
 
             </p>
-            {/* <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Integration with Existing Learning Platforms: The tool will
-              seamlessly integrate with popular learning management systems
-              (LMS) and education platforms, ensuring a smooth adoption process
-              for educational institutions.
-            </p>
- */}          </div>
+              </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
             Smart Feeding Systems:<br />
@@ -196,58 +176,8 @@ const AhProject1 = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[1910px] right-[0px] left-[0px] h-[826px] overflow-hidden text-5xl font-h1">
-        <div className="absolute top-[73.5px] left-[calc(50%_-_597.7px)] w-[1195.4px] h-[678.9px]">
-          <div className="absolute top-[26.3px] left-[calc(50%_-_597.7px)] w-[296.1px] h-[37.1px]">
-            <div className="absolute top-[1.1px] left-[calc(50%_-_148.05px)] bg-blue w-[199.7px] h-[34.9px]" />
-            <div className="absolute top-[0px] left-[calc(50%_-_148.05px)] leading-[140%] capitalize font-semibold whitespace-pre-wrap inline-block w-[296.1px] h-[37.1px]">
-              <span>See related</span>
-              <span className="text-darkslategray">{`  `}</span>
-            </div>
-          </div>
-          <div className="absolute top-[80px] left-[calc(24%_-_288.4px)] rounded-8xs bg-blueviolet w-full h-[550px]" >
-            <div className="absolute top-[-270px] left-[calc(52%_-_597.7px)] w-[1192.7px] h-[554.5px] text-mini font-poppins">
-              <div className="absolute top-[0px] left-[calc(50%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] text-CBB2FF">
-                  The research project, "AI-Driven Disease Prediction and Prevention in Livestock," focuses on leveraging artificial intelligence to enhance disease prediction and prevention in livestock. The approach involves comprehensive data collection, feature engineering, and the development of machine learning models for early disease prediction.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  AI-Driven Disease Prediction and Prevention in Livestock
-                </div>
-              </div>
-              <div className="absolute top-[-10px] left-[calc(50%_+_19.55px)] w-[576.8px] h-[554.5px]">
-                {/* <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(48%_-_288.4px)] leading-[150%] inline-block w-[554.5px] h-[115px] text-CBB2FF">
-                  The research project, "Automated Heat Detection in Dairy Cattle: AI for Reproductive Management," aims to enhance dairy farming practices by integrating artificial intelligence (AI) for automated heat event detection. The project involves data collection on heat patterns, identification of key indicators, development of AI models, and integration with sensor networks.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(48%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[82.9px]">
-                  Automated Heat Detection in Dairy Cattle: AI for Reproductive Management
-                </div>
-                <div className="absolute top-[260px] left-[calc(-4%_-_596.35px)] w-[576.8px] h-[554.5px]">
-                  {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                  <div className="absolute top-[409.5px] left-[calc(50%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px] ">
-                    The research project, "AI-Enhanced Precision Poultry Farming for Efficient Egg Production," aims to optimize poultry farming practices, focusing on egg production efficiency. The project involves comprehensive data collection on poultry farming parameters, identification of key factors influencing egg production, and the development of AI models for predictive egg production.
-                  </div>
-                  <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                    AI-Enhanced Precision Poultry Farming for Efficient Egg Production
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-[250px] left-[calc(50%_-_1.35px)] w-[576.8px] h-[554.5px]">
-                {/*  <div className="absolute top-[0px] left-[calc(50%_-_288.4px)] rounded-8xs bg-gainsboro-200 w-[576.8px] h-[285.8px]" /> */}
-                <div className="absolute top-[409.5px] left-[calc(51%_-_288.4px)] leading-[150%] inline-block w-[550.1px] h-[115px]">
-                  The research project, "Predictive Analytics for Swine Production: AI-Optimized Growth Models," aims to revolutionize swine farming by integrating AI technologies. The project involves comprehensive data collection on swine growth parameters, identification of key influencing factors, and the development of AI-driven growth prediction models.
-                </div>
-                <div className="absolute top-[309.8px] left-[calc(50%_-_288.4px)] text-8xl leading-[140%] capitalize font-semibold font-h1 inline-block w-[576.8px] h-[114px]">
-                  Predictive Analytics for Swine Production: AI-Optimized Growth Models
-                </div>
-              </div>
-            </div></div>
-          <div className="absolute top-[-0.5px] left-[calc(50%_-_598.2px)] box-border w-[1196.4px] h-px border-t-[1px] border-solid border-gainsboro-100" />
-        </div>
-      </div>
-      <div className="absolute top-[2744px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      
+      <div className="absolute top-[2244px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
