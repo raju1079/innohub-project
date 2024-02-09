@@ -68,11 +68,11 @@ const Notification = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/* <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%-_18px)] left-[calc(56%-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[366px] overflow-hidden text-29xl ">
@@ -84,7 +84,7 @@ const Notification = () => {
           src="/artboard-44x-1@2x.png"
         />
         <b className="absolute top-[255.6px] left-[calc(60%_-_730.1px)] capitalize mb-3">
-          InnoHub INTERNSHIP
+          INNOHUB INTERNSHIP
         </b>
       </div>
       <div className="absolute w-full top-[356px] right-[0px] left-[0px] h-[394px] overflow-hidden text-13xl">
@@ -96,14 +96,14 @@ const Notification = () => {
             The InnoHub Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development.
             Participants in this program will engage in a dynamic six-month stint, actively working on live projects with diverse clients associated with SNIPE TECH PVT LTD. This work will be conducted online, allowing interns to contribute directly from their college premises. The enhanced skills acquired during this period can be effectively leveraged by candidates in various job placement avenues, enhancing their ability to succeed in campus interviews. This program is designed to instill confidence in technology and processes, enabling participants to emerge as highly successful software engineers.
             By providing hands-on experience and exposure to real-world projects, the InnoHub Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
-           
 
-<div className="text-2xl leading-[100%] mt-10 left-[calc(52%_-_320.1px)] font-semibold w-[900.8px] h-[70px] mb-2 text-blue text-8xl">
-  Eligibility: BE, B.Tech, MCA, BCA, M.Tech, MSc.
-  <Link to="/apply-internship" className="ml-4 underline cursor-pointer text-xl text-white">
-   {/*  Click to Apply */}  Apply to Internship
-  </Link>
-</div>
+
+            <div className="text-2xl leading-[100%] mt-10 left-[calc(52%_-_320.1px)] font-semibold w-[900.8px] h-[70px] mb-2 text-blue text-8xl">
+              Eligibility: BE, B.Tech, MCA, BCA, M.Tech, MSc.
+              <Link to="/apply-internship" className="ml-4 underline cursor-pointer text-xl text-white">
+                {/*  Click to Apply */}  Apply to Internship
+              </Link>
+            </div>
 
 
           </div>
@@ -122,25 +122,17 @@ const Notification = () => {
           <div className=" absolute top-[0px] left-[calc(105%_-_599.55px)] leading-[90%] mt-2 font-semibold inline-block w-[545.8px] h-[53px] mb-4 text-blue ">
             Internship process:
           </div>
-         {/*  <ul className="list-inside pl-6">
-            <li className="mb-2 text-lg">Step 1: Screening Written Test & Interview</li>
-            <li className="mb-2 text-lg">Step 2: Training (2 Month Weekly 8 to 10 Hrs.)</li>
-            <li className="mb-2 text-lg">Step 3: Working in Live Project (6 Month Weekly 10 to 15 Hrs.)</li>
-            <li className="mb-2 text-lg">Step 4: Campus Interview Training</li>
-            <li className="mb-2 text-lg">Step 5: Mock Written Test & Interview</li>
-            <li className="mb-2 text-lg">Step 6: Issue Internship Certificate</li>
-          </ul> */}
           <img
-                className="absolute top-[120px] right-[calc(50%_-_850px)]  w-[83s0.8px] h-[555.6px] object-fill"
-                alt=""
-                src="/Group 3763.png"
-              />
+            className="absolute top-[120px] right-[calc(50%_-_850px)]  w-[83s0.8px] h-[555.6px] object-fill"
+            alt=""
+            src="/Group 3763.png"
+          />
 
         </div>
 
         <div className="absolute top-[790.6px] left-[calc(55%_-_650.4px)] w-[1194.8px] h-[516.4px] text-19xl">
-    <div className="leading-[290%] font-semibold inline-block w-[545.8px] h-[106.1px] text-blue mb-[-20px]">
-      Benefits:
+          <div className="leading-[290%] font-semibold inline-block w-[545.8px] h-[106.1px] text-blue mb-[-20px]">
+            Benefits:
           </div>
           <ul className="list-inside pl-6 text-white">
             <li className="mb-2 text-lg">Technology</li>

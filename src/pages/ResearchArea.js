@@ -27,7 +27,7 @@ const ResearchArea = () => {
   const onHealthCareClick = useCallback(() => {
     navigate("/healthcare");
   }, [navigate]);
-  
+
   const onLogisticsClick = useCallback(() => {
     navigate("/logistics");
   }, [navigate]);
@@ -60,7 +60,7 @@ const ResearchArea = () => {
     <div className="xl:w-full relative bg-gray h-[1589px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
-      <img
+        <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
           src="/poplogo.svg"
@@ -75,13 +75,13 @@ const ResearchArea = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -91,12 +91,12 @@ const ResearchArea = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+ */}    </div>
       </div>
       <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -113,9 +113,9 @@ const ResearchArea = () => {
       <div className="absolute w-full top-[500px] right-[0px] left-[0px] h-[607px] overflow-hidden text-5xl">
         <div className="absolute top-[84px] left-[calc(50%_-_536px)] flex flex-row items-start justify-start gap-[126px]">
           <div
-              className="w-[173px]  hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0 cursor-pointer"
-              onClick={onFrameContainerClick}
-            
+            className="w-[173px]  hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0 cursor-pointer"
+            onClick={onFrameContainerClick}
+
           >
             <b className="absolute top-[115.3px] left-[23.3px] capitalize inline-block w-[126.4px] h-[32.4px]">
               Education
@@ -127,9 +127,9 @@ const ResearchArea = () => {
             />
           </div>
           <div className="w-[175px]  hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
-           onClick={onHealthCareClick}
-           
-           >
+            onClick={onHealthCareClick}
+
+          >
             <b className="absolute top-[120px] left-[16px] capitalize inline-block w-[143.1px] h-[32.4px]">
               {" "}
               Healthcare
@@ -141,7 +141,7 @@ const ResearchArea = () => {
             />
           </div>
           <div className="w-[173px] relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
-          onClick={onLogisticsClick}
+            onClick={onLogisticsClick}
           >
             <b className="absolute top-[120px] left-[calc(50%_-_54.5px)] capitalize">{`Logistics `}</b>
             <img
@@ -151,7 +151,7 @@ const ResearchArea = () => {
             />
           </div>
           <div className="w-[173px] relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
-          onClick={onAgricultureClick}
+            onClick={onAgricultureClick}
           >
             <b className="absolute top-[119.1px] left-[16px] capitalize">
               Agriculture
@@ -165,7 +165,7 @@ const ResearchArea = () => {
         </div>
         <div className="absolute top-[347.5px] left-[calc(50%_-_345.5px)] flex flex-row items-start justify-start gap-[85px] text-3xl">
           <div className="w-[174px] relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0 text-center"
-          onClick={onAnimalHusbandryClick}
+            onClick={onAnimalHusbandryClick}
           >
             <b className="absolute top-[102.9px] left-[23.5px] capitalize">
               <p className="m-0">{`Animal `}</p>
@@ -178,7 +178,7 @@ const ResearchArea = () => {
             />
           </div>
           <div className="w-[174px] relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0"
-          onClick={onInformationTechnologyClick}
+            onClick={onInformationTechnologyClick}
           >
             <b className="absolute top-[101.8px] left-[23.8px] capitalize inline-block w-[150.2px] h-[32.4px]">
               Information Technology
@@ -190,7 +190,7 @@ const ResearchArea = () => {
             />
           </div>
           <div className="w-[173px] relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0 text-5xl"
-          onClick={onInsuranceClick}
+            onClick={onInsuranceClick}
           >
             <b className="absolute top-[123.4px] left-[23.3px] capitalize inline-block w-[126.4px] h-[32.4px]">
               Insurance
@@ -263,9 +263,9 @@ const ResearchArea = () => {
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
             <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
               SNIPE TECH PVT LTD #123,
-              70Th Cross 2Nd Floor,<br/> 
-              SVA Arcade 5Th Block,<br/> 
-              Rajaji Nagara,<br/>  Bengaluru – 560010
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
@@ -315,12 +315,12 @@ const ResearchArea = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            //onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
-          onClick={onAboutUsTextClick}>
+            onClick={onAboutUsTextClick}>
             About us
           </div>
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>

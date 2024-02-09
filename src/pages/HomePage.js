@@ -38,16 +38,16 @@ const HomePage = () => {
   // }, [navigate]);
 
   return (
-      
 
 
-    
+
+
     <div className="xl:w-full relative bg-gray h-[3384px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[90px] overflow-hidden">
         <ScrollingText />
         <img
-          className="absolute h-[80.56%] top-[24.22%] bottom-[31.22%] left-[calc(50%_-_596.2px)] max-h-full w-[218.4px] cursor-pointer"
+          className="absolute h-[80.56%] top-[21%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
           src="/poplogo.svg"
           //src="/pop.png"
@@ -64,13 +64,13 @@ const HomePage = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  "
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -80,18 +80,10 @@ const HomePage = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-2xl text-blue">
-            <Link
-              to="/Login"
-              style={{
-                textDecoration: "none",
-                /* color: "white",
-                padding: "29px",
-                backgroundColor: "blue", */
-              }}
-            >
-              Login
-            </Link>
+          <div className="w-[90px] relative rounded-xl bg-cold-grey-white h-6 overflow-hidden shrink-0 text-2xl text-blue">
+            <div className="absolute top-[calc(63%_-_18px)] left-[calc(62%_-_44px)] capitalize font-semibold ">
+              Sign In
+            </div>
           </div>
         </div>
       </div>
@@ -111,14 +103,14 @@ const HomePage = () => {
           alt=""
           src="/Artboard 4@4x 3.png"
         />
-        <div className="absolute top-[363.6px] left-[calc(53%_-_624.1px)] capitalize  w-[924.2px] h-[191.8px]">
+        <div className="absolute top-[363.6px] left-[calc(52%_-_624.1px)] capitalize  w-[924.2px] h-[191.8px]">
           <p className="m-0">
             <b>Explore the World of Innovation</b>
           </p>
           {/*  <p className="m-0 text-13xl font-medium">{` `}</p> */}
         </div>
         <div className="absolute top-[453.6px] left-[calc(52%_-_624.1px)] capitalize font-medium text-thistle inline-block w-[797.4px] h-[191.8px] text-8xl">
-          <p className="m-0">Content Creation at UPL Research Center</p>
+          <p className="m-0">Content Creation at InnoHub Research Center</p>
           <p className="m-0 text-5xl">&nbsp;</p>
         </div>
       </div>
@@ -132,16 +124,16 @@ const HomePage = () => {
 
         <div className="absolute top-[39.4px] left-[calc(50%_-_602.8px)] w-[1193.9px] h-[495.1px]">
           <b className="absolute top-[0px] left-[calc(50%_-_594.55px)] capitalize inline-block w-[763.2px] h-[80.2px]">
-            Welcome to UPL research center
+            Welcome to InnoHub research center
           </b>
           <div className="absolute top-[80.2px] left-[calc(50%_-_596.95px)] text-base w-[1193.9px] h-[414.8px]">
             <p className="m-0">
-              At the UPL Research Center, we are at the forefront of pioneering
+              At the InnoHub Research Center, we are at the forefront of pioneering
               research and innovation in key domains that shape the future of
               computing. Our multidisciplinary approach brings together
               brilliant minds to explore the realms of Artificial Intelligence
               (AI), Cybersecurity, Web Applications, Databases, Internet of
-              Things (IoT), and Cloud Computing.·        
+              Things (IoT), and Cloud Computing.·
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">Exploring the Frontiers of Technology</p>
@@ -166,7 +158,7 @@ const HomePage = () => {
         </b>
         <div className="absolute top-[106.4px] left-[calc(50%_-_599.7px)] w-[1197.7px] h-[67.1px] text-base">
           <p className="m-0">
-            UPL RC works in the areas of Research in Education, health care,
+            InnoHub RC works in the areas of Research in Education, health care,
             Logistics, Agriculture, Animal husbandry,Insurance, and basic
             science. The technology-driven through the following
           </p>
@@ -295,7 +287,7 @@ const HomePage = () => {
 
           {/* <div className="overflow-hidden text-17xl ">Collaborate, Innovate, Transform:</div> */}
           <p className="m-0 text-base">
-            Whether you are a researcher, industry partner, or enthusiast, UPL
+            Whether you are a researcher, industry partner, or enthusiast, InnoHub
             RC welcomes you to join us on this journey of discovery. Explore our
             projects, engage with our expert teams, and be part of the
             transformational impact we strive to create.
@@ -305,7 +297,7 @@ const HomePage = () => {
             Together, Let’s Redefine the Future of Computing!
           </p>
           <p className="m-0 text-base font-semibold">Mallikarjuna G D</p>
-          <p className="m-0 text-base">Director, UPL Research Center</p>
+          <p className="m-0 text-base">Director, InnoHub Research Center</p>
         </div>
       </div>
       <div className="absolute top-[2957.8px] left-[calc(50%_-_719.1px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
@@ -422,9 +414,9 @@ const HomePage = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            //onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div
             className="absolute top-[59.39%] left-[0%] font-poppins"

@@ -49,7 +49,7 @@ const Project1 = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -294,7 +294,7 @@ const Project1 = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>

@@ -13,7 +13,7 @@ const AboutUs = () => {
   }, [navigate]);
 
   const onFAQsTextClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='theUPLResearch']");
+    const anchor = document.querySelector("[data-scroll-to='theInnoHubResearch']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
@@ -36,9 +36,9 @@ const AboutUs = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[1894px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
-      <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+    <div className="xl:w-full relative bg-gray h-[2094px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
+      <div className="absolute w-full top-[90px] right-[0px] left-[10px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
         <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
         <img
@@ -50,13 +50,13 @@ const AboutUs = () => {
           About Us
         </b>
       </div>
-      <div className="absolute w-full top-[496px] right-[0px] left-[0px] h-[263px] overflow-hidden">
+      <div className="absolute w-full top-[476px] right-[0px] left-[10px] h-[263px] overflow-hidden">
         <div
           className="absolute top-[8.6px] left-[calc(50%_-_601.4px)] inline-block w-[1193.9px] h-[158.6px]"
-          data-scroll-to="theUPLResearch"
+          data-scroll-to="theInnoHubResearch"
         >
           <p className="m-0">
-            The UPL Research Centre, established in 2017 as SNIPE TECH PVT LTD
+            The InnoHub Research Centre, established in 2017 as SNIPE TECH PVT LTD
             has a rich history of pioneering research and innovation in
             Education. From its inception, our center has been at the forefront
             of advancing knowledge, breaking new ground in Healthcare,
@@ -74,19 +74,14 @@ const AboutUs = () => {
           <p className="m-0">&nbsp;</p>
         </div>
       </div>
-      <div className="absolute w-full top-[719px] right-[0px] left-[0px] h-[653px] overflow-hidden">
-        <div className="absolute top-[calc(50%_-_259.8px)] left-[calc(50%_-_601px)] w-[1202px] h-[516px]">
-          <div className="absolute top-[calc(50%_-_252.7px)] left-[calc(50%_-_601px)] rounded-corner w-[591px] h-[496px] overflow-hidden">
-            <div className="absolute top-[calc(50%_-_267.3px)] left-[calc(50%_-_306.8px)] shadow-[0px_4px_70px_rgba(0,_0,_0,_0.1)] w-[615.7px] h-[539.5px]">
-              <div className="absolute top-[calc(50%_-_269.75px)] left-[calc(50%_-_307.85px)] rounded-corner bg-blueviolet [backdrop-filter:blur(30px)] w-[615.7px] h-[539.5px]" />
-            </div>
-            <div className="absolute top-[15.7px] left-[19.3px] inline-block w-[546.2px] h-[352px]">
-              <p className="m-0 text-13xl">
+      <div className="absolute w-full top-[750px] right-[0px] left-[0px] h-[757px] overflow-hidden">
+        <div className="absolute top-[calc(50%_-_335.5px)] left-[calc(50%_-_601px)] w-[1202px] h-[227px]">
+          <div className="absolute top-[calc(50%_-_113.5px)] left-[calc(50%_-_601px)] rounded-corner bg-blueviolet [backdrop-filter:blur(25px)] w-[1180px] h-[300px] overflow-hidden">
+            <div className="absolute top-[10.7px] left-[19.3px] capitalize inline-block w-[1150px] h-[181.8px]">
+              <p className="m-0 text-13xl text-plum-100">
                 <b>Vision:</b>
               </p>
-              <p className="m-0">
-                <b>&nbsp;</b>
-              </p>
+              <p className="m-0">&nbsp;</p>
               <p className="m-0">{`Empowering Innovation, Shaping the Future `}</p>
               <p className="m-0">&nbsp;</p>
               <p className="m-0">
@@ -100,61 +95,54 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="absolute top-[calc(50%_-_258px)] left-[calc(50%_+_29px)] rounded-corner w-[572px] h-[516px] overflow-hidden">
-            <div className="absolute top-[-66.6px] left-[-748px] w-[1442.8px] h-[641.6px]">
-              <div className="absolute top-[641.6px] left-[1442.8px] w-[1442.8px] h-[641.6px] [transform:_rotate(-180deg)] [transform-origin:0_0]" />
-              <div className="absolute top-[calc(50%_-_254.3px)] left-[calc(50%_+_26.2px)] shadow-[0px_4px_70px_rgba(0,_0,_0,_0.1)] w-[572.4px] h-[509.5px]">
-                <div className="absolute top-[calc(50%_-_254.75px)] left-[calc(50%_-_286.2px)] rounded-corner bg-blueviolet [backdrop-filter:blur(30px)] w-[572.4px] h-[509.5px]" />
-              </div>
-              <div className="absolute top-[81.9px] left-[767.3px] inline-block w-[529.3px] h-[485.7px]">
-                <p className="m-0 text-13xl">
-                  <b>Mission:</b>
-                </p>
-                <p className="m-0">&nbsp;</p>
-                <p className="m-0">
-                  Pushing Boundaries, Creating Impact At AI Research in various
-                  Fields, our mission is to conduct ground breaking research
-                  that contributes significantly to AI Research in various
-                  Fields.
-                </p>
-                <p className="m-0">&nbsp;</p>
-                <ul className="m-0 pl-[21px]">
-                  <li className="mb-0">
-                    <span>
-                      Advance Knowledge: Pursue cutting-edge research to deepen
-                      our understanding of in Healthcare, Logistics,
-                      Agriculture, Animal-husbandry and Education.
-                    </span>
-                  </li>
-                  <li className="mb-0">
-                    <span>
-                      Foster Collaboration: Create a collaborative ecosystem
-                      that encourages interdisciplinary research, bringing
-                      together experts from diverse backgrounds.
-                    </span>
-                  </li>
-                  <li className="mb-0">
-                    <span>
-                      Educate and Inspire: Contribute to the education and
-                      training of the next generation of researchers and
-                      professionals, inspiring them to excel in AI based
-                      Research and outcome-based products.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Address Societal Challenges: Apply our research outcomes
-                      to address real-world challenges and make a positive
-                      impact on society.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        </div>
+        <div className="absolute top-[calc(60%_-_66.5px)] left-[calc(50%_-_601px)] rounded-corner bg-blueviolet [backdrop-filter:blur(25px)] w-[1180px] h-[405px] overflow-hidden">
+          <div className="absolute top-[10.7px] left-[19.3px] capitalize inline-block w-[1150px] h-[181.8px]">
+            <p className="m-0 text-13xl">
+              <b>Mission:</b>
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Pushing Boundaries, Creating Impact At AI Research in various
+              Fields, our mission is to conduct ground breaking research that
+              contributes significantly to AI Research in various Fields.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <ul className="m-0 pl-[21px]">
+              <li className="mb-0">
+                <span>
+                  Advance Knowledge: Pursue cutting-edge research to deepen our
+                  understanding of in Healthcare, Logistics, Agriculture,
+                  Animal-husbandry and Education.
+                </span>
+              </li>
+              <li className="mb-0">
+                <span>
+                  Foster Collaboration: Create a collaborative ecosystem that
+                  encourages interdisciplinary research, bringing together
+                  experts from diverse backgrounds.
+                </span>
+              </li>
+              <li className="mb-0">
+                <span>
+                  Educate and Inspire: Contribute to the education and training
+                  of the next generation of researchers and professionals,
+                  inspiring them to excel in AI based Research and outcome-based
+                  products.
+                </span>
+              </li>
+              <li>
+                <span>
+                  Address Societal Challenges: Apply our research outcomes to
+                  address real-world challenges and make a positive impact on
+                  society.
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="absolute top-[1472px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[1672px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -214,9 +202,9 @@ const AboutUs = () => {
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
             <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
               SNIPE TECH PVT LTD #123,
-              70Th Cross 2Nd Floor,<br/> 
-              SVA Arcade 5Th Block,<br/> 
-              Rajaji Nagara,<br/>  Bengaluru – 560010
+              70Th Cross 2Nd Floor,<br />
+              SVA Arcade 5Th Block,<br />
+              Rajaji Nagara,<br />  Bengaluru – 560010
             </div>
           </div>
           <img
@@ -266,12 +254,12 @@ const AboutUs = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            //onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
-          onClick={onAboutUsTextClick}>
+            onClick={onAboutUsTextClick}>
             About us
           </div>
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
@@ -285,9 +273,9 @@ const AboutUs = () => {
           src="/poplogo.svg"
         />
       </div>
-    
+
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden text-xl">
-      <img
+        <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
           src="/poplogo.svg"
@@ -302,13 +290,13 @@ const AboutUs = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
-            Collabrations
+            Collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -318,11 +306,11 @@ const AboutUs = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
