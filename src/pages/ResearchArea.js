@@ -57,8 +57,8 @@ const ResearchArea = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[1589px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[1579px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -140,7 +140,7 @@ const ResearchArea = () => {
               src="/signcrosssquarehealthsignmedicalsymbolhospitalcrosssquare.svg"
             />
           </div>
-          <div className="w-[173px] relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
+          <div className="w-[173px] hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
             onClick={onLogisticsClick}
           >
             <b className="absolute top-[120px] left-[calc(50%_-_54.5px)] capitalize">{`Logistics `}</b>
@@ -150,7 +150,7 @@ const ResearchArea = () => {
               src="/ambulancecaremergencyhealthmedicalambulance.svg"
             />
           </div>
-          <div className="w-[173px] relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
+          <div className="w-[173px]  hover:scale-110 relative rounded-xl bg-blue h-[173px] overflow-hidden shrink-0"
             onClick={onAgricultureClick}
           >
             <b className="absolute top-[119.1px] left-[16px] capitalize">
@@ -164,7 +164,7 @@ const ResearchArea = () => {
           </div>
         </div>
         <div className="absolute top-[347.5px] left-[calc(50%_-_345.5px)] flex flex-row items-start justify-start gap-[85px] text-3xl">
-          <div className="w-[174px] relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0 text-center"
+          <div className="w-[174px]  hover:scale-110 relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0 text-center"
             onClick={onAnimalHusbandryClick}
           >
             <b className="absolute top-[102.9px] left-[23.5px] capitalize">
@@ -177,7 +177,7 @@ const ResearchArea = () => {
               src="/petsallowedtravelwayfinderpetsallowed.svg"
             />
           </div>
-          <div className="w-[174px] relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0"
+          <div className="w-[174px]  hover:scale-110 relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0"
             onClick={onInformationTechnologyClick}
           >
             <b className="absolute top-[101.8px] left-[23.8px] capitalize inline-block w-[150.2px] h-[32.4px]">
@@ -189,7 +189,7 @@ const ResearchArea = () => {
               src="/desktopchecksuccessapprovedevicedisplaydesktopcomputer.svg"
             />
           </div>
-          <div className="w-[173px] relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0 text-5xl"
+          <div className="w-[173px]  hover:scale-110 relative rounded-xl bg-blue h-[174px] overflow-hidden shrink-0 text-5xl"
             onClick={onInsuranceClick}
           >
             <b className="absolute top-[123.4px] left-[23.3px] capitalize inline-block w-[126.4px] h-[32.4px]">

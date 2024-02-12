@@ -1,5 +1,13 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
 
 const AnimalHusbandry = () => {
   const navigate = useNavigate();
@@ -32,10 +40,28 @@ const AnimalHusbandry = () => {
     navigate("/animalhusbandry");
   }, [navigate]);
 
+  const onAhProject2Click = useCallback(() => {
+    navigate("/ahproject2");
+  }, [navigate]);
+
+  const onAhProject3Click = useCallback(() => {
+    navigate("/ahproject3");
+  }, [navigate]);
+
+  const onAhProject4Click = useCallback(() => {
+    navigate("/ahproject4");
+  }, [navigate]);
+
+  const onAhProject5Click = useCallback(() => {
+    navigate("/ahproject5");
+  }, [navigate]);
+
+
+
   return (
-    <div className="xl:w-full relative bg-gray h-[2664px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start py-0 px-5">
-      <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
+    <div className="xl:w-full relative bg-gray h-[3164px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start py-0 px-5">
+       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
@@ -67,12 +93,12 @@ const AnimalHusbandry = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+         */}</div>
       </div>
       <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -82,7 +108,7 @@ const AnimalHusbandry = () => {
           alt=""
           src="/artboard-44x-1@2x.png"
         />
-        <b className="absolute top-[293.6px] left-[calc(52%_-_624.1px)] capitalize">
+        <b className="absolute top-[343.6px] left-[calc(52%_-_624.1px)] capitalize">
           AnimalHusbandry
         </b>
       </div>
@@ -101,8 +127,8 @@ const AnimalHusbandry = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full top-[950px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
-        <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
+      <div className="absolute w-full top-[830px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
+         <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
           <div
             className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] cursor-pointer"
             onClick={onGroupContainerClick}
@@ -120,36 +146,94 @@ const AnimalHusbandry = () => {
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
                 Smart Feeding Systems: AI Optimization for Livestock Nutrition
-                <div className="absolute top-[183.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
-                  The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets.
+                <div className="absolute top-[173.8px] left-[calc(50%_-_275.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify">
+                 The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets.
                   Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity.
                 </div>
               </div>
             </div>
+            </div>
             <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
-              <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px] ">
+            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px] " >
                 <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
                 <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
               <img
                 className="absolute top-[50px] right-[calc(50%_-_258.4px)]  w-[490.8px] h-[447.6px] object-fill rounded-md"
                 alt=""
                 src="/AnimalHusbandryimg2.jpg"
+                onClick={onAhProject2Click}
               />
 
-              </div>
+</div>
               <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
                 <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
                   AI-Driven Disease Prediction and Prevention in Livestock
                 </div>
-                <div className="absolute top-[166.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
-                  The research project, "AI-Driven Disease Prediction and Prevention in Livestock," focuses on leveraging artificial intelligence to enhance disease prediction and prevention in livestock.
+                <div className="absolute top-[96.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
+                 The research project, "AI-Driven Disease Prediction and Prevention in Livestock," focuses on leveraging artificial intelligence to enhance disease prediction and prevention in livestock.
                   The approach involves comprehensive data collection, feature engineering, and the development of machine learning models for early disease prediction.              </div>
               </div>
             </div>
-          </div>
+          
         </div></div>
-      <div className="absolute top-[2290px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
-        <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
+        <div className="flex flex-col sm:w-50 lg:w-50 flex flex-wrap justify-center w-full font-poppins ">
+        <div className="absolute top-[2240px] left-[calc(50%_-_630px)] text-sm font-roboto shadow-md ">
+
+          <Card className="mt-6 w-[400px] h-[330px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+                Automated Heat Detection in Dairy Cattle: AI for Reproductive Management
+              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+               The research project, "Automated Heat Detection in Dairy Cattle: AI for Reproductive Management," aims to enhance dairy farming practices by integrating artificial intelligence (AI) for automated heat event detection. 
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[2px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"
+              onClick={onAhProject3Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2240px] left-[calc(50%_-_202px)] text-sm font-roboto">
+
+          <Card className="mt-6 w-[400px] h-[330px] ">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+                AI-Enhanced Precision Poultry Farming for Efficient Egg Production
+              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project, "AI-Enhanced Precision Poultry Farming for Efficient Egg Production," aims to optimize poultry farming practices, focusing on egg production efficiency.
+              The project involves comprehensive data collection on poultry farming parameters </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[25px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer " onClick={onAhProject4Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2240px] left-[calc(50%_-_-220px)]  text-sm font-roboto">
+
+          <Card className="mt-6 w-[400px] h-[330px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
+              Predictive Analytics for Swine Production: AI-Optimized Growth Models
+              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project, "Predictive Analytics for Swine Production: AI-Optimized Growth Models," aims to revolutionize swine farming by integrating AI technologies. The project involves comprehensive data collection on swine growth parameters.  
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[2px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onAhProject5Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+
+      </div>
+
+      <div className="absolute top-[2744px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+       <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
         <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>

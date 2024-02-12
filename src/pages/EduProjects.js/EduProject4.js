@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AhProject2 = () => {
+const EduProject4 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,7 +29,8 @@ const AhProject2 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2517px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2952px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -62,12 +63,12 @@ const AhProject2 = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
- */}        </div>
+          </div> */}
+        </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -75,109 +76,99 @@ const AhProject2 = () => {
         <img
           className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[375.6px] object-cover"
           alt=""
-          src="/artboard-44x-1@2x.png"
-        />
+          src="/artboard-44x-1@2x.png" />
       </div>
-      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
-          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-          </div>
-          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]  text-justify">
-            <p className="m-0">
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
+          {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
+     */}          <div className="absolute top-[628.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
+           IntelliLearn Assist is designed to revolutionize education by focusing on early intervention for learning disabilities detection through AI-driven data profiling. It encompasses the analysis of academic performance, behaviour patterns, and cognitive assessments to construct comprehensive learning profiles for individual students.</div>
 
-              AI-Driven Nutrition Optimization: Utilizes advanced algorithms to optimize feed formulation and delivery processes.            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Health Monitoring: Integrates IoT devices and sensors for continuous monitoring of key health indicators.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Dynamic Diet Adjustment: Adapts individualized diets based on real-time health data and changing environmental conditions.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Precision Feeding Strategies: Implements AI models aligned with specific production goals for targeted outcomes.
-            </p>
-          </div>
           <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name:NutriOptiFeed
-
+          <div className="absolute top-[500.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name:   IntelliLearn Assist
           </div>
-          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[575.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[852.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[940.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
+            <p className="m-0">
+            	Data-Driven Learning Profiling: Utilizes advanced AI algorithms and machine learning techniques for in-depth analysis of academic, behavioural, and cognitive data to create detailed learning profiles.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Early Warning System: Incorporates anomaly detection algorithms to identify potential learning disabilities based on patterns and deviations from expected learning trajectories.
+
+
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Multimodal Data Fusion: Integrates diverse data sources, such as academic, behavioral, and physiological data, to enhance the accuracy and reliability of learning disability detection.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            AI-Driven Diagnostic Tools: Develops tools powered by machine learning algorithms to provide detailed insights into the specific nature of learning disabilities, facilitating targeted and effective interventions.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Personalized Intervention Strategies: Generates adaptive learning materials, assistive technologies, and teaching strategies through machine learning, tailored to the identified needs of individual students.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            •	Continuous Monitoring and Feedback: Implements machine learning models for ongoing assessment, ensuring dynamic adjustments to intervention strategies based on real-time insights.</p>
+          </div>
+          <div className="absolute top-[730.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
-
             <ul>
-              <li>Livestock Managers</li>
-              <li>Nutritionists</li>
-              <li>Veterinarians</li>
-              <li>Agricultural Extension Services</li>
-            </ul>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-              Project Impact:
-            </p>
-            <ul className="text-justify">
-              <li>Enhanced Productivity: Improves livestock health, growth, and overall productivity through AI-optimized nutrition.  </li>
+              <li>
+              	Educational institutions, teachers, educational specialists, and students across various levels.</li>
 
-              <li>Cost-Benefit Efficiency: Evaluates economic implications, fostering feed efficiency and production outcomes.</li>
-
-              <li>Education and Adoption: Facilitates effective adoption through education and training programs for livestock managers.</li>
-
-              <li>Environmental Sustainability: Assesses and enhances environmental impact, ensuring responsible resource utilization.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
+              
+              {/* <li>Corporate Risk Managers: "CorpInsureOptimize" is designed for professionals responsible for managing corporate risks, providing them with tools to optimize insurance coverage and associated costs
               </li> */}
             </ul>
+          </div>
+          <div className="absolute top-[1390.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+            Project Impact:
+          </div>
+          <div className="absolute top-[1448.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[282px] text-justify">
+            <ul className="list-disc pl-6">
+              <li>	IntelliLearn Assist aims to significantly impact education by enabling early intervention for learning disabilities, leading to improved academic outcomes, enhanced student well-being, and a more inclusive learning environment.</li>
+              
+            </ul>
+          </div>
 
-
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-              Conculsion
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-justify">
-            NutriOptiFeed emerges as a pivotal AI tool, aligning with the project's goals by providing a comprehensive system for AI-optimized livestock nutrition. Its features contribute to enhanced productivity, economic efficiency, and sustainable farming practices. NutriOptiFeed stands as a revolutionary solution, ensuring the well-being of livestock and fostering responsible agricultural practices
-
-            </p>
-            {/* <p className="m-0">&nbsp;</p>
+          {/* Conclusion */}
+          <div className="absolute top-[1550.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+            Conclusion:
+          </div>
+          <div className="absolute top-[1608.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[254px] text-justify">
             <p className="m-0">
-              · Integration with Existing Learning Platforms: The tool will
-              seamlessly integrate with popular learning management systems
-              (LMS) and education platforms, ensuring a smooth adoption process
-              for educational institutions.
-            </p>
- */}          </div>
+            IntelliLearn Assist stands as a comprehensive solution at the intersection of AI and education, offering personalized, timely, and ethical support for students with learning challenges. By leveraging advanced technologies, this tool has the potential to transform educational practices, ensuring that every student receives the individualized attention needed for their academic success and personal development.</p>
+          </div>
+         
+          
 
-          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-          AI-Driven Disease Prediction and Prevention in Livestock<br />
-            {/* <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>*/}
-          </div> 
-          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
-            <p className="m-0 ">
-
-            The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
-            </p>
+          <div className="absolute top-[-80px] left-[calc(50%_-_609.7px)] text-29xl leading-[140%] font-semibold-350 inline-block w-[1219.4px]">
+          AI-Enabled Early Intervention for Learning Disabilities Detection<br />
+            {/* <div className="absolute top-[65px] text-13xl">
+              {" "}
+              Emotion-Aware AI for Personalized Learning </div> */}</div>
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
             <p className="m-0">
-
-              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-            </p>
-
+            This research focuses on developing AI algorithms for the early detection of learning disabilities in students. By analysing patterns in student performance, behaviour, and engagement, the project aims to create a predictive model that identifies potential learning challenges. The goal is to enable timely intervention strategies and provide personalized support to students with specific educational needs.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            This research initiative focuses on advancing educational practices through Data-Driven Learning Profiling. By deploying AI algorithms and machine learning techniques, the project aims to analyse academic performance, behaviour patterns, and cognitive assessments to construct detailed learning profiles for individual students. An Early Warning System, utilizing anomaly detection algorithms, is being developed to flag potential learning disabilities based on identified patterns and deviations from expected trajectories. The integration of multimodal data fusion, incorporating diverse data sources, enhances the accuracy of learning disability detection. AI-Driven Diagnostic Tools are being created to provide detailed insights into the specific nature of learning disabilities, facilitating targeted interventions. Personalized Intervention Strategies, generated through machine learning, aim to offer adaptive learning materials and teaching strategies tailored to the identified needs of individual students. Continuous Monitoring and Feedback mechanisms, driven by machine learning models, ensure ongoing assessment and dynamic adjustments to intervention strategies. Ethical considerations regarding data privacy, consent, and responsible AI use in educational settings are addressed through robust privacy protocols and transparent communication channels with stakeholders. This holistic approach strives to revolutionize education by providing personalized, timely, and ethical support for students with learning challenges.		</p>
+            
           </div>
         </div>
       </div>
-      <div className="absolute top-[2100px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[2529px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -198,38 +189,31 @@ const AhProject2 = () => {
           <img
             className="absolute top-[0.7px] left-[0px] w-2 h-[14.7px]"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[18.7px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0.7px] left-[45.3px] w-5 h-[14.7px]"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[76px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[102.7px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[129.3px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0.7px] left-[156px] w-[14.7px] h-[14.7px] object-cover"
             alt=""
-            src="/social@2x.png"
-          />
+            src="/social@2x.png" />
         </div>
         <div className="absolute top-[103px] left-[-1px] box-border w-[1442px] h-0.5 border-t-[2px] border-solid border-cold-grey-white" />
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
@@ -300,8 +284,6 @@ const AhProject2 = () => {
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
           className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
@@ -309,7 +291,8 @@ const AhProject2 = () => {
         />
       </div>
     </div>
+
   );
 };
 
-export default AhProject2;
+export default EduProject4;

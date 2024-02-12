@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const EduProject = () => {
+const EduProject2 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,8 +29,8 @@ const EduProject = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[3152px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[3148px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -49,7 +49,7 @@ const EduProject = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -63,11 +63,11 @@ const EduProject = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
@@ -81,85 +81,50 @@ const EduProject = () => {
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
-     */}          <div className="absolute top-[828.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
-            The primary goal of this project is to develop and implement an
-            artificial intelligence-based tool, EduAImentor, that enhances
-            personalized learning experiences for students, thereby optimizing
-            their engagement in educational settings. The tool aims to cater to
-            the diverse needs of both educators and students, offering adaptive
-            learning paths, real-time feedback, and data-driven insights to
-            improve overall academic outcomes.
-          </div>
+     */}          <div className="absolute top-[708.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
+           The research aims to explore the integration of artificial intelligence (AI) tools to enhance student collaboration and problem-solving skills in group learning environments. The study will focus on understanding the impact of AI-supported group learning on student engagement, knowledge acquisition, and overall learning outcomes. Various AI tools will be investigated for their effectiveness in fostering collaboration, critical thinking, and problem-solving among students. </div>
 
           <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[700.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name: EduAImentor
+          <div className="absolute top-[550.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name:  CollaboraLearnAI
           </div>
-          <div className="absolute top-[775.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[645.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[932.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[852.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[1000.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[930.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
-              · Adaptive Learning Paths: EduAImentor will analyze individual
-              student learning styles, preferences, and performance data to
-              dynamically adapt learning paths. This ensures that each student
-              receives a customized curriculum that aligns with their strengths,
-              weaknesses, and pace of learning.
+            Intelligent Group Formation: Utilizes AI algorithms to form diverse and effective student groups based on skills, expertise, and learning styles, fostering a balanced and collaborative environment.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              · Real-time Feedback Mechanism: The tool will provide instant
-              feedback on assessments, assignments, and learning activities,
-              fostering a responsive learning environment. Educators can use
-              this feedback to make timely interventions, addressing individual
-              student needs.
-            </p>
+            Adaptive Learning Paths: Personalized learning paths for each student within a group, tailored to their individual strengths and weaknesses, ensuring optimized skill development.           </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              · Content Personalization: EduAImentor will curate and recommend
-              personalized learning materials based on each student's progress,
-              interests, and preferred learning modalities. This includes
-              interactive multimedia content, quizzes, and supplementary
-              resources.
-            </p>
+            Real-time Analytics: Provides instructors with real-time data on group dynamics, individual contributions, and learning progress, enabling timely interventions and personalized feedback. </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              · Engagement Analytics: Robust analytics will track student
-              engagement levels, identifying patterns and areas of improvement.
-              This data will be valuable for educators to refine their teaching
-              methods and for students to enhance their self-awareness and
-              motivation.
-            </p>
+            Natural Language Processing (NLP): Incorporates NLP to facilitate seamless communication among group members, aiding in effective collaboration and discussion.</p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              · Collaborative Learning Spaces: EduAImentor will facilitate
-              collaborative learning experiences by creating virtual spaces
-              where students can work together on projects, discuss topics, and
-              share resources. This promotes a sense of community and
-              peer-to-peer learning.
-            </p>
+            Gamification Elements: Integrates gamification elements to make the learning experience more engaging, motivating students to actively participate and contribute to group activities. </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              · Integration with Existing Learning Platforms: The tool will
-              seamlessly integrate with popular learning management systems
-              (LMS) and education platforms, ensuring a smooth adoption process
-              for educational institutions.
-            </p>
+            Resource Recommendations: Recommends relevant learning resources, articles, and multimedia content based on the group's current learning objectives, enhancing the depth of understanding</p>
           </div>
-          <div className="absolute top-[1470.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[1390.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Project Impact:
           </div>
-          <div className="absolute top-[1508.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[282px]">
+          <div className="absolute top-[1438.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[282px] text-justify">
             <ul className="list-disc pl-6">
-              <li>Improved Learning Outcomes: Personalized learning experiences will lead to improved academic performance and a deeper understanding of subjects among students.</li>
-              <li>Enhanced Educator Efficiency: EduAImentor will assist educators in tailoring their teaching strategies, saving time on manual assessment, and enabling more targeted interventions.</li>
-              <li>Increased Student Engagement: The adaptive and interactive nature of EduAImentor will boost student motivation and engagement in the learning process.</li>
-              <li>Data-Driven Decision Making: Institutions will benefit from valuable insights derived from EduAImentor's analytics, guiding informed decisions on curriculum design and teaching methodologies.</li>
+              <li>	The implementation of CollaboraLearn AI in the educational landscape is anticipated to have a profound impact on student collaboration and problem-solving skills, revolutionizing traditional group learning methodologies. The key areas of impact include:</li>
+              <li>	Enhanced Collaboration: CollaboraLearn AI facilitates the creation of diverse and effective student groups, promoting collaboration through intelligent group formation algorithms. Real-time analytics provide insights into group dynamics, fostering a collaborative environment where students can learn from each other.</li>
+              <li>	Individualized Learning Paths: The adaptive learning paths powered by AI ensure that each student receives personalized instruction tailored to their unique strengths and weaknesses. This individualization not only caters to diverse learning styles but also maximizes skill development for each student.</li>
+              <li>	Improved Problem-Solving Skills: The incorporation of gamification elements and resource recommendations stimulates critical thinking and problem-solving abilities. Students are motivated to actively engage in group activities, leading to a deeper understanding of concepts and the development of practical problem-solving skills.</li>
             </ul>
           </div>
 
@@ -167,55 +132,24 @@ const EduProject = () => {
           <div className="absolute top-[1750.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Conclusion:
           </div>
-          <div className="absolute top-[1808.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[254px]">
+          <div className="absolute top-[1808.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[254px] text-justify">
             <p className="m-0">
-              The AI-enhanced personalized learning tool, EduAImentor, has the potential to revolutionize education by providing a tailored and engaging learning experience for students. Its multifaceted features cater to the needs of both educators and students, contributing to improved learning outcomes and a more dynamic and responsive educational environment.
-            </p>
+            CollaboraLearn AI marks a significant breakthrough in educational technology, presenting a comprehensive solution to enhance student collaboration and problem-solving skills. Its integration of artificial intelligence transforms group learning by introducing a dynamic and personalized educational approach, transcending mere academic outcomes. As educational institutions embrace this tool, a transformative learning experience unfolds, empowering students to actively engage in collaborative endeavors and cultivate vital life skills such as teamwork, communication, and critical thinking. The tool's adaptive features, gamification elements, and real-time analytics contribute to an immersive and effective learning process, perfectly aligned with the evolving demands of 21st-century education. </p>
           </div>
 
           <div className="absolute top-[-80px] left-[calc(50%_-_609.7px)] text-29xl leading-[140%] font-semibold-350 inline-block w-[1219.4px]">
-            AI-Enhanced Personalized Learning for Optimal Student Engagement
-          </div>
-          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          Enhancing Student Collaboration and Problem-Solving Skills through AI-Supported Group Learning </div>
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
             <p className="m-0">
-              In this research project, we aim to leverage artificial
-              intelligence (AI) to revolutionize the educational experience by
-              implementing personalized learning strategies. Traditional
-              one-size-fits-all educational models often struggle to accommodate
-              the diverse learning styles and paces of individual students. Our
-              research focuses on creating an adaptive learning environment
-              powered by AI algorithms that tailor educational content and
-              methods to meet the unique needs of each student.
+            This research aims to explore how artificial intelligence can facilitate and enhance collaborative learning experiences. The project focuses on developing AI-driven tools and methodologies to optimize group formation, foster effective communication, and assess individual and collective problem-solving skills in collaborative educational settings.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            This initiative focuses on leveraging artificial intelligence (AI) to optimize group learning experiences. An intelligent group formation algorithm is proposed, utilizing clustering based on diverse student profiles to ensure well-balanced and effective groups. Real-time collaboration analytics employ natural language processing (NLP) and sentiment analysis to assess communication patterns and provide immediate feedback to enhance collaboration. AI-powered collaborative tools are developed, featuring real-time document editing and adaptive functionalities based on group dynamics. Individualized learning paths use adaptive algorithms to address specific student needs, employing reinforcement learning for dynamic adjustments..
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              In this comprehensive AI-driven educational initiative, algorithms
-              are developed for student profiling, utilizing data from
-              assessments, quizzes, and interactions with educational content.
-              Natural Language Processing (NLP) is employed to analyze written
-              responses, providing insights into each student's learning
-              preferences, strengths, and areas of improvement. The initiative
-              progresses to curriculum customization, where an adaptive
-              curriculum is dynamically adjusted based on individual student
-              progress and feedback. Machine learning models predict the
-              effectiveness of teaching materials, and reinforcement learning
-              optimizes content delivery in response to continuous assessment
-              results.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Engagement monitoring tools driven by AI are introduced to enhance
-              student participation in online and offline learning activities.
-              Computer vision analyzes facial expressions and body language,
-              while sentiment analysis on written responses gauges emotional
-              engagement. Personalized gamification elements are implemented to
-              motivate and reward student participation. A real-time feedback
-              mechanism is established between AI, educators, and students,
-              incorporating NLP algorithms for teacher feedback analysis,
-              sentiment analysis for emotional tone understanding, and an
-              adaptive feedback mechanism for constructive guidance.
-            </p>
-            <p className="m-0">&nbsp;</p>
+            Gamification elements are integrated to motivate active participation and collaboration, tracking achievements for virtual rewards. A structured feedback mechanism encourages reflection and continuous improvement within groups. Ethical considerations involve strict data anonymization, bias audits, and transparent communication channels. Long-term impact assessment plans include conducting longitudinal studies to evaluate sustained improvements in collaboration, problem-solving skills, and academic performance through standardized assessments and qualitative feedback. This comprehensive approach aims to enhance the effectiveness and ethical implementation of AI-supported group learning.</p>
+            {/* <p className="m-0">&nbsp;</p>
             <p className="m-0">
               Ethical considerations are addressed with a focus on data privacy,
               bias mitigation, and transparency in AI-driven education. Strict
@@ -228,7 +162,7 @@ const EduProject = () => {
               conducting longitudinal studies to track progress over multiple
               academic years, analyzing standardized test scores, retention
               rates, and self-reported well-being metrics.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -339,7 +273,7 @@ const EduProject = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>
@@ -359,4 +293,4 @@ const EduProject = () => {
   );
 };
 
-export default EduProject;
+export default EduProject2;

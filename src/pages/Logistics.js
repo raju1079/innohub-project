@@ -1,5 +1,15 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
+
+
 
 const Logistics = () => {
   const navigate = useNavigate();
@@ -32,9 +42,26 @@ const Logistics = () => {
     navigate("/logistics");
   }, [navigate]);
 
+  const onLogProject2Click = useCallback(() => {
+    navigate("/logproject2");
+  }, [navigate]);
+
+  const onLogProject3Click = useCallback(() => {
+    navigate("/logproject3");
+  }, [navigate]);
+
+  const onLogProject4Click = useCallback(() => {
+    navigate("/logproject4");
+  }, [navigate]);
+
+  const onLogProject5Click = useCallback(() => {
+    navigate("/logproject5");
+  }, [navigate]);
+
+
   return (
-    <div className="xl:w-full relative bg-gray h-[2708px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[3120px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -67,14 +94,14 @@ const Logistics = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+      <div className="absolute w-full top-[110px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
         <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
         <img
@@ -82,7 +109,7 @@ const Logistics = () => {
           alt=""
           src="/artboard-44x-1@2x.png"
         />
-        <b className="absolute top-[293.6px] left-[calc(52%_-_624.1px)] capitalize">
+        <b className="absolute top-[313.6px] left-[calc(52%_-_624.1px)] capitalize">
           Logistics
         </b>
       </div>
@@ -91,7 +118,7 @@ const Logistics = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
             
           </b> */}
-        <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+        <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base text-justify inline-block w-[1199.7px] h-[261px]">
           Logistic Research is the systemic inquiry and analysis focused on improving the planning, execution, and management
           of the transportation, storage and distribution of goods and services. It aims to optimize supply chain processes, reduce costs,
           and enhance the overall efficiency of logistic operations. It enhances overall supply chain performance through the application of
@@ -99,7 +126,7 @@ const Logistics = () => {
         </div>
         {/* </div> */}
       </div>
-      <div className="absolute w-full top-[950px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
+      <div className="absolute w-full top-[850px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
         <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
           <div
             className="absolute top-[-100px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] cursor-pointer"
@@ -111,7 +138,7 @@ const Logistics = () => {
             </div>
             
             <img
-                className="absolute top-[62px] left-[calc(50%_-_535.4px)]  w-[470.8px] h-[425.6px] object-fill rounded-md"
+                className="absolute top-[62px] left-[calc(50%_-_535.4px)]  w-[470.8px] h-[425.6px] object-fill rounded-md cursor-pointer"
                 alt=""
                 src="/Logisticsimg1.jpg"
               />
@@ -120,7 +147,7 @@ const Logistics = () => {
 
                 Blockchain Technology in Supply Chain
               </div>
-              <div className="absolute top-[133.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
+              <div className="absolute top-[133.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify">
 
                 This research project investigates the application of blockchain technology in supply chain management, specifically within logistics. The focus is on enhancing transparency and traceability to improve efficiency, reduce fraud, and build trust among stakeholders. The approach involves designing a robust blockchain architecture, integrating with IoT devices for real-time data capture, ensuring traceability through provenance tracking, implementing smart contracts for automated processes,
                 enabling secure data sharing, ensuring interoperability with existing systems, conducting real-world pilot implementations, addressing regulatory compliance, and promoting educational outreach for adoption.
@@ -128,20 +155,21 @@ const Logistics = () => {
             </div>
           </div>
           <div className="absolute top-[494.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
-            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
+            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]" onClick={onLogProject2Click}>
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
               <img
-                className="absolute top-[62px] right-[calc(50%_-_257.4px)]  w-[480.8px] h-[425.6px] object-fill rounded-md"
+                className="absolute top-[62px] right-[calc(50%_-_257.4px)]  w-[480.8px] h-[425.6px] object-fill rounded-md cursor-pointer"
                 alt=""
                 src="/Logisticsimg2.jpg"
+              
               />
             </div>
             <div className="absolute top-[88.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
                 Optimizing Last-Mile Delivery Routes Using Machine Learning Algorithms
               </div>
-              <div className="absolute top-[106.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
+              <div className="absolute top-[106.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
                 The research project aims to revolutionize last-mile delivery operations using machine learning. By optimizing route planning, reducing delivery times, and minimizing operational costs, the study addresses critical challenges in the final leg of the supply chain. The approach includes data collection, route optimization algorithm development, dynamic real-time route adjustment, customer preference consideration, GIS integration, cost-benefit analysis, scalability testing, and an ongoing evaluation feedback loop.
 
               </div>
@@ -149,7 +177,56 @@ const Logistics = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[2280px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="flex flex-col sm:w-100 flex flex-wrap justify-center w-full font-poppins ">
+        <div className="absolute top-[2220px] left-[calc(50%_-_720px)] text-sm font-roboto shadow-md ">
+
+          <Card className="mt-6 w-[450px] h-[300px]">
+            <CardBody>
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+              Green Logistics: Sustainable Practices and Environmental Impact Assessment"</Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The "Green Logistics" research project aims to integrate sustainable practices into logistics, exploring eco-friendly strategies and conducting a comprehensive environmental impact assessment.</Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[21px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onLogProject3Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2220px] left-[calc(50%_-_222px)] text-sm font-roboto">
+
+          <Card className="mt-6 w-[450px] h-[300px] ">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+              Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics.  </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[1px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer "onClick={onLogProject4Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2220px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
+
+          <Card className="mt-6 w-[450px] h-[300px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
+              Drones in Logistics: Exploring the Potential for Last-Mile Deliveries              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The "Drones in Logistics: Exploring the Potential for Last-Mile Deliveries" research project aims to assess the feasibility and impact of integrating drone technology into the last-mile delivery process.  </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[25px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onLogProject5Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+
+      </div>
+
+
+      <div className="absolute top-[2700px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>

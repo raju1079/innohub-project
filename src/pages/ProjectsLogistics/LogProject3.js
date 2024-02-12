@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AhProject2 = () => {
+const LogProject3 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,7 +29,8 @@ const AhProject2 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2517px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2694px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -62,12 +63,12 @@ const AhProject2 = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/* <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
- */}        </div>
+  */}       </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -78,67 +79,109 @@ const AhProject2 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
-          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
+          {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
+          <div className="absolute top-[448.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          Scope of the Tool: EcoLogiSense covers features for literature review analysis, green technology impact assessment, supply chain optimization, life cycle assessment, waste reduction strategies, carbon footprint measurement, stakeholder collaboration frameworks, policy recommendation generation, and educational outreach facilitation.
           </div>
-          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]  text-justify">
+          <div className="absolute top-[612.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
 
-              AI-Driven Nutrition Optimization: Utilizes advanced algorithms to optimize feed formulation and delivery processes.            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Health Monitoring: Integrates IoT devices and sensors for continuous monitoring of key health indicators.
+            	Literature Review Analysis: Provides insights from a global review of sustainable logistics practices.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Dynamic Diet Adjustment: Adapts individualized diets based on real-time health data and changing environmental conditions.
+            	Green Technology Impact Assessment: Evaluates the effectiveness of green transportation technologies.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Precision Feeding Strategies: Implements AI models aligned with specific production goals for targeted outcomes.
+            Supply Chain Optimization: Models and optimizes processes considering sustainability factors.
+
             </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Life Cycle Assessment (LCA): Quantifies the environmental impact of logistics operations.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Waste Reduction Strategies: Recommends practices for minimizing waste in logistics.
+            </p>
+           
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Carbon Footprint Measurement: Establishes KPIs and methodologies for carbon emission tracking.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Stakeholder Collaboration Frameworks: Facilitates collaborative initiatives within the logistics ecosystem.
+            </p>
+          {/*   <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Policy Recommendation Generation: Proposes regulations, incentives, and guidelines for sustainable logistics.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Educational Outreach Facilitation: Conducts workshops and training sessions for industry professionals.
+
+            </p> */}
           </div>
-          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[86.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name:NutriOptiFeed
+          <div className="absolute top-[320.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name: EcoLogiSense
 
           </div>
-          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[395.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[542.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[980.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
             <ul>
-              <li>Livestock Managers</li>
-              <li>Nutritionists</li>
-              <li>Veterinarians</li>
-              <li>Agricultural Extension Services</li>
+              <li>		Logistics Managers
+
+
+              </li>
+              <li>	Sustainability Professionals
+
+              </li>
+              <li>	Policy Makers
+
+              </li>
+              <li>Industry Associations
+
+              </li>
+              <li>Educational Institutions
+
+              </li>
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
-            <ul className="text-justify">
-              <li>Enhanced Productivity: Improves livestock health, growth, and overall productivity through AI-optimized nutrition.  </li>
+            <ul>
+              <li>	Sustainable Practices Adoption: Encourages the integration of green logistics practices.
 
-              <li>Cost-Benefit Efficiency: Evaluates economic implications, fostering feed efficiency and production outcomes.</li>
+              </li>
+              <li>		Environmental Impact Reduction: Mitigates the carbon footprint of logistics operations.
 
-              <li>Education and Adoption: Facilitates effective adoption through education and training programs for livestock managers.</li>
+              </li>
+              <li>		Collaborative Ecosystem: Fosters stakeholder collaboration for sustainable logistics.
 
-              <li>Environmental Sustainability: Assesses and enhances environmental impact, ensuring responsible resource utilization.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
-              </li> */}
+              </li>
+              <li>		Policy Advocacy: Influences policymakers toward sustainable logistics regulations.
+
+              </li>
+              <li>		Industry Awareness: Increases knowledge and adoption of green logistics practices.
+
+              </li>
             </ul>
 
 
@@ -147,10 +190,8 @@ const AhProject2 = () => {
               Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-justify">
-            NutriOptiFeed emerges as a pivotal AI tool, aligning with the project's goals by providing a comprehensive system for AI-optimized livestock nutrition. Its features contribute to enhanced productivity, economic efficiency, and sustainable farming practices. NutriOptiFeed stands as a revolutionary solution, ensuring the well-being of livestock and fostering responsible agricultural practices
-
-            </p>
+            <p className="m-0">
+              EcoLogiSense stands as a comprehensive tool facilitating the adoption of sustainable practices in logistics. Through its features, it contributes to reducing environmental impact, fostering collaboration, influencing policies, and promoting knowledge dissemination for a greener logistics ecosystem.</p>
             {/* <p className="m-0">&nbsp;</p>
             <p className="m-0">
               · Integration with Existing Learning Platforms: The tool will
@@ -161,23 +202,19 @@ const AhProject2 = () => {
  */}          </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-          AI-Driven Disease Prediction and Prevention in Livestock<br />
-            {/* <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>*/}
-          </div> 
-          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
-            <p className="m-0 ">
-
-            The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
-            </p>
+            Green Logistics: Sustainable Practices and Environmental Impact Assessment<br />
+            {/*  <div className="absolute top-[65px] text-13xl"> Enhancing Transparency and Traceability in Logistics</div> */}
+          </div>
+          <div className="absolute top-[164.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
             <p className="m-0">
 
-              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-            </p>
-
+              The "Green Logistics" research project aims to integrate sustainable practices into logistics, exploring eco-friendly strategies and conducting a comprehensive environmental impact assessment. The approach involves a literature review on global green logistics practices, analyzing the impact of green transportation technologies, optimizing supply chains for sustainability, conducting a life cycle assessment of logistics operations, promoting circular economy practices, measuring and reporting carbon footprints, fostering stakeholder collaboration, proposing policy recommendations, and facilitating educational outreach for industry adoption.</p>
           </div>
         </div>
       </div>
-      <div className="absolute top-[2100px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+
+
+      <div className="absolute top-[2273px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -312,4 +349,4 @@ const AhProject2 = () => {
   );
 };
 
-export default AhProject2;
+export default LogProject3;

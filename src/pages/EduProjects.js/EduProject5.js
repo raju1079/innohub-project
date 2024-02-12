@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const InsProject1 = () => {
+const EduProject5 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,8 +29,8 @@ const InsProject1 = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[2624px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[2952px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -63,7 +63,7 @@ const InsProject1 = () => {
           >
             About us
           </div>
-          {/* <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
@@ -76,99 +76,94 @@ const InsProject1 = () => {
         <img
           className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[375.6px] object-cover"
           alt=""
-          src="/artboard-44x-1@2x.png"
-        />
+          src="/artboard-44x-1@2x.png" />
       </div>
-      <div className="absolute w-full top-[540px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
-          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[428.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            The recommended AI tool, "InsureAI," is envisioned as a groundbreaking solution designed to transform the landscape of personal insurance. The tool's scope revolves around leveraging advanced AI algorithms, including machine learning models and predictive analytics, to enable a more refined and personalized risk assessment in the insurance domain. "InsureAI" aims to dynamically adapt to individual customer profiles, providing real-time insights into policyholders' behaviors, preferences, and lifestyles.
-          </div>
-          <div className="absolute top-[612.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
-            <p className="m-0">
-              Advanced Risk Prediction Models: Utilizes sophisticated machine learning models to predict and assess risks associated with individual policyholders, ensuring a nuanced understanding of their unique circumstances
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Dynamic Adaptation: Adapts in real-time to changes in customer profiles, ensuring that insurance coverage remains aligned with evolving needs and circumstances
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Personalized Recommendations: Offers personalized insurance product recommendations based on the comprehensive analysis of individual policyholders' data, optimizing coverage to suit specific requirements.
+          {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" />
+     */}          <div className="absolute top-[528.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
+           EduSphere XR aims to redefine traditional classroom instruction by seamlessly integrating augmented reality (AR) and artificial intelligence (AI). The tool focuses on developing interactive and dynamic AR applications that overlay digital content onto the physical classroom environment, enhancing traditional instructional materials with adaptive, personalized, and collaborative features.</div>
 
-            </p>
-           
-          </div>
-          <div className="absolute top-[106.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[290.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name: InsureAI
-
+          <div className="absolute top-[400.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name:   EduSphere XR
           </div>
-          <div className="absolute top-[365.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[475.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[772.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[870.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[850.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
+            <p className="m-0">
+            	AR-Enhanced Content Delivery: Enriches classroom instruction with interactive 3D models, simulations, and overlays aligned with the curriculum.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Adaptive Learning Paths with AI: Tailors content delivery based on individual student progress, learning styles, and comprehension levels using AI-driven adaptive learning algorithms. </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	AI-Powered Student Assessments: Provides intelligent assessment tools within AR environments for real-time feedback, comprehension assessment, and adaptive adjustment of difficulty.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Collaborative AR Learning Environments: Fosters teamwork and peer learning through shared virtual spaces, incorporating features for collaborative problem-solving, group projects, and simulations. </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	AR for Specialized Learning Needs: Addresses diverse learning needs by customizing AR features for various learning modalities, with AI algorithms adapting content delivery based on individualized learning plans. </p>
+           
+          </div>
+          <div className="absolute top-[630.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
+            <ul>
+              <li>
+              Educational institutions, teachers, and students across various levels, with a focus on enhancing traditional classroom experiences through immersive and personalized learning.</li>
 
-            <ul className="text-justify">
-              <li>Insurance Providers: "InsureAI" is tailored for insurance companies looking to enhance the precision and relevance of their insurance products, fostering customer satisfaction and loyalty.</li>
-
-              <li>Policyholders: The tool caters to individuals seeking more personalized and cost-effective insurance coverage that aligns closely with their lifestyles and preferences.
-              </li>
-
+              
               {/* <li>Corporate Risk Managers: "CorpInsureOptimize" is designed for professionals responsible for managing corporate risks, providing them with tools to optimize insurance coverage and associated costs
               </li> */}
             </ul>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-              Project Impact:
-            </p>
-            <ul className="text-justify">
-              <li>The project aims to bring about a transformative impact on the personal insurance sector by introducing a more customer-centric and responsive approach to risk assessment. "InsureAI" is expected to optimize insurance premiums, accuracy of coverage, and overall customer satisfaction, thereby reshaping industry standards.</li>
-
-             
-            </ul>
-
-
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
-              Conculsion
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-justify">
-              In conclusion, the development and implementation of "InsureAI" hold the potential to revolutionize personal insurance by harnessing the power of AI for tailored coverage. The tool's adaptive nature and personalized recommendations are poised to redefine customer experiences, establishing a new paradigm for the ethical and effective use of AI in the insurance industry. This research project serves as a foundational step towards ushering in a more dynamic, customer-friendly, and efficient era in the realm of personal insurance.
-
-            </p>
-            {/*  <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-             "CorpInsureOptimize" stands as a pivotal tool in reshaping how corporations approach insurance efficiency. By harnessing AI for advanced risk assessment and cost optimization, this tool is positioned to bring about positive transformations in the corporate insurance landscape, fostering a balance between risk mitigation and financial prudence. The research project sets the stage for a new era in corporate insurance practices, where data-driven insights and innovation lead to more resilient and economically viable insurance solutions.
-            </p>
- */}          </div>
-
-          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold inline-block w-[1219.4px]">
-          Personalized Risk Assessment in Personal Insurance:  <br />
-            <div className="absolute top-[105px] text-13xl"> Integrating AI for Tailored Coverage
-            </div>
           </div>
-          <div className="absolute top-[184.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
-            <p className="m-0 text-justify">
+          <div className="absolute top-[1230.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+            Project Impact:
+          </div>
+          <div className="absolute top-[1298.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[282px] text-justify">
+            <ul className="list-disc pl-6">
+              <li>	EduSphere XR is anticipated to revolutionize classroom learning by increasing student engagement, understanding, and retention of educational content. The integration of AR and AI is expected to create a more adaptive, personalized, and collaborative learning environment, impacting academic performance, student satisfaction, and overall educational experiences positively.</li>
+              
+            </ul>
+          </div>
 
-              The "CorpInsureOptimize" AI tool is developed to comprehensively address the efficiency of corporate insurance processes. It focuses on two key aspects: risk mitigation and cost optimization. The tool delves into innovative approaches and technologies that can be employed by corporations to streamline risk management, ultimately leading to more efficient and cost-effective corporate insurance solutions.
-            </p>
+          {/* Conclusion */}
+          <div className="absolute top-[1450.9px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+            Conclusion:
+          </div>
+          <div className="absolute top-[1508.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[254px] text-justify">
+            <p className="m-0">
+            EduSphere XR emerges as a comprehensive tool at the forefront of educational innovation, harmonizing AR and AI to create dynamic, interactive, and adaptive classroom experiences. By addressing diverse learning needs, fostering collaboration, and providing real-time feedback, this tool has the potential to significantly enhance the quality and effectiveness of traditional classroom instruction, ushering in a new era of immersive and personalized learning.</p>
+          </div>
+         
+          
 
+          <div className="absolute top-[-80px] left-[calc(50%_-_609.7px)] text-29xl leading-[140%] font-semibold-350 inline-block w-[1219.4px]">
+          Augmented Reality and AI Integration in Classroom Instruction<br />
+           {/*  <div className="absolute top-[65px] text-13xl">
+              {" "}
+              Emotion-Aware AI for Personalized Learning </div> */}</div>
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
+            <p className="m-0">
+            This research project explores the integration of augmented reality (AR) and artificial intelligence (AI) to transform traditional classroom instruction. By developing AR applications for content delivery, the aim is to enrich the physical classroom with interactive 3D models and simulations. Adaptive Learning Paths with AI-driven algorithms will tailor content delivery based on individual student progress, ensuring a personalized and engaging learning experience. AI-powered student assessments within AR environments will provide real-time feedback and dynamically adjust assessment difficulty. Collaborative AR learning environments foster teamwork and peer learning through shared virtual spaces, monitored and enhanced by AI. The project also investigates the potential of AR and AI for addressing diverse learning needs, catering to various learning styles and preferences. A longitudinal impact assessment will evaluate the sustained effects on academic performance, engagement, and learning outcomes. Ethical considerations prioritize data privacy, consent, and responsible use of AR and AI technologies in educational settings, ensuring transparency and communication with stakeholders. This holistic approach aims to revolutionize classroom learning, providing immersive, personalized, and ethically sound educational experiences.</p>
+            {/* <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            The research aims to revolutionize education through Emotion Recognition Technology, employing computer vision, natural language processing, and physiological sensors for accurate emotional assessment. Real-Time Emotional Feedback mechanisms alert educators to shifts in students' emotional states, enabling timely intervention. Adaptive Learning Paths, driven by machine learning, tailor educational experiences based on individual emotional states, fostering a supportive learning environment. Emotionally Intelligent Chatbots provide personalized support, using natural language processing to detect emotional cues. Emotionally Inclusive Content Creation tools employ sentiment analysis to tailor educational materials, ensuring they resonate with learners' emotional needs. Longitudinal Emotional Impact Assessment evaluates the sustained effects of emotion-aware AI on student well-being and academic performance through extended studies. Ethical considerations are paramount, guiding the project to establish clear guidelines for privacy, consent, and responsible use of emotional data, ensuring transparency and ethical conduct in educational settings.	</p>
+             */}
           </div>
         </div>
       </div>
-     
-      <div className="absolute top-[2204px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[2529px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -189,38 +184,31 @@ const InsProject1 = () => {
           <img
             className="absolute top-[0.7px] left-[0px] w-2 h-[14.7px]"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[18.7px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0.7px] left-[45.3px] w-5 h-[14.7px]"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[76px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[102.7px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0px] left-[129.3px] w-4 h-4 overflow-hidden"
             alt=""
-            src="/social.svg"
-          />
+            src="/social.svg" />
           <img
             className="absolute top-[0.7px] left-[156px] w-[14.7px] h-[14.7px] object-cover"
             alt=""
-            src="/social@2x.png"
-          />
+            src="/social@2x.png" />
         </div>
         <div className="absolute top-[103px] left-[-1px] box-border w-[1442px] h-0.5 border-t-[2px] border-solid border-cold-grey-white" />
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
@@ -291,8 +279,6 @@ const InsProject1 = () => {
           <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
           <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
         </div>
-        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
         <img
           className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
           alt=""
@@ -300,7 +286,8 @@ const InsProject1 = () => {
         />
       </div>
     </div>
+
   );
 };
 
-export default InsProject1;
+export default EduProject5;

@@ -29,8 +29,8 @@ const Project1 = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[2869px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[2864px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -49,7 +49,7 @@ const Project1 = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -63,12 +63,12 @@ const Project1 = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+        {/*   <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+   */}      </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -82,12 +82,12 @@ const Project1 = () => {
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/*  <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
             The MediGenAI tool encompasses a comprehensive scope within AI-driven precision medicine, targeting key areas such as genomic data analysis,
             predictive diagnostics, and treatment response optimization. It integrates seamlessly into clinical workflows, offering real-time recommendations for informed treatment decisions and supports proactive healthcare interventions through remote patient monitoring. The tool prioritizes ethical considerations, addressing patient privacy and data security, ensuring transparent and responsible AI use. It also includes a patient education interface to enhance understanding and collaboration. Designed for healthcare professionals, patients seeking personalized care, and healthcare institutions focusing on precision medicine, MediGenAI aims to revolutionize healthcare by enhancing diagnostic accuracy and empowering stakeholders for optimal and personalized medical outcomes.
 
           </div>
-          <div className="absolute top-[782.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[782.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
               Genomic Data Analysis: Advanced AI algorithms for comprehensive analysis of genomic data, identifying genetic markers associated with diseases, treatment responses, and adverse reactions.
 
@@ -130,7 +130,7 @@ const Project1 = () => {
             Key Features:
           </div>
           <div className="absolute top-[1250.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
-            <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
+            <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold text-justify">
               Target Audience:
             </p>
 
@@ -153,11 +153,11 @@ const Project1 = () => {
 
 
             <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
+            <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold text-justify">
               Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0">
+            <p className="m-0 text-justify">
 
               MediGenAI stands as a groundbreaking tool at the forefront of AI-driven precision medicine, offering a comprehensive solution for personalized treatment strategies. By seamlessly integrating into clinical workflows, providing predictive insights, and addressing ethical considerations, MediGenAI is poised to revolutionize healthcare delivery, empowering both healthcare professionals and patients in the pursuit of optimal and personalized medical care.
 
@@ -169,7 +169,7 @@ const Project1 = () => {
             AI-Driven Precision Medicine: <br />
             <div className=" absolute top-[65px] text-13xl">Transforming Healthcare through Personalized Treatment Strategies
             </div>     </div>
-          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
             <p className="m-0">
 
               This research project focuses on leveraging AI for precision medicine, tailoring healthcare to individual patients. It involves developing AI algorithms for genomic data analysis, predicting diagnostics for early disease detection, and optimizing treatment responses through machine learning models. The project aims to create AI-powered clinical decision support systems for informed treatment decisions and implement remote patient monitoring systems for proactive interventions. Ethical considerations, including patient privacy and education initiatives for AI understanding, are integral to the research. The goal is to revolutionize healthcare by integrating AI to enhance diagnostic accuracy, predict treatment responses, and empower both patients and healthcare professionals.
@@ -294,7 +294,7 @@ const Project1 = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>

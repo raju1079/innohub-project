@@ -33,17 +33,17 @@ const HomePage = () => {
     navigate("/desktop-3");
   }, [navigate]);
 
-  // const onLoginTextClick = useCallback(() => {
-  //   navigate("/Login-us");
-  // }, [navigate]);
+   const onLoginClick = useCallback(() => {
+    navigate("/Login");
+   }, [navigate]);
 
   return (
 
 
 
 
-    <div className="xl:w-full relative bg-gray h-[3384px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[3376px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[90px] overflow-hidden">
         <ScrollingText />
         <img
@@ -81,7 +81,7 @@ const HomePage = () => {
             About us
           </div>
           <div className="w-[90px] relative rounded-xl bg-cold-grey-white h-6 overflow-hidden shrink-0 text-2xl text-blue">
-            <div className="absolute top-[calc(63%_-_18px)] left-[calc(62%_-_44px)] capitalize font-semibold ">
+            <div className="absolute top-[calc(63%_-_18px)] left-[calc(62%_-_44px)] capitalize font-semibold " onClick={onLoginClick}>
               Sign In
             </div>
           </div>
@@ -126,17 +126,18 @@ const HomePage = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_594.55px)] capitalize inline-block w-[763.2px] h-[80.2px]">
             Welcome to InnoHub research center
           </b>
-          <div className="absolute top-[80.2px] left-[calc(50%_-_596.95px)] text-base w-[1193.9px] h-[414.8px]">
+          <div className="absolute top-[80.2px] left-[calc(50%_-_596.95px)] text-base w-[1193.9px] h-[414.8px] text-justify">
             <p className="m-0">
               At the InnoHub Research Center, we are at the forefront of pioneering
               research and innovation in key domains that shape the future of
               computing. Our multidisciplinary approach brings together
               brilliant minds to explore the realms of Artificial Intelligence
               (AI), Cybersecurity, Web Applications, Databases, Internet of
-              Things (IoT), and Cloud Computing.·
+              Things (IoT), and Cloud Computing.
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0">Exploring the Frontiers of Technology</p>
+            <p className="m-0">Exploring the Frontiers of Technology.</p>
+            <br />
             <p className="m-0">
               In the ever-evolving computing landscape, our research center
               stands as a hub for cutting-edge advancements. We are dedicated to
@@ -160,7 +161,7 @@ const HomePage = () => {
           <p className="m-0">
             InnoHub RC works in the areas of Research in Education, health care,
             Logistics, Agriculture, Animal husbandry,Insurance, and basic
-            science. The technology-driven through the following
+            science. The technology-driven through the following :
           </p>
           <p className="m-0">&nbsp;</p>
           <p className="m-0">&nbsp;</p>
@@ -186,7 +187,7 @@ const HomePage = () => {
             <div className="absolute w-[calc(100%_+_19px)] top-[-0.5px] right-[-19px] left-[0px] rounded-t-xl rounded-b-none bg-cold-grey-white shadow-[0px_7px_10px_rgba(0,_0,_0,_0.25)] h-[60px] overflow-hidden">
               <b className="absolute top-[6px] left-[22.5px]">{`Cybersecurity `}</b>
             </div>
-            <div className="absolute top-[94.8px] left-[166.6px] text-xl text-cold-grey-white inline-block w-[379.3px]">
+            <div className="absolute top-[94.8px] left-[166.6px] text-xl text-cold-grey-white inline-block w-[379.3px] ">
               Fortifying digital landscapes against evolving threats through
               innovative cybersecurity solutions and robust defense mechanisms.
             </div>
@@ -286,7 +287,7 @@ const HomePage = () => {
           </b>
 
           {/* <div className="overflow-hidden text-17xl ">Collaborate, Innovate, Transform:</div> */}
-          <p className="m-0 text-base">
+          <p className="m-0 text-base text-justify">
             Whether you are a researcher, industry partner, or enthusiast, InnoHub
             RC welcomes you to join us on this journey of discovery. Explore our
             projects, engage with our expert teams, and be part of the
@@ -296,6 +297,7 @@ const HomePage = () => {
           <p className="m-0 text-base">
             Together, Let’s Redefine the Future of Computing!
           </p>
+          
           <p className="m-0 text-base font-semibold">Mallikarjuna G D</p>
           <p className="m-0 text-base">Director, InnoHub Research Center</p>
         </div>

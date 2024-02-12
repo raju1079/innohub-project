@@ -29,8 +29,8 @@ const AgrProject1 = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[2664px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    <div className="xl:w-full relative bg-gray h-[2658px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -49,7 +49,7 @@ const AgrProject1 = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -63,11 +63,11 @@ const AgrProject1 = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
@@ -82,11 +82,11 @@ const AgrProject1 = () => {
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify" >
             AgriOptiAI covers the entire precision agriculture spectrum, providing AI-powered solutions for crop monitoring, decision support, input optimization, IoT integration, data security, and economic-environmental impact assessment.
 
           </div>
-          <div className="absolute top-[632.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[632.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
               Crop Health Analytics
 
@@ -146,7 +146,7 @@ const AgrProject1 = () => {
               Target Audience:
             </p>
 
-            <ul>
+            <ul className="text-justify">
               <li>Farmers and Agricultural Practitioners</li>
               <li>Agricultural Technology Developers</li>
               <li>Policy Makers in Agriculture</li>
@@ -171,7 +171,7 @@ const AgrProject1 = () => {
               Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0">
+            <p className="m-0 text-justify">
 
               AgriOptiAI emerges as a comprehensive AI tool, promising transformative impacts on precision agriculture. It aligns with the project's goals, offering practical solutions for optimal resource management, sustainability, and increased efficiency in farming practices.
 
@@ -191,7 +191,7 @@ const AgrProject1 = () => {
             </div>
           </div>
           <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
-            <p className="m-0">
+            <p className="m-0 text-justify">
 
               This research project focuses on leveraging AI for precision medicine, tailoring healthcare to individual patients. It involves developing AI algorithms for genomic data analysis, predicting diagnostics for early disease detection, and optimizing treatment responses through machine learning models. The project aims to create AI-powered clinical decision support systems for informed treatment decisions and implement remote patient monitoring systems for proactive interventions. Ethical considerations, including patient privacy and education initiatives for AI understanding, are integral to the research. The goal is to revolutionize healthcare by integrating AI to enhance diagnostic accuracy, predict treatment responses, and empower both patients and healthcare professionals.
 
@@ -315,7 +315,7 @@ const AgrProject1 = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>

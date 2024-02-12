@@ -36,7 +36,7 @@ const AboutUs = () => {
   }, [navigate]);
 
   return (
-    <div className="xl:w-full relative bg-gray h-[2094px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    <div className="xl:w-full relative bg-gray h-[2092px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[90px] right-[0px] left-[10px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />

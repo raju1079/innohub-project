@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AhProject2 = () => {
+const AgrProject5 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,7 +29,8 @@ const AhProject2 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2517px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2658px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -66,8 +67,8 @@ const AhProject2 = () => {
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
- */}        </div>
+          </div> */}
+        </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -78,67 +79,75 @@ const AhProject2 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] text-justify">
           {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
+          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+            AgriForecast Pro covers diverse features for accurate market predictions and decision support tailored for the agribusiness sector.
           </div>
-          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]  text-justify">
+          <div className="absolute top-[632.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0">
+              AI-Driven Market Prediction: Utilizes advanced AI models for accurate and timely market forecasts.
 
-              AI-Driven Nutrition Optimization: Utilizes advanced algorithms to optimize feed formulation and delivery processes.            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Health Monitoring: Integrates IoT devices and sensors for continuous monitoring of key health indicators.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Dynamic Diet Adjustment: Adapts individualized diets based on real-time health data and changing environmental conditions.
+              Decision Support Integration: Seamlessly integrates AI predictions into decision support systems for actionable insights.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Precision Feeding Strategies: Implements AI models aligned with specific production goals for targeted outcomes.
+              Customization Module: Allows customization of AI models for specific agribusiness sectors, crops, and geographic regions.
             </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Risk Assessment: Evaluates external factors and risks, including weather events, regulatory changes, and global market trends.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Data Security Assurance: Ensures robust data security and privacy measures for sensitive market data.
+            </p>
+
           </div>
-          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[76.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name:NutriOptiFeed
+          <div className="absolute top-[340.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name: AgriForecast Pro
 
           </div>
           <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[572.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[990.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
             <ul>
-              <li>Livestock Managers</li>
-              <li>Nutritionists</li>
-              <li>Veterinarians</li>
-              <li>Agricultural Extension Services</li>
+              <li>Agribusiness Executives
+              </li>
+              <li>Market Analysts</li>
+              <li>Agricultural Economists</li>
+
+              <li>Decision Support System Developers</li>
+              <li>Agricultural Technology Providers</li>
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
-            <ul className="text-justify">
-              <li>Enhanced Productivity: Improves livestock health, growth, and overall productivity through AI-optimized nutrition.  </li>
+            <ul>
+              <li>Strategic Decision Improvement: Enhances decision-making for agribusinesses through accurate and timely market predictions.
 
-              <li>Cost-Benefit Efficiency: Evaluates economic implications, fostering feed efficiency and production outcomes.</li>
+              </li>
+              <li>Customized Insights: Provides tailored insights for different agribusiness sectors, promoting adaptability.</li>
+              <li>Risk Mitigation: Addresses external risks, contributing to effective risk management in market forecasting.</li>
+              <li>Economic Efficiency: Evaluates economic implications, fostering cost savings and overall profitability.</li>
+              <li>Barriers Mitigation: Identifies and addresses challenges, providing adoption strategies for seamless integration.</li>
 
-              <li>Education and Adoption: Facilitates effective adoption through education and training programs for livestock managers.</li>
-
-              <li>Environmental Sustainability: Assesses and enhances environmental impact, ensuring responsible resource utilization.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
-              </li> */}
             </ul>
 
 
@@ -147,37 +156,35 @@ const AhProject2 = () => {
               Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0 text-justify">
-            NutriOptiFeed emerges as a pivotal AI tool, aligning with the project's goals by providing a comprehensive system for AI-optimized livestock nutrition. Its features contribute to enhanced productivity, economic efficiency, and sustainable farming practices. NutriOptiFeed stands as a revolutionary solution, ensuring the well-being of livestock and fostering responsible agricultural practices
+            <p className="m-0">
 
+            AgriForecast Pro stands as a cutting-edge AI tool, aligning with the project's goals by offering tailored market forecasting solutions for agribusinesses. Its features empower decision-makers, fostering economic efficiency, risk mitigation, and future-ready market forecasting capabilities. AgriForecast Pro serves as a catalyst for informed and strategic decision-making in the dynamic landscape of agribusiness.
             </p>
-            {/* <p className="m-0">&nbsp;</p>
+            {/*  <p className="m-0">&nbsp;</p>
             <p className="m-0">
               · Integration with Existing Learning Platforms: The tool will
               seamlessly integrate with popular learning management systems
               (LMS) and education platforms, ensuring a smooth adoption process
               for educational institutions.
-            </p>
- */}          </div>
+            </p> */}
+          </div>
 
-          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-          AI-Driven Disease Prediction and Prevention in Livestock<br />
-            {/* <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>*/}
-          </div> 
-          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
-            <p className="m-0 ">
-
-            The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
-            </p>
+          <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold inline-block w-[1219.4px]">
+          AI-Based Market Forecasting for Agribusiness: <br />
+            <div className="absolute top-[65px] text-13xl"> Enhancing Decision Support Systems
+            </div>
+          </div>
+          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
             <p className="m-0">
 
-              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
+            The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims to leverage artificial intelligence (AI) to revolutionize market predictions in the agribusiness sector. The comprehensive approach involves a literature review, identification of market forecasting challenges, exploration of AI solutions, development of AI models, and integration into decision support systems. The project emphasizes customization, evaluation of external factors, and addresses data security and privacy. It assesses economic and environmental impacts, identifies adoption challenges, and explores future trends.
             </p>
 
           </div>
         </div>
       </div>
-      <div className="absolute top-[2100px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+
+      <div className="absolute top-[2241px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -312,4 +319,4 @@ const AhProject2 = () => {
   );
 };
 
-export default AhProject2;
+export default AgrProject5;

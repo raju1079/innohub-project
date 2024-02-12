@@ -30,7 +30,7 @@ const LogProject1 = () => {
 
   return (
     <div className="xl:w-full relative bg-gray h-[2694px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -49,7 +49,7 @@ const LogProject1 = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -63,12 +63,12 @@ const LogProject1 = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/* <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+  */}       </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -82,11 +82,11 @@ const LogProject1 = () => {
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[398.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          <div className="absolute top-[398.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
             OptiRouteML encompasses features for data integration, route optimization, real-time adjustments, customer preference consideration, GIS integration, cost-benefit analysis, scalability testing, and continuous evaluation.
 
           </div>
-          <div className="absolute top-[532.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[532.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
 
               GIS Integration: Enhance route planning with spatial analysis and visualization using GIS.
@@ -143,7 +143,7 @@ const LogProject1 = () => {
               Target Audience:
             </p>
 
-            <ul>
+            <ul className="text-justify">
               <li>Supply Chain Managers: Optimizing last-mile delivery for cost reduction and efficiency.</li>
               <li>Logistics Companies: Improving operational performance in the final phase of delivery.
               </li>
@@ -154,7 +154,7 @@ const LogProject1 = () => {
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
-            <ul>
+            <ul className="text-justify">
               <li>Operational Efficiency: Optimized routes leading to reduced delivery times and operational costs.</li>
               <li>Customer Satisfaction: Personalized deliveries aligning with customer preferences.</li>
               <li>Cost Reduction: Improved resource allocation and fuel efficiency contributing to overall cost reduction.</li>
@@ -169,7 +169,7 @@ const LogProject1 = () => {
               Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0">
+            <p className="m-0 text-justify">
               OptiRouteML presents a transformative solution for last-mile delivery, leveraging machine learning to enhance efficiency, reduce costs, and improve customer satisfaction. By addressing key challenges
               and ensuring scalability, the tool contributes to the evolution of last-mile delivery operations in the modern supply chain landscape.
 
@@ -185,11 +185,11 @@ const LogProject1 = () => {
  */}          </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-            Blockchain Technology in Supply Chain:<br />
-            <div className="absolute top-[65px] text-13xl"> Enhancing Transparency and Traceability in Logistics</div>
-          </div>
+          Optimizing Last-Mile Delivery Routes Using Machine Learning Algorithms<br />
+            {/* <div className="absolute top-[65px] text-13xl"> Enhancing Transparency and Traceability in Logistics</div>
+ */}          </div>
           <div className="absolute top-[164.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
-            <p className="m-0">
+            <p className="m-0 text-justify">
 
               BlockLogisticsAI encompasses features for robust blockchain architecture, IoT integration, traceability and provenance, smart contract automation, secure data sharing, interoperability, real-world pilot implementations, regulatory compliance, and educational outreach.
             </p>
@@ -313,7 +313,7 @@ const LogProject1 = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>

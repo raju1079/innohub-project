@@ -1,5 +1,14 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
+
 
 const Agriculture = () => {
   const navigate = useNavigate();
@@ -32,10 +41,28 @@ const Agriculture = () => {
     navigate("/agriculture");
   }, [navigate]);
 
+  const onAgrProject2Click = useCallback(() => {
+    navigate("/agrproject2");
+  }, [navigate]);
+
+  const onAgrProject3Click = useCallback(() => {
+    navigate("/agrproject3");
+  }, [navigate]);
+
+  const onAgrProject4Click = useCallback(() => {
+    navigate("/agrproject4");
+  }, [navigate]);
+
+  const onAgrProject5Click = useCallback(() => {
+    navigate("/agrproject5");
+  }, [navigate]);
+
+
+
   return (
-    <div className="xl:w-full relative bg-gray h-[2664px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
-      <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
+    <div className="2xl:w-full relative bg-gray h-[3028px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
+       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
@@ -67,12 +94,12 @@ const Agriculture = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+ */}        </div>
       </div>
       <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -91,7 +118,7 @@ const Agriculture = () => {
           <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
             
           </b> */}
-        <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base capitalize text-justify inline-block w-[1199.7px] h-[261px]">
+        <div className="absolute top-[0px] left-[calc(50%_-_599.85px)] text-base text-justify inline-block w-[1199.7px] h-[261px]">
           Agriculture research encompasses the systematic study, experimentation, and investigation conducted to enhance understanding and improve various aspects of agriculture.
           This include exploring new farming techniques, developing resilient crop varieties, optimizing livestock management, and addressing challenges to promote sustainable and efficient
           agriculture practices. It aims to overall agricultural productivity and also enhances efficiency, sustainability and resilience in the agriculture sector.
@@ -109,15 +136,15 @@ const Agriculture = () => {
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
             <img
-              className="absolute top-[53px] left-[calc(50%_-_546.4px)]  w-[485.8px] h-[444.6px] object-fill rounded-md"
+              className="absolute top-[53px] left-[calc(50%_-_546.4px)]  w-[485.8px] h-[444.6px] object-fill rounded-md cursor-pointer" 
               alt=""
               src="/Agricultureimg1.jpg"
             />
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
+              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px] curser-pointer">
                 Precision Agriculture: Integrating AI for Optimal Resource Management
               </div>
-              <div className="absolute top-[183.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
+              <div className="absolute top-[183.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify">
                 The research project, "Precision Agriculture: Integrating AI for Optimal Resource Management," delves into the synergy of artificial intelligence (AI) and precision agriculture to enhance resource efficiency, improve crop yields, and foster sustainable farming practices.
                 The research spans a comprehensive approach, encompassing a literature review, exploration of sensing technologies, machine learning for predictive modeling, AI-driven decision support systems, optimization of input applications, IoT integration, data security, farm robotics, and economic-environmental impact assessment. It also investigates collaboration strategies for widespread adoption.
 
@@ -125,7 +152,7 @@ const Agriculture = () => {
             </div>
           </div>
           <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
-            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
+            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]" onClick={onAgrProject2Click}>
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
               {/*  <img
@@ -136,23 +163,77 @@ const Agriculture = () => {
  */}
             </div>
             <img
-              className="absolute top-[57px] right-[calc(50%_-_579.4px)]  w-[480.8px] h-[429.6px] object-fill rounded-md"
+              className="absolute top-[57px] right-[calc(50%_-_579.4px)]  w-[480.8px] h-[429.6px] object-fill rounded-md cursor-pointer"
               alt=""
               src="/Agricultureimgs2.jpg"
+              onClick={onAgrProject2Click}
             />
             <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
+              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px] cursor-pointer">
                 AI-Driven Crop Monitoring and Disease Detection in Smart Farming
               </div>
-              <div className="absolute top-[166.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
+              <div className="absolute top-[106.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
                 The research project, "AI-Driven Crop Monitoring and Disease Detection in Smart Farming," focuses on leveraging artificial intelligence (AI) to enhance crop monitoring and enable early detection of diseases in smart farming systems. The primary goal is to develop advanced AI tools that can analyze sensor data, satellite imagery, and other sources to provide real-time insights into crop health. This research aims to empower farmers with proactive measures, minimizing crop losses and optimizing agricultural practices
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute top-[2290px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
-        <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
+      <div className="flex flex-col sm:w-50 lg:w-50 flex flex-wrap justify-center w-full font-poppins ">
+        <div className="absolute top-[2130px] left-[calc(50%_-_630px)] text-sm font-roboto shadow-md ">
+
+          <Card className="mt-6 w-[400px] h-[330px]">
+            <CardBody>
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+              Machine Learning for Crop Yield Prediction: A Comprehensive Analysis
+              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions. 
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[20px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"
+              onClick={onAgrProject3Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2130px] left-[calc(50%_-_202px)] text-sm font-roboto">
+
+          <Card className="mt-6 w-[400px] h-[330px] ">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+              AI-Based Soil Health Assessment for Sustainable Agriculture
+              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project, "AI for Soil Health Assessment in Sustainable Agriculture," aims to leverage artificial intelligence (AI) to provide accurate assessments of soil health for sustainable farming.  </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[25px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer " onClick={onAgrProject4Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2130px] left-[calc(50%_-_-220px)]  text-sm font-roboto">
+
+          <Card className="mt-6 w-[400px] h-[330px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
+              AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims artificial to intelligence (AI) to revolutionize market predictions in the agribusiness sector. 
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[1px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onAgrProject5Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+
+      </div>
+
+      <div className="absolute top-[2608px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+       <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
         <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>

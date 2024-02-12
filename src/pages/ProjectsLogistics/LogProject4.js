@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AhProject2 = () => {
+const LogProject4 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,7 +29,8 @@ const AhProject2 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2517px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2694px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -62,12 +63,12 @@ const AhProject2 = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/* <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
- */}        </div>
+  */}       </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -78,67 +79,87 @@ const AhProject2 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
-          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-          </div>
-          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]  text-justify">
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
+          {/*           <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
+          <div className="absolute top-[398.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
+            DemandProphet encompasses features for data collection, preprocessing, and integration; advanced machine learning models; real-time streaming for dynamic forecasting; scenario analysis and sensitivity testing; inventory management optimization; collaborative tools for stakeholders; and continuous performance evaluation and improvement mechanisms.</div>
+          <div className="absolute top-[552.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
 
-              AI-Driven Nutrition Optimization: Utilizes advanced algorithms to optimize feed formulation and delivery processes.            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Health Monitoring: Integrates IoT devices and sensors for continuous monitoring of key health indicators.
+              Comprehensive Data Handling: Efficiently collects, preprocesses, and integrates diverse data sources.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Dynamic Diet Adjustment: Adapts individualized diets based on real-time health data and changing environmental conditions.
+              Advanced Machine Learning Models: Implements regression, time-series, and deep learning models for accurate demand predictions.            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Real-time Streaming Capability: Enables dynamic forecasting with real-time data updates for prompt adaptation.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Precision Feeding Strategies: Implements AI models aligned with specific production goals for targeted outcomes.
+              External Data Integration: Integrates external data sources for enhanced demand forecast accuracy.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Scenario Analysis: Conducts scenario testing to assess demand forecasts under various conditions.
             </p>
-          </div>
-          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+              Inventory Management Optimization: Aligns inventory levels with predicted demand, considering various logistical factors.
+              Stakeholder Collaboration Tools: Facilitates collaboration and information exchange among supply chain stakeholders.
+
+            </p>
+           </div>
+          <div className="absolute top-[86.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name:NutriOptiFeed
+          <div className="absolute top-[260.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name: DemandProphet
 
           </div>
-          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[335.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[492.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[890.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
             <ul>
-              <li>Livestock Managers</li>
-              <li>Nutritionists</li>
-              <li>Veterinarians</li>
-              <li>Agricultural Extension Services</li>
+              <li>			Supply Chain Managers
+
+
+              </li>
+              <li>		Supply Chain Managers
+              </li>
+              <li>		Inventory Planners
+
+              </li>
+              <li>	Data Analysts
+
+              </li>
+              <li>	Stakeholders in Supply Chain Operations
+              </li>
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
             <ul className="text-justify">
-              <li>Enhanced Productivity: Improves livestock health, growth, and overall productivity through AI-optimized nutrition.  </li>
-
-              <li>Cost-Benefit Efficiency: Evaluates economic implications, fostering feed efficiency and production outcomes.</li>
-
-              <li>Education and Adoption: Facilitates effective adoption through education and training programs for livestock managers.</li>
-
-              <li>Environmental Sustainability: Assesses and enhances environmental impact, ensuring responsible resource utilization.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
-              </li> */}
+              <li>		Enhanced Forecast Accuracy: Improves demand prediction accuracy for better inventory management.
+              </li>
+              <li>			Optimized Supply Chain Operations: Enhances operational efficiency through dynamic forecasting.
+              </li>
+              <li>			Cost Reduction: Reduces holding costs and minimizes stockouts or overstock situations.
+              </li>
+              <li>			Stakeholder Collaboration: Facilitates better communication and coordination along the supply chain.
+              </li>
+              <li>			Continuous Improvement Culture: Fosters a culture of continuous improvement based on real-time data and feedback.
+              </li>
             </ul>
 
 
@@ -148,9 +169,7 @@ const AhProject2 = () => {
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-justify">
-            NutriOptiFeed emerges as a pivotal AI tool, aligning with the project's goals by providing a comprehensive system for AI-optimized livestock nutrition. Its features contribute to enhanced productivity, economic efficiency, and sustainable farming practices. NutriOptiFeed stands as a revolutionary solution, ensuring the well-being of livestock and fostering responsible agricultural practices
-
-            </p>
+            DemandProphet emerges as a comprehensive AI tool, contributing to optimized supply chain operations through accurate demand forecasting, real-time adaptability, and collaborative stakeholder engagement. Its features align with the project's goal of improving overall efficiency in logistics and supply chain management.</p>
             {/* <p className="m-0">&nbsp;</p>
             <p className="m-0">
               · Integration with Existing Learning Platforms: The tool will
@@ -161,23 +180,19 @@ const AhProject2 = () => {
  */}          </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-          AI-Driven Disease Prediction and Prevention in Livestock<br />
-            {/* <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>*/}
-          </div> 
-          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
-            <p className="m-0 ">
+           Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management<br />
+            {/*  <div className="absolute top-[65px] text-13xl"> Enhancing Transparency and Traceability in Logistics</div> */}
+          </div>
+          <div className="absolute top-[164.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+            <p className="m-0 text-justify">
 
-            The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
-            </p>
-            <p className="m-0">
-
-              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-            </p>
-
+            The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics. The approach involves data collection and preprocessing, feature engineering for demand drivers, implementation of diverse machine learning models, integration of external data sources, real-time data streaming for dynamic forecasting, scenario analysis, optimization of inventory management, collaboration with stakeholders, and continuous performance evaluation for improvement.</p>
           </div>
         </div>
       </div>
-      <div className="absolute top-[2100px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+
+
+      <div className="absolute top-[2273px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -312,4 +327,4 @@ const AhProject2 = () => {
   );
 };
 
-export default AhProject2;
+export default LogProject4;

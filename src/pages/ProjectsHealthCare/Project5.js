@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AhProject2 = () => {
+const Project5 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,7 +29,8 @@ const AhProject2 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2517px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2864px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -62,12 +63,12 @@ const AhProject2 = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
- */}        </div>
+         */}</div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -78,67 +79,77 @@ const AhProject2 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
-          {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
+          {/*  <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
+          <div className="absolute top-[448.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
+          OncoCareAI spans diverse features, including genomic analysis, predictive modeling, multi-omics integration, radiomic imaging, clinical decision support, real-time monitoring, patient education, and ethical considerations in cancer treatment planning.</div>
+          <div className="absolute top-[642.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
+            <p className="m-0">
+            	Genomic Profiling: AI-driven analysis of genomic data for personalized cancer treatment approaches.
+           </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Predictive Modeling: Assessment of individual treatment responses for effective and less toxic therapies.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Multi-Omics Integration: Comprehensive understanding of the molecular landscape through AI integration.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	AI-Enabled Radiomics: Quantitative imaging analysis for tumor characterization and treatment planning.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Clinical Decision Support: Real-time recommendations for personalized treatment plans based on patient profiles.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Real-Time Monitoring: AI systems for continuous monitoring, enabling adaptive treatment strategies.</p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Patient-Centric Communication: AI-driven tools for patient education and personalized information delivery.
+              	Ethical Considerations: Strict privacy protocols, informed consent, and transparency in AI algorithm usage.
+            </p>
           </div>
-          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]  text-justify">
-            <p className="m-0">
-
-              AI-Driven Nutrition Optimization: Utilizes advanced algorithms to optimize feed formulation and delivery processes.            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Health Monitoring: Integrates IoT devices and sensors for continuous monitoring of key health indicators.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Dynamic Diet Adjustment: Adapts individualized diets based on real-time health data and changing environmental conditions.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Precision Feeding Strategies: Implements AI models aligned with specific production goals for targeted outcomes.
-            </p>
-          </div>
-          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[76.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name:NutriOptiFeed
-
+          <div className="absolute top-[290.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name: OncoCareAI
           </div>
-          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[365.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
           <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[1070.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
-            <ul>
-              <li>Livestock Managers</li>
-              <li>Nutritionists</li>
-              <li>Veterinarians</li>
-              <li>Agricultural Extension Services</li>
+            <ul className="text-justify">
+              <li>		Oncologists and Healthcare Providers: Utilizing AI for personalized cancer treatment planning.
+       </li>
+              <li>	Cancer Patients: Benefiting from individualized treatment strategies and continuous monitoring.
+              </li>
+              <li>	Healthcare Institutions: Integrating AI for improved oncology practices.
+              </li>
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
             <ul className="text-justify">
-              <li>Enhanced Productivity: Improves livestock health, growth, and overall productivity through AI-optimized nutrition.  </li>
-
-              <li>Cost-Benefit Efficiency: Evaluates economic implications, fostering feed efficiency and production outcomes.</li>
-
-              <li>Education and Adoption: Facilitates effective adoption through education and training programs for livestock managers.</li>
-
-              <li>Environmental Sustainability: Assesses and enhances environmental impact, ensuring responsible resource utilization.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
-              </li> */}
+              <li>	Improved Treatment Outcomes: Personalized treatment plans enhancing efficacy and minimizing side effects.
+              </li>
+              <li>	Real-Time Adjustments: AI-driven monitoring facilitating timely adaptations to treatment plans.
+              </li>
+              <li>	Patient Empowerment: AI tools promoting patient understanding and involvement in treatment decisions.</li>
+              <li>	Ethical Oncology Practices: Adherence to privacy and ethical standards in AI-driven cancer treatment.
+              </li>
+             
             </ul>
 
 
@@ -148,36 +159,25 @@ const AhProject2 = () => {
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-justify">
-            NutriOptiFeed emerges as a pivotal AI tool, aligning with the project's goals by providing a comprehensive system for AI-optimized livestock nutrition. Its features contribute to enhanced productivity, economic efficiency, and sustainable farming practices. NutriOptiFeed stands as a revolutionary solution, ensuring the well-being of livestock and fostering responsible agricultural practices
 
-            </p>
-            {/* <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              · Integration with Existing Learning Platforms: The tool will
-              seamlessly integrate with popular learning management systems
-              (LMS) and education platforms, ensuring a smooth adoption process
-              for educational institutions.
-            </p>
- */}          </div>
+           OncoCareAI emerges as a comprehensive solution, leveraging AI to transform cancer treatment. By addressing ethical considerations and offering a diverse set of features, the tool contributes to individualized and ethically sound cancer treatment plans, ultimately improving patient outcomes and well-being in the battle against cancer.</p>
+
+          </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-          AI-Driven Disease Prediction and Prevention in Livestock<br />
-            {/* <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>*/}
-          </div> 
-          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
-            <p className="m-0 ">
-
-            The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
-            </p>
+          AI-Based Personalized Treatment Plans for Cancer Patients<br />
+              {/* <div className=" absolute top-[65px] text-13xl">AI-Enabled Remote Patient Monitoring
+            </div> */}      </div>
+          <div className="absolute top-[144.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
             <p className="m-0">
 
-              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-            </p>
+            The research project, "Telemedicine Transformation: AI-Enabled Remote Patient Monitoring," focuses on integrating artificial intelligence into telemedicine for more effective remote patient care. Through AI algorithms analyzing wearable device data and health records, the aim is to enhance virtual care quality, particularly for patients with chronic conditions. The approach involves smart wearables and IoT integration, predictive analytics, AI-assisted diagnostics, patient engagement through chatbots, risk stratification, interoperability with EHR, continuous learning, and ethical considerations.            </p>
 
           </div>
         </div>
       </div>
-      <div className="absolute top-[2100px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+
+      <div className="absolute top-[2444px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -312,4 +312,4 @@ const AhProject2 = () => {
   );
 };
 
-export default AhProject2;
+export default Project5;

@@ -1,5 +1,14 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
+
 
 const InformationTechnology = () => {
   const navigate = useNavigate();
@@ -32,10 +41,37 @@ const InformationTechnology = () => {
     navigate("/informationtechnology");
   }, [navigate]);
 
+  const onProjectIT2Click = useCallback(() => {
+    navigate("/projectit2");
+  }, [navigate]);
+
+  const onProjectIT3Click = useCallback(() => {
+    navigate("/projectit3");
+  }, [navigate]);
+
+  const onProjectIT4Click = useCallback(() => {
+    navigate("/projectit4");
+  }, [navigate]);
+
+  const onProjectIT5Click = useCallback(() => {
+    navigate("/projectit5");
+  }, [navigate]);
+
+  const onProjectIT6Click = useCallback(() => {
+    navigate("/projectit6");
+  }, [navigate]);
+
+  const onProjectIT7Click = useCallback(() => {
+    navigate("/projectit7");
+  }, [navigate]);
+
+
+
+
   return (
-    <div className="xl:w-full relative bg-gray h-[2713px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
-      <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
+    <div className="xl:w-full relative bg-gray h-[3580px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
+     <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
@@ -67,12 +103,12 @@ const InformationTechnology = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+        */} </div>
       </div>
       <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -97,16 +133,16 @@ const InformationTechnology = () => {
           while AI algorithms automate project planning by analysing historical data and dependencies. For code development and review, tools like OpenAI Codex generate code snippets and AI-driven static code analysis automates review processes.
           In testing, AI algorithms automate test case generation and dynamically adapt test suites, reducing maintenance efforts. Automated bug detection analyses code changes and logs, prioritizing potential issues, with predictive maintenance anticipating problems
           proactively.
-          AI extends its impact to deployment and release management through automated deployment processes and predicting the impact of code changes.
+          {/* AI extends its impact to deployment and release management through automated deployment processes and predicting the impact of code changes.
           In infrastructure management, AI analyses system usage patterns for autonomous scaling and predicts server issues for proactive maintenance. Security and compliance benefit from continuous AI-driven security scans and behavioural analysis of anomalies.
           AI-powered chatbots and automated ticket triage expedite support and issue resolution. Data management involves AI-assisted data cleansing and predictive analytics for system performance insights.
           Automation extends to documentation generation based on code comments and knowledge extraction from diverse sources. Continuous improvement employs AI-powered analytics to identify bottlenecks, recommend enhancements, and trends.
           Adoption of AI platforms, such as integrated AI development environments (AIDEs) and AI-powered DevOps platforms, seamlessly integrates AI tools into the development lifecycle. Finally, AI-driven learning platforms assist in identifying skill gaps, recommending training, and personalizing learning
-          paths for team members.
+          paths for team members. */}
         </div>
         {/*  </div> */}
       </div>
-      <div className="absolute w-full top-[950px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
+      <div className="absolute w-full top-[800px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
         <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
           <div
             className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] cursor-pointer"
@@ -126,27 +162,28 @@ const InformationTechnology = () => {
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
                 AI-Powered Requirement Analysis for Software Development: A Comparative Study
               </div>
-              <div className="absolute top-[253.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px]">
-                In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches.
+              <div className="absolute top-[225.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify ">
+                 In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches.
               </div>
             </div>
           </div>
           <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
-            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]">
+          <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]" onClick={onProjectIT2Click}>
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
               <div className="absolute top-[33.5px] left-[calc(50%_-_238.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
               <img
-                className="absolute top-[49px] left-[calc(50%_-_223.4px)]  w-[490.8px] h-[454.6px] object-fill rounded-md"
+                className="absolute top-[49px] left-[calc(50%_-_223.4px)]  w-[490.8px] h-[454.6px] object-fill rounded-md cursor-pointer"
                 alt=""
                 src="/InformationTechimg2.avif"
+              
               />
             </div>
             <div className="absolute top-[88.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
                 Automated Code Review with Artificial Intelligence: Improving Code Quality and Development Efficiency
               </div>
-              <div className="absolute top-[166.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px]">
-                Code Quality and Development Efficiency," seeks to revolutionize software development's code review process by integrating Artificial Intelligence (AI). With a primary goal of enhancing code quality and reducing human-intensive efforts, the project undertakes a thorough investigation into AI algorithms' capabilities for code analysis. It commences with an extensive literature review, exploring successful implementations and challenges in AI-driven code analysis, and evaluating techniques such as static code analysis, machine learning, and natural language processing.
+              <div className="absolute top-[140.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
+                 Code Quality and Development Efficiency," seeks to revolutionize software development's code review process by integrating Artificial Intelligence (AI). With a primary goal of enhancing code quality and reducing human-intensive efforts, the project undertakes a thorough investigation into AI algorithms' capabilities for code analysis. It commences with an extensive literature review, exploring successful implementations and challenges in AI-driven code analysis, and evaluating techniques such as static code analysis, machine learning, and natural language processing.
 
 
 
@@ -158,7 +195,89 @@ const InformationTechnology = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[2290px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="flex flex-col sm:w-100 flex flex-wrap justify-center w-full font-poppins grid grid-col-5">
+        <div className="absolute top-[2260px] left-[calc(50%_-_720px)] text-sm font-roboto shadow-md ">
+
+          <Card className="mt-6 w-[450px] h-[300px]">
+            <CardBody>
+              <Typography variant="h6" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+              "Predictive Maintenance in Software Development: Leveraging AI for Bug Detection and Resolution"
+              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate. </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[2px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer" onClick={onProjectIT3Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2260px] left-[calc(50%_-_222px)] text-sm font-roboto">
+
+          <Card className="mt-6 w-[450px] h-[300px] ">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+              "AI-Driven Testing Strategies: Enhancing Test Case Generation and Adaptive Test Automation"</Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating (AI) Artificial Integrates.</Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[15px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer " onClick={onProjectIT4Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2260px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
+
+          <Card className="mt-6 w-[450px] h-[300px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
+              "AI-Driven Documentation and Knowledge Management: Towards Automated Knowledge Extraction"             </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project titled "AI-Driven Documentation and Knowledge Management" aims to revolutionize traditional documentation processes through the application of AI. </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[15px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer" onClick={onProjectIT5Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2660px] left-[calc(50%_-_-70px)]  text-sm font-roboto">
+
+          <Card className="mt-6 w-[450px] h-[300px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
+              "Algorithmic Transparency in Hiring: Building Trust in AI-Driven Recruitment Systems"              </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project titled "Algorithmic Transparency in Hiring" focuses on addressing the challenges associated with trust and fairness in AI-driven recruitment systems.  </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[2px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer" onClick={onProjectIT6Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="absolute top-[2660px] left-[calc(50%_-_450px)]  text-sm font-roboto">
+
+          <Card className="mt-6 w-[450px] h-[300px]">
+            <CardBody>
+
+              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
+              AI-Enhanced Job Interviews: Evaluating the Impact on Candidate Performance and Selection Accuracy"             </Typography>
+              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
+              The research project on "AI-Enhanced Job Interviews" is centered on revolutionizing the job interview process by leveraging Artificial Intelligence (AI). </Typography>
+            </CardBody>
+            <CardFooter className="pt-0 text-center">
+              <Button className="mt-[2px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer" onClick={onProjectIT7Click}>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+
+
+      </div>
+
+
+
+      <div className="absolute top-[3160px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>

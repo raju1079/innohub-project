@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AhProject2 = () => {
+const ProjectIT3 = () => {
   const navigate = useNavigate();
 
   const onGroupClick = useCallback(() => {
@@ -29,7 +29,8 @@ const AhProject2 = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-gray h-[2517px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins">
+    <div className="xl:w-full relative bg-gray h-[2880px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -66,8 +67,8 @@ const AhProject2 = () => {
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
-          </div>
- */}        </div>
+          </div> */}
+        </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -78,67 +79,69 @@ const AhProject2 = () => {
           src="/artboard-44x-1@2x.png"
         />
       </div>
-      <div className="absolute w-full top-[420px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
-        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px] ">
+      <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
+        <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[488.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
-            NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
-          </div>
-          <div className="absolute top-[602.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]  text-justify">
+          <div className="absolute top-[518.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
+          "BugGuardian AI" stands as a cutting-edge AI tool tailored for efficient bug management in software development. The tool's scope encompasses predictive bug analysis, leveraging advanced AI algorithms to foresee potential bugs based on historical data and code patterns. Its intelligent bug prioritization system considers severity, potential impact, and historical trends, ensuring developers focus on the most critical issues first.           </div>
+          <div className="absolute top-[702.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
+            Predictive Bug Analysis: Utilizes advanced AI algorithms to predict potential bugs based on historical data and code patterns.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Smart Bug Prioritization: Intelligently prioritizes bugs based on their severity, potential impact, and historical trends.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            Automated Resolution Suggestions: Generates automated suggestions for bug resolution, providing developers with actionable insights.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Integration with Development Tools: Seamlessly integrates with popular development tools, ensuring minimal disruption to existing workflows.
+            </p>
+            <p className="m-0">&nbsp;</p>
+            <p className="m-0">
+            	Real-time Monitoring: Provides real-time monitoring of code changes, allowing for continuous bug prediction and resolution.
 
-              AI-Driven Nutrition Optimization: Utilizes advanced algorithms to optimize feed formulation and delivery processes.            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Real-time Health Monitoring: Integrates IoT devices and sensors for continuous monitoring of key health indicators.
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">
-              Dynamic Diet Adjustment: Adapts individualized diets based on real-time health data and changing environmental conditions.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              Precision Feeding Strategies: Implements AI models aligned with specific production goals for targeted outcomes.
+            	Scalable for Projects of Any Size: Designed to scale for projects of varying sizes, accommodating both small and large-scale software development efforts.
             </p>
           </div>
-          <div className="absolute top-[66.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
+          <div className="absolute top-[126.4px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold inline-block w-[803px] h-[31.6px]">
             Synopsis:
           </div>
-          <div className="absolute top-[350.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
-            AI Tool Name:NutriOptiFeed
-
+          <div className="absolute top-[360.3px] left-[calc(50%_-_609.7px)] text-13xl leading-[140%] capitalize font-semibold">
+            AI Tool Name: BugGuardian AI
           </div>
-          <div className="absolute top-[425.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[455.6px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Objective:
           </div>
-          <div className="absolute top-[552.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
+          <div className="absolute top-[632.5px] left-[calc(50%_-_609.7px)] text-5xl leading-[140%] capitalize font-semibold">
             Key Features:
           </div>
-          <div className="absolute top-[880.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[1015.9px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
             <p className="m-0  text-5xl text-blue leading-[140%] capitalize font-semibold">
               Target Audience:
             </p>
 
-            <ul>
-              <li>Livestock Managers</li>
-              <li>Nutritionists</li>
-              <li>Veterinarians</li>
-              <li>Agricultural Extension Services</li>
+            <ul className="text-justify">
+              <li>	Software Development Teams: Targeting development teams seeking to proactively manage and resolve bugs in their software.</li>
+              <li>	Quality Assurance Teams: Offering a valuable tool for QA teams aiming to enhance the overall quality and stability of software products.</li>
+              <li>	Enterprise Solutions: Providing enterprise-level solutions for organizations with complex and mission-critical software projects.</li>
             </ul>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-5xl text-blue leading-[140%] capitalize font-semibold">
               Project Impact:
             </p>
             <ul className="text-justify">
-              <li>Enhanced Productivity: Improves livestock health, growth, and overall productivity through AI-optimized nutrition.  </li>
-
-              <li>Cost-Benefit Efficiency: Evaluates economic implications, fostering feed efficiency and production outcomes.</li>
-
-              <li>Education and Adoption: Facilitates effective adoption through education and training programs for livestock managers.</li>
-
-              <li>Environmental Sustainability: Assesses and enhances environmental impact, ensuring responsible resource utilization.</li>
-              {/* <li>Continuous Improvement: Ongoing evaluation and feedback loop ensuring adaptability and refinement.
-              </li> */}
+              <li>	Proactive Bug Management: Anticipates and addresses bugs before they impact the software, contributing to a proactive bug management approach.</li>
+              <li>	Efficiency Gains: Reduces the time and effort spent on reactive bug resolution, leading to increased efficiency within development cycles.</li>
+              <li>	Software Stability: Enhances overall software stability and reliability, resulting in a more robust end product.</li>
+              <li>	Improved Development Workflow: Integrates seamlessly into existing development workflows, minimizing disruption and ensuring ease of adoption.</li>
+              
             </ul>
 
 
@@ -148,7 +151,7 @@ const AhProject2 = () => {
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0 text-justify">
-            NutriOptiFeed emerges as a pivotal AI tool, aligning with the project's goals by providing a comprehensive system for AI-optimized livestock nutrition. Its features contribute to enhanced productivity, economic efficiency, and sustainable farming practices. NutriOptiFeed stands as a revolutionary solution, ensuring the well-being of livestock and fostering responsible agricultural practices
+            The "Predictive Maintenance in Software Development" research project and the resulting "BugGuardian AI" tool aim to revolutionize bug detection and resolution, transforming the software development landscape. By leveraging AI for predictive maintenance, developers and QA teams can proactively manage software bugs, resulting in enhanced stability, improved productivity, and a more efficient development lifecycle. The commercial tool is poised to offer practical solutions to the challenges faced by software development teams, making it a valuable asset in the pursuit of high-quality software products.
 
             </p>
             {/* <p className="m-0">&nbsp;</p>
@@ -157,27 +160,26 @@ const AhProject2 = () => {
               seamlessly integrate with popular learning management systems
               (LMS) and education platforms, ensuring a smooth adoption process
               for educational institutions.
-            </p>
- */}          </div>
+            </p> */}
+          </div>
 
           <div className="absolute top-[-70px] left-[calc(50%_-_609.7px)] text-29xl leading-[100%] capitalize font-semibold-350 inline-block w-[1219.4px]">
-          AI-Driven Disease Prediction and Prevention in Livestock<br />
-            {/* <div className="absolute top-[65px] text-13xl" > AI Optimization for Livestock Nutrition</div>*/}
-          </div> 
-          <div className="absolute top-[154.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
-            <p className="m-0 ">
+          Predictive Maintenance in Software Development:<br />
+            <div className=" absolute top-[105px] text-13xl"> Leveraging AI for Bug Detection and Resolution</div>
 
-            The research project, "Smart Feeding Systems: AI Optimization for Livestock Nutrition," aims to transform livestock nutrition practices through AI integration into feeding systems. The project involves comprehensive data collection, nutritional analysis, and AI-driven optimization for individualized diets. Real-time monitoring of livestock health, dynamic adjustment of diets, and precision feeding strategies will be implemented to enhance productivity. The research includes a cost-benefit analysis, education programs for livestock managers, and an environmental impact assessment. The continuous improvement framework ensures iterative refinement based on feedback from livestock performance.
-            </p>
-            <p className="m-0">
+          </div>
+          <div className="absolute top-[214.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+            <p className="m-0 text-justify">
 
-              NutriOptiFeed encompasses features for AI-driven nutritional optimization, real-time health monitoring, and precision feeding for diverse livestock species and production goals.
+            The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate, detect, and resolve software bugs before they escalate. Drawing inspiration from predictive maintenance concepts in engineering, this study seeks to enhance the reliability and stability of software systems by implementing AI-driven algorithms. The research focuses on proactive bug identification, prioritization, and resolution to streamline the development process and minimize the impact of potential defects.
+
             </p>
 
           </div>
         </div>
       </div>
-      <div className="absolute top-[2100px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      
+      <div className="absolute top-[2460px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
@@ -312,4 +314,4 @@ const AhProject2 = () => {
   );
 };
 
-export default AhProject2;
+export default ProjectIT3;

@@ -30,7 +30,7 @@ const ProjectIT1 = () => {
 
   return (
     <div className="xl:w-full relative bg-gray h-[2824px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1237px] flex flex-col  items-start justify-start  py-0 px-5">
+    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -49,7 +49,7 @@ const ProjectIT1 = () => {
             className="relative capitalize font-medium cursor-pointer"
           //onClick={onProjectsTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
@@ -63,12 +63,12 @@ const ProjectIT1 = () => {
           >
             About us
           </div>
-          <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/* <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
           </div>
-        </div>
+  */}       </div>
       </div>
       <div className="absolute w-full top-[98px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[414px] overflow-hidden">
         <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
@@ -82,11 +82,11 @@ const ProjectIT1 = () => {
       <div className="absolute w-full top-[520px] right-[0px] left-[0px] h-[2682px] overflow-hidden text-base text-blue">
         <div className="absolute top-[68.6px] left-[calc(50%_-_609.7px)] w-[1219.4px] h-[2544.8px]">
           {/* <div className="absolute top-[159px] left-[calc(50%_-_609.7px)] rounded-8xs bg-gainsboro-200 w-[1195.4px] h-[471.3px]" /> */}
-          <div className="absolute top-[538.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px]">
+          <div className="absolute top-[538.4px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[114.6px] text-justify">
             "ReqAI Analytica" is an advanced requirement analysis tool powered by Artificial Intelligence, designed to streamline and optimize the initial phase of software development projects. It integrates cutting-edge AI techniques to improve accuracy, efficiency, and adaptability in understanding and extracting project requirements.
 
           </div>
-          <div className="absolute top-[702.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px]">
+          <div className="absolute top-[702.7px] left-[calc(50%_-_609.7px)] leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[432.8px] text-justify">
             <p className="m-0">
               AI-Driven Requirement Extraction: Utilizes advanced NLP algorithms and machine learning models to extract and categorize requirements from diverse textual sources.
 
@@ -135,7 +135,7 @@ const ProjectIT1 = () => {
               Target Audience:
             </p>
 
-            <ul>
+            <ul className="text-justify">
               <li>Software Development Teams: Targeting development teams in various industries seeking to enhance their requirement analysis processes.</li>
               <li>Project Managers: Providing a valuable tool for project managers to efficiently plan and execute software development projects.</li>
               <li>Consulting Firms: Offering consulting firms a powerful tool to streamline their client's requirement analysis processes.</li>
@@ -158,7 +158,7 @@ const ProjectIT1 = () => {
               Conculsion
             </p>
             <p className="m-0">&nbsp;</p>
-            <p className="m-0">
+            <p className="m-0 text-justify">
               "ReqAI Analytica" aims to revolutionize the requirement analysis phase in software development, providing a comprehensive solution that combines the latest AI advancements with user-friendly functionality. The tool addresses the evolving needs of development teams, ensuring a smoother and more efficient path from requirements to successful software delivery.
 
 
@@ -177,7 +177,7 @@ const ProjectIT1 = () => {
             <div className=" absolute top-[105px] text-13xl"> A Comparative Study </div>
 
           </div>
-          <div className="absolute top-[214.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px]">
+          <div className="absolute top-[214.2px] left-[calc(50%_-_609.7px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[1195.4px] h-[518.6px] text-justify">
             <p className="m-0">
 
               In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches. The approach involves an extensive literature review, investigating real-world applications of AI in various software development life cycle phases. Identifying and analysing AI techniques like Natural Language Processing (NLP) and machine learning for requirement analysis, the research develops a comprehensive framework with key evaluation metrics such as accuracy, time efficiency, scalability, and adaptability.
@@ -303,7 +303,7 @@ const ProjectIT1 = () => {
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
           //onClick={onCareersTextClick}
           >
-            Collaborations
+            Collabrations
           </div>
           <div className="absolute top-[59.39%] left-[0%] font-poppins"
             onClick={onAboutUsTextClick}>
