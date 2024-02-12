@@ -1,13 +1,13 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import {
+/* import {
   Card,
   CardBody,
   CardFooter,
   Typography,
   Button,
 } from "@material-tailwind/react";
-
+ */
 
 
 
@@ -94,7 +94,7 @@ const Logistics = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
@@ -136,12 +136,12 @@ const Logistics = () => {
               <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
-            
+
             <img
-                className="absolute top-[62px] left-[calc(50%_-_535.4px)]  w-[470.8px] h-[425.6px] object-fill rounded-md cursor-pointer"
-                alt=""
-                src="/Logisticsimg1.jpg"
-              />
+              className="absolute top-[62px] left-[calc(50%_-_535.4px)]  w-[470.8px] h-[425.6px] object-fill rounded-md cursor-pointer"
+              alt=""
+              src="/Logisticsimg1.jpg"
+            />
             <div className="absolute top-[71.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
 
@@ -162,7 +162,7 @@ const Logistics = () => {
                 className="absolute top-[62px] right-[calc(50%_-_257.4px)]  w-[480.8px] h-[425.6px] object-fill rounded-md cursor-pointer"
                 alt=""
                 src="/Logisticsimg2.jpg"
-              
+
               />
             </div>
             <div className="absolute top-[88.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
@@ -177,53 +177,48 @@ const Logistics = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:w-100 flex flex-wrap justify-center w-full font-poppins ">
-        <div className="absolute top-[2220px] left-[calc(50%_-_720px)] text-sm font-roboto shadow-md ">
 
-          <Card className="mt-6 w-[450px] h-[300px]">
-            <CardBody>
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
-              Green Logistics: Sustainable Practices and Environmental Impact Assessment"</Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The "Green Logistics" research project aims to integrate sustainable practices into logistics, exploring eco-friendly strategies and conducting a comprehensive environmental impact assessment.</Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[21px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onLogProject3Click}>Read More</Button>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="absolute top-[2220px] left-[calc(50%_-_222px)] text-sm font-roboto">
-
-          <Card className="mt-6 w-[450px] h-[300px] ">
-            <CardBody>
-
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
-              Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics.  </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[1px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer "onClick={onLogProject4Click}>Read More</Button>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="absolute top-[2220px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
-
-          <Card className="mt-6 w-[450px] h-[300px]">
-            <CardBody>
-
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
-              Drones in Logistics: Exploring the Potential for Last-Mile Deliveries              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The "Drones in Logistics: Exploring the Potential for Last-Mile Deliveries" research project aims to assess the feasibility and impact of integrating drone technology into the last-mile delivery process.  </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[25px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onLogProject5Click}>Read More</Button>
-            </CardFooter>
-          </Card>
+      <div className="flex flex-col sm:w-100 flex flex-wrap grid grid-col-3 justify-center w-full font-poppins ">
+        <div className="absolute top-[2220px] left-[calc(50%_-_710px)] text-sm font-poppins shadow-md ">
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">
+              Green Logistics: Sustainable Practices and Environmental Impact Assessment
+            </div>
+            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
+            The "Green Logistics" research project aims to integrate sustainable practices into logistics, exploring eco-friendly strategies and conducting a comprehensive environmental impact assessment.           </div>
+            <div className="pt-0 mt-7 text-center">
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject3Click}>Read more</button>
+            </div>
+            {/*             <button className="mt-[21px] bg-blue text-white text-3xl hover:bg-indigo-800 hover:text-black cursor-pointer" onClick={onLogProject3Click}>Read More</button>
+            </div>
+           */}</div>
         </div>
 
+
+        <div className="absolute top-[2220px] left-[calc(50%_-_220px)] text-sm font-poppins shadow-md ">
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+            Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management </div>
+            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+            The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics. </div>
+            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject4Click}>Read more</button>
+          </div>
+
+
+        </div>
+        <div className="absolute top-[2220px] left-[calc(50%_-_-260px)] text-sm font-poppins shadow-md ">
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+            Drones in Logistics: Exploring the Potential for Last-Mile Deliveries               </div>
+            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+            The "Drones in Logistics: Exploring the Potential for Last-Mile Deliveries" research project aims to assess the feasibility and impact of integrating drone technology into the last-mile delivery process.</div>
+            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject5Click}>Read more</button>
+          </div>
+
+        </div>
       </div>
+
+
 
 
       <div className="absolute top-[2700px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">

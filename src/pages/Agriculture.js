@@ -1,13 +1,13 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import {
+/* import {
   Card,
   CardBody,
   CardFooter,
   Typography,
   Button,
 } from "@material-tailwind/react";
-
+ */
 
 
 const Agriculture = () => {
@@ -62,7 +62,7 @@ const Agriculture = () => {
   return (
     <div className="2xl:w-full relative bg-gray h-[3028px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
-       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
+      <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
@@ -94,7 +94,7 @@ const Agriculture = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
@@ -136,7 +136,7 @@ const Agriculture = () => {
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
             <img
-              className="absolute top-[53px] left-[calc(50%_-_546.4px)]  w-[485.8px] h-[444.6px] object-fill rounded-md cursor-pointer" 
+              className="absolute top-[53px] left-[calc(50%_-_546.4px)]  w-[485.8px] h-[444.6px] object-fill rounded-md cursor-pointer"
               alt=""
               src="/Agricultureimg1.jpg"
             />
@@ -180,60 +180,45 @@ const Agriculture = () => {
         </div>
       </div>
       <div className="flex flex-col sm:w-50 lg:w-50 flex flex-wrap justify-center w-full font-poppins ">
-        <div className="absolute top-[2130px] left-[calc(50%_-_630px)] text-sm font-roboto shadow-md ">
+        <div className="absolute top-[2130px] left-[calc(50%_-_700px)] text-sm font-roboto shadow-md ">
 
-          <Card className="mt-6 w-[400px] h-[330px]">
-            <CardBody>
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
-              Machine Learning for Crop Yield Prediction: A Comprehensive Analysis
-              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions. 
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[20px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"
-              onClick={onAgrProject3Click}>Read More</Button>
-            </CardFooter>
-          </Card>
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">      Machine Learning for Crop Yield Prediction: A Comprehensive Analysis
+            </div>
+            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins"> The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions.
+            </div>
+            <div className="pt-0 mt-7 text-center">
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject3Click}>Read more</button>
+            </div>
+          </div>
         </div>
-        <div className="absolute top-[2130px] left-[calc(50%_-_202px)] text-sm font-roboto">
+        <div className="absolute top-[2130px] left-[calc(50%_-_220px)] text-sm font-roboto shadow-md ">
 
-          <Card className="mt-6 w-[400px] h-[330px] ">
-            <CardBody>
-
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
-              AI-Based Soil Health Assessment for Sustainable Agriculture
-              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project, "AI for Soil Health Assessment in Sustainable Agriculture," aims to leverage artificial intelligence (AI) to provide accurate assessments of soil health for sustainable farming.  </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[25px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer " onClick={onAgrProject4Click}>Read More</Button>
-            </CardFooter>
-          </Card>
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue"> AI-Based Soil Health Assessment for Sustainable Agriculture
+            </div>
+            <div className="text-black  px-5 py-1 text-sm text-left font-poppins">  The research project, "AI for Soil Health Assessment in Sustainable Agriculture," aims to leverage artificial intelligence (AI) to provide accurate assessments of soil health for sustainable farming.   </div>
+            <div className="pt-0 mt-7 text-center">
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject4Click}>Read more</button>
+            </div>
+          </div>
         </div>
-        <div className="absolute top-[2130px] left-[calc(50%_-_-220px)]  text-sm font-roboto">
+        <div className="absolute top-[2130px] left-[calc(50%_-_-250px)] text-sm font-roboto shadow-md ">
 
-          <Card className="mt-6 w-[400px] h-[330px]">
-            <CardBody>
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">         AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems </div>
+            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">       The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims artificial to intelligence (AI) to revolutionize market predictions in the agribusiness sector.
+            </div>
+            <div className="pt-0 mt-7 text-center">
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject5Click}>Read more</button>
+            </div>
 
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
-              AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims artificial to intelligence (AI) to revolutionize market predictions in the agribusiness sector. 
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[1px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onAgrProject5Click}>Read More</Button>
-            </CardFooter>
-          </Card>
+          </div>
         </div>
-
       </div>
 
       <div className="absolute top-[2608px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
-       <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
+        <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>
         <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>

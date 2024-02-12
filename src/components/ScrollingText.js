@@ -10,8 +10,8 @@ const ScrollingText = () => {
   const handleBoxClick = () => {
     // Handle the click event here, for now, we'll navigate to "/new-page"
     navigate('/notification');
-    console.log('Box clicked!');
-  };
+   /*  console.log('Box clicked!');
+  */ };
 
   return (
     <div

@@ -1,13 +1,13 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import {
+/* import {
   Card,
   CardBody,
   CardFooter,
   Typography,
   Button,
 } from "@material-tailwind/react";
-
+ */
 
 const Insurance = () => {
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ const Insurance = () => {
   return (
     <div className="xl:w-full relative bg-gray h-[3160px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
-       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
+      <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
           className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
@@ -78,13 +78,13 @@ const Insurance = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer"
-            //onClick={onProjectsTextClick}
+          //onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -94,7 +94,7 @@ const Insurance = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
@@ -170,10 +170,10 @@ const Insurance = () => {
 
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
-              Personalized Risk Assessment in Personal Insurance: Integrating
+                Personalized Risk Assessment in Personal Insurance: Integrating
                 AI for Tailored Coverage"          </div>
-                <div className="absolute top-[253.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify">
-              The research project titled "Personalized Risk Assessment in
+              <div className="absolute top-[253.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify">
+                The research project titled "Personalized Risk Assessment in
                 Personal Insurance: Integrating AI for Tailored Coverage"
                 endeavors to revolutionize the landscape of personal insurance
                 by integrating Artificial Intelligence (AI) to refine risk
@@ -181,7 +181,7 @@ const Insurance = () => {
                 algorithms to develop personalized insurance products that
                 intricately cater to the distinct needs, behaviors, and
                 lifestyles of individual policyholders.
-                
+
               </div>
             </div>
           </div>
@@ -197,11 +197,11 @@ const Insurance = () => {
             </div>
             <div className="absolute top-[108.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
-              Corporate Insurance Efficiency: A Comprehensive Study on Risk
+                Corporate Insurance Efficiency: A Comprehensive Study on Risk
                 Mitigation and Cost Optimization
-</div>
-<div className="absolute top-[150.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
-              The research project titled "Corporate Insurance Efficiency: A
+              </div>
+              <div className="absolute top-[150.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
+                The research project titled "Corporate Insurance Efficiency: A
                 Comprehensive Study on Risk Mitigation and Cost Optimization"
                 endeavors to explore and enhance the efficiency of corporate
                 insurance processes by delving into advanced strategies for risk
@@ -212,7 +212,7 @@ const Insurance = () => {
                 insurance solutions.
 
 
-               
+
               </div>
             </div>
           </div>
@@ -221,58 +221,49 @@ const Insurance = () => {
       <div className="flex flex-col sm:w-100 flex flex-wrap justify-center w-full font-poppins ">
         <div className="absolute top-[2290px] left-[calc(50%_-_720px)] text-sm font-roboto shadow-md ">
 
-          <Card className="mt-6 w-[450px] h-[300px]">
-            <CardBody>
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">
               Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models
-              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project titled "Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models" aims to explore and analyze . 
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[10px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onInsProject3Click}>Read More</Button>
-            </CardFooter>
-          </Card>
+            </div>
+            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
+              The research project titled "Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models" aims to explore and analyze .
+            </div>
+            <div className="pt-0 mt-7 text-center">
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject3Click}>Read more</button>
+            </div>
+          </div>
         </div>
+
         <div className="absolute top-[2290px] left-[calc(50%_-_222px)] text-sm font-roboto">
 
-          <Card className="mt-6 w-[450px] h-[300px] ">
-            <CardBody>
-
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
               Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance
-              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project titled "Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance".  </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[12px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer "onClick={onInsProject4Click}>Read More</Button>
-            </CardFooter>
-          </Card>
+            </div>
+            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+              The research project titled "Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance". </div>
+            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject4Click}>Read more</button>
+          </div>
+
+
         </div>
+
         <div className="absolute top-[2290px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
 
-          <Card className="mt-6 w-[450px] h-[300px]">
-            <CardBody>
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+              Ethical Dimensions of Insurance in Healthcare: Balancing Profitability, Patient Welfare, and Privacy             </div>
+            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+              The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare.</div>
+            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject5Click}>Read more</button>
+          </div>
 
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
-              Ethical Dimensions of Insurance in Healthcare: Balancing Profitability, Patient Welfare, and Privacy              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare.</Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[15px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onInsProject5Click}>Read More</Button>
-            </CardFooter>
-          </Card>
         </div>
-
       </div>
 
-      
       <div className="absolute top-[2740px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">  <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
-          Subscribe
-        </b>
+        Subscribe
+      </b>
         <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>
         <div className="absolute top-[20px] left-[619px] w-[672px] h-10 text-base text-cold-grey-30">
           <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,_255,_255,_0.12),_0px_8px_24px_-4px_rgba(255,_255,_255,_0.08)]" />
@@ -383,7 +374,7 @@ const Insurance = () => {
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-            //onClick={onCareersTextClick}
+          //onClick={onCareersTextClick}
           >
             Collaborations
           </div>

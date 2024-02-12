@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import {
+/* import {
   Card,
   CardBody,
   CardFooter,
@@ -8,7 +8,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-
+ */
 
 const HealthCare = () => {
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ const HealthCare = () => {
   const onProject2Click = useCallback(() => {
     navigate("/project2");
   }, [navigate]);
-  
+
   const onProject3Click = useCallback(() => {
     navigate("/project3");
   }, [navigate]);
@@ -94,7 +94,7 @@ const HealthCare = () => {
           >
             About us
           </div>
-         {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
+          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
             <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
               Sign In
             </div>
@@ -128,7 +128,7 @@ const HealthCare = () => {
         </div>
       </div>
       <div className="absolute w-full top-[840px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
-         <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
+        <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
           <div
             className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] cursor-pointer"
             onClick={onGroupContainerClick}
@@ -138,10 +138,10 @@ const HealthCare = () => {
               <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
             </div>
             <img
-                className="absolute top-[55px] left-[calc(50%_-_536.4px)]  w-[460.8px] h-[440.6px] object-fill rounded-md"
-                alt=""
-                src="/Healthimg1.png"
-              />
+              className="absolute top-[55px] left-[calc(50%_-_536.4px)]  w-[460.8px] h-[440.6px] object-fill rounded-md"
+              alt=""
+              src="/Healthimg1.png"
+            />
             <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
               <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px] cursor-pointer">
                 AI-Driven Precision Medicine: Transforming Healthcare through Personalized Treatment Strategies
@@ -159,7 +159,7 @@ const HealthCare = () => {
                 className="absolute top-[60px] left-[calc(50%_-_217.4px)]  w-[470.8px] h-[430.6px] object-fill rounded-md cursor-pointer"
                 alt=""
                 src="/Healthimg2.jpeg"
-              
+
               />
             </div>
             <div className="absolute top-[118.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
@@ -167,7 +167,7 @@ const HealthCare = () => {
                 AI-Enhanced Clinical Imaging for Accurate Disease Diagnosis
               </div>
               <div className="absolute top-[100.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
-                 This research project focuses on transforming disease diagnosis by integrating artificial intelligence (AI) into clinical imaging.
+                This research project focuses on transforming disease diagnosis by integrating artificial intelligence (AI) into clinical imaging.
                 Leveraging advanced machine learning and computer vision, the project aims to enhance the accuracy and efficiency of disease detection across various medical imaging modalities.
               </div>
             </div>
@@ -177,191 +177,181 @@ const HealthCare = () => {
 
 
       <div className="flex flex-col sm:w-50 lg:w-50 flex flex-wrap justify-center w-full font-poppins ">
-        <div className="absolute top-[2280px] left-[calc(50%_-_630px)] text-sm font-roboto shadow-md ">
-
-          <Card className="mt-6 w-[400px] h-[330px]">
-            <CardBody>
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">Telemedicine Transformation: AI-Enabled Remote Patient Monitoring
-              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project, "Telemedicine Transformation: AI-Enabled Remote Patient Monitoring," focuses on integrating artificial intelligence into telemedicine for more effective remote patient care. </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[20px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"
-              onClick={onProject3Click}>Read More</Button>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="absolute top-[2280px] left-[calc(50%_-_202px)] text-sm font-roboto">
-
-          <Card className="mt-6 w-[400px] h-[330px] ">
-            <CardBody>
-
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-center px-2 py-1 text-blue">
-              AI-Assisted Mental Health Diagnosis and Intervention
-              </Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              The research project, "AI-Assisted Mental Health Diagnosis and Intervention," aims to integrate artificial intelligence into mental health care, enhancing accuracy, efficiency, and accessibility.  </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[20px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer " onClick={onProject4Click}>Read More</Button>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="absolute top-[2280px] left-[calc(50%_-_-220px)]  text-sm font-roboto">
-
-          <Card className="mt-6 w-[400px] h-[330px]">
-            <CardBody>
-
-              <Typography variant="h5" color="black" className="mb-2 text-3xl font-semibold text-blue text-center px-2 py-1">
-              AI-Based Personalized Treatment Plans for Cancer Patients</Typography>
-              <Typography className="text-black text-sm text-center px-2 py-1 font-poppins">
-              This research project focuses on leveraging artificial intelligence (AI) to tailor personalized treatment plans for cancer patients, aiming to improve treatment outcomes, minimize side effects, and enhance overall patient well-being. 
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0 text-center">
-              <Button className="mt-[2px] bg-blue text-black text-3xl hover:bg-indigo-800 cursor-pointer"onClick={onProject5Click}>Read More</Button>
-            </CardFooter>
-          </Card>
-        </div>
-
-      </div>
-
-
-
-      <div className="absolute top-[2790px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
-       <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
-          Subscribe
-        </b>
-        <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>
-        <div className="absolute top-[20px] left-[619px] w-[672px] h-10 text-base text-cold-grey-30">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,_255,_255,_0.12),_0px_8px_24px_-4px_rgba(255,_255,_255,_0.08)]" />
-          <div className="absolute w-[70.86%] top-[30%] left-[2.29%] inline-block">
-            Enter your email Address
-          </div>
-          <div className="absolute h-4/5 w-[26.22%] top-[10%] right-[0.68%] bottom-[10%] left-[73.1%] bg-midnightblue flex flex-row items-center justify-center py-[5px] px-[26px] box-border text-center text-cold-grey-white">
-            <div className="relative">Subscribe</div>
-          </div>
-        </div>
-        <div className="absolute top-[272px] left-[221px] text-center">
-          Follow us
-        </div>
-        <div className="absolute top-[296px] left-[166px] w-[170.7px] h-4">
-          <img
-            className="absolute top-[0.7px] left-[0px] w-2 h-[14.7px]"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[18.7px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0.7px] left-[45.3px] w-5 h-[14.7px]"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[76px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[102.7px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[129.3px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0.7px] left-[156px] w-[14.7px] h-[14.7px] object-cover"
-            alt=""
-            src="/social@2x.png"
-          />
-        </div>
-        <div className="absolute top-[103px] left-[-1px] box-border w-[1442px] h-0.5 border-t-[2px] border-solid border-cold-grey-white" />
-        <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
-        <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
-          <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
-              SNIPE TECH PVT LTD #123,
-              70Th Cross 2Nd Floor,<br />
-              SVA Arcade 5Th Block,<br />
-              Rajaji Nagara,<br />  Bengaluru – 560010
+        <div className="absolute top-[2280px] left-[calc(50%_-_710px)] text-sm font-roboto shadow-md ">
+          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+            <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+              Telemedicine Transformation: AI-Enabled Remote Patient Monitoring
+            </div>
+            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
+              The research project, "Telemedicine Transformation: AI-Enabled Remote Patient Monitoring," focuses on integrating artificial intelligence into telemedicine for more effective remote patient care.  </div>
+            <div className="pt-0 mt-7 text-center">
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick = { onProject3Click }>Read more</button>
+            </div>
             </div>
           </div>
-          <img
-            className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-            alt=""
-            src="/icon.png"
-          />
+          <div className="absolute top-[2280px] left-[calc(50%_-_222px)] text-sm font-roboto">
+
+            <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                AI-Assisted Mental Health Diagnosis and Intervention
+              </div>
+              <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+                The research project, "AI-Assisted Mental Health Diagnosis and Intervention," aims to integrate artificial intelligence into mental health care, enhancing accuracy, efficiency, and accessibility. </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProject4Click}>Read more</button>
+            </div>
+
+
+          </div>
+
+          <div className="absolute top-[2280px] left-[calc(50%_-_-260px)]  text-sm font-roboto">
+
+            <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">     AI-Based Personalized Treatment Plans for Cancer Patients</div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+
+                This research project focuses on leveraging artificial intelligence (AI) to tailor personalized treatment plans for cancer patients, aiming to improve treatment outcomes, minimize side effects, and enhance overall patient well-being.
+              </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProject5Click}>Read more</button>
+            </div>
+
+          </div>
         </div>
-        <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
-          <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] font-medium">
-              hr@snipe.co.in
+
+
+
+        <div className="absolute top-[2790px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+          <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
+            Subscribe
+          </b>
+          <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>
+          <div className="absolute top-[20px] left-[619px] w-[672px] h-10 text-base text-cold-grey-30">
+            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,_255,_255,_0.12),_0px_8px_24px_-4px_rgba(255,_255,_255,_0.08)]" />
+            <div className="absolute w-[70.86%] top-[30%] left-[2.29%] inline-block">
+              Enter your email Address
+            </div>
+            <div className="absolute h-4/5 w-[26.22%] top-[10%] right-[0.68%] bottom-[10%] left-[73.1%] bg-midnightblue flex flex-row items-center justify-center py-[5px] px-[26px] box-border text-center text-cold-grey-white">
+              <div className="relative">Subscribe</div>
             </div>
           </div>
-          <img
-            className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-            alt=""
-            src="/icon1.png"
-          />
-        </div>
-        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
-        <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
-          <img
-            className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-            alt=""
-            src="/icon.svg"
-          />
-          <div className="absolute top-[2px] left-[37px] w-[139px] h-5">
-            <div className="absolute top-[-60%] left-[0%] capitalize font-medium">
-              <p className="m-0">+91 080-23100098</p>
-              <p className="m-0">+91 63635 07858</p>
+          <div className="absolute top-[272px] left-[221px] text-center">
+            Follow us
+          </div>
+          <div className="absolute top-[296px] left-[166px] w-[170.7px] h-4">
+            <img
+              className="absolute top-[0.7px] left-[0px] w-2 h-[14.7px]"
+              alt=""
+              src="/social.svg"
+            />
+            <img
+              className="absolute top-[0px] left-[18.7px] w-4 h-4 overflow-hidden"
+              alt=""
+              src="/social.svg"
+            />
+            <img
+              className="absolute top-[0.7px] left-[45.3px] w-5 h-[14.7px]"
+              alt=""
+              src="/social.svg"
+            />
+            <img
+              className="absolute top-[0px] left-[76px] w-4 h-4 overflow-hidden"
+              alt=""
+              src="/social.svg"
+            />
+            <img
+              className="absolute top-[0px] left-[102.7px] w-4 h-4 overflow-hidden"
+              alt=""
+              src="/social.svg"
+            />
+            <img
+              className="absolute top-[0px] left-[129.3px] w-4 h-4 overflow-hidden"
+              alt=""
+              src="/social.svg"
+            />
+            <img
+              className="absolute top-[0.7px] left-[156px] w-[14.7px] h-[14.7px] object-cover"
+              alt=""
+              src="/social@2x.png"
+            />
+          </div>
+          <div className="absolute top-[103px] left-[-1px] box-border w-[1442px] h-0.5 border-t-[2px] border-solid border-cold-grey-white" />
+          <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
+          <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
+            <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
+              <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+                SNIPE TECH PVT LTD #123,
+                70Th Cross 2Nd Floor,<br />
+                SVA Arcade 5Th Block,<br />
+                Rajaji Nagara,<br />  Bengaluru – 560010
+              </div>
+            </div>
+            <img
+              className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
+              alt=""
+              src="/icon.png"
+            />
+          </div>
+          <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
+            <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
+              <div className="absolute top-[-5%] left-[0.67%] font-medium">
+                hr@snipe.co.in
+              </div>
+            </div>
+            <img
+              className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
+              alt=""
+              src="/icon1.png"
+            />
+          </div>
+          <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
+          <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
+            <img
+              className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
+              alt=""
+              src="/icon.svg"
+            />
+            <div className="absolute top-[2px] left-[37px] w-[139px] h-5">
+              <div className="absolute top-[-60%] left-[0%] capitalize font-medium">
+                <p className="m-0">+91 080-23100098</p>
+                <p className="m-0">+91 63635 07858</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
-          <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2017 All Rights Reserved
+          <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
+            <div className="absolute top-[6.25%] left-[0%] font-light">
+              © 2017 All Rights Reserved
+            </div>
           </div>
-        </div>
-        <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
-          <b className="absolute top-[0%] left-[0%] text-lg">Company</b>
-          <div
-            className="absolute top-[26.9%] left-[0%] capitalize font-medium font-poppins cursor-pointer"
-            onClick={onAboutUsText2Click}
-          >
-            Research area
+          <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
+            <b className="absolute top-[0%] left-[0%] text-lg">Company</b>
+            <div
+              className="absolute top-[26.9%] left-[0%] capitalize font-medium font-poppins cursor-pointer"
+              onClick={onAboutUsText2Click}
+            >
+              Research area
+            </div>
+            <div
+              className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
+            //onClick={onCareersTextClick}
+            >
+              Collaborations
+            </div>
+            <div className="absolute top-[59.39%] left-[0%] font-poppins"
+              onClick={onAboutUsTextClick}>
+              About us
+            </div>
+            <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
+            <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
           </div>
-          <div
-            className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-          //onClick={onCareersTextClick}
-          >
-            Collaborations
-          </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins"
-            onClick={onAboutUsTextClick}>
-            About us
-          </div>
-          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
-          <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
-        </div>
-        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
+          {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
         <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
-        <img
-          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
-          alt=""
-          src="/poplogo.svg"
-        />
+          <img
+            className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
+            alt=""
+            src="/poplogo.svg"
+          />
+        </div>
       </div>
-    </div>
-  );
+      );
 };
 
-export default HealthCare;
+      export default HealthCare;
