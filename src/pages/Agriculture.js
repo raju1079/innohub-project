@@ -1,14 +1,5 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-/* import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
- */
-
 
 const Agriculture = () => {
   const navigate = useNavigate();
@@ -179,43 +170,54 @@ const Agriculture = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:w-50 lg:w-50 flex flex-wrap justify-center w-full font-poppins ">
-        <div className="absolute top-[2130px] left-[calc(50%_-_700px)] text-sm font-roboto shadow-md ">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">      Machine Learning for Crop Yield Prediction: A Comprehensive Analysis
-            </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins"> The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions.
-            </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject3Click}>Read more</button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[2130px] left-[calc(50%_-_220px)] text-sm font-roboto shadow-md ">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue"> AI-Based Soil Health Assessment for Sustainable Agriculture
-            </div>
-            <div className="text-black  px-5 py-1 text-sm text-left font-poppins">  The research project, "AI for Soil Health Assessment in Sustainable Agriculture," aims to leverage artificial intelligence (AI) to provide accurate assessments of soil health for sustainable farming.   </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject4Click}>Read more</button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[2130px] left-[calc(50%_-_-250px)] text-sm font-roboto shadow-md ">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">         AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">       The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims artificial to intelligence (AI) to revolutionize market predictions in the agribusiness sector.
-            </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject5Click}>Read more</button>
-            </div>
-
-          </div>
-        </div>
+      <div className="flex flex-col sm:w-100  flex-wrap grid-col-3 justify-center w-full font-poppins ">
+  
+ 
+  <div className="absolute top-[2100px] left-[calc(60%_-_720px)] text-sm font-roboto shadow-md ">
+  <div className=" absolute h-[380px] w-[250px] bg-blue rounded-xl ">
+ 
+    
+ 
+    <div className="mt-6 m-5 w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+      <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+      Machine Learning for Crop Yield Prediction</div>
+      <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
+      The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions.</div>
+      <div className="pt-0 mt-7 text-center">
+        <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[250px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAgrProject3Click}>Read more</button>
       </div>
+    </div>
+  </div>
+ </div>
+   <div className="absolute top-[2100px] left-[calc(55.5%_-_222px)] text-sm font-roboto">
+   <div className=" absolute h-[380px] w-[350px] bg-blue rounded-xl ">
+ 
+    <div className="mt-6 w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+   
+      <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+      AI-Based Soil Health Assessment For Sustainable Agriculture</div>
+      <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+      The research project, "AI for Soil Health Assessment in Sustainable Agriculture.
+      to provide accurate assessments of soil health for sustainable farming. </div>
+      <button className="absolute  w-[100px] h-[30px] text-white bg-blue mt-8  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer"onClick={onAgrProject4Click}>Read more</button>
+    </div>
+ 
+ </div>
+  </div>
+  <div className="absolute top-[2100px] left-[calc(55%--270px)]  text-sm font-roboto">
+  <div className=" absolute h-[380px] w-[270px] bg-blue rounded-xl ">
+ 
+ 
+    <div className="mt-6 ml-[-100px] w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+      <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+      AI-Based Market Forecasting For Agribusiness             </div>
+      <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+      AI-Based Market Forecasting for Agribusiness: aims to leverage artificial intelligence (AI) to revolutionize market predictions in the agribusiness sector. </div>
+      <button className="absolute mt-8 w-[100px] h-[30px] text-white bg-blue  text:align-center left-[120px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer"onClick={onAgrProject5Click}>Read more</button>
+    </div>
+    </div>
+  </div>
+ </div>
 
       <div className="absolute top-[2608px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">

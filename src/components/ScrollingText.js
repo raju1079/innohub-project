@@ -28,7 +28,7 @@ const ScrollingText = () => {
 
 
         - We are taking 100 students - whose percentage is 80% above in their current degree,
-        and one test to be passed, college letter should be submitted - it is a free 8 months course
+        and one test to be passed, college letter should be submitted - it is a free 9 months course
         (3 months training - 2 months AI, 1 Month campus preparation, 6 months project work)
         
         

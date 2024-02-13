@@ -1,13 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-/* import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
- */
+
 
 const Insurance = () => {
   const navigate = useNavigate();
@@ -218,48 +211,52 @@ const Insurance = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:w-100 flex flex-wrap justify-center w-full font-poppins ">
-        <div className="absolute top-[2290px] left-[calc(50%_-_720px)] text-sm font-roboto shadow-md ">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">
-              Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models
-            </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
-              The research project titled "Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models" aims to explore and analyze .
-            </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject3Click}>Read more</button>
+      <div className="flex flex-col sm:w-100  flex-wrap grid-col-3 justify-center w-full font-poppins ">
+        <div className="absolute top-[2265px] left-[calc(60%_-_720px)] text-sm font-roboto shadow-md ">
+          <div className=" absolute h-[400px] w-[250px] bg-blue rounded-xl g ">
+            <div className="mt-6 m-5 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+                Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models
+              </div>
+              <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
+                The research project titled "Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models" aims to explore and analyze .
+              </div>
+              <div className="pt-0 mt-7 text-center">
+                <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[250px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject3Click}>Read more</button>
+              </div>
             </div>
           </div>
         </div>
+        <div className="absolute top-[2265px] left-[calc(54%_-_222px)] text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[350px] bg-blue rounded-xl g ">
 
-        <div className="absolute top-[2290px] left-[calc(50%_-_222px)] text-sm font-roboto">
+            <div className="mt-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
 
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance
+              </div>
+              <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+                The research project titled "Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance". </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue mt-14  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject4Click}>Read more</button>
             </div>
-            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
-              The research project titled "Hospitals as Stakeholders: Exploring the Role and Impact of Healthcare Institutions in Insurance". </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject4Click}>Read more</button>
+
           </div>
-
-
         </div>
+        <div className="absolute top-[2265px] left-[calc(55%--270px)]  text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[270px] bg-blue rounded-xl g ">
 
-        <div className="absolute top-[2290px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
 
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              Ethical Dimensions of Insurance in Healthcare: Balancing Profitability, Patient Welfare, and Privacy             </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-              The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare.</div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject5Click}>Read more</button>
+            <div className="mt-6 ml-[-100px] w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                Ethical Dimensions of Insurance in Healthcare: Balancing Profitability, Patient Welfare, and Privacy             </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+                The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare.</div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[120px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onInsProject5Click}>Read more</button>
+            </div>
           </div>
-
         </div>
       </div>
+
 
       <div className="absolute top-[2740px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">  <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
         Subscribe

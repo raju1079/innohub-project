@@ -63,7 +63,7 @@ const Education = () => {
 
 
   return (
-    <div className="xl:w-full relative bg-gray h-[3095px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+    <div className="xl:w-full relative bg-gray h-[3495px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1207px] flex flex-col  items-start justify-start py-0 px-5">
       <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
         <img
@@ -207,61 +207,74 @@ const Education = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:w-100 flex flex-wrap  justify-center w-full font-poppins ">
-        <div className="absolute top-[2150px] left-[calc(50%_-_690px)] text-sm font-roboto shadow-md ">
+      <div className="flex flex-col sm:w-100 flex-wrap  justify-center w-full font-poppins ">
+        <div className="absolute top-[2150px] left-[calc(55%_-_680px)] text-sm font-roboto shadow-md ">
 
-          <div className="mt-6 w-[350px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">
-              Affective Computing in Education: Emotion-Aware AI for Personalized Learning </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
+          <div className=" absolute h-[380px] w-[250px] bg-blue rounded-xl ">
 
-              This research project delves into the integration of affective computing in educational environments. </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[230px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject3Click}>Read more</button>
+
+
+            <div className="mt-6 m-5 w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+              <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+                Affective Computing in Education  </div>
+              <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
+
+
+                This research project delves into the integration of affective computing in educational environments.   </div>
+              <div className="pt-0 mt-[50px] text-center">
+                <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[230px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject3Click}>Read more</button>
+              </div>
             </div>
           </div>
         </div>
-        <div className="absolute top-[2150px] left-[calc(50%_-_325px)] text-sm font-roboto">
+        <div className="absolute top-[2150px] left-[calc(59.5%_-_325px)] text-sm font-roboto">
 
-          <div className="mt-6 w-[350px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              AI-Enabled Early Intervention for Learning Disabilities Detection</div>
-            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+          <div className=" absolute h-[380px] w-[350px] bg-blue rounded-xl ">
 
-              This research focuses on developing AI algorithms for the early detection of learning disabilities in students.  </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[230px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject4Click}>Read more</button>
+            <div className="mt-6 w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                AI-Enabled Early Intervention for Learning Disabilities Detection </div>
+              <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+
+                This research focuses on developing AI algorithms for the early detection of learning disabilities in students. </div>
+                
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue mt-8  text:align-center left-[210px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject4Click}>Read more</button>
+            </div>
+
           </div>
-
-
         </div>
 
+        <div className="absolute top-[2150px] left-[calc(50%--300px)]  text-sm font-roboto">
+          <div className=" absolute h-[380px] w-[270px] bg-blue rounded-xl ">
 
-        <div className="absolute top-[2150px] left-[calc(50%_-_-30px)]  text-sm font-roboto">
 
-          <div className="mt-6 w-[350px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              Augmented Reality and AI Integration in Classroom Instruction             </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-
-              This research project explores the integration of augmented reality (AR) and (AI) to transform traditional classroom instruction. </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[230px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject5Click}>Read more</button>
+            <div className="mt-6 ml-[-100px] w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                Augmented Reality and AI Integration in Classroom Instruction             </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+                This research project explores the integration of augmented reality (AR) and (AI) to transform traditional classroom instruction. </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[120px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject5Click}>Read more</button>
+            </div>
           </div>
-
         </div>
 
-        <div className="absolute top-[2150px] left-[calc(50%_-_-390px)]  text-sm font-roboto">
+        <div className="absolute top-[2600px] left-[calc(50%_-_200px)]  text-sm font-roboto">
+          <div className=" absolute h-[380px] w-[350px] bg-blue rounded-xl ">
 
-          <div className="mt-6 w-[350px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              AI-Driven Academic Advising for Higher Education </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-              This research project focuses on the implementation of artificial intelligence (AI) to revolutionize the academic advising process in higher education. </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[230px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject6Click}>Read more</button>
+
+            <div className="mt-6 w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                AI-Driven Academic Advising for Higher Education  </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+
+                This research project focuses on the implementation of artificial intelligence (AI) to revolutionize the academic advising process in higher education.</div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue mt-7 text:align-center left-[210px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onEduProject6Click}>Read more</button>
+            </div>
           </div>
-
         </div>
       </div>
-      <div className="absolute top-[2680px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
+      <div className="absolute top-[3075px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe
         </b>

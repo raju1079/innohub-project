@@ -1,13 +1,5 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-/* import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
- */
 
 const AnimalHusbandry = () => {
   const navigate = useNavigate();
@@ -174,49 +166,58 @@ const AnimalHusbandry = () => {
                 The approach involves comprehensive data collection, feature engineering, and the development of machine learning models for early disease prediction.              </div>
             </div>
           </div>
-
-        </div></div>
-      <div className="flex flex-col sm:w-50 lg:w-50 flex flex-wrap justify-center w-full font-poppins ">
-        <div className="absolute top-[2240px] left-[calc(50%_-_690px)] text-sm font-roboto shadow-md ">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">      Automated Heat Detection in Dairy Cattle: AI for Reproductive Management
-            </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">  The research project, "Automated Heat Detection in Dairy Cattle: AI for Reproductive Management," aims to enhance dairy farming practices by integrating artificial intelligence (AI) for automated heat event detection.
-            </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAhProject3Click}>Read more</button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[2240px] left-[calc(50%_-_202px)] text-sm font-roboto">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              AI-Enhanced Precision Poultry Farming for Efficient Egg Production
-            </div>
-            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
-              The research project, "AI-Enhanced Precision Poultry Farming for Efficient Egg Production," aims to optimize poultry farming practices, focusing on egg production efficiency.
-              The project involves comprehensive data collection on poultry farming parameters  </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAhProject4Click}>Read more</button>
-          </div>
+</div>
+</div>
+<div className="flex flex-col sm:w-100  flex-wrap grid-col-3 justify-center w-full font-poppins ">
 
 
-        </div>
-        <div className="absolute top-[2240px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
+<div className="absolute top-[2200px] left-[calc(60%_-_720px)] text-sm font-roboto shadow-md ">
+  <div className=" absolute h-[380px] w-[250px] bg-blue rounded-xl ">
 
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              Predictive Analytics for Swine Production: AI-Optimized Growth Models
-            </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-              The research project, "Predictive Analytics for Swine Production: AI-Optimized Growth Models," aims to revolutionize swine farming by integrating AI technologies. The project involves comprehensive data collection on swine growth parameters.
-            </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAhProject5Click}>Read more</button>
-          </div>
 
-        </div>
+
+    <div className="mt-6 m-5 w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+      <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+        Automated Heat Detection in Dairy Cattle </div>
+      <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
+        The research project, "Automated Heat Detection in Dairy Cattle: AI for Reproductive Management," aims to enhance dairy farming practices by integrating artificial intelligence (AI) for automated heat event detection.
       </div>
+      <div className="pt-0 mt-7 text-center">
+        <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[250px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAhProject3Click}>Read more</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="absolute top-[2200px] left-[calc(55.5%_-_222px)] text-sm font-roboto">
+  <div className=" absolute h-[380px] w-[350px] bg-blue rounded-xl ">
+
+    <div className="mt-6  w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+
+      <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+        AI-Enhanced Precision Poultry Farming for Efficient Egg Production
+      </div>
+      <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+        The research project, "Predictive Analytics for Swine Production: AI-Optimized Growth Models," aims to revolutionize swine farming by integrating AI technologies. </div>
+      <button className="absolute  w-[100px] h-[30px] text-white bg-blue mt-14  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAhProject4Click}>Read more</button>
+    </div>
+
+  </div>
+</div>
+
+<div className="absolute top-[2200px] left-[calc(55%--270px)]  text-sm font-roboto">
+  <div className=" absolute h-[380px] w-[270px] bg-blue rounded-xl ">
+
+
+    <div className="mt-6 ml-[-100px] w-[350px] h-[320px] bg-white rounded-xl overflow-hidden">
+      <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+        Predictive Analytics for Swine Production   </div>
+      <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+        The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare.</div>
+      <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[120px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onAhProject5Click}>Read more</button>
+    </div>
+  </div>
+</div>
+</div>
       <div className="absolute top-[2744px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
         <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
           Subscribe

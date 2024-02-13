@@ -1,14 +1,5 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-/* import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
- */
-
 
 const InformationTechnology = () => {
   const navigate = useNavigate();
@@ -190,72 +181,74 @@ const InformationTechnology = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:w-100 flex flex-wrap justify-center w-full font-poppins grid grid-col-5">
-        <div className="absolute top-[2260px] left-[calc(50%_-_720px)] text-sm font-roboto shadow-md ">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">
-              "Predictive Maintenance in Software Development: Leveraging AI for Bug Detection and Resolution"
+      <div className="flex-col sm:w-100 flex-wrap justify-center w-full font-poppins grid grid-col-5">
+        <div className="absolute top-[2260px] left-[calc(60%_-_720px)] text-sm font-roboto shadow-md ">
+          <div className=" absolute h-[400px] w-[250px] bg-blue rounded-xl g ">
+            <div className="mt-6 m-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+                "Predictive Maintenance in Software Development: Leveraging AI for Bug Detection and Resolution"
+              </div>
+              <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
+                The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate.</div>
+              <div className="pt-0 mt-7 text-center">
+                <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT3Click}>Read more</button>
+              </div>
             </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
-              The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate.</div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT3Click}>Read more</button>
+          </div>
+        </div>
+        <div className="absolute top-[2260px] left-[calc(54%_-_222px)] text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[350px] bg-blue rounded-xl g ">
+            <div className="mt-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                "AI-Driven Testing Strategies: Enhancing Test Case Generation and Adaptive Test Automation" </div>
+              <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+
+                The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating (AI) Artificial Integrates.</div>
+              <button className="absolute mt-8 w-[100px] h-[30px] text-white bg-blue  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT4Click}>Read more</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="absolute top-[2260px] left-[calc(55%_-_-270px)]  text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[270px] bg-blue rounded-xl g ">
+            <div className="mt-6 ml-[-100px] w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                "AI-Driven Documentation and Knowledge Management: Towards Automated Knowledge Extraction"
+              </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+
+                The research project titled "AI-Driven Documentation and Knowledge Management" aims to revolutionize traditional documentation processes through the application of AI. </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[130px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT5Click}>Read more</button>
             </div>
           </div>
         </div>
-        <div className="absolute top-[2260px] left-[calc(50%_-_222px)] text-sm font-roboto">
 
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              "AI-Driven Testing Strategies: Enhancing Test Case Generation and Adaptive Test Automation" </div>
-            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+        <div className="absolute top-[2700px] left-[calc(54%_-_-70px)]  text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[270px] bg-blue rounded-xl g ">
+            <div className="mt-6 ml-[-100px] w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                "Algorithmic Transparency in Hiring: Building Trust in AI-Driven Recruitment Systems"             </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
 
-              The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating (AI) Artificial Integrates.</div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT4Click}>Read more</button>
-          </div>
-
-
-        </div>
-
-        <div className="absolute top-[2260px] left-[calc(50%_-_-270px)]  text-sm font-roboto">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              "AI-Driven Documentation and Knowledge Management: Towards Automated Knowledge Extraction"          </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-
-              The research project titled "AI-Driven Documentation and Knowledge Management" aims to revolutionize traditional documentation processes through the application of AI. </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT5Click}>Read more</button>
+                The research project titled "Algorithmic Transparency in Hiring" focuses on addressing the challenges associated with trust and fairness in AI-driven recruitment systems. </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center mt-4 left-[100px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT6Click}>Read more</button>
+            </div>
           </div>
 
         </div>
+        <div className="absolute top-[2700px] left-[calc(54%_-_450px)]  text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[250px] bg-blue rounded-xl g ">
+            <div className="mt-6 m-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
 
-        <div className="absolute top-[2660px] left-[calc(50%_-_-70px)]  text-sm font-roboto">
+                AI-Enhanced Job Interviews: Evaluating the Impact on Candidate Performance and Selection Accuracy"            </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
 
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-              "Algorithmic Transparency in Hiring: Building Trust in AI-Driven Recruitment Systems"             </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-
-              The research project titled "Algorithmic Transparency in Hiring" focuses on addressing the challenges associated with trust and fairness in AI-driven recruitment systems. </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT6Click}>Read more</button>
+                The research project on "AI-Enhanced Job Interviews" is centered on revolutionizing the job interview process by leveraging Artificial Intelligence (AI).</div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[220px] mt-4 rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT7Click}>Read more</button>
+            </div>
           </div>
-
-
-        </div>
-        <div className="absolute top-[2660px] left-[calc(50%_-_450px)]  text-sm font-roboto">
-
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-
-              AI-Enhanced Job Interviews: Evaluating the Impact on Candidate Performance and Selection Accuracy"            </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-
-              The research project on "AI-Enhanced Job Interviews" is centered on revolutionizing the job interview process by leveraging Artificial Intelligence (AI).</div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT7Click}>Read more</button>
-          </div>
-
         </div>
       </div>
       <div className="absolute top-[3160px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">

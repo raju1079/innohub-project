@@ -137,7 +137,7 @@ const HomePage = () => {
             </p>
             <p className="m-0">&nbsp;</p>
             <p className="m-0">Exploring the Frontiers of Technology.</p>
-            <br />
+            
             <p className="m-0">
               In the ever-evolving computing landscape, our research center
               stands as a hub for cutting-edge advancements. We are dedicated to
@@ -293,8 +293,9 @@ const HomePage = () => {
             projects, engage with our expert teams, and be part of the
             transformational impact we strive to create.
           </p>
-          {/* <p className="m-0">&nbsp;</p> */}
+          <p className="m-0">&nbsp;</p> 
           <p className="m-0 text-base">
+
             Together, Let’s Redefine the Future of Computing!
           </p>
           

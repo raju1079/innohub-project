@@ -47,6 +47,7 @@ const Logistics = () => {
   }, [navigate]);
 
   const onLogProject3Click = useCallback(() => {
+    console.log('Button clicked!')
     navigate("/logproject3");
   }, [navigate]);
 
@@ -171,50 +172,55 @@ const Logistics = () => {
               </div>
               <div className="absolute top-[106.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
                 The research project aims to revolutionize last-mile delivery operations using machine learning. By optimizing route planning, reducing delivery times, and minimizing operational costs, the study addresses critical challenges in the final leg of the supply chain. The approach includes data collection, route optimization algorithm development, dynamic real-time route adjustment, customer preference consideration, GIS integration, cost-benefit analysis, scalability testing, and an ongoing evaluation feedback loop.
-
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col sm:w-100 flex flex-wrap grid grid-col-3 justify-center w-full font-poppins ">
-        <div className="absolute top-[2220px] left-[calc(50%_-_710px)] text-sm font-poppins shadow-md ">
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="  px-5 py-4 text-3xl font-semibold text-left px-2 py-1 text-blue">
-              Green Logistics: Sustainable Practices and Environmental Impact Assessment
+      <div className="flex flex-col sm:w-100  flex-wrap grid-col-3 justify-center w-full font-poppins ">
+        <div className="absolute top-[2100px] left-[calc(60%_-_720px)] text-sm font-roboto shadow-md ">
+          <div className=" absolute h-[400px] w-[250px] bg-blue rounded-xl g ">
+            <div className="mt-6 m-5 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
+                Green Logistics: Sustainable Practices and Environmental Impact Assessment
+              </div>
+              <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
+                The "Green Logistics" research project aims to integrate sustainable practices into logistics, exploring eco-friendly strategies and conducting a comprehensive environmental impact assessment.
+              </div>
+              <div className="pt-0 mt-7 text-center">
+                <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[250px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject3Click}>Read more</button>
+              </div>
             </div>
-            <div className="text-black  px-5 py-1 text-sm text-left px-2 py-1 font-poppins">
-            The "Green Logistics" research project aims to integrate sustainable practices into logistics, exploring eco-friendly strategies and conducting a comprehensive environmental impact assessment.           </div>
-            <div className="pt-0 mt-7 text-center">
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject3Click}>Read more</button>
-            </div>
-            {/*             <button className="mt-[21px] bg-blue text-white text-3xl hover:bg-indigo-800 hover:text-black cursor-pointer" onClick={onLogProject3Click}>Read More</button>
-            </div>
-           */}</div>
-        </div>
-
-
-        <div className="absolute top-[2220px] left-[calc(50%_-_220px)] text-sm font-poppins shadow-md ">
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-            Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management </div>
-            <div className="text-black text-sm text-left px-5 py-1 font-poppins">
-            The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics. </div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject4Click}>Read more</button>
           </div>
-
-
         </div>
-        <div className="absolute top-[2220px] left-[calc(50%_-_-260px)] text-sm font-poppins shadow-md ">
-          <div className="mt-6 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden">
-            <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-            Drones in Logistics: Exploring the Potential for Last-Mile Deliveries               </div>
-            <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-            The "Drones in Logistics: Exploring the Potential for Last-Mile Deliveries" research project aims to assess the feasibility and impact of integrating drone technology into the last-mile delivery process.</div>
-            <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[300px] rounded hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject5Click}>Read more</button>
-          </div>
+        <div className="absolute top-[2100px] left-[calc(54%_-_222px)] text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[350px] bg-blue rounded-xl g ">
 
+            <div className="mt-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management     </div>
+              <div className="text-black text-sm text-left px-5 py-1 font-poppins">
+                The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics.
+              </div>
+              <button className="absolute  w-[100px] h-[30px] text-white bg-blue mt-4  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject4Click}>Read more</button>
+            </div>
+
+          </div>
+        </div>
+        <div className="absolute top-[2100px] left-[calc(55%--270px)]  text-sm font-roboto">
+          <div className=" absolute h-[400px] w-[270px] bg-blue rounded-xl g ">
+            <div className="mt-6 ml-[-100px] w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
+              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+                Drones in Logistics: Exploring the Potential for Last-Mile Deliveries
+              </div>
+              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
+                The "Drones in Logistics: Exploring the Potential for Last-Mile Deliveries" research project aims to assess the feasibility and impact of integrating drone technology into the last-mile delivery process.
+              </div>
+              <button className="absolute  w-[100px] h-[30px] mt-5 text-white bg-blue  text:align-center left-[120px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onLogProject5Click}>Read more</button>
+            </div>
+          </div>
         </div>
       </div>
 
