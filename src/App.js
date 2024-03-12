@@ -65,6 +65,9 @@ import EduProject3 from "./pages/EduProjects.js/EduProject3";
 import EduProject4 from "./pages/EduProjects.js/EduProject4";
 import EduProject5 from "./pages/EduProjects.js/EduProject5";
 import EduProject6 from "./pages/EduProjects.js/EduProject6";
+import PersonalDetailsForm from "./pages/Enrollment/PersonalDetailsForm";
+
+
 
 
 function App() {
@@ -182,7 +185,9 @@ function App() {
       <Route path="/eduproject4" element={<EduProject4 />} />
       <Route path="/eduproject5" element={<EduProject5 />} />
       <Route path="/eduproject6" element={<EduProject6 />} />
+      <Route path="/personal-details" element={<PersonalDetailsForm />} />
       
+     
      
 
     </Routes>

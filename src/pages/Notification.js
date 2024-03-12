@@ -99,9 +99,9 @@ const Notification = () => {
 
 
             <div className="text-2xl leading-[100%] mt-10 left-[calc(52%_-_320.1px)] font-semibold w-[900.8px] h-[70px] mb-2 text-blue text-8xl">
-              Eligibility: BE, B.Tech, MCA, BCA, M.Tech, MSc.
-              <Link /* to="/apply-internship" */ className="ml-4 underline cursor-pointer text-xl text-white">
-                {/*  Click to Apply */}  Apply to Internship
+              Eligibility: BE, B.Tech, BCA, BSc, MCA, M.Tech, MSc.
+              <Link  to="/personal-details"  className="ml-4 underline cursor-pointer text-xl text-white">
+                 Apply to Internship
               </Link>
             </div>
 
