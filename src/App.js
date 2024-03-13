@@ -185,7 +185,7 @@ function App() {
       <Route path="/eduproject4" element={<EduProject4 />} />
       <Route path="/eduproject5" element={<EduProject5 />} />
       <Route path="/eduproject6" element={<EduProject6 />} />
-      <Route path="/personal-details" element={<PersonalDetailsForm />} />
+      <Route path="/enrollment_form" element={<PersonalDetailsForm />} />
       
      
      
