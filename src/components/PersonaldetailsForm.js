@@ -19,7 +19,7 @@ const YourComponent = () => {
           //className="md:ml-2"
         />
 
-<div className="md:mx-14" >
+<div className="md:mx-8" >
 
         <TextField
           className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -62,7 +62,7 @@ const YourComponent = () => {
           required={true}
           disabled={false}
         />
-<div className="md:mx-14" >
+<div className="md:mx-8" >
         {/* Field 2 */}
         <TextField
           className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -89,7 +89,7 @@ const YourComponent = () => {
           required={true}
           disabled={false}
         />
-<div className="md:mx-14" >
+<div className="md:mx-8" >
         {/* Field 2 */}
         <TextField
           className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -116,7 +116,7 @@ const YourComponent = () => {
           required={true}
           disabled={false}
         />
-<div className="md:mx-14" >
+<div className="md:mx-8" >
         {/* Field 2 */}
         <TextField
           className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -143,7 +143,7 @@ const YourComponent = () => {
           required={true}
           disabled={false}
         />
-<div className="md:mx-14" >
+<div className="md:mx-8" >
         {/* Field 2 */}
         <TextField
           className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -170,7 +170,7 @@ const YourComponent = () => {
           required={true}
           disabled={false}
         />
-<div className="md:mx-14" >
+<div className="md:mx-8" >
         {/* Field 2 */}
         <TextField
           className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"

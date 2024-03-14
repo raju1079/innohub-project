@@ -227,9 +227,9 @@ const EnrollmentForm = () => {
           </div>
         </div>
         {/* <PersonaldetailsForm />  */}
-        <form className="w-[280px] mx-4 mt-4 m-0 md:mx-[-10px] md:px-3 md:mt-8 lg:mx-[10px] lg:mt-10" onSubmit={handleSubmit}>
+        <form className="w-[280px] mx-0 mt-4 m-0 md:mx-0 md:px-3 md:mt-8 lg:mx-0 lg:mt-10" onSubmit={handleSubmit}>
           <div className="h-[166px] w-[155px] flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border">
-            <div className="self-stretch flex-1 rounded-8xs bg-white overflow-hidden flex flex-col  justify-end py-11 pr-0 pl-[19px] relative z-[1] border-[2px] border-solid border-white">
+            <div className="self-stretch mx-2 flex-1 rounded-8xs bg-white overflow-hidden flex flex-col  justify-end py-11 pr-0 pl-[19px] relative z-[1] border-[2px] border-solid border-white">
               <label className="relative w-[calc(100% - 19px)] h-[18px] bg-transparent text-gray-100 text-left inline-block min-w-[83px] border-none outline-none font-poppins text-xs">
                 Upload your Photo
                 <input
@@ -245,7 +245,7 @@ const EnrollmentForm = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-3 ">
+          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3 ">
             <TextField
               label="First Name"
               name="first_name"
@@ -258,7 +258,7 @@ const EnrollmentForm = () => {
               className="w-full md:w-1/2 lg:w-1/4"
             />
 
-            <div className="md:mx-14" >
+            <div className="md:mx-8" >
               <TextField
                 label="Last Name"
                 name="last_name"
@@ -273,7 +273,7 @@ const EnrollmentForm = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-3 ">
+          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3 ">
             <TextField
               label="Email"
               name="email_id"
@@ -285,7 +285,7 @@ const EnrollmentForm = () => {
               disabled={false}
               validate={validateEmail}
             />
-            <div className="md:mx-14" >
+            <div className="md:mx-8 " >
 
               <DatePicker
                 label="Date of Birth"
@@ -296,7 +296,7 @@ const EnrollmentForm = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-3">
+          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3">
 
             <TextField
               label="Communication Address line 1"
@@ -308,7 +308,7 @@ const EnrollmentForm = () => {
               required={true}
               disabled={false}
             />
-            <div className="md:mx-14" >
+            <div className="md:mx-8" >
 
               <TextField
                 className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -323,7 +323,7 @@ const EnrollmentForm = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-3">
+          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3">
             <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 text-white gap-[5px_0px]">
               <div className="w-[232px] relative font-semibold inline-block z-[1]">
                 State
@@ -344,7 +344,7 @@ const EnrollmentForm = () => {
               </div>
 
             </div>
-            <div className="md:mx-14" >
+            <div className="md:mx-8" >
               <div className="self-stretch flex flex-col items-start justify-start gap-[5px_0px] text-lg text-white">
                 <div className="relative font-semibold inline-block z-[1] items-start">
                   City
@@ -364,7 +364,7 @@ const EnrollmentForm = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-3">
+          <div className="flex flex-col mx-2 md:flex-row space-y-4 md:space-y-0 pb-3">
             <TextField
               label="Pincode"
               name="pincode"
@@ -375,7 +375,7 @@ const EnrollmentForm = () => {
               required={true}
               disabled={false}
             />
-            <div className="md:mx-14" >
+            <div className="md:mx-8" >
 
               <TextField
                 className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -391,7 +391,7 @@ const EnrollmentForm = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:pb-6">
+          <div className="flex flex-col mx-2 md:flex-row space-y-4 md:space-y-0 md:pb-6">
 
             <TextField
               label="Aadhar Number"
@@ -404,7 +404,7 @@ const EnrollmentForm = () => {
               disabled={false}
               validate={validateAadharNumber}
             />
-            <div className="md:mx-14" >
+            <div className="md:mx-8" >
               <div className="relative text-base-6 font-semibold font-poppins text-white items-start inline-block">
                 Gender
               </div>
@@ -423,22 +423,25 @@ const EnrollmentForm = () => {
             </div>
           </div>
 
-          <div className="self-stretch mb-5 mx-0 rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white md:w-[765px] lg:w-[1220px] xl:w-[6000px] ">
+          <hr />
+
+          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[318px] sm:w-[360px] md:w-[755px] lg:w-[1010px] xl:w-[1426px]">
             <div className="flex flex-row items-start justify-start py-2 px-[18px]">
               <h2 className="m-0 h-[30px] relative text-inherit font-semibold font-inherit inline-block mq450:text-base">
-                Educational Details
+                EducationalDetails
               </h2>
             </div>
           </div>
           {/* <EducationalDetails/> */}
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pt-5 pb-2 ">
+          <div>         
+            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pt-5 pb-2 md:pl-3 lg:pl-3 xl:pl-3 ">
             <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-1.5 gap-[9px_0px]">
               <div className="w-[183px] relative text-base-6 font-semibold font-poppins text-white text-left inline-block">
                 Higher Education
               </div>
               <div className="rounded-lg bg-white overflow-hidden flex flex-row items-center justify-start px-3.5  border-[1px] border-solid border-white">
                 <select
-                  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[48px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[245px] "
+                  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[48px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[230px] "
                 >
                   <option value="">Select Higher Education</option>
                   {higherEducation.map((edu) => (
@@ -450,21 +453,20 @@ const EnrollmentForm = () => {
                 </select>
               </div>
             </div>
-            <div className=" pl-3 ">
+            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
-                label="Marks in %/GPA"
+                label="Marks in % (GPA)"
                 name="marks_obtained"
                 type="text"
-                placeholder="Enter marks in %/GPA"
+                placeholder="Enter marks in %"
                 value={formFields.marks_obtained}
                 onChange={handleChange}
                 required={true}
                 disabled={false}
-                validate={validateMarks}
-                width="200px"
+                width="190px"
               />
             </div>
-            <div className=" pl-3 ">
+            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
                 label="Year of Completion"
                 name="year_of_completion"
@@ -477,33 +479,38 @@ const EnrollmentForm = () => {
                 width="180px"
               />
             </div>
-            <div className=" pl-3 ">
-              <TextField
-                label="Specialization"
-                name="specialization"
-                type="text"
-                placeholder="Enter specialization"
-                value={formFields.specialization}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                width="180px"
-              />
+          </div>
+            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-6 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
+              <div>
+                <TextField
+                  label="Specialization"
+                  name="specialization"
+                  type="text"
+                  placeholder="Enter specialization"
+                  value={formFields.specialization}
+                  onChange={handleChange}
+                  required={true}
+                  disabled={false}
+                  width="230px"
+                />
+              </div>
+              <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
+                <TextField
+                  label="University"
+                  name="university"
+                  type="text"
+                  placeholder="Enter university"
+                  value={formFields.university}
+                  onChange={handleChange}
+                  required={true}
+                  disabled={false}
+                  width="190px"
+                />
+              </div>
             </div>
-            <div className=" pl-3 ">
-              <TextField
-                label="University"
-                name="university"
-                type="text"
-                placeholder="Enter university"
-                value={formFields.university}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                width="180px"
-              />
-            </div> </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-2">
+
+          </div>
+          <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
               label="HSC"
               name="HSC"
@@ -512,12 +519,12 @@ const EnrollmentForm = () => {
               value={formFields.HSC}
               onChange={handleChange}
               required={true}
-              //disabled={false}
-              width="245px"
+              disabled={false}
+              width="230px"
             />
-            <div className=" pl-3 ">
+            <div className="pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
-                label="Marks in %/GPA"
+                label="Marks in % (GPA)"
                 name="HSC_marks"
                 type="text"
                 placeholder="Enter HSC marks"
@@ -525,15 +532,15 @@ const EnrollmentForm = () => {
                 onChange={handleChange}
                 required={true}
                 disabled={false}
-                width="200px"
+                width="190px"
               />
             </div>
-            <div className=" pl-3 ">
+            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
                 label="Year of Completion"
                 name="HSC_completion_yr"
                 type="text"
-                placeholder="Enter year of completion"
+                placeholder="Enter HSC completion year"
                 value={formFields.HSC_completion_yr}
                 onChange={handleChange}
                 required={true}
@@ -543,7 +550,7 @@ const EnrollmentForm = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-2">
+          <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
               label="SSC"
               name="SSC"
@@ -553,11 +560,11 @@ const EnrollmentForm = () => {
               onChange={handleChange}
               required={true}
               disabled={false}
-              width="245px"
+              width="230px"
             />
-            <div className=" pl-3 ">
+            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
-                label="Marks in %/GPA"
+                label="Marks in % (GPA)"
                 name="SSC_marks"
                 type="text"
                 placeholder="Enter in %/GPA"
@@ -565,15 +572,15 @@ const EnrollmentForm = () => {
                 onChange={handleChange}
                 required={true}
                 disabled={false}
-                width="200px"
+                width="190px"
               />
             </div>
-            <div className=" pl-3 ">
+            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
                 label="Year of Completion"
                 name="SSC_completion_yr"
                 type="text"
-                placeholder="Enter year of completion"
+                placeholder="yyyy"
                 value={formFields.SSC_completion_yr}
                 onChange={handleChange}
                 required={true}
@@ -582,7 +589,7 @@ const EnrollmentForm = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 pb-6">
+          <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-6 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
               label="Achivements/Hobbies"
               name="achievements"
@@ -592,54 +599,73 @@ const EnrollmentForm = () => {
               onChange={handleChange}
               required={true}
               disabled={false}
-              width="245px"
+              width="230px"
             />
-            <div className="pl-3 pt-9 relative">
-              <div className="cursor-pointer w-[240px] [border:none] [outline:none] bg-white self-stretch h-[50px] rounded-lg flex flex-row items-center justify-center pt-3 px-[20px] pb-4 box-border font-poppins text-sm text-gray-500">
-                <FaFileUpload className="w-7 h-7 mr-2 " /> Upload Resume
-              </div>
-              <input
-                type="file"
-                accept=".pdf"
-                onChange={handleChange}
-                className="hidden"
+            <div className=" pl-3 ">
+              <TextField
+                label="Upload Resume"
                 name="upload_resume"
-                id="resumeInput"
+
+                type="file"
+                accepy=".pdf"
+                placeholder="upload resume"
+                value={formFields.upload_resume}
+                onChange={handleChange}
+                //required={true}
+                //disabled={false}
+                width="200px"
+
               />
+              {/*  <FaFileUpload /> */}
             </div>
           </div>
-          <div className="lg:grid grid-flow-col ">
-            <div className="w-[453px] flex flex-row items-start justify-start py-0 pr-0 pt-12 pb-20 box-border max-w-full">
-              <div className="flex-1 flex flex-row flex-wrap items-start justify-center gap-[0px_39px] max-w-full mq450:gap-[0px_39px]">
 
-                <button className="cursor-pointer [border:none] pt-[13px] px-[13px] pb-3.5 mt-3 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray">
-                  <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white  text-center shrink-0">
-                    Submit
-                  </b>
-                </button>
+          {/* <div className="mb-4">
+        <button type="submit" className="bg-color1 text-white py-2 px-4 rounded-md">
+          Submit
+        </button>
+      </div> */}
 
-                <button type="submit" className="cursor-pointer my-3 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray">
-                  <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
-                    Cancel
-                  </b>
-                </button>
-              </div>
+<div className="md:grid grid-flow-col  ">
+          <div className="w-[453px] mx-5 lg:mx-[300px] flex flex-row items-start justify-start py-0 pr-0 pt-12 pb-20 box-border max-w-full">
+            <div className="flex-1 flex flex-row flex-wrap items-start justify-center gap-[0px_39px] max-w-full mq450:gap-[0px_39px]">
+              <button type="submit" className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray">
+                <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
+                  Cancel
+                </b>
+              </button>
+            
+              <button className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
+                <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
+                  Submit
+                </b>
+              </button>
             </div>
           </div>
-          {showSuccessPopup && formData && (
+          </div>
+
+          {showSuccessPopup && (
             <div
-              className="bg-black w-[526px] h-[204px] absolute top-[170px] left-[244px] border-[1px] rounded-lg border-white text-white text-center pt-40 "
+              className="bg-black w-[526px] h-[224px] absolute top-[210px] left-[144px] border-[1px] border-white text-white text-center pt-40"
               onClick={() => setShowSuccessPopup(false)} // Hide the pop-up on click
             >
               Submitted successfully!
             </div>
           )}
-
+          {/* Display success or error message */}
+          {/*   {formData && <div className="text-green-500">
+          </div>} */}
           {error && <div className="text-red-500">Error: {error.message}</div>}
 
         </form>
+
+
+
       </main>
     </div>
+
+
+
   );
 };
 
