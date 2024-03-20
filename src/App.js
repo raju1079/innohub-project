@@ -66,13 +66,6 @@ import EduProject4 from "./pages/EduProjects.js/EduProject4";
 import EduProject5 from "./pages/EduProjects.js/EduProject5";
 import EduProject6 from "./pages/EduProjects.js/EduProject6";
 import PersonalDetailsForm from "./pages/Enrollment/PersonalDetailsForm";
-import UserMangement from "./pages/AdminPanel/UserManagent/UserMangement";
-import HRmanagement from "./pages/AdminPanel/HR_Management/HRmanagement";
-import ContactManagement from "./pages/AdminPanel/ContactManagent/ContactManagement";
-import EventManagement from "./pages/AdminPanel/EventManagement/EventManagement";
-import StudentManagement from "./pages/AdminPanel/StudentManagement/StudentManagement";
-import CourseDetails from "./pages/AdminPanel/CourseDetails/CourseDetails";
-import AdminHome from "./pages/AdminPanel/AdminHomepage/AdminHome";
 
 
 
@@ -193,13 +186,6 @@ function App() {
       <Route path="/eduproject5" element={<EduProject5 />} />
       <Route path="/eduproject6" element={<EduProject6 />} />
       <Route path="/enrollment_form" element={<PersonalDetailsForm />} />
-      <Route path="/usermangement" element={<UserMangement/>} />
-      <Route path="/hrmangement" element={<HRmanagement/>} />
-      <Route path="/contactmanagent" element={<ContactManagement/>}/>
-      <Route path="/eventmanagement" element={<EventManagement/>}/>
-      <Route path="/studentpath" element={<StudentManagement/>}/>
-      <Route path="/coursedetails" element={<CourseDetails/>}/>
-      <Route path="/Adminhome" element ={<AdminHome/>}/>
       
      
      
