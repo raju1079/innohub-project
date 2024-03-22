@@ -1,5 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+
 
 const InformationTechnology = () => {
   const navigate = useNavigate();
@@ -60,329 +63,203 @@ const InformationTechnology = () => {
 
 
   return (
-    <div className="xl:w-full relative bg-gray h-[3580px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
-    w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
-      <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden">
-        <img
-          className="absolute h-[80.56%] top-[18.22%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
-          alt=""
-          src="/poplogo.svg"
-          onClick={onGroupClick}
-        />
-        <div className="absolute top-[30px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
-          <div
-            className="relative capitalize font-medium cursor-pointer"
-            onClick={onResearchAreaTextClick}
-          >
-            Research area
-          </div>
-          <div
-            className="relative capitalize font-medium cursor-pointer"
-          //onClick={onProjectsTextClick}
-          >
-            Collaborations
-          </div>
-          <div
-            className="relative capitalize font-medium cursor-pointer"
-          //onClick={onProjectsTextClick}
-          >
-            Blogs
-          </div>
-          <div
-            className="relative capitalize font-medium cursor-pointer"
-            onClick={onAboutUsTextClick}
-          >
-            About us
-          </div>
-          {/*  <div className="w-[110px] relative rounded-xl bg-cold-grey-white h-7 overflow-hidden shrink-0 text-3xl text-blue">
-            <div className="absolute top-[calc(54%_-_18px)] left-[calc(56%_-_44px)] capitalize font-semibold ">
-              Sign In
-            </div>
-          </div>
-        */} </div>
+
+    /* Header */
+
+    <div className="relative bg-gray xl:w-full lg:w-[1300px] md:w-[1180px] w-[749px] px-[0px] mx-full">
+
+      <div className="absolute flex mx-auto top-0 right-0 left-0 h-[90px] overflow-hidden">
+        <Header />
       </div>
-      <div className="absolute w-full top-[90px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
-        <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%_50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,_#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
-        <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
-        <img
-          className="absolute top-[0px] left-[calc(50%_-_721.4px)] w-[1442.8px] h-[375.6px] object-cover"
-          alt=""
-          src="/artboard-44x-1@2x.png"
-        />
-        <b className="absolute top-[293.6px] left-[calc(52%_-_624.1px)] capitalize">
-          InformationTechnology
-        </b>
-      </div>
-      <div className="absolute w-full top-[456px] right-[0px] left-[0px] h-[394px] overflow-hidden text-13xl">
-        {/* <div className="absolute top-[31.6px] left-[calc(50%_-_599.9px)] w-[1199.7px] h-[330.8px]">
-          <b className="absolute top-[0px] left-[calc(50%_-_599.55px)] capitalize">
-            
-          </b> */}
-        <div className="absolute top-[69.8px] left-[calc(50%_-_599.85px)] text-base  text-justify inline-block w-[1199.7px] h-[261px]">
-          Leveraging artificial intelligence (AI) technologies in IT development and maintenance processes aims to streamline tasks, enhance efficiency, and reduce manual effort.
-          AI tools are applied across various aspects of the development lifecycle. In requirements analysis and planning, natural language processing (NLP) aids in understanding project needs,
-          while AI algorithms automate project planning by analysing historical data and dependencies. For code development and review, tools like OpenAI Codex generate code snippets and AI-driven static code analysis automates review processes.
-          In testing, AI algorithms automate test case generation and dynamically adapt test suites, reducing maintenance efforts. Automated bug detection analyses code changes and logs, prioritizing potential issues, with predictive maintenance anticipating problems
-          proactively.
-          {/* AI extends its impact to deployment and release management through automated deployment processes and predicting the impact of code changes.
-          In infrastructure management, AI analyses system usage patterns for autonomous scaling and predicts server issues for proactive maintenance. Security and compliance benefit from continuous AI-driven security scans and behavioural analysis of anomalies.
-          AI-powered chatbots and automated ticket triage expedite support and issue resolution. Data management involves AI-assisted data cleansing and predictive analytics for system performance insights.
-          Automation extends to documentation generation based on code comments and knowledge extraction from diverse sources. Continuous improvement employs AI-powered analytics to identify bottlenecks, recommend enhancements, and trends.
-          Adoption of AI platforms, such as integrated AI development environments (AIDEs) and AI-powered DevOps platforms, seamlessly integrates AI tools into the development lifecycle. Finally, AI-driven learning platforms assist in identifying skill gaps, recommending training, and personalizing learning
-          paths for team members. */}
-        </div>
-        {/*  </div> */}
-      </div>
-      <div className="absolute w-full top-[800px] right-[0px] left-[0px] h-[1340px] overflow-hidden text-17xl text-blue">
-        <div className="absolute top-[120px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[1111px]">
-          <div
-            className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] cursor-pointer"
-            onClick={onGroupContainerClick}
-          >
-            <div className="absolute top-[0px] left-[calc(50%_-_597.4px)] w-[551.3px] h-[516.4px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_242.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
-            </div>
+
+      body
+
+      {/* Title */}
+
+      <section className="text-white flex flex-wrap  body-font md:mx-[95px] lg:mx-0">
+        <div className="container px-24 py-24">
+          <div className="absolute w-full top-[70px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+            <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
+            <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
             <img
-              className="absolute top-[55px] left-[calc(50%_-_545.4px)]  w-[482.8px] h-[445.6px] object-fill rounded-md"
+              className="absolute flex flex-col top-[0px] lg:w-auto left-[calc(50%_-_721.4px)] w-[1160.8px] h-[375.6px] object-cover md:w-auto"
               alt=""
-              src="/InformationTechimg1.jpg"
+              src="/artboard-44x-1@2x.png"
             />
+          </div>
 
-            <div className="absolute top-[51.1px] left-[calc(50%_-_4.2px)] w-[601.6px] h-[334.6px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[53px]">
-                AI-Powered Requirement Analysis for Software Development: A Comparative Study
-              </div>
-              <div className="absolute top-[225.8px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[150.7px] text-justify ">
-                In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches.
-              </div>
+
+          <div className="container mx-auto pt-[350px] font-poppins">
+            <div className="w-full">
+            <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">InformationTechnology</b>
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">Leveraging artificial intelligence (AI) technologies in IT development and maintenance processes aims to streamline tasks, enhance efficiency, and reduce manual effort.
+                AI tools are applied across various aspects of the development lifecycle. In requirements analysis and planning, natural language processing (NLP) aids in understanding project needs,
+                while AI algorithms automate project planning by analysing historical data and dependencies. For code development and review, tools like OpenAI Codex generate code snippets and AI-driven static code analysis automates review processes.
+                In testing, AI algorithms automate test case generation and dynamically adapt test suites, reducing maintenance efforts. Automated bug detection analyses code changes and logs, prioritizing potential issues, with predictive maintenance anticipating problems
+                proactively.
+              </p>
             </div>
           </div>
-          <div className="absolute top-[594.6px] left-[calc(50%_-_597.4px)] w-[1194.8px] h-[516.4px] text-8xl">
-            <div className="absolute top-[0px] left-[calc(50%_+_46.1px)] w-[551.3px] h-[516.4px]" onClick={onProjectIT2Click}>
-              <div className="absolute top-[0px] left-[calc(50%_-_275.65px)] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
-              <div className="absolute top-[33.5px] left-[calc(50%_-_238.15px)] rounded-lg bg-white w-[517.8px] h-[482.9px]" />
-              <img
-                className="absolute top-[49px] left-[calc(50%_-_223.4px)]  w-[490.8px] h-[454.6px] object-fill rounded-md cursor-pointer"
-                alt=""
-                src="/InformationTechimg2.avif"
+        </div>
 
+
+        {/* contain/images */}
+
+         <div className="container flex px-10 py-24 md:flex-row flex-col items-center"onClick={onGroupContainerClick}>
+          <div className="lg:max-w-lg lg:w-1/2 md:w-2/3 w-5/6 mb-10 md:mb-0  ">
+            <div className=" mx-auto " onClick={onGroupContainerClick}>
+              <div className="absolute mt-[-30px] ml-[-20px] rounded-lg bg-blue w-[290.8px] h-[378.3px]" />
+
+              <span className=" absolute rounded-lg bg-white w-[517.8px] h-[482.9px] cursor-pointer " />
+              <img
+                className="relative object-center rounded-xl p-3 w-[480.8px] h-[439.6px] top-4 object-fill "
+                alt=""
+                src="InformationTechimg1.jpg"
               />
             </div>
-            <div className="absolute top-[88.9px] left-[calc(50%_-_597.4px)] w-[601.6px] h-[294.5px]">
-              <div className="absolute top-[0px] left-[calc(50%_-_300.8px)] leading-[140%] capitalize font-semibold inline-block w-[545.8px] h-[106.1px]">
-                Automated Code Review with Artificial Intelligence: Improving Code Quality and Development Efficiency
+          </div>
+          <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
+            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] break-all">  AI-Powered Requirement Analysis for Software Development: A Comparative Study
+
+            </h1>
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">  In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches.
+
+            </p>
+          </div>
+        </div>
+
+        {/* 2 */}
+
+        <div className="container mx-auto flex px-5 py-4 md:flex-row flex-col items-center mb-10">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-14 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="title-font mb-3 font-medium text-blue font-poppins text-29xl md:text-17xl break-keep ">Automated Code Review with Artificial Intelligence: Improving Code Quality and Development Efficiency
+            </h1>
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> Code Quality and Development Efficiency," seeks to revolutionize software development's code review process by integrating Artificial Intelligence (AI). With a primary goal of enhancing code quality and reducing human-intensive efforts, the project undertakes a thorough investigation into AI algorithms' capabilities for code analysis. It commences with an extensive literature review, exploring successful implementations and challenges in AI-driven code analysis, and evaluating techniques such as static code analysis, machine learning, and natural language processing.
+
+            </p>
+          </div>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="mx-auto">
+              <div className="absolute mt-[-25px] ml-[265px] rounded-lg bg-blue w-[270.8px] h-[378.3px]" />
+
+              <span className=" absolute rounded-lg bg-white w-[517.8px] h-[482.9px] cursor-pointer" />
+              <img
+                className="relative object-center rounded-xl w-[480.8px] h-[439.6px] p-3 top-4 object-fill "
+                alt=""
+                src="/InformationTechimg2.avif"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* cards */}
+      <section>
+        <div className="text-gray-600 body-font overflow-hidden mt-[50px] mb-[150px]">
+          <div className="container p-10 mx-auto">
+            <div className="flex flex-wrap -m-4">
+              <div className="p-10 xl:w-1/4 lg:w-1/4 md:w-2/3 w-2/3">
+                <div className=" absolute mt-[-20px] ml-[40px] rounded-lg bg-blue flex flex-col w-[230.8px] h-[260.3px] overflow-hidden " />
+
+                <div className="relative border-2 border-gray-200 p-6 bg-white rounded-xl">
+                  <h1 className="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 text-blue ">
+                    Predictive Maintenance :</h1>
+                  <p className="text-gray-600 mb-4">
+                    The "Predictive Maintenance in Software Development" research project aims to explore the integration of AI to anticipate.</p>
+                  <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4 w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black"onClick={onProjectIT3Click}>Readmore
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+
+                </div>
               </div>
-              <div className="absolute top-[140.1px] left-[calc(50%_-_300.8px)] text-mini leading-[150%] text-cold-grey-white inline-block w-[601.6px] h-[128.4px] text-justify">
-                Code Quality and Development Efficiency," seeks to revolutionize software development's code review process by integrating Artificial Intelligence (AI). With a primary goal of enhancing code quality and reducing human-intensive efforts, the project undertakes a thorough investigation into AI algorithms' capabilities for code analysis. It commences with an extensive literature review, exploring successful implementations and challenges in AI-driven code analysis, and evaluating techniques such as static code analysis, machine learning, and natural language processing.
 
+
+              <div className="p-10 xl:w-1/4 lg:w-1/4 md:w-2/3 w-2/3">
+                <div className=" absolute mt-[-20px] ml-[40px] rounded-lg bg-blue flex flex-col w-[230.8px] h-[260.3px] overflow-hidden " />
+
+                <div className="relative border-2 border-gray-200 p-6 bg-white rounded-xl">
+                  <h1 className="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 text-blue">
+                    AI-Driven Testing Strategies:</h1>
+                  <p className="text-gray-600 mb-4">
+                    The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating (AI)</p>
+                  <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4 w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black"onClick={onProjectIT4Click}>Readmore
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex-col sm:w-100 flex-wrap justify-center w-full font-poppins grid grid-col-5">
-        <div className="absolute top-[2260px] left-[calc(60%_-_720px)] text-sm font-roboto shadow-md ">
-          <div className=" absolute h-[400px] w-[250px] bg-blue rounded-xl g ">
-            <div className="mt-6 m-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
-              <div className="  px-5 py-4 text-3xl font-semibold text-left text-blue">
-                "Predictive Maintenance in Software Development: Leveraging AI for Bug Detection and Resolution"
+
+
+              <div className="p-10 xl:w-1/4 lg:w-1/4 md:w-2/3 w-2/3">
+                <div className=" absolute mt-[-20px] ml-[40px] rounded-lg bg-blue flex flex-col w-[230.8px] h-[260.3px] overflow-hidden " />
+
+                <div className="relative border-2 border-gray-200 p-6 bg-white rounded-xl">
+                  <h1 className="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 text-blue">
+                    AI-Driven Documentation:</h1>
+                  <p className="text-gray-600 mb-4">
+                    The research project titled "AI-Driven Documentation and Knowledge Management".</p>
+                  <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4  w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black"onClick={onProjectIT5Click}>Readmore
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <div className="text-black  px-5 py-1 text-sm text-left font-poppins">
-                The "Predictive Maintenance in Software Development" research project aims to explore the integration of Artificial Intelligence (AI) to anticipate.</div>
-              <div className="pt-0 mt-7 text-center">
-                <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT3Click}>Read more</button>
+
+              <div className="p-10 xl:w-1/4 lg:w-1/4 lg:mx-[120px] md:w-2/3 w-2/3 ">
+                <div className=" absolute mt-[-20px] ml-[40px] rounded-lg bg-blue flex flex-col w-[230.8px] h-[260.3px] overflow-hidden " />
+
+                <div className="relative border-2 border-gray-200 p-6 bg-white rounded-xl">
+                  <h1 className="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 text-blue">
+                    Algorithmic Transparency:</h1>
+                  <p className="text-gray-600 mb-4">
+                    The research project titled "Algorithmic Transparency in Hiring" focuses on addressing .</p>
+                  <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4  w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black"onClick={onProjectIT6Click}>Readmore
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[2260px] left-[calc(54%_-_222px)] text-sm font-roboto">
-          <div className=" absolute h-[400px] w-[350px] bg-blue rounded-xl g ">
-            <div className="mt-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
-              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-                "AI-Driven Testing Strategies: Enhancing Test Case Generation and Adaptive Test Automation" </div>
-              <div className="text-black text-sm text-left px-5 py-1 font-poppins">
 
-                The research project titled "AI-Driven Testing Strategies" aims to transform software testing by integrating (AI) Artificial Integrates.</div>
-              <button className="absolute mt-8 w-[100px] h-[30px] text-white bg-blue  text:align-center left-[220px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT4Click}>Read more</button>
-            </div>
-          </div>
 
-        </div>
+              <div className="p-10 xl:w-1/4 lg:w-1/4 md:w-2/3 w-2/3">
+                <div className=" absolute mt-[-20px] ml-[40px] rounded-lg bg-blue flex flex-col w-[230.8px] h-[260.3px] overflow-hidden " />
 
-        <div className="absolute top-[2260px] left-[calc(55%_-_-270px)]  text-sm font-roboto">
-          <div className=" absolute h-[400px] w-[270px] bg-blue rounded-xl g ">
-            <div className="mt-6 ml-[-100px] w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
-              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-                "AI-Driven Documentation and Knowledge Management: Towards Automated Knowledge Extraction"
+                <div className="relative border-2 border-gray-200 p-6 bg-white rounded-xl">
+                  <h1 className="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 text-blue">
+                    AI-Enhanced Job Interviews: </h1>
+                  <p className="text-gray-600 mb-4">
+                  In the rapidly evolving landscape of software development, this research focuses on the crucial role.</p>
+                  <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4  w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black"onClick={onProjectIT7Click}>Readmore
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
 
-                The research project titled "AI-Driven Documentation and Knowledge Management" aims to revolutionize traditional documentation processes through the application of AI. </div>
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[130px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT5Click}>Read more</button>
-            </div>
-          </div>
-        </div>
 
-        <div className="absolute top-[2700px] left-[calc(54%_-_-70px)]  text-sm font-roboto">
-          <div className=" absolute h-[400px] w-[270px] bg-blue rounded-xl g ">
-            <div className="mt-6 ml-[-100px] w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
-              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
-                "Algorithmic Transparency in Hiring: Building Trust in AI-Driven Recruitment Systems"             </div>
-              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
-
-                The research project titled "Algorithmic Transparency in Hiring" focuses on addressing the challenges associated with trust and fairness in AI-driven recruitment systems. </div>
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center mt-4 left-[100px] rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT6Click}>Read more</button>
             </div>
           </div>
 
         </div>
-        <div className="absolute top-[2700px] left-[calc(54%_-_450px)]  text-sm font-roboto">
-          <div className=" absolute h-[400px] w-[250px] bg-blue rounded-xl g ">
-            <div className="mt-6 m-6 w-[350px] h-[350px] bg-white rounded-xl overflow-hidden">
-              <div className="text-3xl font-semibold text-left px-5 py-4 text-blue">
+      </section>
 
-                AI-Enhanced Job Interviews: Evaluating the Impact on Candidate Performance and Selection Accuracy"            </div>
-              <div className="text-black text-sm text-left px-5 py-4 font-poppins">
 
-                The research project on "AI-Enhanced Job Interviews" is centered on revolutionizing the job interview process by leveraging Artificial Intelligence (AI).</div>
-              <button className="absolute  w-[100px] h-[30px] text-white bg-blue  text:align-center left-[220px] mt-4 rounded-xl hover:bg-indigo-600 hover:text-black cursor-pointer" onClick={onProjectIT7Click}>Read more</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[3160px] left-[calc(50%_-_720px)] bg-blue w-[1440px] h-[420px] text-sm font-roboto">
-        <b className="absolute top-[20px] left-[150px] text-17xl uppercase flex text-yellow-50 text-center items-center justify-center w-[202px] h-[68px]">
-          Subscribe
-        </b>
-        <div className="absolute top-[68px] left-[619px] text-base inline-block w-[672px]">{`Subscribe to stay tuned for new web design and latest updates. Let's do it! `}</div>
-        <div className="absolute top-[20px] left-[619px] w-[672px] h-10 text-base text-cold-grey-30">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,_255,_255,_0.12),_0px_8px_24px_-4px_rgba(255,_255,_255,_0.08)]" />
-          <div className="absolute w-[70.86%] top-[30%] left-[2.29%] inline-block">
-            Enter your email Address
-          </div>
-          <div className="absolute h-4/5 w-[26.22%] top-[10%] right-[0.68%] bottom-[10%] left-[73.1%] bg-midnightblue flex flex-row items-center justify-center py-[5px] px-[26px] box-border text-center text-cold-grey-white">
-            <div className="relative">Subscribe</div>
-          </div>
-        </div>
-        <div className="absolute top-[272px] left-[221px] text-center">
-          Follow us
-        </div>
-        <div className="absolute top-[296px] left-[166px] w-[170.7px] h-4">
-          <img
-            className="absolute top-[0.7px] left-[0px] w-2 h-[14.7px]"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[18.7px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0.7px] left-[45.3px] w-5 h-[14.7px]"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[76px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[102.7px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0px] left-[129.3px] w-4 h-4 overflow-hidden"
-            alt=""
-            src="/social.svg"
-          />
-          <img
-            className="absolute top-[0.7px] left-[156px] w-[14.7px] h-[14.7px] object-cover"
-            alt=""
-            src="/social@2x.png"
-          />
-        </div>
-        <div className="absolute top-[103px] left-[-1px] box-border w-[1442px] h-0.5 border-t-[2px] border-solid border-cold-grey-white" />
-        <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
-        <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
-          <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
-              SNIPE TECH PVT LTD #123,
-              70Th Cross 2Nd Floor,<br />
-              SVA Arcade 5Th Block,<br />
-              Rajaji Nagara,<br />  Bengaluru – 560010
-            </div>
-          </div>
-          <img
-            className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-            alt=""
-            src="/icon.png"
-          />
-        </div>
-        <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins">
-          <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] font-medium">
-              hr@snipe.co.in
-            </div>
-          </div>
-          <img
-            className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-            alt=""
-            src="/icon1.png"
-          />
-        </div>
-        <b className="absolute top-[128px] left-[1110px] text-lg">Contact Us</b>
-        <div className="absolute top-[317px] left-[1089px] w-44 h-6 font-poppins">
-          <img
-            className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-            alt=""
-            src="/icon.svg"
-          />
-          <div className="absolute top-[2px] left-[37px] w-[139px] h-5">
-            <div className="absolute top-[-60%] left-[0%] capitalize font-medium">
-              <p className="m-0">+91 080-23100098</p>
-              <p className="m-0">+91 63635 07858</p>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[392px] left-[635px] w-[171px] h-4 text-xs">
-          <div className="absolute top-[6.25%] left-[0%] font-light">
-            © 2017 All Rights Reserved
-          </div>
-        </div>
-        <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
-          <b className="absolute top-[0%] left-[0%] text-lg">Company</b>
-          <div
-            className="absolute top-[26.9%] left-[0%] capitalize font-medium font-poppins cursor-pointer"
-            onClick={onAboutUsText2Click}
-          >
-            Research area
-          </div>
-          <div
-            className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-          //onClick={onCareersTextClick}
-          >
-            Collaborations
-          </div>
-          <div className="absolute top-[59.39%] left-[0%] font-poppins"
-            onClick={onAboutUsTextClick}>
-            About us
-          </div>
-          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
-          <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
-        </div>
-        {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
-        <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
-        <img
-          className="absolute h-[18.05%] w-[17.86%] top-[31.1%] right-[75.17%] bottom-[48.86%] left-[8.97%] max-w-full overflow-hidden max-h-full"
-          alt=""
-          src="/poplogo.svg"
-        />
-      </div>
+      <Footer />
+
     </div>
+
   );
 };
 

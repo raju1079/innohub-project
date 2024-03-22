@@ -425,7 +425,7 @@ const EnrollmentForm = () => {
 
           <hr />
 
-          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[318px] sm:w-[360px] md:w-[755px] lg:w-[1010px] xl:w-[1426px]">
+          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[598px] sm:w-[735px] md:w-[995px] lg:w-[1240px] xl:w-[1426px] 2xl:w-[2540px]">
             <div className="flex flex-row items-start justify-start py-2 px-[18px]">
               <h2 className="m-0 h-[30px] relative text-inherit font-semibold font-inherit inline-block mq450:text-base">
                 EducationalDetails
@@ -434,8 +434,9 @@ const EnrollmentForm = () => {
           </div>
           {/* <EducationalDetails/> */}
           <div>         
-            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pt-5 pb-2 md:pl-3 lg:pl-3 xl:pl-3 ">
+            <div className="flex flex-col mx-2 w-[270px] md:flex-row  space-y-4 md:space-y-0 pt-5 pb-2 md:pl-3 lg:pl-3 xl:pl-3 ">
             <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-1.5 gap-[9px_0px]">
+            
               <div className="w-[183px] relative text-base-6 font-semibold font-poppins text-white text-left inline-block">
                 Higher Education
               </div>
@@ -479,10 +480,9 @@ const EnrollmentForm = () => {
                 width="180px"
               />
             </div>
-          </div>
-            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-6 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
-              <div>
-                <TextField
+            </div>
+          <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 md:pl-3 lg:pl-3 xl:pl-3">
+                   <TextField
                   label="Specialization"
                   name="specialization"
                   type="text"
@@ -493,7 +493,8 @@ const EnrollmentForm = () => {
                   disabled={false}
                   width="230px"
                 />
-              </div>
+         
+          
               <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
                 <TextField
                   label="University"
@@ -507,9 +508,9 @@ const EnrollmentForm = () => {
                   width="190px"
                 />
               </div>
-            </div>
-
-          </div>
+              </div>
+              
+              </div>
           <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
               label="HSC"

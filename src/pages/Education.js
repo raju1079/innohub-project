@@ -59,7 +59,7 @@ const Education = () => {
 
     /* Header */
 
-    <div className="relative bg-gray xl:w-full md:w-[1180px] w-[749px] px-[0px] mx-full">
+    <div className="relative bg-gray xl:w-full lg:w-[1300px] md:w-[1180px] w-[749px] px-[0px] mx-full">
 
        <div className="absolute flex mx-auto top-0 right-0 left-0 h-[90px] overflow-hidden">
         <Header />
@@ -84,8 +84,8 @@ const Education = () => {
 
           <div className="container mx-auto pt-[350px] font-poppins">
             <div className="w-full">      
-                    <b className="text-29xl mx-[-30px] md:text-29xl font-bold text-white ">Education</b>
-            <p className="mt-4 mx-[-60px] pl-10 text-13xl md:text-xl text-white text-justify break-all">Education research is crucial for informing decisions in educational
+                    <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">Education</b>
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">Education research is crucial for informing decisions in educational
               systems, policies, and practices. It provides empirical evidence for
               evidence-based policies, focusing on teaching methodologies and
               curriculum design to enhance student outcomes. The integration of
@@ -114,9 +114,9 @@ const Education = () => {
 
         {/* contain/images */}
 
-        <div className="container mx-auto lg:w-auto  flex px-10 py-24 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-2/3 w-5/6 mb-10 md:mb-0  ">
-            <div className=" mx-auto " onClick={onGroupContainerClick}>
+        <div className="container flex px-10 py-24 md:flex-row flex-col items-center"onClick={onGroupContainerClick}>
+          <div className="lg:max-w-lg lg:w-1/2 md:w-2/3 w-5/6 mb-10 md:mb-0  ">
+            <div className=" mx-auto " >
               <div className="absolute mt-[-30px] ml-[-20px] rounded-lg bg-blue w-[290.8px] h-[378.3px]" />
 
               <span className=" absolute rounded-lg bg-white w-[517.8px] h-[482.9px] cursor-pointer " />
@@ -131,7 +131,7 @@ const Education = () => {
             <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] break-all"> AI-Enhanced Personalized Learning for Optimal Student Engagement
 
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl break-all"> In this research project, we aim to leverage artificial
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> In this research project, we aim to leverage artificial
               intelligence (AI) to revolutionize the educational experience by
               implementing personalized learning strategies. Traditional
               one-size-fits-all educational models often struggle to
@@ -145,12 +145,12 @@ const Education = () => {
 
         {/* 2 */}
 
-        <div className="container mx-auto flex px-5 py-4 md:flex-row flex-col items-center mb-10">
+        <div className="container mx-auto flex px-5 py-4 md:flex-row flex-col items-center mb-10"onClick={onEduProject2Click}>
           <div className="lg:flex-grow md:w-1/2 lg:pr-14 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font mb-4 font-medium text-blue font-poppins text-29xl md:text-17xl break-keep ">Enhancing Student Collaboration and Problem-Solving Skills
+            <h1 className="title-font mb-3 font-medium text-blue font-poppins text-29xl md:text-17xl break-keep ">Enhancing Student Collaboration and Problem-Solving Skills
               through AI-Supported Group Learning
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl break-all">This research aims to explore how artificial intelligence can
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">This research aims to explore how artificial intelligence can
               facilitate and enhance collaborative learning experiences. The
               project focuses on developing AI-driven tools and methodologies
               to optimize group formation, foster effective communication, and
@@ -176,7 +176,7 @@ const Education = () => {
 
       {/* cards */}
       <section>
-      <div className="text-gray-600 body-font overflow-hidden">
+      <div className="text-gray-600 body-font overflow-hidden mt-[50px] mb-[150px]">
         <div className="container p-10 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-10 xl:w-1/4 lg:w-1/4 md:w-2/3 w-2/3">
@@ -187,7 +187,8 @@ const Education = () => {
                 Affective Computing in Education</h1>
                 <p className="text-gray-600 mb-4">
                 This research project delves into the integration of affective computing in educational environments.</p>
-                <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4 w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl ">Readmore
+                <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4 w-[120px] focus:outline-none rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black" onClick={onEduProject3Click}>Readmore
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -202,12 +203,13 @@ const Education = () => {
 
               <div className="relative border-2 border-gray-200 p-6 bg-white rounded-xl">
                 <h1 className="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 text-blue">
-                  AI-Enabled Early Intervention for Learning 
+                  AI-Enabled Early Intervention.
                 </h1>
                 <p className="text-gray-600 mb-4">
                   This research focuses on developing AI algorithms for the early detection of learning disabilities in students.
                 </p>
-                <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4 w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl ">Readmore
+                <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4 w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black" onClick={onEduProject4Click}>Readmore
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -224,7 +226,8 @@ const Education = () => {
                 Augmented Reality and AI Integration </h1>
                 <p className="text-gray-600 mb-4">
                 This research project explores the integration of augmented reality (AR) and (AI) .</p>
-                <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4  w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl ">Readmore
+                <button className=" text-right flex items-center mt-auto text-white bg-blue border-0 py-2 px-4  w-[120px] focus:outline-none hover:bg-gray-500 rounded-xl cursor-pointer transition duration-500 hover:scale-105 hover:bg-gray-500 
+                hover:bg-white hover:text-black" onClick={onEduProject5Click}>Readmore
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
