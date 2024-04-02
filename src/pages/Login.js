@@ -5,43 +5,36 @@ import { useDispatch, useSelector } from 'react-redux';
 import { adminLogin } from '../redux/actions/action';
 import { FaHome } from "react-icons/fa";
 import { useCallback  } from "react";
-
 import { useNavigate } from "react-router-dom";
-
-
+import { AdminHome } from "./AdminPanel/AdminPanel/AdminHomepage/AdminHome";
+import useHistory from "react";
 
 const Login = () => {
   
-  const navigate = useNavigate();
    const dispatch = useDispatch();
   const adminState = useSelector((state) => state.admin);
   const [credentials, setCredentials] = useState({ username: '', password: '' });
 
-  const handleAdminLogin = () => {
-    if (credentials.username === 'admin' && credentials.password === 'Innohub@2024') {
-      dispatch(adminLogin(credentials.username, credentials.password));
-    } else {
-      alert('Invalid username or password');
-    }
-  };
-
-  // Redirect to dashboard if admin is logged in
-  if (adminState.loggedIn) {
-    return <Redirect to="/dashboard" />;
-  } 
   
- 
- /*  const dispatch = useDispatch();
-  const adminState = useSelector((state) => state.admin);
- */
-/* const handleAdminLogin = () => {
-   if( dispatch(adminLogin('admin', 'Innohub@2024')));
-  };
- */  
-  /* if (adminState.loggedIn) {
-    return <Redirect to="/dashboard" />;
+const handleAdminLogin = () => {
+  if (credentials.username === 'admin' && credentials.password === 'Innohub@2024') {
+    dispatch(adminLogin(credentials.username, credentials.password));
+    navigate('/Adminhome'); // Redirect to Adminhome if login is successful
+  } else {
+    alert('Invalid username or password');
   }
- */
+};
+
+// Inside your component function
+const navigate = useNavigate();
+ 
+// Assuming adminState.loggedIn is a state variable to track admin login status
+// You can conditionally render the redirect inside your component's return statement
+if (adminState.loggedIn) {
+  return <Redirect to="/Adminhome" />; // Redirect if admin is logged in
+}
+
+ 
   const onHomeClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
@@ -75,7 +68,7 @@ const Login = () => {
           <img className="w-32 h-32 mt-7 md:w-48 md:h-38 " src="/poplogo.svg" alt="Your Company" />
         </div>
         <h2 className=" text-center text-2xl md:text-3xl font-extrabold text-white">
-          Signin into your account
+          Login into your account
         </h2>
         <form className="mt-0 space-y-10 px-5 lg:px-10 py-5" action="#" method="POST">
           <input type="hidden" name="remember" value="true" />

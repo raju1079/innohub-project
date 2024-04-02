@@ -82,7 +82,7 @@ const HomePage = () => {
           </div>
           <div className="w-[90px] relative rounded-xl bg-cold-grey-white h-6 overflow-hidden shrink-0 text-2xl text-blue">
             <div className="absolute top-[calc(63%_-_18px)] left-[calc(62%_-_44px)] capitalize font-semibold " onClick={onLoginClick}>
-              Sign In
+              Log In
             </div>
           </div>
         </div>

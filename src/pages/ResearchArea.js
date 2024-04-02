@@ -111,7 +111,7 @@ const ResearchArea = () => {
                 alt=""
                 src="/signcrosssquarehealthsignmedicalsymbolhospitalcrosssquare.svg"
               />
-              <b className="flex content-center text-white px-[40px] md:px-[35px] text-17xl ">HealthCare</b>
+              <b className="flex content-center text-white px-[40px] md:px-[10px] text-17xl ">HealthCare</b>
 
             </div>
 
@@ -137,7 +137,7 @@ const ResearchArea = () => {
                 alt=""
                 src="/beachislandwavesoutdoorrecreationtreebeachpalmwavewatertravelplaces.svg"
               />
-              <b className="flex content-center text-white px-[40px] md:px-[30px] text-17xl ">Agriculture</b>
+              <b className="flex content-center text-white px-[40px] md:px-[10px] text-17xl ">Agriculture</b>
 
             </div>
 
@@ -164,7 +164,7 @@ const ResearchArea = () => {
                 alt=""
                 src="/desktopchecksuccessapprovedevicedisplaydesktopcomputer.svg"
               />
-              <b className="flex content-center text-white px-[35px] md:px-[35px] pt-[-15px] text-17xl text-center">Information <br /> Technology</b>
+              <b className="flex content-center text-white px-[35px] md:px-[5px] pt-[-15px] text-17xl text-center">Information <br /> Technology</b>
 
             </div>
 
@@ -177,7 +177,7 @@ const ResearchArea = () => {
                 alt=""
                 src="/insurancehandhealthmedicalinsurancehandcross.svg"
               />
-              <b className="flex content-center text-white px-[45px] md:px-[45px] text-17xl ">Insurance</b>
+              <b className="flex content-center text-white px-[45px] md:px-[25px] text-17xl ">Insurance</b>
 
             </div>
 

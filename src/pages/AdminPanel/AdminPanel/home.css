@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Import Google Font - Poppins */
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+
+
+}
+
+ /* In your CSS file (e.g., home.css) */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Now you can use Montserrat as a font-family in your CSS rules */
+ /* Example usage of Montserrat font */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.bg-custom-color {
+  background-color: #532fa0;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
