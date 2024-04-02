@@ -23,7 +23,6 @@ import AgrProject1 from "./pages/ProjectsAgriculture/AgrProject1";
 import AhProject1 from "./pages/AHProjects/AhProject1";
 import InsProject1 from "./pages/InsProjects/InsProject1";
 import Login from "./pages/Login";
-import SignIn from "./pages/SignIn";
 
 
 import AgrProject2 from "./pages/ProjectsAgriculture/AgrProject2";
@@ -146,8 +145,7 @@ function App() {
       <Route path="ahproject1" element={<AhProject1 />} />
       <Route path="insproject1" element={<InsProject1 />} />
       <Route path="/Login" element={<Login />} />
-      <Route path="/SignIn" element={<SignIn />} />
-
+      
       <Route path="Agrproject3" element={<AgrProject3 />} />
       <Route path="Agrproject2" element={<AgrProject2 />} />
       <Route path="Agrproject4" element={<AgrProject4 />} />
