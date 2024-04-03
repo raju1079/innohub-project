@@ -42,7 +42,7 @@ if (adminState.loggedIn) {
 
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen  bg-black px-8 lg:p-0">
+    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen  bg-[#090119] px-8 lg:p-0">
       {/* Images and Vectors for larger screens */}
       <div className="hidden lg:flex flex-1 justify-center items-center">
         <div className="relative">
