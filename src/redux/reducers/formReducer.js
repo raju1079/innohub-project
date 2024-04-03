@@ -6,6 +6,7 @@ const initialState = {
   const formReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'SUBMIT_FORM_SUCCESS':
+        console.log('Form Data received:', action.payload); // Add this line to log the formData
         return {
           ...state,
           formData: action.payload,

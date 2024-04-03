@@ -70,6 +70,12 @@ const AdminSidebar = () => {
     };
   }, []);
 
+  const navigateToEnrolledStudents = () => {
+    // Navigate to enrolled students page
+    navigate("/enrolled-students");
+  };
+
+ 
 
   return (
     <div >
@@ -93,14 +99,9 @@ const AdminSidebar = () => {
           }`}
         aria-label="Sidebar"
       >
+     <div className="h-full px-3 py-4 overflow-y-auto bg-custom-color dark:bg-gray-800 rounded-tr-[100px] ">
 
-
-
-        <div className="h-full px-3 py-4 overflow-y-auto bg-custom-color dark:bg-gray-800 rounded-tr-[100px] ">
-
-
-
-          <ul class="space-y-2 font-medium">
+      <ul class="space-y-2 font-medium">
 
             <button
               type="button"
@@ -163,7 +164,6 @@ const AdminSidebar = () => {
               <span class="ms-3 ml-[-20px]">Dashboard</span>
             </a>
 
-
             <button
               type="button"
               class="flex items-center w-full p-2 text-base text-white bg-custom-color transition duration-75 rounded-lg group hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 pl-[15px]"
@@ -187,7 +187,7 @@ const AdminSidebar = () => {
                 href="#"
                 class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline"
               >
-                User Managent
+                User Management
               </a>
 
 
@@ -213,9 +213,6 @@ const AdminSidebar = () => {
               </a>
 
             </ul>
-
-
-
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]"
@@ -226,7 +223,6 @@ const AdminSidebar = () => {
                 Event management
               </span>
             </a>
-
 
             <button
               type="button"
@@ -251,6 +247,7 @@ const AdminSidebar = () => {
 
               <a
                 href="#"
+                onClick={navigateToEnrolledStudents}
                 class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline"
               >
                 Enrolled students

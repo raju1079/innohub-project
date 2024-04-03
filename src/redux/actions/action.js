@@ -58,7 +58,9 @@ export const setCities = (cities) => ({
         payload: response.data,
       });
   
-      console.log(response.data);
+            // After form submission, send an email
+    await dispatch(sendEmail(formData)); // Assuming email is part of formData
+  
     } catch (error) {
       dispatch({
         type: 'SUBMIT_FORM_ERROR',
@@ -73,27 +75,6 @@ export const setCities = (cities) => ({
   });
   
   
-
- /*  export const login = (username , password) => async (dispatch) => {
-    try {
-      // Assuming your login API endpoint is '/api/login' and you are sending credentials as POST data
-      const response = await axios.post('/api/admin',{ username , password });
-      // Dispatch an action indicating successful login and pass the user data if necessary
-      dispatch({
-        type:' ActionTypes.LOGIN_SUCCESS',
-        payload: response.data, // You might want to pass user data received from the server
-      });
-      console.log('Login successful');
-    } catch (error) {
-      // Dispatch an action indicating login failure
-      dispatch({
-        type: 'ActionTypes.LOGIN_FAILURE',
-        payload: error.message, // You might want to pass the error message for displaying to the user
-      });
-      console.error('Error during login:', error);
-    }
-  };
-  */ 
   export const adminLogin = (username, password) => async (dispatch) => {
     try {
       const response = await axios.post('/api/admin', {
@@ -115,3 +96,37 @@ export const setCities = (cities) => ({
     )
   }
 }
+
+export const fetchStudents = () => async (dispatch) => {
+  try {
+    const response = await axios.get('/api/students');
+   // console.log('Fetched data:', response.data); 
+    dispatch({
+      type: 'FETCH_STUDENTS_SUCCESS',
+      payload: response.data,
+    });
+  } catch (error) {
+    dispatch({
+      type: 'FETCH_STUDENTS_ERROR',
+      payload: error,
+    });
+   // console.error('Error fetching students:', error);
+  }
+};
+
+export const sendEmail = (formData) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/enrollMail', formData);
+    dispatch({
+      type: 'SEND_EMAIL_SUCCESS',
+      payload: response.data,
+    });
+    console.log('Email sent successfully:', response.data);
+  } catch (error) {
+    dispatch({
+      type: 'SEND_EMAIL_ERROR',
+      payload: error,
+    });
+    console.error('Error sending email:', error);
+  }
+};

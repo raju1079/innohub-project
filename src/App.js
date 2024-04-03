@@ -66,6 +66,7 @@ import EduProject5 from "./pages/EduProjects.js/EduProject5";
 import EduProject6 from "./pages/EduProjects.js/EduProject6";
 import PersonalDetailsForm from "./pages/Enrollment/PersonalDetailsForm";
 import AdminHome from "./pages/AdminPanel/AdminPanel/AdminHomepage/AdminHome";
+import EnrolledStudents from "./pages/AdminPanel/AdminPanel/StudentManagement/EnrolledStudents";
 
 
 
@@ -186,15 +187,9 @@ function App() {
       <Route path="/eduproject6" element={<EduProject6 />} />
       <Route path="/enrollment_form" element={<PersonalDetailsForm />} />
       <Route path="/Adminhome" element ={<AdminHome/>}/>
-      
-      
+      <Route path="/enrolled-students" element ={<EnrolledStudents/>}/>
 
       
-      
-     
-      
-     
-     
 
     </Routes>
   );

@@ -6,6 +6,7 @@ import { submitForm, resetForm } from "../../redux/actions/action"
 import { fetchStates } from '../../redux/actions/action'
 import { fetchCities } from '../../redux/actions/action'
 import { fetchHigherEducation } from '../../redux/actions/action'
+import { sendEmail } from '../../redux/actions/action';
 import DatePicker from "../../components/formcomponents/DatePicker";
 import { FaFileUpload } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
@@ -51,9 +52,13 @@ const EnrollmentForm = () => {
   const states = useSelector((state) => state.states.states);
   const cities = useSelector((state) => state.cities.cities);
   const higherEducation = useSelector((state) => state.higherEducation.higherEducation);
+  const emailSent = useSelector((state) => state.email.emailSent);
+  const emailError = useSelector((state) => state.email.emailError);
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [selectedState, setSelectedState] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
+  const [selectedGender, setSelectedGender] = useState('');
+  const [selectedHigherEducation, setSelectedHigherEducation] = useState('');
 
   useEffect(() => {
     dispatch(fetchStates());
@@ -102,11 +107,28 @@ const EnrollmentForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(submitForm(formFields));
+
+    const stateName = states.find(state => state.state_id === parseInt(selectedState))?.state_name || '';
+    const cityName = cities.find(city => city.city_id === parseInt(selectedCity))?.city_name || '';
+
+    const updatedFormFields = {
+      ...formFields,
+      state: stateName,
+      city: cityName,
+      gender: selectedGender,
+      higher_education: selectedHigherEducation
+
+    };
+    dispatch(submitForm(updatedFormFields));
+
+    dispatch(sendEmail(updatedFormFields)); // Dispatch sendEmail directly
+
     setShowSuccessPopup(true); // Show the success pop-up
+
     handleReset();
-    console.log("handleSubmit", formFields)
+    console.log("handleSubmit", updatedFormFields)
   };
+
 
   const handleReset = () => {
     dispatch(resetForm());
@@ -139,7 +161,9 @@ const EnrollmentForm = () => {
     });
     setSelectedState('');
     setSelectedCity('');
-    dispatch(fetchHigherEducation());
+    setSelectedGender('');
+    setSelectedHigherEducation('');
+
   };
 
 
@@ -153,12 +177,13 @@ const EnrollmentForm = () => {
     return emailRegex.test(value) ? "" : "Invalid email address";
   };
 
-  // Validation function for date of birth
   const validateDateOfBirth = (value) => {
     const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
-    return dobRegex.test(value) ? "" : "Invalid date of birth";
-  };
+    const [year] = value.split('-');
 
+    // Check if the date format is correct and if the year part contains exactly four digits
+    return dobRegex.test(value) && year.length === 4 ? "" : "Invalid date of birth";
+  };
 
   const validateMobileNumber = (value) => {
     const isValid = /^\d{10}$/.test(value); // Assumes a 10-digit mobile number
@@ -176,7 +201,7 @@ const EnrollmentForm = () => {
     const marks = parseFloat(value);
 
     if (marks < 80) {
-      return 'Marks should be above 80% or equivalent GPA 8.';
+      return 'Marks should be above 80% to proceed further.';
     }
 
     return '';
@@ -194,7 +219,7 @@ const EnrollmentForm = () => {
               alt=""
               src="/poplogo.svg"
             />
-            <div className="flex-1 flex flex-col items-start justify-start pt-0 pl-5 md:pt-[7px] px-0 pb-2 md:pb-0">
+            <div className="flex-1 flex flex-col items-center justify-start pt-0 pl-5 md:pt-[7px] px-0 pb-2 md:pb-0">
               <h1 className="m-0 relative  font-semibold font-inherit whitespace-nowrap text-6xl md:text-4xl">
                 Enrollment Form
               </h1>
@@ -207,7 +232,7 @@ const EnrollmentForm = () => {
                 onClick={onHomeClick}
               >
                 <FaHome
-                 className="h-8 w-14" />
+                  className="h-8 w-14" />
                 Home
               </div>
             </div>
@@ -285,14 +310,14 @@ const EnrollmentForm = () => {
               disabled={false}
               validate={validateEmail}
             />
-            <div className="md:mx-8 " >
+            <div className=" mx-5 ml-0 md:mx-8 " >
 
               <DatePicker
                 label="Date of Birth"
                 value={formFields.dob}
                 onChange={(newDateValue) => handleChange({ target: { name: 'dob', value: newDateValue } })}
                 required={true}
-              // validate={validateDateOfBirth}// Don't forget to replace this with your actual validation function
+                validate={validateDateOfBirth}
               />
             </div>
           </div>
@@ -412,20 +437,22 @@ const EnrollmentForm = () => {
               <div className="self-stretch rounded-[8.08px] bg-whitesmoke flex flex-row items-center justify-between  pb-[11px] pr-4  box-border gap-[20px] max-w-full mq450:flex-wrap">
                 <div className="h-[51px] w-[165px] relative rounded-[8.08px] bg-whitesmoke hidden max-w-full" />
                 <select
-                  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[51px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[20px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[355px] "
+                  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[51px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[20px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[270px] md:min-w-[355px] "
+                  value={selectedGender}
+                  onChange={(e) => setSelectedGender(e.target.value)}
                 >
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
-                  <option value="3">Other</option>
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
                 </select>
-
               </div>
             </div>
           </div>
 
           <hr />
 
-          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[598px] sm:w-[735px] md:w-[995px] lg:w-[1240px] xl:w-[1426px] 2xl:w-[2540px]">
+          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[318px] sm:w-[360px] md:w-[755px] lg:w-[1010px] xl:w-[1426px]">
             <div className="flex flex-row items-start justify-start py-2 px-[18px]">
               <h2 className="m-0 h-[30px] relative text-inherit font-semibold font-inherit inline-block mq450:text-base">
                 EducationalDetails
@@ -433,56 +460,59 @@ const EnrollmentForm = () => {
             </div>
           </div>
           {/* <EducationalDetails/> */}
-          <div>         
-            <div className="flex flex-col mx-2 w-[270px] md:flex-row  space-y-4 md:space-y-0 pt-5 pb-2 md:pl-3 lg:pl-3 xl:pl-3 ">
-            <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-1.5 gap-[9px_0px]">
-            
-              <div className="w-[183px] relative text-base-6 font-semibold font-poppins text-white text-left inline-block">
-                Higher Education
-              </div>
-              <div className="rounded-lg bg-white overflow-hidden flex flex-row items-center justify-start px-3.5  border-[1px] border-solid border-white">
-                <select
-                  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[48px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[230px] "
-                >
-                  <option value="">Select Higher Education</option>
-                  {higherEducation.map((edu) => (
-                    <option key={edu.degree_id} value={edu.degree_id}>
-                      {edu.degree_name}
-                    </option>
+          <div>
+            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pt-5 pb-2 md:pl-3 lg:pl-3 xl:pl-3 ">
+              <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-1.5 gap-[9px_0px]">
+                <div className="w-[183px] relative text-base-6 font-semibold font-poppins text-white text-left inline-block">
+                  Higher Education
+                </div>
+                <div className="rounded-lg bg-white overflow-hidden flex flex-row items-center justify-start px-3.5  border-[1px] border-solid border-white">
+                  <select
+                    className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[48px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[230px] "
+                    value={selectedHigherEducation}
+                    onChange={(e) => setSelectedHigherEducation(e.target.value)}
+                  >
+                    <option value="">Select Higher Education</option>
+                    {higherEducation.map((edu) => (
+                      <option key={edu.degree_id} value={edu.degree_name}>
+                        {edu.degree_name}
+                      </option>
 
-                  ))}
-                </select>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
+                <TextField
+                  label="Marks in % "
+                  name="marks_obtained"
+                  type="text"
+                  placeholder="Enter marks in %"
+                  value={formFields.marks_obtained}
+                  onChange={handleChange}
+                  required={true}
+                  disabled={false}
+                  width="190px"
+                  validate={validateMarks}
+                />
+              </div>
+              <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
+                <TextField
+                  label="Year of Completion"
+                  name="year_of_completion"
+                  type="text"
+                  placeholder="Enter year of completion"
+                  value={formFields.year_of_completion}
+                  onChange={handleChange}
+                  required={true}
+                  disabled={false}
+                  width="180px"
+                />
               </div>
             </div>
-            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
-              <TextField
-                label="Marks in % (GPA)"
-                name="marks_obtained"
-                type="text"
-                placeholder="Enter marks in %"
-                value={formFields.marks_obtained}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                width="190px"
-              />
-            </div>
-            <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
-              <TextField
-                label="Year of Completion"
-                name="year_of_completion"
-                type="text"
-                placeholder="Enter year of completion"
-                value={formFields.year_of_completion}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                width="180px"
-              />
-            </div>
-            </div>
-          <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 md:pl-3 lg:pl-3 xl:pl-3">
-                   <TextField
+            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-6 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
+              <div>
+                <TextField
                   label="Specialization"
                   name="specialization"
                   type="text"
@@ -493,8 +523,7 @@ const EnrollmentForm = () => {
                   disabled={false}
                   width="230px"
                 />
-         
-          
+              </div>
               <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
                 <TextField
                   label="University"
@@ -508,12 +537,12 @@ const EnrollmentForm = () => {
                   width="190px"
                 />
               </div>
-              </div>
-              
-              </div>
+            </div>
+
+          </div>
           <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
-              label="HSC"
+              label="12th Board"
               name="HSC"
               type="text"
               placeholder="Enter University"
@@ -528,7 +557,7 @@ const EnrollmentForm = () => {
                 label="Marks in % (GPA)"
                 name="HSC_marks"
                 type="text"
-                placeholder="Enter HSC marks"
+                placeholder="Enter marks in %"
                 value={formFields.HSC_marks}
                 onChange={handleChange}
                 required={true}
@@ -541,7 +570,7 @@ const EnrollmentForm = () => {
                 label="Year of Completion"
                 name="HSC_completion_yr"
                 type="text"
-                placeholder="Enter HSC completion year"
+                placeholder="Enter year of completion"
                 value={formFields.HSC_completion_yr}
                 onChange={handleChange}
                 required={true}
@@ -553,7 +582,7 @@ const EnrollmentForm = () => {
 
           <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
-              label="SSC"
+              label="10th Board"
               name="SSC"
               type="text"
               placeholder="Enter University"
@@ -581,7 +610,7 @@ const EnrollmentForm = () => {
                 label="Year of Completion"
                 name="SSC_completion_yr"
                 type="text"
-                placeholder="yyyy"
+                placeholder="Enter year of completion"
                 value={formFields.SSC_completion_yr}
                 onChange={handleChange}
                 required={true}
@@ -606,9 +635,8 @@ const EnrollmentForm = () => {
               <TextField
                 label="Upload Resume"
                 name="upload_resume"
-
                 type="file"
-                accepy=".pdf"
+                accept=".pdf"
                 placeholder="upload resume"
                 value={formFields.upload_resume}
                 onChange={handleChange}
@@ -620,53 +648,45 @@ const EnrollmentForm = () => {
               {/*  <FaFileUpload /> */}
             </div>
           </div>
+          <div className="md:grid grid-flow-col  ">
+            <div className="w-[453px] mx-5 lg:mx-[300px] flex flex-row items-start justify-start py-0 pr-0 pt-12 pb-20 box-border max-w-full">
+              <div className="flex-1 flex flex-row flex-wrap items-start justify-center gap-[0px_39px] max-w-full mq450:gap-[0px_39px]">
+                <button type="submit" className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray">
+                  <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
+                    Submit
+                  </b>
+                </button>
 
-          {/* <div className="mb-4">
-        <button type="submit" className="bg-color1 text-white py-2 px-4 rounded-md">
-          Submit
-        </button>
-      </div> */}
-
-<div className="md:grid grid-flow-col  ">
-          <div className="w-[453px] mx-5 lg:mx-[300px] flex flex-row items-start justify-start py-0 pr-0 pt-12 pb-20 box-border max-w-full">
-            <div className="flex-1 flex flex-row flex-wrap items-start justify-center gap-[0px_39px] max-w-full mq450:gap-[0px_39px]">
-              <button type="submit" className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray">
-                <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
-                  Cancel
-                </b>
-              </button>
-            
-              <button className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
-                <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
-                  Submit
-                </b>
-              </button>
+                <button className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-black flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
+                  <b className="w-[152px] relative text-base-2 inline-block font-poppins text-white text-center shrink-0">
+                    Cancel
+                  </b>
+                </button>
+              </div>
             </div>
-          </div>
           </div>
 
           {showSuccessPopup && (
             <div
-              className="bg-black w-[526px] h-[224px] absolute top-[210px] left-[144px] border-[1px] border-white text-white text-center pt-40"
+              className="bg-black w-[426px] h-[124px] absolute top-[210px] left-[144px] border-[1px] border-white text-white text-center pt-40"
               onClick={() => setShowSuccessPopup(false)} // Hide the pop-up on click
             >
               Submitted successfully!
             </div>
           )}
-          {/* Display success or error message */}
-          {/*   {formData && <div className="text-green-500">
-          </div>} */}
+
+          {/*  {emailSent && (
+      <p>Email has been successfully sent.</p>
+    )}
+    {emailError && (
+      <p>Error in sending email: {emailError.message}</p>
+    )} */}
+
           {error && <div className="text-red-500">Error: {error.message}</div>}
 
         </form>
-
-
-
       </main>
     </div>
-
-
-
   );
 };
 
