@@ -83,10 +83,10 @@ const AdminSidebar = () => {
     navigate("/enrolled-students");
   };
 
-  const navigateToScreeningTestResult = () => {
+  /* const navigateToScreeningTestResult = () => {
     navigate("/screeningtest-result");
   };
-
+ */
   const navigateToQualifiedStudents = () => {
     // Navigate to enrolled students page
     navigate("/qualified-students");
@@ -269,14 +269,14 @@ const AdminSidebar = () => {
               >
                 Enrolled students
               </a>
-              <a
+            {/*   <a
                 href="#"
                 onClick={navigateToScreeningTestResult}
                 className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline"
               >
                 Screening test results
               </a>
-
+ */}
 
               <a
                 href=" "
