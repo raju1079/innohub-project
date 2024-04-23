@@ -2,17 +2,18 @@ const initialState = {
   sendingEmail: false,
   emailSent: false,
   emailError: null,
+  emailStatus:{},
 };
 
 const emailReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'SEND_EMAIL_REQUEST':
+   /*  case 'SEND_EMAIL_REQUEST':
       return {
         ...state,
         sendingEmail: true,
         emailSent: false,
         emailError: null,
-      };
+      }; */
     case 'SEND_EMAIL_SUCCESS':
       return {
         ...state,

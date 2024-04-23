@@ -12,13 +12,14 @@ const Table = ({ columns, data, heading, button }) => {
     canNextPage,
     canPreviousPage,
     pageOptions,
-    state: { pageIndex, globalFilter },
+    state: { pageIndex,pageSize, globalFilter },
     prepareRow,
     setGlobalFilter,
   } = useTable(
     {
       columns,
       data,
+      initialState: { pageSize: 5 }, // Set initial page size
     },
     useGlobalFilter,
     useFilters,
@@ -42,9 +43,9 @@ const Table = ({ columns, data, heading, button }) => {
           />
         </div>
 
-        <button className="bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 md:mt-0 md:ml-4 rounded">
+       {/*  <button className="bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 md:mt-0 md:ml-4 rounded">
           {button}
-        </button>
+        </button> */}
       </div>
 
       {page.length === 0 ? (

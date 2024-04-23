@@ -10,6 +10,7 @@ import { sendEmail } from '../../redux/actions/action';
 import DatePicker from "../../components/formcomponents/DatePicker";
 import { FaFileUpload } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
+import {updateEmailStatus} from "../../redux/actions/action"
 
 const EnrollmentForm = () => {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ const EnrollmentForm = () => {
     state: '',
     city: '',
     pincode: '',
-    upload_photo: '',
+   // upload_photo: '',
     higher_education: "",
     marks_obtained: "",
     year_of_completion: "",
@@ -43,7 +44,7 @@ const EnrollmentForm = () => {
     SSC_marks: "",
     SSC_completion_yr: "",
     achievements: "",
-    upload_resume: ""
+    //upload_resume: ""
   });
 
 
@@ -143,7 +144,7 @@ const EnrollmentForm = () => {
       mobile_no: '',
       gender: '',
       pincode: '',
-      upload_photo: '',
+      //upload_photo: '',
       higher_education: "",
       marks_obtained: "",
       year_of_completion: "",
@@ -156,7 +157,7 @@ const EnrollmentForm = () => {
       SSC_marks: "",
       SSC_completion_yr: "",
       achievements: "",
-      upload_resume: ""
+    //  upload_resume: ""
 
     });
     setSelectedState('');
@@ -199,13 +200,21 @@ const EnrollmentForm = () => {
 
   const validateMarks = (value) => {
     const marks = parseFloat(value);
-
-    if (marks < 80) {
-      return 'Marks should be above 80% to proceed further.';
+  
+    // Assuming GPA is on a scale of 0-10
+    if ((marks >= 0 && marks <= 10 && marks < 8) || (marks >= 11 && marks <= 100 && marks < 80)) {
+      return 'Marks should be above 80% or CGPA should be above 8 to proceed further.';
     }
-
+  
     return '';
   };
+
+  const sendEmailToStudent = (student_Id) => {
+    // Assuming you have access to studentId
+    const emailSent = true; // Assuming the email was successfully sent
+    dispatch(updateEmailStatus(student_Id, emailSent));
+  };
+  
 
 
   return (
@@ -253,7 +262,7 @@ const EnrollmentForm = () => {
         </div>
         {/* <PersonaldetailsForm />  */}
         <form className="w-[280px] mx-0 mt-4 m-0 md:mx-0 md:px-3 md:mt-8 lg:mx-0 lg:mt-10" onSubmit={handleSubmit}>
-          <div className="h-[166px] w-[155px] flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border">
+       {/*    <div className="h-[166px] w-[155px] flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border">
             <div className="self-stretch mx-2 flex-1 rounded-8xs bg-white overflow-hidden flex flex-col  justify-end py-11 pr-0 pl-[19px] relative z-[1] border-[2px] border-solid border-white">
               <label className="relative w-[calc(100% - 19px)] h-[18px] bg-transparent text-gray-100 text-left inline-block min-w-[83px] border-none outline-none font-poppins text-xs">
                 Upload your Photo
@@ -268,7 +277,7 @@ const EnrollmentForm = () => {
                 className="w-[40px] h-[40px] absolute !m-[0] top-[25px] left-[calc(50%_-_20px)] overflow-hidden shrink-0"
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3 ">
             <TextField
@@ -452,14 +461,14 @@ const EnrollmentForm = () => {
 
           <hr />
 
-          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[318px] sm:w-[360px] md:w-[755px] lg:w-[1010px] xl:w-[1426px]">
+          <div className="self-stretch mb-5 mx-0  rounded-lg bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border overflow-hidden flex flex-col items-start justify-start pt-[7px] px-0 pb-0 gap-[4px_0px] max-w-[5500px] border-[1px] border-solid border-white w-[318px] sm:w-[360px] md:w-[755px] lg:w-[1235px] xl:w-[1426px]">
             <div className="flex flex-row items-start justify-start py-2 px-[18px]">
               <h2 className="m-0 h-[30px] relative text-inherit font-semibold font-inherit inline-block mq450:text-base">
                 EducationalDetails
               </h2>
             </div>
           </div>
-          {/* <EducationalDetails/> */}
+          
           <div>
             <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pt-5 pb-2 md:pl-3 lg:pl-3 xl:pl-3 ">
               <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-1.5 gap-[9px_0px]">
@@ -484,10 +493,10 @@ const EnrollmentForm = () => {
               </div>
               <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
                 <TextField
-                  label="Marks in % "
+                  label="Marks in % (CGPA)"
                   name="marks_obtained"
                   type="text"
-                  placeholder="Enter marks in %"
+                  placeholder="Enter marks in % or CGPA"
                   value={formFields.marks_obtained}
                   onChange={handleChange}
                   required={true}
@@ -509,9 +518,11 @@ const EnrollmentForm = () => {
                   width="180px"
                 />
               </div>
-            </div>
-            <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-6 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
-              <div>
+            
+{/*             <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-6 pl-0 md:pl-3 lg:pl-3 xl:pl-3">
+ */}           
+             <div className=" pl-0 md:pl-3 md:flex-row lg:pl-3 xl:pl-3">
+              
                 <TextField
                   label="Specialization"
                   name="specialization"
@@ -521,7 +532,7 @@ const EnrollmentForm = () => {
                   onChange={handleChange}
                   required={true}
                   disabled={false}
-                  width="230px"
+                  width="190px"
                 />
               </div>
               <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
@@ -538,8 +549,8 @@ const EnrollmentForm = () => {
                 />
               </div>
             </div>
-
-          </div>
+            </div>
+        
           <div className="flex flex-col mx-2 w-[270px] md:flex-row space-y-4 md:space-y-0 pb-2 md:pl-3 lg:pl-3 xl:pl-3">
             <TextField
               label="12th Board"
@@ -554,10 +565,10 @@ const EnrollmentForm = () => {
             />
             <div className="pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
-                label="Marks in % (GPA)"
+                label="Marks in % (CGPA)"
                 name="HSC_marks"
                 type="text"
-                placeholder="Enter marks in %"
+                placeholder="Enter marks in % or CGPA"
                 value={formFields.HSC_marks}
                 onChange={handleChange}
                 required={true}
@@ -594,10 +605,10 @@ const EnrollmentForm = () => {
             />
             <div className=" pl-0 md:pl-3 lg:pl-3 xl:pl-3">
               <TextField
-                label="Marks in % (GPA)"
+                label="Marks in % (CGPA)"
                 name="SSC_marks"
                 type="text"
-                placeholder="Enter in %/GPA"
+                placeholder="Enter in %/CGPA"
                 value={formFields.SSC_marks}
                 onChange={handleChange}
                 required={true}
@@ -632,7 +643,7 @@ const EnrollmentForm = () => {
               width="230px"
             />
             <div className=" pl-3 ">
-              <TextField
+             {/*  <TextField
                 label="Upload Resume"
                 name="upload_resume"
                 type="file"
@@ -667,21 +678,23 @@ const EnrollmentForm = () => {
           </div>
 
           {showSuccessPopup && (
-            <div
-              className="bg-black w-[426px] h-[124px] absolute top-[210px] left-[144px] border-[1px] border-white text-white text-center pt-40"
-              onClick={() => setShowSuccessPopup(false)} // Hide the pop-up on click
-            >
-              Submitted successfully!
-            </div>
-          )}
+  <div
+    className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50"
+    onClick={() => setShowSuccessPopup(false)} // Hide the pop-up on click
+  >
+    <div className="bg-white rounded-lg p-8">
+      <p className="text-black text-center">Successfully registered.</p>
+      <p className="text-black text-center">Please check your email for more details.</p>
+    </div>
+  </div>
+)}
 
-          {/*  {emailSent && (
-      <p>Email has been successfully sent.</p>
-    )}
-    {emailError && (
+
+
+   {/*  {emailError && (
       <p>Error in sending email: {emailError.message}</p>
-    )} */}
-
+    )} 
+ */}
           {error && <div className="text-red-500">Error: {error.message}</div>}
 
         </form>

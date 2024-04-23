@@ -7,7 +7,9 @@ import formReducer from './reducers/formReducer';
 import adminReducer from './reducers/adminReducer';
 import studentReducer from './reducers/studentReducer'
 import emailReducer from './reducers/emailReducer';
+import emailStatusReducer from './reducers/emailStatusReducer';
 
+// Combine all the reducers
 
 const rootReducer = combineReducers({
  
@@ -17,8 +19,8 @@ const rootReducer = combineReducers({
   form: formReducer,
   admin: adminReducer,
   students: studentReducer,
-  email: emailReducer
-
+  email: emailReducer,
+  emailstatus: emailStatusReducer
   
 });
 

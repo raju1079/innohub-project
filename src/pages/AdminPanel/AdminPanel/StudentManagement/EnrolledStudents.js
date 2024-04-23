@@ -4,22 +4,32 @@ import AdminSidebar from '../Adminsidebar'
 import { useEffect, useState, useMemo,useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { fetchStudents } from '../../../../redux/actions/action';
+import { fetchStudents ,sendEmail} from '../../../../redux/actions/action';
 import Table from '../../../../components/tableComponents/Table';
 import { CiMenuKebab } from "react-icons/ci";
 import Dropdown from "../../../../components/dropdown/DropDown"
-
+import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
+import EditStudent from '../../../../components/enrolledstudents/EditStudent';
+import { updateEmailStatus } from '../../../../redux/actions/action';
 
 const EnrolledStudents= () => {
 
     const dispatch = useDispatch();
     const students = useSelector((state) => state.students.students);
-    const [emailSent, setEmailSent] = useState({});
+    //const emailSent = useSelector((state) => state.email.emailSent);
+    const emailStatus = useSelector((state) => state.emailStatus);
+    console.log("emailStatus",emailStatus)
+
+
+    const [emailSent, setEmailSent] = useState(false);
     const [selectedStudent, setSelectedStudent] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
+    const [showEditPopup, setShowEditPopup] = useState(false);
+    const [editedStudent, setEditedStudent] = useState(null);
+
     const navigate = useNavigate();
 
-  
+  console.log(students, "aaaaaaaaaa")
     const columns = useMemo(
       () => [
         {
@@ -47,6 +57,7 @@ const EnrolledStudents= () => {
           Header: 'City',
           accessor: 'city',
         },
+
         {
           Header: 'Email Sent',
           accessor: 'email_sent',
@@ -55,8 +66,44 @@ const EnrolledStudents= () => {
               className='ml-7'
               type="checkbox"
               checked={emailSent[row.original.student_id] || false}
-              onChange={(e) => handleCheckboxChange(e, row.original.student_id)}
+              onChange={(e) => handleCheckboxChange(e, row.original.enrollement_id)}
             />
+          ),
+        },
+        {
+          Header: 'Test Score',
+          accessor: 'test_score',
+         // width: 50,
+          Cell: ({ row }) => (
+            <input
+              type="text"
+              value={row.original.test_score || ''}
+              onChange={(e) => handleTestScoreChange(e, row.original.student_id)}
+            />
+          ),
+        },
+        {
+          Header: 'Interview Score',
+          accessor: 'interview_score',
+          Cell: ({ row }) => (
+            <input
+              type="text"
+              value={row.original.interview_score || ''}
+              onChange={(e) => handleInterviewScoreChange(e, row.original.student_id)}
+            />
+          ),
+        },
+        {
+          Header: 'Status',
+          accessor: 'status',
+          Cell: ({ row }) => (
+            <select
+           // value={cell.value || ''}
+            //onChange={(e) => handleInputChange(e, rowIndex, cell.column.id)}
+          >
+            <option value="selected">Qualified</option>
+            <option value="rejected">Rejected</option>
+          </select>
           ),
         },
         {
@@ -69,6 +116,8 @@ const EnrolledStudents= () => {
             />
           ),
         },
+
+
       ],
       [emailSent]
     );
@@ -77,30 +126,42 @@ const EnrolledStudents= () => {
       dispatch(fetchStudents());
     }, [dispatch]);
      
-    const handleCheckboxChange = (event, studentId) => {
+    const handleCheckboxChange = useCallback((event, studentId) => {
       const { checked } = event.target;
-      setEmailSent(prevState => ({
-        ...prevState,
-        [studentId]: checked
-      }));
-    };
-     
-    const handleOptionSelect = (option, student) => {
+      dispatch(updateEmailStatus(studentId, checked)); // Update Redux state when checkbox is changed
+    }, [dispatch]);
+
+        const handleOptionSelect = (option, student) => {
       if (option === 'View') {
         setSelectedStudent(student);
         setShowPopup(true);
       }
+      else if (option === 'Edit') {
+        setSelectedStudent(student);
+        setShowEditPopup(true);
+        setEditedStudent(student); // Set edited student data initially to selected student data
+      }
+      
       // You can implement other actions for 'Edit' and 'Deactivate' here
     };
 
-    const onHomeClick = useCallback(() => {
-        navigate("/");
-      }, [navigate]);
-  
+
+    const handleEditSubmit = (editedStudentData) => {
+      // Here you can dispatch an action to update the student data
+      // For simplicity, let's just log the edited student data
+      console.log('Edited Student:', editedStudentData);
+      setShowEditPopup(false); // Close the popup after submission
+    };
+
+    const sendEmailToStudent = useCallback((student_Id) => {
+      dispatch(sendEmail(student_Id));
+  }, [dispatch]);
+
+   
   return (
-    <div className="flex flex-row w-full  bg-[#090119]  overflow-hidden">
+    <div className="flex flex-row w-full bg-[#090119]  overflow-hidden">
       <div className="w-full">
-        <header className="w-full flex flex-col md:flex-row items-start justify-start gap-5 text-4xl md:text-xl text-white font-poppins">
+        {/* <header className="w-full flex flex-col md:flex-row items-start justify-start gap-5 text-4xl md:text-xl text-white font-poppins">
           <div className="w-full items-center flex flex-col  md:flex-row justify-start gap-5">
             <img
               className="h-24 w-60 mb-2  md:mb-0"
@@ -116,50 +177,43 @@ const EnrolledStudents= () => {
               <div className='absolute pt-14 font-poppins text-sm pl-4'>Manage your Admin Dashboard learn more</div>
             </div>
           </div>
-        </header>
+        </header> */}
+        <AdminHeader dashboardName="Student Management"/>
         <div className="md:flex md:flex-row">
           <div className="md:w-64">
              <AdminSidebar/>  
           </div>
-          <div className="md:flex-1 md:ml-8 px-4">
-            <div className="text-white">
+          <div className="overflow-x-auto w-full md:flex-1 md:ml-8 px-4 pt-28">
+            <div className="text-white ">
               {students.length > 0 ? (
                 <Table
                   columns={columns}
                   data={students}
                   heading="Enrolled Students"
-                  button="Add new student"                
+                  button="Add new student" 
+                 
                 />
               ) : (
-                <p>loading........</p>
+                <p>no records to display</p>
               )}
             </div>
           </div>
         </div>
       </div>
       {showPopup && (
-        <Popup student={selectedStudent} onClose={() => setShowPopup(false)} />
+        <ViewStudent student={selectedStudent} onClose={() => setShowPopup(false)} />
+      )}
+      {showEditPopup && (
+        <EditStudent
+           student={editedStudent}
+          onClose={() => setShowEditPopup(false)}
+          onSubmit={handleEditSubmit}
+        />
       )}
     </div>
   );
 };
 
-const Popup = ({ student, onClose }) => {
-  return (
-    <div className="fixed top-0 left-0 w-full h-full bg-color bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-md">
-        <h2 className="text-xl font-bold mb-4">Student Details</h2>
-        <p><strong>Student Id:</strong> {student.student_id}</p>
-        <p><strong>Name:</strong> {student.first_name}</p>
-        <p><strong>Email:</strong> {student.email_id}</p>
-        <p><strong>Mobile:</strong> {student.mobile_no}</p>
-        <p><strong>State:</strong> {student.state}</p>
-        <p><strong>City:</strong> {student.city}</p>
-        <button className="bg-color text-white px-4 py-2 rounded-md mt-4" onClick={onClose}>Close</button>
-      </div>
-    </div>
-  );
-};
 
 
 export default EnrolledStudents

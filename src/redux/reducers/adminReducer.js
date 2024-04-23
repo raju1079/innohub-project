@@ -1,8 +1,9 @@
-// loginReducer.js
+// reducers/adminReducer.js
 
 const initialState = {
   loggedIn: false,
-  error: null,
+  token: null,
+  error: null
 };
 
 const adminReducer = (state = initialState, action) => {
@@ -11,13 +12,15 @@ const adminReducer = (state = initialState, action) => {
       return {
         ...state,
         loggedIn: true,
-        error: null,
+        token: action.payload,
+        error: null
       };
     case 'ADMIN_LOGIN_ERROR':
       return {
         ...state,
         loggedIn: false,
-        error: action.payload,
+        token: null,
+        error: action.payload
       };
     default:
       return state;

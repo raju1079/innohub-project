@@ -1,45 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CiMail } from "react-icons/ci";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { useDispatch, useSelector } from 'react-redux';
 import { adminLogin } from '../redux/actions/action';
 import { FaHome } from "react-icons/fa";
-import { useCallback  } from "react";
+import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { AdminHome } from "./AdminPanel/AdminPanel/AdminHomepage/AdminHome";
 import useHistory from "react";
 
 const Login = () => {
-  
-   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const adminState = useSelector((state) => state.admin);
   const [credentials, setCredentials] = useState({ username: '', password: '' });
+  const [showAlert, setShowAlert] = useState(false);
 
-  
-const handleAdminLogin = () => {
-  if (credentials.username === 'admin' && credentials.password === 'Innohub@2024') {
+  const handleAdminLogin = () => {
+    // Dispatch adminLogin action with username and password
     dispatch(adminLogin(credentials.username, credentials.password));
-    navigate('/Adminhome'); // Redirect to Adminhome if login is successful
-  } else {
-    alert('Invalid username or password');
-  }
-};
+  };
 
-// Inside your component function
-const navigate = useNavigate();
- 
-// Assuming adminState.loggedIn is a state variable to track admin login status
-// You can conditionally render the redirect inside your component's return statement
-if (adminState.loggedIn) {
-  return <Redirect to="/Adminhome" />; // Redirect if admin is logged in
-}
-
- 
-  const onHomeClick = useCallback(() => {
+  const onHomeClick = () => {
     navigate("/");
-  }, [navigate]);
+  };
 
+  useEffect(() => {
+    // If login attempt was unsuccessful, show alert
+    if (adminState.error) {
+      setShowAlert(true);
+    } else {
+      setShowAlert(false);
+    }
+  }, [adminState.error]);
+  
 
+  useEffect(() => {
+    if (adminState.loggedIn) {
+      navigate('/Adminhome');
+    }
+    
+  }, [adminState.loggedIn, navigate]);
+  
 
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen  bg-[#090119] px-8 lg:p-0">
@@ -47,19 +51,19 @@ if (adminState.loggedIn) {
       <div className="hidden lg:flex flex-1 justify-center items-center">
         <div className="relative">
           <img className="w-full max-w-md" src="/login.jpg" alt="Login" />
-          
-          <img className="absolute top-0 left-0 mt-[-50px] ml-[-10%]" src="/Vector 2.png" alt="Vector 1" style={{ maxWidth: '30%' }}  />  
-              <div
-                className=" h-[45px] lg:top-[-450px] lg:left-[-500px] xl:left-[-500px] rounded-xl flex-1 md:mr-5 relative capitalize font-medium text-white inline-block box-border pl-5 pr-5 pt-0  mb-5 md:text-lg"
-                
-              >
-                <FaHome
-                 className="h-8 w-14"onClick={onHomeClick} />
-                Home
-              </div>
-              
-          
-                  </div>
+
+          <img className="absolute top-0 left-0 mt-[-50px] ml-[-10%]" src="/Vector 2.png" alt="Vector 1" style={{ maxWidth: '30%' }} />
+          <div
+            className=" h-[45px] lg:top-[-450px] lg:left-[-500px] xl:left-[-500px] rounded-xl flex-1 md:mr-5 relative capitalize font-medium text-white inline-block box-border pl-5 pr-5 pt-0  mb-5 md:text-lg"
+
+          >
+            <FaHome
+              className="h-8 w-14" onClick={onHomeClick} />
+            Home
+          </div>
+
+
+        </div>
       </div>
 
       {/* Login Form */}
@@ -103,7 +107,7 @@ if (adminState.loggedIn) {
                   type="password"
                   autoComplete="current-password"
                   onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
-                  
+
                   required
                   className="appearance-none  rounded-l-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Password"
@@ -113,17 +117,25 @@ if (adminState.loggedIn) {
             </div>
           </div>
           <div className="text-md mt-3">
-                  <a href="#" className="font-semibold text-white hover:text-indigo-500">
-                    Forgot password?
-                  </a>
-                </div>
+            <a href="#" className="font-semibold text-white hover:text-indigo-500">
+              Forgot password?
+            </a>
+          </div>
           <div>
             <button
               type="button"
               className="group relative ml-[60px] lg:ml-[150px] flex justify-center py-3 px-8 lg:py-2 lg:px-10 mb-[10px] border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-white hover:text-black focus:outline-purple focus:ring-2 focus:ring-offset-2 focus:ring-blue cursor-pointer"
               onClick={handleAdminLogin}
             >
-           Login </button>
+              Login </button>
+
+
+              {showAlert && (
+            <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+              <strong className="font-bold">Error:</strong>
+              <span className="block sm:inline"> Invalid username or password.</span>
+            </div>
+          )}
           </div>
         </form>
       </div>

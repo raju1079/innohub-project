@@ -10,7 +10,7 @@ function AdminHome() {
       <div className="main-container  h-auto bg-[#090119] relative overflow-hidden mx-auto  my-0">
       {/* <Sidebar /> */}
       <AdminSidebar/>
-     <AdminHeader/>
+     <AdminHeader dashboardName="Admin Dashboard"/>
       {/* <Dashboard />  */}
       <WelcomeToDash/>
       
