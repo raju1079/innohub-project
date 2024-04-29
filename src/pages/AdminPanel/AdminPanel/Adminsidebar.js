@@ -93,7 +93,7 @@ const AdminSidebar = () => {
   }
 
   const navigateToAreaManagement = () => {
-    navigate("/AllState");
+    navigate("/allState");
   };
 
   return (
