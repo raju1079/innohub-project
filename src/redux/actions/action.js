@@ -1,7 +1,7 @@
 //import axios from "axios";
 import { ActionTypes } from '../constants/action-types'
 import axios from '../../api/axios'
-
+import { toast } from "react-toastify"
 
 export const setStates = (states) => ({
   type: ActionTypes.SET_STATES,
@@ -149,4 +149,238 @@ export const updateEmailStatus = (student_Id, emailSent) => {
     type: 'UPDATE_EMAIL_STATUS',
     payload: { student_Id, emailSent },
   };
+};
+
+export const fetchStateById = (id) => async (dispatch) => {
+  try {
+    const response = await axios.get(`/api/state/${id}`);
+      console.log(response.data,"data");
+    if (response.status === 200) {
+      const stateData = response.data;
+      //console.log(stateData,"stateData");
+      dispatch({
+        type: ActionTypes.FETCH_STATE_BY_ID,
+        payload: stateData,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching state by ID:', error);
+  }
+};
+
+export const uploadNewState = (newStateData) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/state', newStateData);
+    const stateData = response.data;
+    console.error('State loaded', stateData);
+    toast.success("State created successfully");
+    dispatch({
+      type: ActionTypes.UPLOAD_STATE,
+      payload: stateData
+    });
+  } catch (error) {
+    // Check if the error response contains the message indicating state name duplication
+    if (error.response && error.response.data && error.response.data.error === 'State name is already available, provide a new state name') {
+      toast.error("State name is already available, provide a new State name");
+    } else {
+      console.error(error);
+    }
+  }
+};
+
+export const updateStateById = (updateStateData, id) => async (dispatch) => {
+  try {
+    const response = await axios.put(`/api/state/${id}`, updateStateData);
+    const stateData = response.data; 
+    console.error('State updated', stateData);
+    toast.success("You have successfully updated State");
+    dispatch({
+      type: ActionTypes.EDIT_STATE,
+      payload: stateData
+    });    
+  } catch (error) {
+    console.error( error);
+  }
+};
+
+export const deactivateState = (stateId) => async (dispatch) => {
+  console.log(stateId, "stateId");
+  try {
+    const response = await axios.put(`/api/state/${stateId}/deactivate`);
+    if (response.status === 200) {
+      toast.success(`You have successfully deactivated State Id ${stateId}`);
+      dispatch({
+        type: ActionTypes.DEACTIVATE_STATE_SUCCESS,
+        payload: stateId,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while deactivating state:', error);
+  }
+};
+
+export const fetchCityList = () => async (dispatch) => {
+  try {
+    const response = await axios.get('/api/city');
+
+    if (response.status === 200) {
+      const cityData = response.data;
+      dispatch({
+        type: ActionTypes.FETCH_CITY,
+        payload: cityData,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching cities:', error);
+  }
+};
+
+export const fetchCityById = (id) => async (dispatch) => {
+  try {
+    const response = await axios.get(`/api/city/${id}/city`);
+      console.log(response.data,"data");
+    if (response.status === 200) {
+      const cityData = response.data;
+      //console.log(cityData,"cityData");
+      dispatch({
+        type: ActionTypes.FETCH_CITY_BY_ID,
+        payload: cityData,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching city by ID:', error);
+  }
+};
+
+export const uploadNewCity = (newCityData) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/city', newCityData);
+    const cityData = response.data;
+    console.error('City loaded', cityData);
+    toast.success("City created successfully");
+    dispatch({
+      type: ActionTypes.UPLOAD_CITY,
+      payload: cityData
+    });
+  } catch (error) {
+    // Check if the error response contains the message indicating city name duplication
+    if (error.response && error.response.data && error.response.data.error === 'City name is already available, provide a new city name') {
+      toast.error("City name is already available, provide a new City name");
+    } else {
+      console.error(error);
+    }
+  }
+};
+
+export const updateCityById = (updateCityData, id) => async (dispatch) => {
+  try {
+    const response = await axios.put(`/api/city/${id}/city`, updateCityData);
+    const cityData = response.data; 
+    console.error('City updated', cityData);
+    toast.success("You have successfully updated City");
+    dispatch({
+      type: ActionTypes.EDIT_CITY,
+      payload: cityData
+    });    
+  } catch (error) {
+    console.error( error);
+  }
+};
+
+export const deactivateCity = (cityId) => async (dispatch) => {
+  console.log(cityId, "cityId");
+  try {
+    const response = await axios.put(`/api/city/${cityId}/deactivate`);
+    if (response.status === 200) {
+      toast.success(`You have successfully deactivated City Id ${cityId}`);
+      dispatch({
+        type: ActionTypes.DEACTIVATE_CITY_SUCCESS,
+        payload: cityId,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while deactivating state:', error);
+  }
+};
+
+export const fetchEducationById = (id) => async (dispatch) => {
+  try {
+    const response = await axios.get(`/api/degree/${id}`);
+      console.log(response.data,"data");
+    if (response.status === 200) {
+      const educationData = response.data;
+      //console.log(educationData,"educationData");
+      dispatch({
+        type: ActionTypes.FETCH_EDUCATION_BY_ID,
+        payload: educationData,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching education by ID:', error);
+  }
+};
+
+export const uploadNewEducation = (newEducationData) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/degree', newEducationData);
+    const educationData = response.data;
+    console.error('Education loaded', educationData);
+    toast.success("Education created successfully");
+    dispatch({
+      type: ActionTypes.UPLOAD_EDUCATION,
+      payload: educationData
+    });
+  } catch (error) {
+    // Check if the error response contains the message indicating Education name duplication
+    if (error.response && error.response.data && error.response.data.error === 'Education name is already available, provide a new education name') {
+      toast.error("Education name is already available, provide a new Education name");
+    } else {
+      console.error(error);
+    }
+  }
+};
+
+export const updateEducationById = (updateEducationData, id) => async (dispatch) => {
+  try {
+    const response = await axios.put(`/api/degree/${id}`, updateEducationData);
+    const educationData = response.data; 
+    console.error('Education updated', educationData);
+    toast.success("You have successfully updated Education");
+    dispatch({
+      type: ActionTypes.EDIT_EDUCATION,
+      payload: educationData
+    });    
+  } catch (error) {
+    console.error( error);
+  }
+};
+
+export const deactivateEducation = (degreeId) => async (dispatch) => {
+  console.log(degreeId, "degreeId");
+  try {
+    const response = await axios.put(`/api/degree/${degreeId}/deactivate`);
+    if (response.status === 200) {
+      toast.success(`You have successfully deactivated Education Id ${degreeId}`);
+      dispatch({
+        type: ActionTypes.DEACTIVATE_EDUCATION_SUCCESS,
+        payload: degreeId,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while deactivating education:', error);
+  }
 };

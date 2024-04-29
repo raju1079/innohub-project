@@ -92,6 +92,10 @@ const AdminSidebar = () => {
     navigate("/qualified-students");
   }
 
+  const navigateToAreaManagement = () => {
+    navigate("/AllState");
+  };
+
   return (
     <div >
 
@@ -215,10 +219,10 @@ const AdminSidebar = () => {
               </a>
 
               <a
-                href="#"
                 className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline"
+                onClick={navigateToAreaManagement}
               >
-                Area management
+                Master Modules
               </a>
 
               <a

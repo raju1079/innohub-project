@@ -68,7 +68,14 @@ import PersonalDetailsForm from "./pages/Enrollment/PersonalDetailsForm";
 import AdminHome from "./pages/AdminPanel/AdminPanel/AdminHomepage/AdminHome";
 import EnrolledStudents from "./pages/AdminPanel/AdminPanel/StudentManagement/EnrolledStudents";
 import QualifiedStudents from "./pages/AdminPanel/AdminPanel/StudentManagement/QualifiedStudents";
-
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import AllState from "./pages/AdminPanel/Area Management/State Master/AllState";
+import UpdateState from "./pages/AdminPanel/Area Management/State Master/UpdateState";
+import AllCity from "./pages/AdminPanel/Area Management/City Master/AllCity";
+import UpdateCity from "./pages/AdminPanel/Area Management/City Master/UpdateCity";
+import AllEducation from "./pages/AdminPanel/Area Management/Educational Master/AllEducation";
+import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Master/UpdateEducation";
 
 function App() {
   const action = useNavigationType();
@@ -123,6 +130,8 @@ function App() {
   }, [pathname]);
 
   return (
+    <div>
+    <ToastContainer theme='colored' position='top-center'></ToastContainer>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/eduproject1" element={<EduProject1 />} />
@@ -189,9 +198,18 @@ function App() {
       <Route path="/enrolled-students" element ={<EnrolledStudents/>}/>
       
       <Route path="/qualified-students" element = {<QualifiedStudents/>}/>
-      
 
+      <Route path='allState' element={<AllState />} />
+      <Route path='updateState/:stateId' element={<UpdateState />} />
+
+      <Route path='allCity' element={<AllCity />} />
+      <Route path='updateCity/:cityId' element={<UpdateCity />} />
+
+      <Route path='allEducation' element={<AllEducation />} />
+      <Route path='updateEducation/:degreeId' element={<UpdateEducation />} />
+      
     </Routes>
+    </div>
   );
 }
 export default App;

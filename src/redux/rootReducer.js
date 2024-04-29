@@ -9,6 +9,21 @@ import studentReducer from './reducers/studentReducer'
 import emailReducer from './reducers/emailReducer';
 import emailStatusReducer from './reducers/emailStatusReducer';
 
+import { UploadState } from './reducers/UploadState.js';
+import { updateState } from './reducers/UpdateState.js';
+import FetchStateById from './reducers/FetchStateById.js';
+import DeactivateState from './reducers/DeactivateState.js';
+
+import { FetchCity } from './reducers/FetchCity.js';
+import { UploadCity } from './reducers/UploadCity.js';
+import { updateCity } from './reducers/UpdateCity.js';
+import FetchCityById from './reducers/FetchCityById.js';
+import DeactivateCity from './reducers/DeactivateCity.js';
+
+import { UploadEducation } from './reducers/UploadEducation.js';
+import { updateEducation } from './reducers/UpdateEducation.js';
+import FetchEducationById from './reducers/FetchEducationById.js';
+import DeactivateEducation from './reducers/DeactivateEducation.js';
 // Combine all the reducers
 
 const rootReducer = combineReducers({
@@ -20,7 +35,23 @@ const rootReducer = combineReducers({
   admin: adminReducer,
   students: studentReducer,
   email: emailReducer,
-  emailstatus: emailStatusReducer
+  emailstatus: emailStatusReducer,
+
+  fetchStateById: FetchStateById,
+  uploadState: UploadState,
+  updateState: updateState,
+  deactivateState: DeactivateState,
+
+  fetchCity: FetchCity,
+  fetchCityById: FetchCityById,
+  uploadCity: UploadCity,
+  updateCity: updateCity,
+  deactivateCity: DeactivateCity,
+
+  fetchEducationById: FetchEducationById,
+  uploadEducation: UploadEducation,
+  updateEducation: updateEducation,
+  deactivateEducation: DeactivateEducation,
   
 });
 
