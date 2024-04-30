@@ -24,6 +24,9 @@ import { UploadEducation } from './reducers/UploadEducation.js';
 import { updateEducation } from './reducers/UpdateEducation.js';
 import FetchEducationById from './reducers/FetchEducationById.js';
 import DeactivateEducation from './reducers/DeactivateEducation.js';
+import userSubmitReducer from './reducers/userSubmitReducer';
+import rolesReducer from './reducers/rolesReducer';
+import userdisplayReducer from './reducers/userdisplayReducer';
 // Combine all the reducers
 
 const rootReducer = combineReducers({
@@ -52,6 +55,10 @@ const rootReducer = combineReducers({
   uploadEducation: UploadEducation,
   updateEducation: updateEducation,
   deactivateEducation: DeactivateEducation,
+  userForm:userSubmitReducer,
+  roles:rolesReducer,
+  users:userdisplayReducer,
+  
   
 });
 

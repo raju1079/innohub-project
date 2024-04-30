@@ -96,6 +96,9 @@ const AdminSidebar = () => {
     navigate("/allState");
   };
 
+
+  
+
   return (
     <div >
 
@@ -124,13 +127,13 @@ const AdminSidebar = () => {
 
             <button
               type="button"
-              className="flex items-center w-[230px] p-2 text-base text-white bg-custom-color transition duration-75 rounded-lg group hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 mt-[-30px] rounded-bl-[50px] ml-[-20px] bg-white rounded-tr-[70px]"
+              class="flex items-center w-64 p-2 text-base text-white bg-custom-color transition duration-75 rounded-lg group hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 mt-[-30px] rounded-bl-[50px] ml-[-50px] bg-white rounded-tr-[70px]"
               aria-controls="dropdown-example"
               data-collapse-toggle="dropdown-example"
               onClick={profilepicDown} // Add onClick event handler here
             >
 
-              <img src="/admin_profile.PNG" alt="" style={{ width: "50px", height: "50px", backgroundColor: "black", borderRadius: "50%" }} />
+<img src="/admin_profile.PNG" alt="" style={{ width: "50px", height: "50px", backgroundColor: "black", borderRadius: "50%", marginLeft:"20px" }} />
               <p style={{ color: "black", marginTop: "-40px", paddingLeft: "10px" }} className="dropdown-toggle pt-[50px] font-bold">
                 Admin
               </p>
@@ -176,26 +179,25 @@ const AdminSidebar = () => {
             </ul>
             <a
               href="#"
-              className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]"
-              onClick={handleDashboardClick} // Update onClick event
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]"
             >
 
-              <MdDashboard className="w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ml-[-60px]" />
-              <span className="ms-3 ml-[-20px]">Dashboard</span>
+              <MdDashboard className="ml-[-60px] cursor-pointer"/>
+              <span class="ms-3 ml-[-20px] cursor-pointer ">Dashboard</span>
             </a>
 
             <button
               type="button"
-              className="flex items-center w-full p-2 text-base text-white bg-custom-color transition duration-75 rounded-lg group hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 pl-[15px]"
+              class="flex items-center w-full p-2 text-base text-white bg-custom-color transition duration-75 rounded-lg group hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 pl-[15px]"
               aria-controls="dropdown-example"
               data-collapse-toggle="dropdown-example"
               onClick={toggleDropdown} // Add onClick event handler here
             >
-              <MdAdminPanelSettings className="ml-[-60px]" />
-              <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+              <MdAdminPanelSettings className="ml-[-60px] cursor-pointer" />
+              <span class="ms-3 ml-[-20px] cursor-pointer ">
                 AdminMaster
               </span>
-              <IoMdArrowDropdown className="w-5 h-5" />
+              <IoMdArrowDropdown class="w-5 h-5" />
 
             </button>
             <ul
@@ -204,7 +206,7 @@ const AdminSidebar = () => {
             >
 
               <a
-                href="#"
+                href="/usermanagement"
                 className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline"
               >
                 User Management
@@ -238,8 +240,8 @@ const AdminSidebar = () => {
               className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]"
             >
 
-              <IoIosPerson className="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ml-[-60px]" />
-              <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300 ml-[-40px]">
+              <IoIosPerson className="ml-[-60px] cursor-pointer" />
+              <span class="ms-3 ml-[-20px] cursor-pointer ">
                 Event management
               </span>
             </a>
@@ -254,8 +256,8 @@ const AdminSidebar = () => {
 
             >
 
-              <PiStudentBold className="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ml-[-60px]" />
-              <span className="flex-1 ms-3 text-left bg-custom-color rtl:text-right whitespace-nowrap ml-[-40px]" >
+              <PiStudentBold className="ml-[-60px] cursor-pointer"  />
+              <span class="ms-3 ml-[-20px] cursor-pointer ">
 
 
                 Student management
@@ -294,8 +296,8 @@ const AdminSidebar = () => {
               href="#"
               className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]"
             >
-            <MdContentCopy class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ml-[-60px]" />
-              <span class="flex-1 ms-3 whitespace-nowrap ">Content management</span>
+            <MdContentCopy className="ml-[-60px] cursor-pointer"  />
+              <span class="ms-3 ml-[-20px] cursor-pointer ">Content management</span>
             </a>
           </ul>
         </div>

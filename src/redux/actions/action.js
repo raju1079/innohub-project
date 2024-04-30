@@ -86,6 +86,9 @@ export const setCities = (cities) => ({
       
       // Check if login was successful
       if (message === 'Login successful') {
+        // Store token in localStorage
+        localStorage.setItem('token', token);
+        
         // Dispatch action to update Redux state with token
         dispatch({
           type: 'ADMIN_LOGIN_SUCCESS',
@@ -384,3 +387,82 @@ export const deactivateEducation = (degreeId) => async (dispatch) => {
     console.error('Error while deactivating education:', error);
   }
 };
+
+export const setRoles = (roles) => ({
+  type: ActionTypes.SET_ROLES,
+  payload: roles,
+});
+
+export const fetchRoles = () => async (dispatch) => {
+  try {
+    const response = await axios.get('/api/roles');
+    // console.log("Roles data", response.data);
+    dispatch(setRoles(response.data));
+  } catch(error) {
+    console.error('Error in fetching roles', error)
+  }
+};
+
+
+export const sendUserForm = (userFormData) => async (dispatch) => {
+  try {
+    // Retrieve token from local storage
+    const token = localStorage.getItem('token');
+    console.log(token)
+
+    // Check if token exists
+    if (!token) {
+      // Handle case where token is not found in local storage
+      console.error('Token not found in local storage');
+      dispatch({
+        type: 'SUBMIT_USER_FORM_ERROR',
+        payload: 'Token not found in local storage'
+      });
+      return;
+    }
+
+    const response = await axios.post('/api/grant-access', userFormData, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+
+    console.log('User form data received', response.data);
+    dispatch({
+      type: 'SUBMIT_USER_FORM_SUCCESS',
+      payload: response.data // Assuming your response includes form data
+    });
+    // await dispatch(userFormData)
+    console.log('User form submitted successfully', response.data);
+  } catch (error) {
+    console.error('Error submitting user form data', error);
+    dispatch({
+      type: 'SUBMIT_USER_FORM_ERROR',
+      payload: error.message
+    });
+  }
+};
+
+
+
+
+
+
+export const fetchUsers=()=>async(dispatch)=>{
+  try{
+    const response=await axios.get('/api/usermanage');
+    console.log('Fetched user data:', response.data); 
+    dispatch({
+      type:'FETCH_USERS_SUCCESS',
+      payload:response.data,
+    });
+  } catch(error){
+    dispatch({
+      type:'FETCH_USERS_ERROR',
+      payload:error
+    });
+    console.error(' error in Fetching user data:', error); 
+  }
+};
+
+

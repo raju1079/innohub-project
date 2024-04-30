@@ -76,6 +76,8 @@ import AllCity from "./pages/AdminPanel/Area Management/City Master/AllCity";
 import UpdateCity from "./pages/AdminPanel/Area Management/City Master/UpdateCity";
 import AllEducation from "./pages/AdminPanel/Area Management/Educational Master/AllEducation";
 import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Master/UpdateEducation";
+import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserManagement";
+import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
 
 function App() {
   const action = useNavigationType();
@@ -207,6 +209,8 @@ function App() {
 
       <Route path='allEducation' element={<AllEducation />} />
       <Route path='updateEducation/:degreeId' element={<UpdateEducation />} />
+      <Route path="/UserManagement" element={<UserManagement/>}/>
+<Route path="/AddUserMangForm" element={<AddUserMangForm/>}/>
       
     </Routes>
     </div>
