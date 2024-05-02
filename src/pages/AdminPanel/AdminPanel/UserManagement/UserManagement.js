@@ -203,12 +203,18 @@ const Popup = ({ user, onClose }) => {
     <div className="fixed top-0 left-0 w-full h-full bg-color bg-opacity-50 flex items-center justify-center">
       <div className="bg-white p-8 rounded-md">
         <h2 className="text-xl font-bold mb-4">Student Details</h2>
-        <p><strong>Student Id:</strong> {user.user_id}</p>
-        <p><strong>Name:</strong> {user.first_name}</p>
+        <p><strong>User Id:</strong> {user.user_id}</p>
+        <p><strong>First Name:</strong> {user.first_name}</p>
+        <p><strong>Last Name:</strong> {user.last_name}</p>
+        <p><strong>Gender:</strong> {user.gender}</p>
+        <p><strong>Adhaar number:</strong> {user.adhaar_no}</p>
         <p><strong>Email:</strong> {user.email_id}</p>
         <p><strong>Mobile:</strong> {user.mobile_no}</p>
+        <p><strong>Date of birth:</strong> {user.dob}</p>
         <p><strong>State:</strong> {user.state}</p>
         <p><strong>City:</strong> {user.city}</p>
+        <p><strong>Roles name:</strong> {user.roles_name}</p>
+        <p><strong>profession:</strong> {user.profession}</p>
         <button className="bg-color text-white px-4 py-2 rounded-md mt-4" onClick={onClose}>Close</button>
       </div>
     </div>
