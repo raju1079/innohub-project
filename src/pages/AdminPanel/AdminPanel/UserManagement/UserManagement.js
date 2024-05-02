@@ -10,6 +10,7 @@ import { fetchUsers } from '../../../../redux/actions/action';
 import { useGlobalFilter } from 'react-table';
 import { useDispatch, useSelector } from 'react-redux';
 import AdminHeader from '../AdminHeader';
+import AddUserMangForm from './AddUserMangForm';
 function UserManagement() {
   const navigate = useNavigate();
   const dispatch=useDispatch();
@@ -18,6 +19,7 @@ function UserManagement() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedUsers, setSelectedUsers] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [showAddUserPopup, setShowAddUserPopup] = useState(false);
   const onGroupClickkk = useCallback(() => {
     navigate("/");
   }, [navigate]);
@@ -25,6 +27,15 @@ function UserManagement() {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const toggleAddUserPopup = () => {
+    setShowAddUserPopup(!showAddUserPopup);
+  };
+
+  const handleAddUserClick = () => {
+    setShowAddUserPopup(true);
+  };
+
 
   const columns = [
     {
@@ -82,9 +93,7 @@ function UserManagement() {
     // Add more data objects as needed
   ];
 
-  const handleAddUserClick = () => {
-    navigate('/AddUserMangForm');
-  };
+  
 
   const handleOptionSelect = (option, user) => {
     if (option === 'View') {
@@ -108,7 +117,7 @@ const onHomeClick = useCallback(() => {
       <div className="w-full">
       <AdminHeader dashboardName="User Management"/>
         
-        <div className='ml-[280px] mt-28 flex flex-row gap gap-6'>
+        <div className='ml-[280px] mt-28 grid gap-x-8 gap-y-4  lg:flex flex-row md:ml-[300px] gap gap-6 ml-[10px] xl:ml-[300px] '>
           <p className='text-white'>Filterby:</p>
           <button
             type="button"
@@ -146,11 +155,11 @@ const onHomeClick = useCallback(() => {
             </span>
             <IoMdArrowDropdown class="w-5 h-5" />
           </button>
-          <input placeholder="Deactivate Accounts" className='text-white bg-[#090119] border-2'   aria-controls="dropdown-example"
+          <input placeholder="Deactivate Accounts" className='text-white bg-[#090119] border-2 w-[150px]'   aria-controls="dropdown-example"
             data-collapse-toggle="dropdown-example"
             onClick={toggleDropdown}  />
           <IoMdArrowDropdown />
-          <button onClick={handleAddUserClick} className='cursor-pointer bg-color hover:bg-blue-700 text-white font-bold  md:mt-0 md:ml-4 rounded'>Add new user</button>
+          <button onClick={handleAddUserClick} className='cursor-pointer bg-color hover:bg-blue-700 text-white font-bold  md:mt-0 md:ml-4 rounded w-[150px]'>Add new user</button>
         </div>
         <div className="md:flex md:flex-row">
           <div className="md:w-64">
@@ -174,6 +183,16 @@ const onHomeClick = useCallback(() => {
       </div>
       {showPopup && (
         <Popup user={selectedUsers} onClose={() => setShowPopup(false)} />
+      )}
+
+      {/* Popup for adding a new user */}
+      {showAddUserPopup && (
+        
+          <div className="">
+            <h2 className="text-xl font-bold mb-4">Add New User</h2>
+            <AddUserMangForm onCloseee={()=>setShowAddUserPopup(false)} />
+          </div>
+        
       )}
     </div>
   );

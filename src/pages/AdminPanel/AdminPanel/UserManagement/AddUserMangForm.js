@@ -10,7 +10,7 @@ import DatePicker from '../../../../components/formcomponents/DatePicker';
 import { useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
 import { FaHome } from "react-icons/fa";
-function AddUserMangForm() {
+function AddUserMangForm({onCloseee}) {
   const navigate=useNavigate();
   const dispatch=useDispatch();
     const [formFieldsss, setFormFieldsss] = useState({
@@ -125,6 +125,7 @@ const { username, password } = formState; // Assuming your form state contains t
         
            
           setShowSuccessPopup(true);
+          onCloseee();
           handleReset();
         
       };
@@ -160,6 +161,9 @@ setSelectedRoles('');
         navigate("/");
       }, [navigate]);
 
+      const handleDashboard = () => {
+        setShowSuccessPopup(false); // Close the popup when navigating away
+      };
       
       const validateEmail = (value) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -199,43 +203,17 @@ setSelectedRoles('');
       
   return (
 
-    <>
-      <div className="w-full flex flex-col items-start justify-start pt-2 px-4 box-border bg-black max-w-full">
-        <header className="w-full flex flex-col md:flex-row items-center justify-between max-w-full gap-[20px] text-center text-4xl md:text-xl text-white font-poppins">
-          <div className="w-full  flex flex-col md:flex-row items-start justify-start gap-[10px] max-w-full">
-            <img
-              className="h-[69px] w-[260px] relative mb-2 md:mb-0"
-              loading="lazy"
-              alt=""
-              src="/poplogo.svg"
-            />
-            <div className="flex-1 flex flex-col items-center justify-start pt-0 pl-5 md:pt-[7px] px-0 pb-2 md:pb-0">
-              <h1 className="m-0 relative  font-semibold font-inherit whitespace-nowrap text-6xl md:text-4xl">
-                Add user Form
-              </h1>
-            </div>
-          </div>
-          <div className="flex flex-col items-start justify-start pt-2 md:pt-[5px] px-0 pb-0 text-left text-xl">
-            <div className="flex flex-col md:flex-row items-center justify-end gap-4 md:gap-8 cursor-pointer">
-              <div
-                className="h-[45px] rounded-xl flex-1 md:mr-5 relative capitalize font-medium text-white inline-block box-border pl-5 pr-5 pt-0  mb-5 md:text-lg"
-                onClick={onHomeClick}
-              >
-                <FaHome
-                  className="h-8 w-14" />
-                Home
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
+      <div className='relative bg-custom-color ml-[-320px] w-screen-full  md:ml-[-500px] lg:ml-[-770px] xl:ml-[-950px]  border-2 border-black popup-content grid justify-items-start'>
+        <div className="self-stretch flex flex-col bg-color items-start justify-start max-w-full text-start text-xl text-black font-poppins">
 
-      <div className=''>
-      <div className=' relative bg-custom-color lg:mx-28 lg:px-4  border-2 border-black xl:px-20'>
-       <form onSubmit={handleUserSubmit}  className="w-[280px]  mx-0 mt-4 m-0 md:mx-0 md:px-3  md:mt-8 lg:mx-0 lg:mt-10 lg:justify-center md:pt-4 lg:pr-24" >
+        
+       <form onSubmit={handleUserSubmit} 
+        className="w-[280px]   mx-0 mt-4 m-0 md:mx-0 md:px-3  md:mt-8  lg:mx-0 lg:mt-10 lg:justify-center md:pt-4 lg:pr-24" >
          
 
-          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3 ">
+
+
+          <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3 ">
             <TextField
               label="First Name"
               name="first_name"
@@ -248,7 +226,7 @@ setSelectedRoles('');
               className="w-full md:w-1/2 lg:w-1/4"
             />
 
-            <div className="md:mx-8" >
+            <div className="lg:mx-8" >
               <TextField
                 label="Last Name"
                 name="last_name"
@@ -262,26 +240,9 @@ setSelectedRoles('');
               />
             </div>
           </div>
-
-          {/* <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3 ">
-            
-
-            <div className="md:mx-8" >
-              <TextField
-                label="Adhaar no"
-                name="adhaar_no"
-                type="text"
-                placeholder="Enter your adhaar number "
-                value={formFieldsss.adhaar_no}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                validate={validateAadharNumber}
-                className="w-full md:w-1/2 lg:w-1/4"
-              />
-            </div>
-          </div> */}
-          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3">
+         
+          
+          <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3">
 
             <TextField
               label="Email ID"
@@ -294,7 +255,7 @@ setSelectedRoles('');
               disabled={false}
               validate={validateEmail}
             />
-            <div className="md:mx-8" >
+            <div className="lg:mx-8" >
 
               <TextField
                 className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
@@ -309,7 +270,7 @@ setSelectedRoles('');
               />
             </div>
           </div>
-          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3">
+          <div className="flex flex-col mx-4  lg:flex-row space-y-4 lg:space-y-0 pb-3">
             <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 text-white gap-[5px_0px]">
               <div className="w-[232px] relative font-semibold inline-block z-[1]">
                 State
@@ -330,7 +291,7 @@ setSelectedRoles('');
               </div>
 
             </div>
-            <div className="md:mx-8" >
+            <div className="lg:mx-8 lg:flex-row space-y-4 lg:space-y-0" >
               <div className="self-stretch flex flex-col items-start justify-start gap-[5px_0px] text-lg text-white">
                 <div className="relative font-semibold inline-block z-[1] items-start pt-[-50px]">
                   City
@@ -350,7 +311,7 @@ setSelectedRoles('');
               </div>
             </div>
           </div>
-          <div className="flex flex-col mx-2 md:flex-row space-y-4 md:space-y-0 pb-3">
+          <div className="flex flex-col mx-2 lg:flex-row space-y-4 lg:space-y-0 pb-3">
             <TextField
               label="Pincode"
               name="pincode"
@@ -362,7 +323,7 @@ setSelectedRoles('');
               disabled={false}
             />
             
-            <div className="md:mx-8" >
+            <div className="lg:mx-8" >
               <TextField
                 label="Adhaar no"
                 name="adhaar_no"
@@ -377,21 +338,10 @@ setSelectedRoles('');
               />
             </div>
 
-              {/* <TextField
-                className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
-                label="Mobile Number"
-                name="mobile_no"
-                type="text"
-                placeholder="Enter your mobile number"
-                value={formFieldsss.mobile_no}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                validate={validateMobileNumber}
-              /> */}
+              
             
           </div>
-          <div className="flex flex-col ml-2  md:flex-row space-y-4 md:space-y-0 pb-3 md:ml-[10px] lg:gap-5 ">
+          <div className="flex flex-col ml-2  lg:flex-row space-y-4 lg:space-y-0 space-y-4 md:space-y-0 pb-3 md:ml-[10px] lg:gap-5 ">
           <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 text-white gap-[5px_0px]">
               <div className="w-[232px] relative font-semibold inline-block z-[1]">
                 Roles
@@ -413,8 +363,8 @@ setSelectedRoles('');
               </div>
 
             </div>
-            <div className="md:mx-8 " >
-              <div className="self-stretch flex flex-col items-start justify-start gap-[5px_0px] text-lg text-white">
+            <div className="lg:mx-8 " >
+              <div className="self-stretch flex flex-col md:flex flex-row items-start justify-start gap-[5px_0px] text-lg text-white">
                 <div className="relative font-semibold inline-block z-[1] items-start lg:ml-[-20px]">
                   Gender
                 </div>
@@ -433,7 +383,7 @@ setSelectedRoles('');
             </div>
           </div>
           
-          <div className="flex flex-col mx-2  md:flex-row space-y-4 md:space-y-0 pb-3 ">
+          <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3">
           <DatePicker
                 label="Date of Birth"
                 value={formFieldsss.dob}
@@ -442,7 +392,7 @@ setSelectedRoles('');
                 validate={validateDateOfBirth}
               />
 
-            <div className="md:mx-28  pt-2 lg:ml-[120px]" >
+            <div className="lg:mx-28  pt-2 lg:ml-[120px]" >
                <TextField
                 className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
                 label="Mobile Number"
@@ -485,7 +435,7 @@ setSelectedRoles('');
                   </b>
                 </button>
 
-                <button onClick={handleReset} className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-white flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
+                <button  onClick={onCloseee} className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-white flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
                   <b className="w-[152px] relative text-base-2 inline-block font-poppins text-black text-center shrink-0">
                     Cancel
                   </b>
@@ -516,7 +466,8 @@ setSelectedRoles('');
         </form>
         </div>
         </div>
-    </>
+       
+    
   )
 }
 
