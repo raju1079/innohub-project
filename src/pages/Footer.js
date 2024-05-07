@@ -27,6 +27,10 @@ const Footer = ({
     navigate("/about-us");
   }, [navigate]);
 
+  const onFAQTextClick = useCallback(() => {
+    navigate("/faq_page1");
+  }, [navigate]); 
+
   const wisconsinAveSuiteStyle = useMemo(() => {
     return {
       top: propTop,
@@ -126,24 +130,24 @@ const Footer = ({
                 <div className="flex flex-col items-start justify-start gap-[11px] text-sm font-poppins">
                   <div
                     className="h-[21px] relative capitalize font-medium inline-block cursor-pointer"
-                    onClick={onAboutUsText1Click}
+                    onClick={onResearchAreaTextClick}
                   >
                     Research area
                   </div>
                   <div
                     className="relative font-medium cursor-pointer"
-                    onClick={onCareersTextClick}
+                    onClick={onProjectsTextClick}
                   >
                     Projects
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[11px] font-roboto">
-                    <div className="h-[21px] relative font-poppins inline-block">
+                    <div className="h-[21px] relative font-poppins inline-block"onClick={onAboutUsTextClick} >
                       About us
                     </div>
                     <div className="flex flex-row items-start justify-start pt-0 px-0 pb-[5px]">
-                      <div className="relative">Collaboration</div>
+                      <div className="relative"onClick={ onProjectsTextClick}>Collaboration</div>
                     </div>
-                    <div className="relative">FAQs</div>
+                    <div className="relative" onClick={onFAQTextClick}>FAQs</div>
                   </div>
                 </div>
               </div>

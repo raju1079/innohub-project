@@ -25,16 +25,20 @@ const HomePage = () => {
     navigate("/about-us");
   }, [navigate]);
 
-  const onAboutUsText2Click = useCallback(() => {
-    navigate("/researcharea");
-  }, [navigate]);
+  // const onAboutUsText2Click = useCallback(() => {
+  //   navigate("/researcharea");
+  // }, [navigate]);
 
-  const onCareersTextClick = useCallback(() => {
-    navigate("/desktop-3");
-  }, [navigate]);
+  // const onCareersTextClick = useCallback(() => {
+  //   navigate("/desktop-3");
+  // }, [navigate]);
 
    const onLoginClick = useCallback(() => {
     navigate("/Login");
+   }, [navigate]);
+
+   const onFAQClick = useCallback(() => {
+    navigate("/faq_page1");
    }, [navigate]);
 
   return (
@@ -64,13 +68,13 @@ const HomePage = () => {
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  "
-          //onClick={onProjectsTextClick}
+          onClick={onProjectsTextClick}
           >
             Collaborations
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
-          //onClick={onProjectsTextClick}
+          onClick={onProjectsTextClick}
           >
             Blogs
           </div>
@@ -411,13 +415,13 @@ const HomePage = () => {
           <b className="absolute top-[0%] left-[0%] text-lg">Company</b>
           <div
             className="absolute top-[26.9%] left-[0%] capitalize font-medium font-poppins cursor-pointer"
-            onClick={onAboutUsText2Click}
+            onClick={onResearchAreaTextClick}
           >
             Research area
           </div>
           <div
             className="absolute top-[43.15%] left-[0%] font-medium font-poppins cursor-pointer"
-          //onClick={onCareersTextClick}
+          onClick={onProjectsTextClick}
           >
             Collaborations
           </div>
@@ -427,8 +431,8 @@ const HomePage = () => {
           >
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]">Blogs</div>
-          <div className="absolute top-[91.88%] left-[0%]">FAQs</div>
+          <div className="absolute top-[75.63%] left-[0%]"  onClick={onProjectsTextClick}>Blogs</div>
+          <div className="absolute top-[91.88%] left-[0%]" onClick={onFAQClick}>FAQs</div>
         </div>
         {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
         <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}
