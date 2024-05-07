@@ -78,7 +78,7 @@ import AllEducation from "./pages/AdminPanel/Area Management/Educational Master/
 import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Master/UpdateEducation";
 import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserManagement";
 import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
-import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
+// import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
 
 function App() {
@@ -200,7 +200,7 @@ function App() {
         <Route path="/enrollment_form" element={<PersonalDetailsForm />} />
         <Route path="/Adminhome" element={<AdminHome />} />
         <Route path="/enrolled-students" element={<EnrolledStudents />} />
-        <Route path="access_control" element={<AccessControlHome />} />
+        {/* <Route path="access_control" element={<AccessControlHome />} /> */}
         <Route path="/qualified-students" element={<QualifiedStudents />} />
 
         <Route path='allState' element={<AllState />} />
