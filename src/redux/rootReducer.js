@@ -8,7 +8,7 @@ import adminReducer from './reducers/adminReducer';
 import studentReducer from './reducers/studentReducer'
 import emailReducer from './reducers/emailReducer';
 import emailStatusReducer from './reducers/emailStatusReducer';
-
+import { updateStudent } from './reducers/UpdateStudent.js';
 import { UploadState } from './reducers/UploadState.js';
 import { updateState } from './reducers/UpdateState.js';
 import FetchStateById from './reducers/FetchStateById.js';
@@ -27,6 +27,10 @@ import DeactivateEducation from './reducers/DeactivateEducation.js';
 import userSubmitReducer from './reducers/userSubmitReducer';
 import rolesReducer from './reducers/rolesReducer';
 import userdisplayReducer from './reducers/userdisplayReducer';
+import { FetchMark } from './reducers/FetchQualified.js';
+import { UploadMark } from './reducers/UploadMark.js';
+import { FetchStudentMark } from './reducers/FetchStudentMark.js';
+
 // Combine all the reducers
 
 const rootReducer = combineReducers({
@@ -39,7 +43,7 @@ const rootReducer = combineReducers({
   students: studentReducer,
   email: emailReducer,
   emailstatus: emailStatusReducer,
-
+  updateStudent: updateStudent,
   fetchStateById: FetchStateById,
   uploadState: UploadState,
   updateState: updateState,
@@ -58,7 +62,9 @@ const rootReducer = combineReducers({
   userForm:userSubmitReducer,
   roles:rolesReducer,
   users:userdisplayReducer,
-  
+  fetchMark: FetchMark,
+  uploadMark: UploadMark,
+  fetchStudentMark: FetchStudentMark,
   
 });
 

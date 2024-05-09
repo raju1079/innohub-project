@@ -368,11 +368,19 @@ const EnrollmentForm = () => {
                   value={selectedState}
                   onChange={handleStateChange}>
                   <option value="">Select State</option>
-                  {states.map((state) => (
+                  {/*{states.map((state) => (
                     <option key={state.state_id} value={state.state_id}>
                       {state.state_name}
                     </option>
-                  ))}
+                  ))}*/}
+                  {states
+                  .filter(state => state.status === 0) // Filter active states only
+                  .map(state => (
+                  <option key={state.state_id} value={state.state_id}>
+                    {state.state_name}
+                  </option>
+                  ))
+                  }
                 </select>
 
               </div>
@@ -389,10 +397,15 @@ const EnrollmentForm = () => {
                     value={selectedCity}
                     onChange={handleCityChange}>
                     <option value="">Select City</option>
-                    {cities.map((city) => (
+                    {/*{cities.map((city) => (
                       <option key={city.city_id} value={city.city_id}>
                         {city.city_name}
                       </option>
+                    ))}*/}
+                    {cities.filter(city => city.status === 0).map(city => (
+                    <option key={city.city_id} value={city.city_id}>
+                      {city.city_name}
+                    </option>
                     ))}
                   </select></div>
               </div>
@@ -482,11 +495,16 @@ const EnrollmentForm = () => {
                     onChange={(e) => setSelectedHigherEducation(e.target.value)}
                   >
                     <option value="">Select Higher Education</option>
-                    {higherEducation.map((edu) => (
+                    {/*{higherEducation.map((edu) => (
                       <option key={edu.degree_id} value={edu.degree_name}>
                         {edu.degree_name}
                       </option>
 
+                    ))}*/}
+                    {higherEducation.filter(education => education.status === 0).map(education => (
+                    <option key={education.degree_id} value={education.degree_name}>
+                      {education.degree_name}
+                    </option>
                     ))}
                   </select>
                 </div>

@@ -465,4 +465,68 @@ export const fetchUsers=()=>async(dispatch)=>{
   }
 };
 
+export const updateStudentById = (updateStudentData, id) => async (dispatch) => {
+  try {
+    const response = await axios.put(`/api/students/${id}`, updateStudentData);
+    const studentData = response.data; 
+    console.error('Student updated', studentData);
+    toast.success("You have successfully updated Student");
+    dispatch({
+      type: ActionTypes.EDIT_STUDENT,
+      payload: studentData
+    });    
+  } catch (error) {
+    console.error( error);
+  }
+};
 
+export const fetchQualified = () => async (dispatch) => {
+  try {
+    const response = await axios.get('/api/marks/qualified');
+
+    if (response.status === 200) {
+      const markData = response.data;
+      dispatch({
+        type: ActionTypes.FETCH_MARK,
+        payload: markData, 
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching mark:', error);
+  }
+};
+
+export const uploadNewMark = (newMarkData) => async (dispatch) => {
+  try {
+    console.log("New mark data:", newMarkData);
+    const response = await axios.post('/api/marks', newMarkData);
+    const markData = response.data;
+    console.error('Mark loaded', markData);
+    dispatch({
+      type: ActionTypes.UPLOAD_MARK,
+      payload: markData
+    });
+  } catch (error) {
+    console.error("Error uploading new mark:", error.response.data);
+  }
+};
+
+export const fetchStudentMark = () => async (dispatch) => {
+  try {
+    const response = await axios.get('/api/marks');
+
+    if (response.status === 200) {
+      const markData = response.data;
+      dispatch({
+        type: ActionTypes.FETCH_STUDENT_MARK,
+        payload: markData, 
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching mark:', error);
+  }
+};

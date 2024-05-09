@@ -10,7 +10,8 @@ import { CiMenuKebab } from "react-icons/ci";
 import Dropdown from "../../../../components/dropdown/DropDown"
 import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
 import EditStudent from '../../../../components/enrolledstudents/EditStudent';
-import { updateEmailStatus } from '../../../../redux/actions/action';
+import { updateEmailStatus, uploadNewMark, fetchStudentMark } from '../../../../redux/actions/action';
+import AddMark from '../../../../components/enrolledstudents/AddMark';
 
 const EnrolledStudents= () => {
 
@@ -19,6 +20,18 @@ const EnrolledStudents= () => {
     //const emailSent = useSelector((state) => state.email.emailSent);
     const emailStatus = useSelector((state) => state.emailStatus);
     console.log("emailStatus",emailStatus)
+    const mark = useSelector((state) => state.fetchStudentMark.mark); 
+    useEffect(() => {
+      dispatch(fetchStudentMark());
+    }, [dispatch]);
+  
+    console.log(typeof mark, mark);
+    const combinedData = students.map(student => ({
+      ...student,
+      mark: Array.isArray(mark) ? mark.find(m => m.student_id === student.student_id) : null
+    }));
+    console.log("Mark data:", mark);
+
 
 
     const [emailSent, setEmailSent] = useState(false);
@@ -26,6 +39,7 @@ const EnrolledStudents= () => {
     const [showPopup, setShowPopup] = useState(false);
     const [showEditPopup, setShowEditPopup] = useState(false);
     const [editedStudent, setEditedStudent] = useState(null);
+    const [showAddMarkPopup, setShowAddMarkPopup] = useState(false);
 
     const navigate = useNavigate();
 
@@ -39,7 +53,8 @@ const EnrolledStudents= () => {
         },
         {
           Header: 'Name',
-          accessor: 'first_name' 
+          //accessor: 'first_name' 
+          accessor: (row) => `${row.first_name} ${row.last_name}`,
         },
         {
           Header: 'Email',
@@ -57,6 +72,14 @@ const EnrolledStudents= () => {
           Header: 'City',
           accessor: 'city',
         },
+        {
+          Header: 'Test Score',
+          accessor: 'test_score',
+        },
+        {
+          Header: 'Interview Score',
+          accessor: 'interview_score',
+        },
 
         {
           Header: 'Email Sent',
@@ -70,7 +93,7 @@ const EnrolledStudents= () => {
             />
           ),
         },
-        {
+        /*{
           Header: 'Test Score',
           accessor: 'test_score',
          // width: 50,
@@ -105,13 +128,13 @@ const EnrolledStudents= () => {
             <option value="rejected">Rejected</option>
           </select>
           ),
-        },
+        },*/
         {
           Header: '', // New column for actions
           accessor: 'actions', // Custom accessor to ensure unique key
           Cell: ({ row }) => (
             <Dropdown
-              options={['View', 'Edit', 'Deactivate']}
+              options={['View', 'Edit', 'Deactivate', 'Add Mark']}
               onSelect={(option) => handleOptionSelect(option, row.original)}
             />
           ),
@@ -141,11 +164,16 @@ const EnrolledStudents= () => {
         setShowEditPopup(true);
         setEditedStudent(student); // Set edited student data initially to selected student data
       }
-      
+      else if (option === 'Add Mark') {
+        setSelectedStudent(student);  
+        setShowAddMarkPopup(true);  
+      }
       // You can implement other actions for 'Edit' and 'Deactivate' here
     };
 
-
+    const handleAddMarkSubmit = (markData) => {
+      dispatch(uploadNewMark(markData));
+    };
     const handleEditSubmit = (editedStudentData) => {
       // Here you can dispatch an action to update the student data
       // For simplicity, let's just log the edited student data
@@ -188,7 +216,8 @@ const EnrolledStudents= () => {
               {students.length > 0 ? (
                 <Table
                   columns={columns}
-                  data={students}
+                  //data={students}
+                  data={combinedData}
                   heading="Enrolled Students"
                   button="Add new student" 
                  
@@ -209,6 +238,13 @@ const EnrolledStudents= () => {
           onClose={() => setShowEditPopup(false)}
           onSubmit={handleEditSubmit}
         />
+      )}
+      {showAddMarkPopup && (
+      <AddMark
+      student={selectedStudent}
+      onClose={() => setShowAddMarkPopup(false)}
+      onSubmit={handleAddMarkSubmit}
+      />
       )}
     </div>
   );

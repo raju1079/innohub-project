@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { updateStudentById } from '../../redux/actions/action'; 
+
 
 const EditStudent = ({ student, onClose, onSubmit }) => {
   const [editedStudent, setEditedStudent] = useState(student);
+  const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -11,8 +15,18 @@ const EditStudent = ({ student, onClose, onSubmit }) => {
     }));
   };
 
-  const handleSubmit = () => {
+  /*const handleSubmit = () => {
     onSubmit(editedStudent); // Pass the edited student data to the onSubmit function
+  };*/
+  const handleSubmit = () => {
+    const { student_id, ...updatedData } = editedStudent; // Extract student_id from editedStudent
+    dispatch(updateStudentById(updatedData, student_id)) // Send updatedData and student_id to action
+      .then((updatedStudent) => {
+        onSubmit(updatedStudent);
+      })
+      .catch((error) => {
+        console.error('Error updating student:', error);
+      });
   };
 
   return (
@@ -34,10 +48,6 @@ const EditStudent = ({ student, onClose, onSubmit }) => {
         <label className="block mb-2">
           Address:
           <input type="text" name="address_line1" value={editedStudent.address_line1} onChange={handleInputChange} className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1" />
-        </label>
-        <label className="block mb-2">
-          Email:
-          <input type="email" name="email_id" value={editedStudent.email_id} onChange={handleInputChange} className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1" />
         </label>
         <div className="flex justify-end pt-6">
           <button onClick={handleSubmit} className="bg-color text-white px-4 py-2 rounded-md mr-2">Submit</button>

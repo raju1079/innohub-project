@@ -17,6 +17,10 @@ const UploadCity = () => {
   const { city_name, state_name, state_id, creation_date } = formData;
   
   useEffect(() => {
+    dispatch(fetchStates()); 
+  }, [dispatch]); 
+
+  useEffect(() => {
     const today = new Date();
     const formattedDate = today.toISOString().split('T')[0];
     setFormData({
@@ -67,6 +71,19 @@ const UploadCity = () => {
       <h2 className="text-white">Add City</h2>
       <form onSubmit={handleSubmit}>
         <div className="flex items-center">
+        <div className="mr-5 w-60 mt-8">
+            <select
+              className="w-full border border-white p-3.5 rounded"
+              name="state_name"
+              value={state_name}
+              onChange={handleChange}
+            >
+              <option value="">Select State</option>
+              {states.map(state => (
+                <option key={state.state_id} value={state.state_name}>{state.state_name}</option>
+              ))}
+            </select>
+          </div>
           <div className="mr-5 w-60">
             <TextField
               label="City Name"
@@ -76,16 +93,8 @@ const UploadCity = () => {
               placeholder="City Name"
               onChange={handleChange}
               validate={validateCityName}
-            />
-          </div>
-          <div className="mr-5 w-60">
-            <TextField
-              label="State Name"
-              type="text"
-              name="state_name"
-              value={state_name}
-              placeholder="State Name"
-              onChange={handleChange}
+              required
+              disabled={!state_name}
             />
           </div>
           <div className="w-60">

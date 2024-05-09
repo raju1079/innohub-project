@@ -16,8 +16,9 @@ const UpdateCity = () => {
     state_id: '',
     creation_date: '', 
   });
+  const [selectedStateName, setSelectedStateName] = useState('');
 
-  const { city_name, state_id } = formData;
+  const { city_name } = formData;
 
   useEffect(() => {
     dispatch(fetchCityById(cityId));
@@ -29,10 +30,11 @@ const UpdateCity = () => {
       const selectedCity = cityDetails[0];
       setFormData({
         city_name: selectedCity?.city_name,
-        state_name: getStateName(selectedCity?.state_id),
+        //state_name: getStateName(selectedCity?.state_id),
         state_id: selectedCity?.state_id,
         creation_date: selectedCity?.creation_date,
       });
+      setSelectedStateName(getStateName(selectedCity?.state_id));
     }
   }, [cityDetails, states]);
 
@@ -50,11 +52,7 @@ const UpdateCity = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'state_name') {
-      const selectedState = states.find(state => state.state_name === value);
-      const state_id = selectedState ? selectedState.state_id : ''; 
-      setFormData({ ...formData, [name]: value, state_id: state_id, creation_date: getCurrentDate() });
-    } else {
+    if (name === 'city_name') {
       setFormData({ ...formData, [name]: value });
     }
   };
@@ -93,7 +91,6 @@ const UpdateCity = () => {
           {cityDetails.length > 0 && (
             <>
               <h6 className="text-white">CITY NAME: {cityDetails[0]?.city_name}</h6>
-              <h6 className="text-white">STATE NAME: {formData.state_name}</h6>
               <button onClick={() => navigate(-1)} className="mt-5 bg-[#532fa0] p-2 rounded">Back</button>
             </>
           )}
@@ -111,13 +108,10 @@ const UpdateCity = () => {
             <div className="w-1/3">
               <TextField
                 type="text"
-                name="state_name"
-                value={formData.state_name}
-                onChange={handleChange}
-                placeholder="State Name"
-                required
+                value={selectedStateName}
+                disabled
               />
-            </div>
+            </div>  
             <div className="w-1/3">
               <TextField
                 type="date"
