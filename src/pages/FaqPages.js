@@ -111,8 +111,10 @@ const FaqPages = () => {
 
 
   return (
-    <div className="relative bg-gray md:w-full w-[739px] p-0 mx-full]">
-      <div className="container mx-auto pt-[5px] font-poppins ">
+    <div className="relative bg-gray xl:w-full lg:w-[1300px] md:w-[1180px] w-[749px] px-[0px] mx-full">
+
+     {/* <div className="relative bg-gray md:w-full w-[739px] p-0 mx-full]"> */}
+      <div className=" mx-auto pt-[5px] font-poppins ">
         <Header />
         <div className="bg-gray py-16 mx-10 font-poppins">
           <div className="container mx-auto">
@@ -131,8 +133,8 @@ const FaqPages = () => {
             <div key={index} className="mt-4">
               <p
                 className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins hover:underline text-13xl md:text-13xl  lg:text-xl"
-
-                onMouseEnter={() => handleOptionChange(index)}
+                onClick={() => handleOptionChange(index)}
+                // onMouseEnter={() => handleOptionChange(index)}
                 onMouseLeave={() => handleOptionChange("")}
               >
                 {faq.question}
@@ -148,13 +150,13 @@ const FaqPages = () => {
             {faqList.length > faqPerPage && (
               <ul className="pagination flex list-none items-center">
                 <li className="mr-2">
-                  <button onClick={goToPreviousPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px]">Previous</button>
+                  <button onClick={goToPreviousPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Previous</button>
                 </li>
                 {Array.from({ length: Math.ceil(faqList.length / faqPerPage) }).map((_, index) => (
                   <li key={index} className="mx-1">
                     <button
                       onClick={() => paginate(index + 1)}
-                      className="px-3 py-1 bg-gray-200 rounded-lg hover:bg-color border-none  text-lg min-w-[40px] min-h-[40px] "
+                      className="px-3 py-1 bg-gray-200 rounded-lg hover:bg-color border-none  text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px] "
                     >
 
                       {index + 1}
@@ -162,7 +164,7 @@ const FaqPages = () => {
                   </li>
                 ))}
                 <li className="ml-2">
-                  <button onClick={goToNextPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px]">Next</button>
+                  <button onClick={goToNextPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Next</button>
                 </li>
               </ul>
             )}
