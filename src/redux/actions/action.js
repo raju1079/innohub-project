@@ -114,10 +114,13 @@ export const setCities = (cities) => ({
 export const fetchStudents = () => async (dispatch) => {
   try {
     const response = await axios.get('/api/students');
+    const totalEnrolledStudents = response.data.length; 
    // console.log('Fetched data:', response.data); 
+    console.log('totalEnrolledStudents     :',totalEnrolledStudents)
     dispatch({
       type: 'FETCH_STUDENTS_SUCCESS',
       payload: response.data,
+      totalEnrolledStudents: totalEnrolledStudents,
     });
   } catch (error) {
     dispatch({
@@ -443,6 +446,37 @@ export const sendUserForm = (userFormData) => async (dispatch) => {
   }
 };
 
+export const sendLoginCredentials = (userData) => async (dispatch) => {
+  try {
+    // Retrieve token from local storage
+    const token = localStorage.getItem('token');
+    console.log(token);
+
+    // Check if token exists
+    if (!token) {
+      // Handle case where token is not found in local storage
+      console.error('Token not found in local storage');
+      dispatch({
+        type: 'EMAIL_SENT_FAILURE',
+        payload: 'Token not found in local storage'
+      });
+      return;
+    }
+
+    await axios.post('/api/send-login-credentials', userData, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+
+    // Dispatch an action indicating successful email sending if needed
+    dispatch({ type: 'EMAIL_SENT_SUCCESS' });
+  } catch (error) {
+    // Dispatch an action for handling email sending failure if needed
+    console.error('Error sending login credentials', error);
+    dispatch({ type: 'EMAIL_SENT_FAILURE', payload: error.message });
+  }
+};
 
 
 
@@ -530,3 +564,4 @@ export const fetchStudentMark = () => async (dispatch) => {
     console.error('Error while fetching mark:', error);
   }
 };
+

@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ScrollingText from "../components/ScrollingText";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -43,21 +44,18 @@ const HomePage = () => {
 
   return (
 
-
-
-
-    <div className="xl:w-full relative bg-gray h-[3376px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
+  <div className="xl:w-full relative bg-gray h-[3376px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
       <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[90px] overflow-hidden">
         <ScrollingText />
-        <img
+       {/*  <img
           className="absolute h-[80.56%] top-[21%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
           alt=""
           src="/poplogo.svg"
           //src="/pop.png"
           onClick={onGroupClick}
-        />
-        <div className="absolute top-[40px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
+        /> */}
+        {/* <div className="absolute top-[40px] left-[calc(50%_-_111px)] w-[694px] flex flex-row items-center justify-between">
           <div
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 
              Save Changes
@@ -89,7 +87,15 @@ const HomePage = () => {
               Log In
             </div>
           </div>
+        </div> */}
+       <Header/>
+        <div className="w-[90px] relative rounded-xl bg-cold-grey-white h-6 overflow-hidden shrink-0 text-2xl text-blue ml-[1100px] md:ml-[1100px]">
+        <div className="absolute top-[calc(63%_-_18px)] left-[calc(62%_-_44px)] capitalize font-semibold " 
+        onClick={onLoginClick}>
+          Log In
         </div>
+      </div>
+
       </div>
 
       <div className="absolute w-[calc(100%_-_3px)] top-[90px] right-[1.6px] left-[1.4px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[711px] overflow-hidden text-29xl">

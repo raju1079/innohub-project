@@ -30,6 +30,9 @@ import userdisplayReducer from './reducers/userdisplayReducer';
 import { FetchMark } from './reducers/FetchQualified.js';
 import { UploadMark } from './reducers/UploadMark.js';
 import { FetchStudentMark } from './reducers/FetchStudentMark.js';
+import userEmailReducer from './reducers/userEmailReducer.js';
+
+
 
 // Combine all the reducers
 
@@ -65,6 +68,7 @@ const rootReducer = combineReducers({
   fetchMark: FetchMark,
   uploadMark: UploadMark,
   fetchStudentMark: FetchStudentMark,
+  userEmail:userEmailReducer,
   
 });
 

@@ -11,19 +11,20 @@ import { useGlobalFilter } from 'react-table';
 import { useDispatch, useSelector } from 'react-redux';
 import AdminHeader from '../AdminHeader';
 import AddUserMangForm from './AddUserMangForm';
+
 function UserManagement() {
+
   const navigate = useNavigate();
   const dispatch=useDispatch();
+
   const users=useSelector((state)=>state.users.users);
+  
   const [emailSent, setEmailSent] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const [selectedUsers, setSelectedUsers] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
   const [showAddUserPopup, setShowAddUserPopup] = useState(false);
-  const onGroupClickkk = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
+  
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -54,13 +55,14 @@ function UserManagement() {
       Header: 'Mobile',
       accessor: 'mobile_no',
     },
-    {
-      Header: 'City',
-      accessor: 'city',
-    },
+    
     {
       Header: 'State',
       accessor: 'state',
+    },
+    {
+      Header: 'City',
+      accessor: 'city',
     },
     ,
     {
@@ -117,7 +119,7 @@ const onHomeClick = useCallback(() => {
       <div className="w-full">
       <AdminHeader dashboardName="User Management"/>
         
-        <div className='ml-[280px] mt-28 grid gap-x-8 gap-y-4  lg:flex flex-row md:ml-[300px] gap gap-6 ml-[10px] xl:ml-[300px] '>
+        <div className='ml-[280px] mt-28 grid gap-x-8 gap-y-4  lg:flex flex-row md:ml-[300px] gap gap-6 xl:ml-[300px] '>
           <p className='text-white'>Filterby:</p>
           <button
             type="button"
@@ -129,7 +131,7 @@ const onHomeClick = useCallback(() => {
             <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
               User ID
             </span>
-            <select className="bg-whitesmoke text-black h-auto rounded-[8.08px]  pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color w-[50px] font-poppins">
+            <select className="bg-whitesmoke text-black h-auto rounded-[8.08px]  pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 w-[50px]">
             <option value="">Select user ID</option>
               {users.map((user)=>{
                 return(

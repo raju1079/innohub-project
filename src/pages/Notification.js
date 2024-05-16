@@ -62,33 +62,72 @@ const Notification = () => {
 
           <div className="container mx-auto pt-[350px] font-poppins">
             <div className="w-full">      
-            <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">INNOHUB INTERNSHIP</b>
-            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">The InnoHub Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development. Participants in this program will engage in a dynamic six-month stint, actively working on live projects with diverse clients associated with SNIPE TECH PVT LTD. This work will be conducted online, allowing interns to contribute directly from their college premises. The enhanced skills acquired during this period can be effectively leveraged by candidates in various job placement avenues, enhancing their ability to succeed in campus interviews. This program is designed to instill confidence in technology and processes, enabling participants to emerge as highly successful software engineers. By providing hands-on experience and exposure to real-world projects, the InnoHub Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
-
+            <b className="text-17xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-17xl font-bold text-white ">INNOHUB INTERNSHIP</b>
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify overflow-wrap-break-word ">
+              The InnoHub Internship stands out as an exceptional integrated program that offers a holistic learning experience, encompassing comprehensive training, mentorship in technology, campus interviews preparation, and a platform for project development. Participants in this program will engage in a dynamic six-month stint, actively working on live projects with diverse clients associated with SNIPE TECH PVT LTD. This work will be conducted online, allowing interns to contribute directly from their college premises.
+            The enhanced skills acquired during this period can be effectively leveraged by candidates in various job placement avenues, enhancing their ability to succeed in campus interviews.This program is designed to instill confidence in technology and processes, enabling participants to emerge as highly successful software engineers.
+            By providing hands-on experience and exposure to real-world projects, the InnoHub Internship prepares candidates for a seamless transition into the professional realm, empowering them to excel in both job placements and campus interviews.
             </p>
-            <h3 className="text-29xl font-semibold mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] mt-[50px] my-[60px] text-blue ">Eligibility:</h3>
-         <b className="flex flex-wrap text-17xl font-semibold mb-2 text-white mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]  "> BE, B.Tech, BCA, BSc, MCA, M.Tech, MSc.
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify  overflow-wrap-break-word">
+            We are pleased to offer scholarships to support students who wish to participate in academic research activities at our esteemed center. The scholarship aims to provide financial assistance to promising students interested in gaining practical experience in the research area through our internship program. By offering this scholarship, we hope to foster a spirit of inquiry and provide valuable learning experiences to motivated individuals like you. The criteria for being eligible to avail the scholarship is define as in the below table:
+            </p>
+
+            <div style={{ textAlign: 'center' }}>
+            <table className="w-full mt-8" style={{ borderCollapse: 'separate', borderSpacing: '0' }}>
+            <thead>
+              <tr>
+                <th style={{ border: '1px solid white', padding: '8px' }}>Sl No.</th>
+                <th style={{ border: '1px solid white', padding: '8px' }}>Marks obtain in Internship test in %age.</th>
+                <th style={{ border: '1px solid white', padding: '8px' }}>Scholarship granted in % on total fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style={{ border: '1px solid white', padding: '8px', textAlign:"center" }}>1.</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>95% to 99.99%</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>50%</td>
+              </tr>
+              <tr>
+                <td style={{ border: '1px solid white', padding: '8px' }}>2.</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>90% to 94%</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>40%</td>
+              </tr>
+              <tr>
+                <td style={{ border: '1px solid white', padding: '8px' }}>3.</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>81% to 89%</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>25%</td>
+              </tr>
+              <tr>
+                <td style={{ border: '1px solid white', padding: '8px' }}>4.</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>71% to 80%</td>
+                <td style={{ border: '1px solid white', padding: '8px' }}>10%</td>
+              </tr>
+            </tbody>
+          </table>
+            </div>
+      <h3 className="text-17xl font-semibold mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] mt-[50px] my-[60px] text-blue ">Eligibility:</h3>
+         <b className="flex flex-wrap text-13xl font-semibold mb-2 text-white mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]  "> BE, B.Tech, BCA, BSc, MCA, M.Tech, MSc.
          
         <Link  to="/enrollment_form" 
-         className="block md:ml-4 underline cursor-pointer text-17xl text-white hover:text-blue ">
-                 Apply to Internship
-              </Link>
+         className="block md:ml-4 underline cursor-pointer text-13xl text-white hover:text-blue ">
+            Apply to Internship
+        </Link>
             
         </b>
         </div>
         </div>
         
         <div className="mx-[-10px] my-[100px]">
-        <b className=" text-29xl text-blue mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]">Internship process:</b>
+        <b className=" text-17xl text-blue mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]">Internship process:</b>
         </div>
         <div className="lg:mx-[100px] xl:mx-[150px]">      
-          <img 
+        <img 
          className=" w-[550px] md:w-[750px] lg:mx-10 xl:w-[950px] object-fill"
          src="/Group 3763.png"/>
          </div>
   
        
-        <h3 className="text-29xl text-blue mt-[100px]mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]" >  Benefits:</h3>
+        <h3 className="text-17xl text-blue mt-[100px]mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]" >  Benefits:</h3>
         <ul className="mb-[150px] leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]">
             <li className="p-1">Technology</li>
             <li className="p-1">Hands on Project Work</li>
@@ -103,10 +142,7 @@ const Notification = () => {
         </section>
         <Footer />
 </div>
-
-    
-
-  );
+ );
 };
 
 export default Notification;

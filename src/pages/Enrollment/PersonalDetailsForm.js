@@ -122,11 +122,14 @@ const EnrollmentForm = () => {
     };
     dispatch(submitForm(updatedFormFields));
 
-    dispatch(sendEmail(updatedFormFields)); // Dispatch sendEmail directly
+    dispatch(sendEmail()); // Dispatch sendEmail directly
 
     setShowSuccessPopup(true); // Show the success pop-up
 
     handleReset();
+    setTimeout(() => {
+      navigate("/");
+    }, 3000); 
     console.log("handleSubmit", updatedFormFields)
   };
 

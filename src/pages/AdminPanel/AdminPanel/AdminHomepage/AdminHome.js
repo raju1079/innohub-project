@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-
+//import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchStudents } from "../../../../redux/actions/action"
 import "../home.css";
 import AdminSidebar from "../Adminsidebar";
 import AdminHeader from "../AdminHeader";
@@ -22,61 +24,6 @@ function AdminHome() {
     </div>
   );
 }
-
-// function Sidebar() {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   // Function to toggle dropdown state
-//   const toggleDropdown = () => {
-//     setIsOpen(!isOpen);
-//   };
-//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-//   const dropdownRef = useRef(null);
-
-//   // Function to toggle dropdown state
-//   const handleDropdownToggle = () => {
-//     setIsDropdownOpen(!isDropdownOpen);
-//   };
-
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-//         setIsDropdownOpen(false);
-//       }
-//     };
-
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => {
-//       document.removeEventListener("mousedown", handleClickOutside);
-//     };
-//   }, []);
-
-//   return (
-//     <div>
-     
-    
-//     </div>
-//   );
-// }
-
-// function Dashboard() {
-//   return (
-//     <div>
-//        {/* <AdminSidebar/> */}
-//       <div class="p-4 sm:ml-64 ">
-//         <div className="flex flex-col items-center px-10 pt-5  max-md:px-5">
-//           <div className="flex flex-col items-start px-6 py-6 text-2xl font-bold text-white w-full bg-custom-color rounded-xl  max-md:mt-10 max-md:max-w-full">
-//             Admin Dashboard
-//             <div className="mt-3 text-sm tracking-wide leading-4">
-//               <span className="text-white">Manage your Admin Dashboard. </span>
-//               <span className="text-white">learn more</span>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 function WelcomeToDash() {
   return (
@@ -101,13 +48,29 @@ function WelcomeToDash() {
 }
 
 function Students() {
+
+  const dispatch = useDispatch();
+  const totalEnrolledStudents = useSelector(state => state.students.totalEnrolledStudents);
+  const loading = useSelector(state => state.students.loading);
+  const error = useSelector(state => state.students.error);
+   console.log("totalEnrolledStudents",totalEnrolledStudents)
+
+  useEffect(() => {
+    dispatch(fetchStudents());
+  }, [dispatch]);
   return (
     <div className="p-4 pb-10 sm:ml-60 gap-x-5 ">
       <div className="flex gap-16 md:gap-4 px-8 font-poppins max-md:flex-wrap">
         <div className="flex flex-col w-[30%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow px-9 pt-10 pb-3.5 w-full font-poppins text-white bg-violet-900 rounded-3xl max-md:px-5 max-md:mt-10">
             <div className="text-2xl">Total Enrolled Students</div>
-            <div className="mt-8 text-4xl">500</div>
+            <div className="mt-8 text-4xl"></div>
+            <div>
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
+      {totalEnrolledStudents !== null && <p>Total Enrolled Students: {totalEnrolledStudents}</p>}
+      {/* Render other student details */}
+    </div>
           </div>
         </div>
         <div className="flex flex-col ml-5 w-[30%] max-md:ml-0 max-md:w-full">

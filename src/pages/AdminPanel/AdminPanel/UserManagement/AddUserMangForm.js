@@ -5,215 +5,213 @@ import { useDispatch, useSelector } from 'react-redux';
 import { adminLogin, fetchStates } from '../../../../redux/actions/action';
 import { fetchCities } from '../../../../redux/actions/action';
 import { fetchRoles } from '../../../../redux/actions/action';
-import {sendUserForm,resetForm } from '../../../../redux/actions/action';
+import { sendUserForm, resetForm, sendLoginCredentials } from '../../../../redux/actions/action';
 import DatePicker from '../../../../components/formcomponents/DatePicker';
 import { useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
 import { FaHome } from "react-icons/fa";
-function AddUserMangForm({onCloseee}) {
-  const navigate=useNavigate();
-  const dispatch=useDispatch();
-    const [formFieldsss, setFormFieldsss] = useState({
-        // Initial form data
-        first_name: '',
-        last_name: '',
-        adhaar_no: '',
-        // user_id: '',
-        email_id:'',
-        Communication_Address_line_1: '',
-        dob: '',
-        mobile_no: '',
-        state: '',
-        city: '',
-        pincode: '',
-        roles_name:'',
-        gender:'',
-        profession:''
-        
+
+function AddUserMangForm({ onCloseee }) {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [formFieldsss, setFormFieldsss] = useState({
+    // Initial form data
+    first_name: '',
+    last_name: '',
+    adhaar_no: '',
+    // user_id: '',
+    email_id: '',
+    Communication_Address_line_1: '',
+    dob: '',
+    mobile_no: '',
+    state: '',
+    city: '',
+    pincode: '',
+    roles_name: '',
+    gender: '',
+    profession: ''
+
+  });
+  const [formState, setFormState] = useState({
+    username: '', // Define your form fields here
+    password: '', // Define your form fields here
+    // Add other form fields here
+  });
+  // console.log("xyz",formFieldsss)
+  const userFormData = useSelector((state) => state.userForm);
+  const error = useSelector((state) => state.error);
+  const states = useSelector((state) => state.states.states);
+  const cities = useSelector((state) => state.cities.cities);
+  const roles = useSelector((state) => state.roles.roles);
+  const email = useSelector((state) => state.userEmail)
+  // console.log("hello", roles)
+
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [selectedState, setSelectedState] = useState('');
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedGender, setSelectedGender] = useState('');
+  const [selectedRoles, setSelectedRoles] = useState('');
+
+  useEffect(() => {
+    dispatch(fetchStates());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (selectedState) {
+      dispatch(fetchCities(selectedState))
+    }
+  }, [dispatch, selectedState])
+
+  useEffect(() => {
+    dispatch(fetchRoles(roles));
+    // console.log(roles)
+  }, [])
+
+  const handleChange = (e) => {
+
+    const { name, value, type } = e.target;
+
+    if (type === 'file') {
+      // Handle file uploads
+      const file = e.target.files[0];
+      setFormFieldsss({
+        ...formFieldsss,
+        [name]: file,
       });
-      const [formState, setFormState] = useState({
-        username: '', // Define your form fields here
-        password: '', // Define your form fields here
-        // Add other form fields here
+    } else {
+      // Handle other input types
+      setFormFieldsss({
+        ...formFieldsss,
+        [name]: value,
       });
-      // console.log("xyz",formFieldsss)
-      const userFormData = useSelector((state) => state.userForm);
-      const error = useSelector((state) => state.error);
-      const states = useSelector((state) => state.states.states);
-      const cities = useSelector((state) => state.cities.cities);
-      const roles=useSelector((state)=>state.roles.roles);
-      // console.log("hello", roles)
+    }
+  };
 
-      const [showSuccessPopup, setShowSuccessPopup] = useState(false);
-      const [selectedState, setSelectedState] = useState('');
-      const [selectedCity, setSelectedCity] = useState('');
-      const [selectedGender, setSelectedGender] = useState('');
-      const[selectedRoles,setSelectedRoles]=useState('');
-      
-      useEffect(()=>{
-        dispatch(fetchStates());
-      },[dispatch]);
+  const handleStateChange = (e) => {
+    const newState = e.target.value;
+    setSelectedState(newState);
+    setSelectedCity('');
+  };
 
-    useEffect(()=>{
-      if(selectedState){
-        dispatch(fetchCities(selectedState))
-      }
-    },[dispatch,selectedState])
+  const handleCityChange = (e) => {
+    const newCity = e.target.value;
+    setSelectedCity(newCity);
+  };
 
-useEffect(()=>{
-  dispatch(fetchRoles(roles));
-// console.log(roles)
-},[])
+  // const handleRoleChnage=(e)=>{
+  // const newRole=e.target.value;
+  // setSelectedRoles(newRole);
 
-    const handleChange = (e) => {
-      
-        const { name, value, type } = e.target;
-    
-        if (type === 'file') {
-          // Handle file uploads
-          const file = e.target.files[0];
-          setFormFieldsss({
-            ...formFieldsss,
-            [name]: file,
-          });
-        } else {
-          // Handle other input types
-          setFormFieldsss({
-            ...formFieldsss,
-            [name]: value,
-          });
-        }
-      };
+  // }
 
-      const handleStateChange = (e) => {
-        const newState = e.target.value;
-        setSelectedState(newState);
-        setSelectedCity('');
-      };
-
-      const handleCityChange = (e) => {
-        const newCity = e.target.value;
-        setSelectedCity(newCity);
-      };
-
-// const handleRoleChnage=(e)=>{
-// const newRole=e.target.value;
-// setSelectedRoles(newRole);
-
-// }
-
-const { username, password } = formState; // Assuming your form state contains these values
-
-     
-      
-      const handleUserSubmit = async (e) => {
-        e.preventDefault();
-    
-        const stateName = states.find(state => state.state_id === parseInt(selectedState))?.state_name || '';
-        const cityName = cities.find(city => city.city_id === parseInt(selectedCity))?.city_name || '';
-    
-        const updatedFormFields = {
-          ...formFieldsss,
-          state: stateName,
-          city: cityName,
-          gender: selectedGender,
-          roles_name: selectedRoles
-        };
-    
-        dispatch(sendUserForm(updatedFormFields));
-    
-        
-           
-          setShowSuccessPopup(true);
-          onCloseee();
-          handleReset();
-        
-      };
-      
-      const handleReset=()=>{
-dispatch(resetForm());
-setFormFieldsss({
-  first_name: '',
-  first_name: '',
-        last_name: '',
-        adhaar_no: '',
-        // user_id: '',
-        email_id:'',
-        Communication_Address_line_1: '',
-        dob: '',
-        mobile_no: '',
-        state: '',
-        city: '',
-        pincode: '',
-        roles_name:'',
-        gender:'',
-        profession:''
-});
-
-setSelectedState('');
-setSelectedCity('');
-setSelectedGender('');
-setSelectedRoles('');
-      };
+  const { username, password } = formState; // Assuming your form state contains these values
 
 
-      const onHomeClick = useCallback(() => {
-        navigate("/");
-      }, [navigate]);
 
-      const handleDashboard = () => {
-        setShowSuccessPopup(false); // Close the popup when navigating away
-      };
-      
-      const validateEmail = (value) => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(value) ? "" : "Invalid email address";
-      };
-    
-      const validateDateOfBirth = (value) => {
-        const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
-        const [year] = value.split('-');
-    
-        // Check if the date format is correct and if the year part contains exactly four digits
-        return dobRegex.test(value) && year.length === 4 ? "" : "Invalid date of birth";
-      };
-    
-      const validateMobileNumber = (value) => {
-        const isValid = /^\d{10}$/.test(value); // Assumes a 10-digit mobile number
-        return isValid ? "" : "Invalid mobile number";
-      };
-    
-      // Validation function for Aadhar number (example)
-      const validateAadharNumber = (value) => {
-        const isValid = /^\d{12}$/.test(value); // Assumes a 12-digit Aadhar number
-        return isValid ? "" : "Invalid Aadhar number";
-      };
-    
-    
-      // const validateMarks = (value) => {
-      //   const marks = parseFloat(value);
-    
-      //   if (marks < 80) {
-      //     return 'Marks should be above 80% to proceed further.';
-      //   }
-    
-      //   return '';
-      // };
+  const handleUserSubmit = async (e) => {
+    e.preventDefault();
 
-      
+    const stateName = states.find(state => state.state_id === parseInt(selectedState))?.state_name || '';
+    const cityName = cities.find(city => city.city_id === parseInt(selectedCity))?.city_name || '';
+
+    const updatedFormFields = {
+      ...formFieldsss,
+      state: stateName,
+      city: cityName,
+      gender: selectedGender,
+      roles_name: selectedRoles
+    };
+
+    dispatch(sendUserForm(updatedFormFields));
+
+    dispatch(sendLoginCredentials({ first_name: formFieldsss.first_name, email_id: formFieldsss.email_id })); // Dispatch action to send email
+
+    setShowSuccessPopup(true);
+    onCloseee();
+    handleReset();
+
+  };
+
+  const handleReset = () => {
+    dispatch(resetForm());
+    setFormFieldsss({
+      first_name: '',
+      first_name: '',
+      last_name: '',
+      adhaar_no: '',
+      // user_id: '',
+      email_id: '',
+      Communication_Address_line_1: '',
+      dob: '',
+      mobile_no: '',
+      state: '',
+      city: '',
+      pincode: '',
+      roles_name: '',
+      gender: '',
+      profession: ''
+    });
+
+    setSelectedState('');
+    setSelectedCity('');
+    setSelectedGender('');
+    setSelectedRoles('');
+  };
+
+
+  const onHomeClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
+  const handleDashboard = () => {
+    setShowSuccessPopup(false); // Close the popup when navigating away
+  };
+
+  const validateEmail = (value) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(value) ? "" : "Invalid email address";
+  };
+
+  const validateDateOfBirth = (value) => {
+    const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
+    const [year] = value.split('-');
+
+    // Check if the date format is correct and if the year part contains exactly four digits
+    return dobRegex.test(value) && year.length === 4 ? "" : "Invalid date of birth";
+  };
+
+  const validateMobileNumber = (value) => {
+    const isValid = /^\d{10}$/.test(value); // Assumes a 10-digit mobile number
+    return isValid ? "" : "Invalid mobile number";
+  };
+
+  // Validation function for Aadhar number (example)
+  const validateAadharNumber = (value) => {
+    const isValid = /^\d{12}$/.test(value); // Assumes a 12-digit Aadhar number
+    return isValid ? "" : "Invalid Aadhar number";
+  };
+
+
+  // const validateMarks = (value) => {
+  //   const marks = parseFloat(value);
+
+  //   if (marks < 80) {
+  //     return 'Marks should be above 80% to proceed further.';
+  //   }
+
+  //   return '';
+  // };
+
+
   return (
 
-      <div className='relative bg-custom-color ml-[-320px] w-screen-full  md:ml-[-500px] lg:ml-[-770px] xl:ml-[-950px]  border-2 border-black popup-content grid justify-items-start'>
-        <div className="self-stretch flex flex-col bg-color items-start justify-start max-w-full text-start text-xl text-black font-poppins">
-
-        
-       <form onSubmit={handleUserSubmit} 
-        className="w-[280px]   mx-0 mt-4 m-0 md:mx-0 md:px-3  md:mt-8  lg:mx-0 lg:mt-10 lg:justify-center md:pt-4 lg:pr-24" >
-         
+    <div className='relative bg-custom-color ml-[-320px] w-screen-full  md:ml-[-500px] lg:ml-[-770px] xl:ml-[-950px]  border-2 border-black popup-content grid justify-items-start'>
+      <div className="self-stretch flex flex-col bg-color items-start justify-start max-w-full text-start text-xl text-black font-poppins">
 
 
-
-          <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3 ">
+        <form onSubmit={handleUserSubmit}
+          className="w-[280px]   mx-0 mt-4 m-0 md:mx-0 md:px-3  md:mt-8  lg:mx-0 lg:mt-10 lg:justify-center md:pt-4 lg:pr-24" >
+           <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3 ">
             <TextField
               label="First Name"
               name="first_name"
@@ -240,8 +238,8 @@ setSelectedRoles('');
               />
             </div>
           </div>
-         
-          
+
+
           <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3">
 
             <TextField
@@ -322,7 +320,7 @@ setSelectedRoles('');
               required={true}
               disabled={false}
             />
-            
+
             <div className="lg:mx-8" >
               <TextField
                 label="Adhaar no"
@@ -338,27 +336,27 @@ setSelectedRoles('');
               />
             </div>
 
-              
-            
+
+
           </div>
-          <div className="flex flex-col ml-2  lg:flex-row space-y-4 lg:space-y-0 space-y-4 md:space-y-0 pb-3 md:ml-[10px] lg:gap-5 ">
-          <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 text-white gap-[5px_0px]">
+          <div className="flex flex-col ml-2  lg:flex-row space-y-4 lg:space-y-0 md:space-y-0 pb-3 md:ml-[10px] lg:gap-5 ">
+            <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 text-white gap-[5px_0px]">
               <div className="w-[232px] relative font-semibold inline-block z-[1]">
                 Roles
               </div>
               <div className="self-stretch rounded-lg bg-white overflow-hidden flex flex-row items-start justify-between  pb-0.5 pr-6 pl-3 whitespace-nowrap gap-[20px] z-[1] text-xs text-gray-300 border-[1px] border-solid border-color1">
-              <select
-  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[51px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[315px] "
-  value={selectedRoles}
-  onChange={(e)=>setSelectedRoles(e.target.value)}
->
-  <option value="">Select Roles</option>
-  {roles.map((roles) => ( // Change 'roles' to 'role'
-    <option key={roles.roles_id} value={roles.roles_name}> {/* Change 'roles' to 'role' */}
-      {roles.roles_name} {/* Change 'roles' to 'role' */}
-    </option>
-  ))}
-</select>
+                <select
+                  className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[51px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[315px] "
+                  value={selectedRoles}
+                  onChange={(e) => setSelectedRoles(e.target.value)}
+                >
+                  <option value="">Select Roles</option>
+                  {roles.map((roles) => ( // Change 'roles' to 'role'
+                    <option key={roles.roles_id} value={roles.roles_name}> {/* Change 'roles' to 'role' */}
+                      {roles.roles_name} {/* Change 'roles' to 'role' */}
+                    </option>
+                  ))}
+                </select>
 
               </div>
 
@@ -372,28 +370,28 @@ setSelectedRoles('');
                   <select
                     className="w-full [border:none] [outline:none] bg-whitesmoke self-stretch h-[51px] rounded-[8.08px] flex flex-row items-center justify-start pt-3 px-[0px] pb-4 box-border font-poppins text-mini-1 text-color min-w-[315px]  "
                     value={selectedGender}
-                    onChange={(e)=>setSelectedGender(e.target.value)}>
+                    onChange={(e) => setSelectedGender(e.target.value)}>
                     <option value="">Select Gender</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                    
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+
                   </select></div>
               </div>
             </div>
           </div>
-          
+
           <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3">
-          <DatePicker
-                label="Date of Birth"
-                value={formFieldsss.dob}
-                onChange={(newDateValue) => handleChange({ target: { name: 'dob', value: newDateValue } })}
-                required={true}
-                validate={validateDateOfBirth}
-              />
+            <DatePicker
+              label="Date of Birth"
+              value={formFieldsss.dob}
+              onChange={(newDateValue) => handleChange({ target: { name: 'dob', value: newDateValue } })}
+              required={true}
+              validate={validateDateOfBirth}
+            />
 
             <div className="lg:mx-28  pt-2 lg:ml-[120px]" >
-               <TextField
+              <TextField
                 className="w-[130px] [border:none] [outline:none] font-poppins text-xs bg-[transparent] h-[18px] relative text-gray-300 whitespace-pre-wrap text-left inline-block"
                 label="Mobile Number"
                 name="mobile_no"
@@ -407,23 +405,23 @@ setSelectedRoles('');
               />
 
               <div className='mt-4'>
-              <TextField
-                label="profession"
-                name="profession"
-                type="text"
-                placeholder="Enter your profession"
-                value={formFieldsss.profession}
-                onChange={handleChange}
-                required={true}
-                disabled={false}
-                className="w-full md:w-1/2 lg:w-1/4 mt-4"
-              />
-               </div>
+                <TextField
+                  label="profession"
+                  name="profession"
+                  type="text"
+                  placeholder="Enter your profession"
+                  value={formFieldsss.profession}
+                  onChange={handleChange}
+                  required={true}
+                  disabled={false}
+                  className="w-full md:w-1/2 lg:w-1/4 mt-4"
+                />
+              </div>
             </div>
           </div>
-       
 
-        
+
+
 
           {error && <div className="text-red-500">Error: {error.message}</div>}
           <div className="md:grid grid-flow-col  ">
@@ -435,7 +433,7 @@ setSelectedRoles('');
                   </b>
                 </button>
 
-                <button  onClick={onCloseee} className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-white flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
+                <button onClick={onCloseee} className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-white flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray ">
                   <b className="w-[152px] relative text-base-2 inline-block font-poppins text-black text-center shrink-0">
                     Cancel
                   </b>
@@ -445,14 +443,14 @@ setSelectedRoles('');
           </div>
           {showSuccessPopup && (
             <div
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50"
-            onClick={() => setShowSuccessPopup(false)} // Hide the pop-up on click
-          >
-            <div className="bg-white rounded-lg p-8">
-              <p className="text-black text-center">Successfully submitted.</p>
-              
+              className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50"
+              onClick={() => setShowSuccessPopup(false)} // Hide the pop-up on click
+            >
+              <div className="bg-white rounded-lg p-8">
+                <p className="text-black text-center">Successfully submitted.</p>
+
+              </div>
             </div>
-          </div>
           )}
 
           {/*  {emailSent && (
@@ -462,12 +460,12 @@ setSelectedRoles('');
       <p>Error in sending email: {emailError.message}</p>
     )} */}
 
-{error && <div className="text-red-500">Error: {error.message}</div>}
+          {error && <div className="text-red-500">Error: {error.message}</div>}
         </form>
-        </div>
-        </div>
-       
-    
+      </div>
+    </div>
+
+
   )
 }
 

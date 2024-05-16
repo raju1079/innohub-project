@@ -1,23 +1,17 @@
 const initialState = {
-    students: [],
-    totalEnrolledStudents: 0,
     loading: false,
     error: null,
   };
   
-  const studentReducer = (state = initialState, action) => {
+  const userEmailReducer = (state = initialState, action) => {
     switch (action.type) {
-      case 'FETCH_STUDENTS_SUCCESS':
-        
+      case 'EMAIL_SENT_SUCCESS':
         return {
           ...state,
-          students: action.payload,
-          totalEnrolledStudents: action.payload.totalEnrolledStudents,
-
           loading: false,
           error: null,
         };
-      case 'FETCH_STUDENTS_ERROR':
+      case 'EMAIL_SENT_FAILURE':
         return {
           ...state,
           loading: false,
@@ -28,5 +22,4 @@ const initialState = {
     }
   };
   
-  export default studentReducer;
-  
+  export default userEmailReducer;
