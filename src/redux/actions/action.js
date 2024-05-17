@@ -565,3 +565,30 @@ export const fetchStudentMark = () => async (dispatch) => {
   }
 };
 
+export const sendEmailMark = (studentId) => async (dispatch) => {
+  try {
+    console.log("Sending email to student:", studentId);
+    const response = await axios.post(`/api/marks/${studentId}`); 
+    console.log('Email sent response:', response.data);
+    toast.success(`Mail Sent Successfully`);
+    dispatch({ type: 'EMAIL_SENT_SUCCESS', payload: studentId });
+  } catch (error) {
+    console.error("Error sending email:", error.response.data);
+    dispatch({ type: 'EMAIL_SENT_FAILURE', payload: studentId });
+  }
+};
+
+export const uploadPayment = (studentId, newpaymentData) => async (dispatch) => {
+  try {
+    const response = await axios.post(`/api/marks/${studentId}/payment`, newpaymentData);
+    const paymentData = response.data;
+    console.error('Payment loaded', paymentData);
+    toast.success("Update Payment Status successfully");
+    dispatch({
+      type: ActionTypes.UPLOAD_PAYMENT,
+      payload: paymentData
+    })
+  }catch (error) {
+    console.error('Error adding Payment data:', error)
+  } 
+};

@@ -74,7 +74,8 @@ const UpdateCity = () => {
     city_name: formData.city_name,
     state_id: formData.state_id,
     state_name: getStateName(formData.state_id),
-    creation_date: formData.creation_date, 
+    //creation_date: formData.creation_date, 
+    creation_date: getCurrentDate(),
   };
 
   const handleSubmit = (e) => {

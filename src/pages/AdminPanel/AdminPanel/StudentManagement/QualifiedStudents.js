@@ -3,23 +3,35 @@ import AdminHeader from '../AdminHeader'
 import AdminSidebar from '../Adminsidebar'
 import Table from '../../../../components/tableComponents/Table'
 import { useMemo } from 'react'
-import { fetchQualified, fetchStudents } from '../../../../redux/actions/action';
+import { fetchQualified, fetchStudents, uploadPayment } from '../../../../redux/actions/action';
 import { useDispatch, useSelector } from 'react-redux';
 import Dropdown from "../../../../components/dropdown/DropDown";
 import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
-
+import TextField from "../../../../components/formcomponents/TextField";
 
 const  QualifiedStudents = () => {
   const mark = useSelector((state) => state.fetchMark.mark); 
   const students = useSelector((state) => state.students.students);
   const [showPopup, setShowPopup] = useState(false);
   const [selectedStudent, setSelectedStudent] = useState(null);
+  const [installmentStatus, setInstallmentStatus] = useState({});
+  const [selectedDates, setSelectedDates] = useState({});
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchQualified());
     dispatch(fetchStudents());
   }, [dispatch]);
+  useEffect(() => {
+    const status = {};
+    combinedData.forEach(student => {
+      status[student.student_id] = {
+        installment1: student.installment1 || 'Unpaid',
+        installment2: student.installment2 || 'Unpaid'
+      };
+    });
+    setInstallmentStatus(status);
+  }, [students, mark]);  
 
   const combinedData = mark.map((m) => {
     const student = students.find((s) => s.student_id === m.student_id);
@@ -65,6 +77,44 @@ const  QualifiedStudents = () => {
         {
           Header: 'Scholarship Granted',
           accessor: 'scholarshipGranted',
+        },
+        {
+          Header: 'Installment1',
+          accessor: 'installment1',
+          Cell: ({ row }) => (
+            <select
+              value={installmentStatus[row.original.student_id]?.installment1 || 'Unpaid'}
+              onChange={(e) => handleInstallmentChange(row.original.student_id, 'installment1', e.target.value)}
+            >
+              <option value="Paid">Paid</option>
+              <option value="Unpaid">Unpaid</option>
+            </select>
+          ),
+        },
+        {
+          Header: 'Installment2',
+          accessor: 'installment2',
+          Cell: ({ row }) => (
+            <select
+              value={installmentStatus[row.original.student_id]?.installment2 || 'Unpaid'}
+              onChange={(e) => handleInstallmentChange(row.original.student_id, 'installment2', e.target.value)}
+            >
+              <option value="Paid">Paid</option>
+              <option value="Unpaid">Unpaid</option>
+            </select>
+          ),
+        },
+        {
+          Header: 'Date',
+          accessor: 'date',
+          Cell: ({ row }) => (
+           <input
+            type="date"
+            value={selectedDates[row.original.student_id] || ''}
+            onChange={(e) => handleDateChange(row.original.student_id, e.target.value)}
+            className="w-35 h-6"
+            />
+          ),
         },
         /*{
           Header: 'ProgramAssigned',
@@ -113,6 +163,57 @@ const  QualifiedStudents = () => {
         setShowPopup(true);
       }
     };
+    const handleInstallmentChange = (studentId, installment, value) => {
+      const updatedStatus = {
+        ...installmentStatus[studentId],
+        [installment]: value,
+      };
+  
+      setInstallmentStatus((prevStatus) => ({
+        ...prevStatus,
+        [studentId]: updatedStatus,
+      }));
+  
+      const date = installmentStatus[studentId]?.date;
+  
+      if (date) {
+        const paymentData = {
+          installment1: installment === 'installment1' ? value : installmentStatus[studentId]?.installment1,
+          installment2: installment === 'installment2' ? value : installmentStatus[studentId]?.installment2,
+          date: date,
+        };
+  
+        dispatch(uploadPayment(studentId, paymentData));
+      }
+    };
+  
+    const handleDateChange = (studentId, date) => {
+      setSelectedDates((prevDates) => ({
+        ...prevDates,
+        [studentId]: date,
+      }));
+  
+      setInstallmentStatus((prevStatus) => ({
+        ...prevStatus,
+        [studentId]: {
+          ...prevStatus[studentId],
+          date: date,
+        },
+      }));
+  
+      const status = installmentStatus[studentId];
+  
+      if (status) {
+        const paymentData = {
+          installment1: status.installment1,
+          installment2: status.installment2,
+          date: date,
+        };
+  
+        dispatch(uploadPayment(studentId, paymentData));
+      }
+    };
+       
 
       
    
