@@ -10,7 +10,7 @@ import { CiMenuKebab } from "react-icons/ci";
 import Dropdown from "../../../../components/dropdown/DropDown"
 import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
 import EditStudent from '../../../../components/enrolledstudents/EditStudent';
-import { updateEmailStatus, uploadNewMark, fetchStudentMark } from '../../../../redux/actions/action';
+import { updateEmailStatus, uploadNewMark, fetchStudentMark, sendEmailMark } from '../../../../redux/actions/action';
 import AddMark from '../../../../components/enrolledstudents/AddMark';
 
 const EnrolledStudents= () => {
@@ -80,17 +80,19 @@ const EnrolledStudents= () => {
           Header: 'Interview Score',
           accessor: 'interview_score',
         },
-
         {
           Header: 'Email Sent',
           accessor: 'email_sent',
           Cell: ({ row }) => (
+            <div className="flex items-center">
             <input
               className='ml-7'
               type="checkbox"
               checked={emailSent[row.original.student_id] || false}
-              onChange={(e) => handleCheckboxChange(e, row.original.enrollement_id)}
+              onChange={(e) => handleCheckboxChange(e, row.original.student_id)}
             />
+            {emailSent[row.original.student_id] }
+            </div>
           ),
         },
         /*{
@@ -149,10 +151,17 @@ const EnrolledStudents= () => {
       dispatch(fetchStudents());
     }, [dispatch]);
      
-    const handleCheckboxChange = useCallback((event, studentId) => {
-      const { checked } = event.target;
-      dispatch(updateEmailStatus(studentId, checked)); // Update Redux state when checkbox is changed
-    }, [dispatch]);
+    const handleCheckboxChange = (event, studentId) => {
+      const isChecked = event.target.checked;
+      setEmailSent(prevState => ({
+        ...prevState,
+        [studentId]: isChecked
+      }));
+      dispatch(updateEmailStatus(studentId, isChecked));
+      if (isChecked) {
+        dispatch(sendEmailMark(studentId));
+      }
+    };
 
         const handleOptionSelect = (option, student) => {
       if (option === 'View') {
