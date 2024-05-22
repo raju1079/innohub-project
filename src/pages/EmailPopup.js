@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import TextField from "../components/formcomponents/TextField";
 import TextArea from "../components/formcomponents/TextArea";
@@ -12,7 +13,7 @@ const EmailPopup = () => {
   const [showPopup, setShowPopup] = useState(true);
   const [isMinimized, setIsMinimized] = useState(false);
   const dispatch= useDispatch();
-  const{first_name, last_name,message}=popupFields;
+  // const{first_name, last_name,message}=popupFields;
 
   const handleChange = (e) => {
     const { name, value } = e.target;

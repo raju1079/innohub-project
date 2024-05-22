@@ -45,6 +45,7 @@ const TextArea = ({
           required={required}
           disabled={disabled}
         />
+        
         {error && (
           <div className="text-red-500 text-xs mt-1">{error}</div>
         )}

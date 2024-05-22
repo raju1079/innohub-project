@@ -207,7 +207,6 @@ const Footer = ({
                         <div className="relative capitalize font-medium whitespace-nowrap">
                           hr@snipe.co.in
                           {showPopup && <EmailPopup />}
-
                         </div>
                       </div>
                     </div>

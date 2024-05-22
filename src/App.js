@@ -80,6 +80,7 @@ import AllEducation from "./pages/AdminPanel/Area Management/Educational Master/
 import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Master/UpdateEducation";
 import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserManagement";
 import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
+
 //  import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
 import EmailPopup from"./pages/EmailPopup";
@@ -220,8 +221,7 @@ function App() {
         <Route path="/UserManagement" element={<UserManagement />} />
         <Route path="/AddUserMangForm" element={<AddUserMangForm />} />
         <Route path="faq_page1" element={<FaqPages />} />
-        {/* <Route path="email_pop" element={<EmailPopup/>}/>  */}
-        <Route path="/email_pop" element={<EmailPopup isMinimized={isMinimized} setIsMinimized={setIsMinimized} />} /> {/* Pass isMinimized and setIsMinimized as props */}
+        {/* <Route path="email_pop" element={<EmailPopup/>}/>   */}
       </Routes>
 
 

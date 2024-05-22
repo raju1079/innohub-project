@@ -134,7 +134,6 @@ const FaqPages = () => {
               <p
                 className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins hover:underline text-13xl md:text-13xl  lg:text-xl"
                 onClick={() => handleOptionChange(index)}
-                // onMouseEnter={() => handleOptionChange(index)}
                 onMouseLeave={() => handleOptionChange("")}
               >
                 {faq.question}
