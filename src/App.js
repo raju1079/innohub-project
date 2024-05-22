@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from "react";
 import {
   Routes,
@@ -5,6 +6,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import ResearchArea from "./pages/ResearchArea";
 import AboutUs from "./pages/AboutUs";
@@ -80,11 +82,14 @@ import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserMan
 import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
 //  import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
+import EmailPopup from"./pages/EmailPopup";
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+  const [isMinimized, setIsMinimized] = useState(false); // State to manage minimization
+
 
   useEffect(() => {
     if (action !== "POP") {
@@ -136,6 +141,7 @@ function App() {
   return (
     <div>
       <ToastContainer theme='colored' position='top-center'></ToastContainer>
+      {/* <EmailPopup/> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/eduproject1" element={<EduProject1 />} />
@@ -214,9 +220,12 @@ function App() {
         <Route path="/UserManagement" element={<UserManagement />} />
         <Route path="/AddUserMangForm" element={<AddUserMangForm />} />
         <Route path="faq_page1" element={<FaqPages />} />
-
-
+        {/* <Route path="email_pop" element={<EmailPopup/>}/>  */}
+        <Route path="/email_pop" element={<EmailPopup isMinimized={isMinimized} setIsMinimized={setIsMinimized} />} /> {/* Pass isMinimized and setIsMinimized as props */}
       </Routes>
+
+
+      
     </div>
   );
 }

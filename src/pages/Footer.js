@@ -1,7 +1,9 @@
+import React from "react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMemo } from "react";
-
+import EmailPopup from "./EmailPopup";
+import {useState} from "react";
 
 const Footer = ({
   social6,
@@ -31,6 +33,19 @@ const Footer = ({
     navigate("/faq_page1");
   }, [navigate]); 
 
+  const [showPopup, setShowPopup] = useState(false);
+  
+  // Function to handle mouse enter event
+  const onhandleMouseEnter = useCallback(() => {
+    setShowPopup(true);
+  }, []);
+
+  // Function to handle mouse leave event
+  const handleMouseLeave = useCallback(() => {
+    setShowPopup(true);
+  }, []);
+
+
   const wisconsinAveSuiteStyle = useMemo(() => {
     return {
       top: propTop,
@@ -53,7 +68,8 @@ const Footer = ({
           <div className="self-stretch flex flex-row items-center justify-center py-1 pr-[5px] pl-[15px] box-border relative [row-gap:20px] max-w-full mq750:flex-wrap">
             <div className="h-full w-full absolute my-0 mx-[!important] top-[-0.1px] right-[-0.4px] bottom-[0.1px] left-[0.4px] bg-cold-grey-10 shadow-[0px_6px_12px_-6px_rgba(255,255,_255,_0.12),_0px_8px_24px-4px_rgba(255,_255,_255,_0.08)]"/>
             <div className="flex-1 flex flex-col items-start justify-start pt-[3px] pb-0 px-0 box-border min-w-[309px] max-w-full">
-              <div className="self-stretch relative z-[1]">
+              <div className="self-stretch relative z-[1] "
+                >
                 Enter your email Address
               </div>
             </div>
@@ -183,10 +199,15 @@ const Footer = ({
                       alt=""
                       src="/icon1.png"
                     />
-                    <div className="flex flex-row items-center justify-start py-0 pr-[39px] pl-px">
+                    <div className="flex flex-row items-center justify-start py-0 pr-[39px] pl-px "
+                     onClick={onhandleMouseEnter}
+                     onMouseLeave={handleMouseLeave}
+                     >
                       <div className="h-5 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
                         <div className="relative capitalize font-medium whitespace-nowrap">
                           hr@snipe.co.in
+                          {showPopup && <EmailPopup />}
+
                         </div>
                       </div>
                     </div>

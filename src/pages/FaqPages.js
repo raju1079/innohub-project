@@ -148,7 +148,7 @@ const FaqPages = () => {
           ))}
           <div className="flex justify-center">
             {faqList.length > faqPerPage && (
-              <ul className="pagination flex list-none items-center">
+              <ul className="pagination flex list-none items-center pb-10 ">
                 <li className="mr-2">
                   <button onClick={goToPreviousPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Previous</button>
                 </li>
@@ -164,7 +164,7 @@ const FaqPages = () => {
                   </li>
                 ))}
                 <li className="ml-2">
-                  <button onClick={goToNextPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Next</button>
+                  <button onClick={goToNextPage} className="px-3 py-1  bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Next</button>
                 </li>
               </ul>
             )}
