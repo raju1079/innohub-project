@@ -592,3 +592,21 @@ export const uploadPayment = (studentId, newpaymentData) => async (dispatch) => 
     console.error('Error adding Payment data:', error)
   } 
 };
+
+export const fetchTotalStudents = () => async (dispatch) => {
+  try {
+    const response = await axios.get('/api/students/count');
+
+    if (response.status === 200) {
+      const { totalEnrolledStudents, totalQualifiedStudents, totalRejectedStudents } = response.data;
+      dispatch({
+        type: ActionTypes.FETCH_STUDENT,
+        payload: { totalEnrolledStudents, totalQualifiedStudents, totalRejectedStudents },
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while fetching student data:', error);
+  }
+};

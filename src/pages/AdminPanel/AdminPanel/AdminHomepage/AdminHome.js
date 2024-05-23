@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 //import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchStudents } from "../../../../redux/actions/action"
+import { fetchStudents, fetchTotalStudents } from "../../../../redux/actions/action"
 import "../home.css";
 import AdminSidebar from "../Adminsidebar";
 import AdminHeader from "../AdminHeader";
@@ -50,39 +50,45 @@ function WelcomeToDash() {
 function Students() {
 
   const dispatch = useDispatch();
-  const totalEnrolledStudents = useSelector(state => state.students.totalEnrolledStudents);
-  const loading = useSelector(state => state.students.loading);
-  const error = useSelector(state => state.students.error);
-   console.log("totalEnrolledStudents",totalEnrolledStudents)
+  //const totalEnrolledStudents = useSelector(state => state.students.totalEnrolledStudents);
+  //const loading = useSelector(state => state.students.loading);
+  //const error = useSelector(state => state.students.error);
+  //console.log("totalEnrolledStudents",totalEnrolledStudents)
+  const {
+    totalEnrolledStudents,
+    totalQualifiedStudents,
+    totalRejectedStudents
+  } = useSelector((state) => state.fetchStudent);
 
   useEffect(() => {
-    dispatch(fetchStudents());
+    //dispatch(fetchStudents());
+    dispatch(fetchTotalStudents());
   }, [dispatch]);
   return (
     <div className="p-4 pb-10 sm:ml-60 gap-x-5 ">
       <div className="flex gap-16 md:gap-4 px-8 font-poppins max-md:flex-wrap">
         <div className="flex flex-col w-[30%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow px-9 pt-10 pb-3.5 w-full font-poppins text-white bg-violet-900 rounded-3xl max-md:px-5 max-md:mt-10">
-            <div className="text-2xl">Total Enrolled Students</div>
-            <div className="mt-8 text-4xl"></div>
+            <div className="mt-4 mb-8 text-2xl">Total Enrolled Students: {totalEnrolledStudents}</div>
+            {/*<div className="mt-8 text-4xl"></div>
             <div>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {totalEnrolledStudents !== null && <p>Total Enrolled Students: {totalEnrolledStudents}</p>}
-      {/* Render other student details */}
-    </div>
+      {/* Render other student details 
+    </div>*/}
           </div>
         </div>
         <div className="flex flex-col ml-5 w-[30%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow px-9 pt-10 pb-3.5 w-full font-poppins text-white bg-violet-900 rounded-3xl max-md:px-5 max-md:mt-10">
-            <div className="text-2xl">Total Selected Students</div>
-            <div className="mt-8 text-4xl">350</div>
+            <div className="mt-4 mb-8 text-2xl">Total Selected Students: {totalQualifiedStudents}</div>
+            {/*<div className="mt-8 text-4xl">350</div>*/}
           </div>
         </div>
         <div className="flex flex-col ml-5 w-[30%] max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col grow p-8 w-full font-poppins text-white bg-violet-900 rounded-3xl max-md:px-5 max-md:mt-10">
-            <div className="text-2xl">Total Rejected Students</div>
-            <div className="mt-4 text-4xl">150</div>
+          <div className="flex flex-col grow px-9 pt-10 pb-3.5 w-full font-poppins text-white bg-violet-900 rounded-3xl max-md:px-5 max-md:mt-10">
+            <div className="mt-4 mb-8 text-2xl">Total Rejected Students: {totalRejectedStudents}</div>
+            {/*<div className="mt-4 text-4xl">150</div>*/}
           </div>
         </div>
       </div>
