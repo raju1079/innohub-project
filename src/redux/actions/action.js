@@ -610,3 +610,22 @@ export const fetchTotalStudents = () => async (dispatch) => {
     console.error('Error while fetching student data:', error);
   }
 };
+
+
+export const UploadEmailPopup = (popupFields) => async (dispatch) => {
+  try {
+    const response = await axios.post(`/api/Mail`, popupFields);
+    dispatch({
+      type: 'POPUP_EMAIL_SENT_SUCCES',
+      payload: response.data,
+    });
+    console.log('Email sent successfully:', response.data);
+  } catch (error) {
+    dispatch({
+      type: 'POPUP_EMAIL_SENT_FAILURE',
+      payload:error,
+    });
+    console.error('Error sending email:', error);
+  }
+};
+

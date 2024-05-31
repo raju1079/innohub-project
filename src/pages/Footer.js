@@ -36,15 +36,17 @@ const Footer = ({
   const [showPopup, setShowPopup] = useState(false);
   
   // Function to handle mouse enter event
-  const onhandleMouseEnter = useCallback(() => {
+  const onHandleClick = useCallback(() => {
     setShowPopup(true);
   }, []);
 
   // Function to handle mouse leave event
-  const handleMouseLeave = useCallback(() => {
-    setShowPopup(true);
-  }, []);
-
+  // const handleMouseLeave = useCallback(() => {
+  //   setShowPopup(true);
+  // }, []);
+  // const handleMinimize=useCallback(()=>{
+  //   setShowPopup(true)
+  // },[]);
 
   const wisconsinAveSuiteStyle = useMemo(() => {
     return {
@@ -163,7 +165,7 @@ const Footer = ({
                     <div className="flex flex-row items-start justify-start pt-0 px-0 pb-[5px]">
                       <div className="relative"onClick={ onProjectsTextClick}>Collaboration</div>
                     </div>
-                    <div className="relative" onClick={onFAQTextClick}>FAQs</div>
+                    <div className="relative cursor-pointer" onClick={onFAQTextClick}>FAQs</div>
                   </div>
                 </div>
               </div>
@@ -200,12 +202,12 @@ const Footer = ({
                       src="/icon1.png"
                     />
                     <div className="flex flex-row items-center justify-start py-0 pr-[39px] pl-px "
-                     onClick={onhandleMouseEnter}
-                     onMouseLeave={handleMouseLeave}
+                     onClick={onHandleClick}
+                    //  onMouseLeave={handleMouseLeave}
                      >
                       <div className="h-5 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
-                        <div className="relative capitalize font-medium whitespace-nowrap">
-                          hr@snipe.co.in
+                        <div className="relative font-medium whitespace-nowrap cursor-pointer">
+                        snipe.upl@gmail.com
                           {showPopup && <EmailPopup />}
                         </div>
                       </div>

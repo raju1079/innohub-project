@@ -34,7 +34,7 @@ import userEmailReducer from './reducers/userEmailReducer.js';
 import { EmailMark } from './reducers/EmailMark.js';
 import { UploadPayment } from './reducers/UploadPayment.js';
 import { FetchStudent } from './reducers/FetchTotalStudents.js';
-
+import { UploadEmailPopup } from './reducers/UploadEmailPopup.js';
 // Combine all the reducers
 
 const rootReducer = combineReducers({
@@ -73,6 +73,7 @@ const rootReducer = combineReducers({
   emailMark: EmailMark,
   uploadPayment: UploadPayment,
   fetchStudent: FetchStudent,
+  uploadEmailPopup:UploadEmailPopup
 });
 
 export default rootReducer;

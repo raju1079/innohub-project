@@ -132,7 +132,7 @@ const FaqPages = () => {
           {currentQuestions.map((faq, index) => (
             <div key={index} className="mt-4">
               <p
-                className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins hover:underline text-13xl md:text-13xl  lg:text-xl"
+                className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins  cursor-pointer hover:underline text-13xl md:text-13xl  lg:text-xl"
                 onClick={() => handleOptionChange(index)}
                 onMouseLeave={() => handleOptionChange("")}
               >
@@ -149,13 +149,13 @@ const FaqPages = () => {
             {faqList.length > faqPerPage && (
               <ul className="pagination flex list-none items-center pb-10 ">
                 <li className="mr-2">
-                  <button onClick={goToPreviousPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Previous</button>
+                  <button onClick={goToPreviousPage} className="px-3 py-1 bg-gray-200 rounded-lg font-poppins cursor-pointer hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Previous</button>
                 </li>
                 {Array.from({ length: Math.ceil(faqList.length / faqPerPage) }).map((_, index) => (
                   <li key={index} className="mx-1">
                     <button
                       onClick={() => paginate(index + 1)}
-                      className="px-3 py-1 bg-gray-200 rounded-lg hover:bg-color border-none  text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px] "
+                      className="px-3 py-1 bg-gray-200 rounded-lg cursor-pointer hover:bg-color border-none  text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px] "
                     >
 
                       {index + 1}
@@ -163,7 +163,7 @@ const FaqPages = () => {
                   </li>
                 ))}
                 <li className="ml-2">
-                  <button onClick={goToNextPage} className="px-3 py-1  bg-gray-200 rounded-lg font-poppins hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Next</button>
+                  <button onClick={goToNextPage} className="px-3 py-1  bg-gray-200 rounded-lg font-poppins cursor-pointer hover:bg-color text-lg min-w-[40px] min-h-[40px] lg:text-sm min-h-[30px] min-h-[30px]">Next</button>
                 </li>
               </ul>
             )}
