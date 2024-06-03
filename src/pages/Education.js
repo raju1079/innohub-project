@@ -71,7 +71,7 @@ const Education = () => {
 
       <section className="text-white flex flex-wrap  body-font md:mx-[95px] lg:mx-0">
         <div className="container px-24 py-24">
-          <div className="absolute w-full top-[70px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+          <div className="absolute w-full top-[95px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
             <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
             <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
             <img
@@ -85,7 +85,7 @@ const Education = () => {
           <div className="container mx-auto pt-[350px] font-poppins">
             <div className="w-full">      
                     <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">Education</b>
-            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">Education research is crucial for informing decisions in educational
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify transform scale-120">Education research is crucial for informing decisions in educational
               systems, policies, and practices. It provides empirical evidence for
               evidence-based policies, focusing on teaching methodologies and
               curriculum design to enhance student outcomes. The integration of
@@ -128,10 +128,10 @@ const Education = () => {
             </div>
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
-            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] break-all"> AI-Enhanced Personalized Learning for Optimal Student Engagement
+            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] transform scale-120"> AI-Enhanced Personalized Learning for Optimal Student Engagement
 
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> In this research project, we aim to leverage artificial
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> In this research project, we aim to leverage artificial
               intelligence (AI) to revolutionize the educational experience by
               implementing personalized learning strategies. Traditional
               one-size-fits-all educational models often struggle to
@@ -150,7 +150,7 @@ const Education = () => {
             <h1 className="title-font mb-3 font-medium text-blue font-poppins text-29xl md:text-17xl break-keep ">Enhancing Student Collaboration and Problem-Solving Skills
               through AI-Supported Group Learning
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">This research aims to explore how artificial intelligence can
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">This research aims to explore how artificial intelligence can
               facilitate and enhance collaborative learning experiences. The
               project focuses on developing AI-driven tools and methodologies
               to optimize group formation, foster effective communication, and

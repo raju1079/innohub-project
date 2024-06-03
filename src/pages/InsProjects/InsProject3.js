@@ -37,7 +37,7 @@ const InsProject3 = () => {
       <div className="bg-gray py-16 mx-10 font-poppins">
         <div className="container mx-auto">
           <div className="px-4 md:px-0">
-            <div className="absolute w-full top-[70px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
+            <div className="absolute w-full top-[95px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
               <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
               <div className="absolute top-[181px] left-[50%] transform -translate-x-1/2 rounded-full bg-gray-400 w-[686px] h-[686px] overflow-hidden" />
               <img
@@ -54,7 +54,7 @@ const InsProject3 = () => {
               Adapting to Digital Disruption and Customer-Centric Models
         </b>
         <h3 className="text-13xl text-blue m-5" >Synopsis:</h3>
-        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base break-all">
+        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base transform scale-120">
         The research project titled "Transformative Trends in Insurance Firms: Adapting to Digital Disruption and Customer-Centric Models" aims to explore and analyze the evolving landscape of insurance firms in the face of digital disruption and changing customer expectations. The study delves into the strategies adopted by insurance companies to adapt their business models, incorporating technology-driven solutions and embracing customer-centric approaches. The scope of the research encompasses a comprehensive analysis of successful industry transformations, the challenges encountered by traditional insurance firms in this dynamic environment, and the strategic initiatives undertaken to remain competitive in the digital age.
            
         </p>
@@ -64,7 +64,7 @@ const InsProject3 = () => {
         </h2>
         <h3 className="text-17xl text-blue m-5" >Objective:</h3>
 
-        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
         "InsureInsight AI" focuses on providing insurance firms with an
             advanced analytical tool to navigate transformative trends by
             leveraging digital disruption and adopting customer-centric models.
@@ -76,7 +76,7 @@ const InsProject3 = () => {
         </p>
 
         <h3 className="text-29xl lg:text-17xl text-blue m-5" >Key Features:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1 ">Trend Analysis: Utilizes machine learning algorithms to analyze
               industry trends, digital disruption, and customer preferences,
               identifying key areas for adaptation.
@@ -93,7 +93,7 @@ const InsProject3 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Target Audience:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1">  The primary target audience for "InsureInsight AI" includes
                 executives, decision-makers, and strategists within insurance
                 firms seeking to navigate digital disruption and embrace
@@ -104,7 +104,7 @@ const InsProject3 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Project Impact:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all ">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 ">
 
           <li className="p-1">The tool aims to empower insurance firms with valuable insights,
                 enhancing their ability to adapt to transformative trends and
@@ -120,7 +120,7 @@ const InsProject3 = () => {
 
         </ul>
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Conclusion:</h3>
-        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
         In conclusion, "InsureInsight AI" serves as a crucial ally for
               insurance firms looking to thrive in the digital era. Its advanced
               analytics and predictive capabilities empower organizations to

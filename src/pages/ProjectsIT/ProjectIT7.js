@@ -37,7 +37,7 @@ const ProjectIT7 = () => {
       <div className="bg-gray py-16 mx-10 font-poppins">
         <div className="container mx-auto">
           <div className="px-4 md:px-0">
-            <div className="absolute w-full top-[70px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
+            <div className="absolute w-full top-[95px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
               <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
               <div className="absolute top-[181px] left-[50%] transform -translate-x-1/2 rounded-full bg-gray-400 w-[686px] h-[686px] overflow-hidden" />
               <img
@@ -54,7 +54,7 @@ const ProjectIT7 = () => {
 
         </b>
         <h3 className="text-13xl text-blue m-5" >Synopsis:</h3>
-        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base break-all">
+        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base transform scale-120">
           In the rapidly evolving landscape of software development, this research focuses on the crucial role of accurate and efficient project requirement analysis in ensuring project success. The primary objective is to explore the integration of Artificial Intelligence (AI) in the requirement analysis phase, specifically comparing AI-powered methodologies against traditional approaches. The approach involves an extensive literature review, investigating real-world applications of AI in various software development life cycle phases. Identifying and analysing AI techniques like Natural Language Processing (NLP) and machine learning for requirement analysis, the research develops a comprehensive framework with key evaluation metrics such as accuracy, time efficiency, scalability, and adaptability.
 
 
@@ -66,13 +66,13 @@ const ProjectIT7 = () => {
         </h2>
         <h3 className="text-17xl text-blue m-5" >Objective:</h3>
 
-        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           "IntelliInterview AI" stands as a cutting-edge AI tool designed to revolutionize the job interview process. Its key features include AI-powered virtual interviewers capable of conducting structured and adaptive interviews with real-time feedback, ensuring a dynamic and responsive candidate assessment experience. The tool incorporates a robust bias detection and mitigation module, addressing concerns related to fairness and objectivity in evaluations.
 
         </p>
 
         <h3 className="text-29xl lg:text-17xl text-blue m-5" >Key Features:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1 "> AI-Powered Virtual Interviewers: Incorporates virtual interviewers powered by AI, capable of conducting structured and adaptive interviews with real-time feedback.
           </li>
           <li className="p-1">
@@ -98,7 +98,7 @@ const ProjectIT7 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Target Audience:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1">Human Resources Departments: Targets HR professionals seeking advanced tools to enhance interview processes and improve hiring accuracy.
 
           </li>
@@ -112,7 +112,7 @@ const ProjectIT7 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Project Impact:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all ">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 ">
           <li className="p-1">	Objective Candidate Assessments: Facilitates more objective candidate assessments by leveraging AI to reduce biases and enhance evaluation accuracy.
 
           </li>
@@ -132,7 +132,7 @@ const ProjectIT7 = () => {
 
         </ul>
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Conclusion:</h3>
-        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           In conclusion, "IntelliInterview AI" represents a significant leap forward in the realm of job interviews, introducing advanced AI capabilities to enhance objectivity, fairness, and overall efficiency. The incorporation of virtual interviewers, bias detection, and adaptive questioning algorithms ensures a tailored and dynamic assessment process. The performance analytics dashboard empowers hiring managers with valuable insights, contributing to more informed decision-making. With a commitment to user-friendly design and a focus on candidate experience, the tool aligns with modern recruitment needs. "IntelliInterview AI" holds the promise of transforming the interview landscape, setting a new standard for transparency, effectiveness, and fairness in candidate evaluations.
 
         </p>

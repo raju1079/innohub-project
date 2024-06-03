@@ -37,7 +37,7 @@ const LogProject4 = () => {
       <div className="bg-gray py-16 mx-10 font-poppins">
         <div className="container mx-auto">
           <div className="px-4 md:px-0">
-            <div className="absolute w-full top-[70px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
+            <div className="absolute w-full top-[95px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
               <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
               <div className="absolute top-[181px] left-[50%] transform -translate-x-1/2 rounded-full bg-gray-400 w-[686px] h-[686px] overflow-hidden" />
               <img
@@ -52,7 +52,7 @@ const LogProject4 = () => {
       <div className="container mx-auto pt-[300px] font-poppins ">
         <b className="text-29xl md:text-29xl m-5 font-bold text-blue flex content-center items-center">Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management</b>
         <h3 className="text-13xl text-blue m-5" >Synopsis:</h3>
-        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base break-all">
+        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base transform scale-120">
           The "Predictive Analytics for Demand Forecasting in Logistics and Supply Chain Management" research project aims to enhance supply chain efficiency through advanced data analytics. The approach involves data collection and preprocessing, feature engineering for demand drivers, implementation of diverse machine learning models, integration of external data sources, real-time data streaming for dynamic forecasting, scenario analysis, optimization of inventory management, collaboration with stakeholders, and continuous performance evaluation for improvement.</p>
 
 
@@ -60,11 +60,11 @@ const LogProject4 = () => {
         <h2 className="text-29xl lg:text-17xl text-blue m-5" >AI Tool Name: DemandProphet</h2>
         <h3 className="text-17xl text-blue m-5" >Objective:</h3>
 
-        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> DemandProphet encompasses features for data collection, preprocessing, and integration; advanced machine learning models; real-time streaming for dynamic forecasting; scenario analysis and sensitivity testing; inventory management optimization; collaborative tools for stakeholders; and continuous performance evaluation and improvement mechanisms.
+        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> DemandProphet encompasses features for data collection, preprocessing, and integration; advanced machine learning models; real-time streaming for dynamic forecasting; scenario analysis and sensitivity testing; inventory management optimization; collaborative tools for stakeholders; and continuous performance evaluation and improvement mechanisms.
         </p>
 
         <h3 className="text-29xl lg:text-17xl text-blue m-5" >Key Features:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1 "> Comprehensive Data Handling: Efficiently collects, preprocesses, and integrates diverse data sources.
           </li><li className="p-1">   Advanced Machine Learning Models: Implements regression, time-series, and deep learning models for accurate demand predictions.
           </li><li className="p-1">            Real-time Streaming Capability: Enables dynamic forecasting with real-time data updates for prompt adaptation.
@@ -79,7 +79,7 @@ const LogProject4 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Target Audience::</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1">	Supply Chain Managers
 
 
@@ -98,7 +98,7 @@ const LogProject4 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Project Impact:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all ">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 ">
           <li className="p-1"> 		Enhanced Forecast Accuracy: Improves demand prediction accuracy for better inventory management.
           </li>
           <li className="p-1">Optimized Supply Chain Operations: Enhances operational efficiency through dynamic forecasting.
@@ -114,7 +114,7 @@ const LogProject4 = () => {
 
         </ul>
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Conclusion:</h3>
-        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> DemandProphet emerges as a comprehensive AI tool, contributing to optimized supply chain operations through accurate demand forecasting, real-time adaptability, and collaborative stakeholder engagement. Its features align with the project's goal of improving overall efficiency in logistics and supply chain management.
+        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> DemandProphet emerges as a comprehensive AI tool, contributing to optimized supply chain operations through accurate demand forecasting, real-time adaptability, and collaborative stakeholder engagement. Its features align with the project's goal of improving overall efficiency in logistics and supply chain management.
         </p>
       </div>
       <Footer />

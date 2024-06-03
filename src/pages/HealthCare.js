@@ -68,7 +68,7 @@ const HealthCare = () => {
 
       <section className="text-white flex flex-wrap  body-font md:mx-[95px] lg:mx-0">
         <div className="container px-24 py-24">
-          <div className="absolute w-full top-[70px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+          <div className="absolute w-full top-[95px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
             <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
             <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
             <img
@@ -82,7 +82,7 @@ const HealthCare = () => {
           <div className="container mx-auto pt-[350px] font-poppins">
             <div className="w-full">
             <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">HealthCare</b>
-            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">Artificial Intelligence (AI) has transformed healthcare by revolutionizing medical research, diagnostics, and patient care. Its vast scope includes data analysis, predictive modeling, personalized treatment plans, and robotic-assisted surgeries.
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify transform scale-120">Artificial Intelligence (AI) has transformed healthcare by revolutionizing medical research, diagnostics, and patient care. Its vast scope includes data analysis, predictive modeling, personalized treatment plans, and robotic-assisted surgeries.
                 AI excels in analyzing extensive healthcare data, accelerating medical research, and aiding informed decision-making. In diagnostics, machine learning models, particularly in medical imaging, enable early disease detection and risk prediction.
                 Personalized medicine tailors treatment based on individual patient characteristics, enhancing efficacy and minimizing side effects. AI contributes to drug development by identifying candidates and predicting success through virtual simulations.
                 Remote patient monitoring and telehealth, powered by AI, address global healthcare challenges, offering continuous monitoring and efficient virtual consultations. AI-assisted robotics improve surgical precision, while AI-driven tools streamline administrative functions, enhancing overall patient care.
@@ -110,11 +110,11 @@ const HealthCare = () => {
             </div>
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
-            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] break-all">  AI-Driven Precision Medicine: Transforming Healthcare through Personalized Treatment Strategies
+            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] transform scale-120">  AI-Driven Precision Medicine: Transforming Healthcare through Personalized Treatment Strategies
 
 
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> This research project focuses on leveraging AI for precision medicine, tailoring healthcare to individual patients. It involves developing AI algorithms for genomic data analysis, predicting diagnostics for early disease detection, and optimizing treatment responses through machine learning models.
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> This research project focuses on leveraging AI for precision medicine, tailoring healthcare to individual patients. It involves developing AI algorithms for genomic data analysis, predicting diagnostics for early disease detection, and optimizing treatment responses through machine learning models.
 
             </p>
           </div>
@@ -126,7 +126,7 @@ const HealthCare = () => {
           <div className="lg:flex-grow md:w-1/2 lg:pr-14 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font mb-3 font-medium text-blue font-poppins text-29xl md:text-17xl  break-keep "> AI-Enhanced Clinical Imaging for Accurate Disease Diagnosis
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">This research project focuses on transforming disease diagnosis by integrating artificial intelligence (AI) into clinical imaging.
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">This research project focuses on transforming disease diagnosis by integrating artificial intelligence (AI) into clinical imaging.
               Leveraging advanced machine learning and computer vision, the project aims to enhance the accuracy and efficiency of disease detection across various medical imaging modalities.</p>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

@@ -78,7 +78,7 @@ const Logistics = () => {
 
       <section className="text-white flex flex-wrap  body-font md:mx-[95px] lg:mx-0">
         <div className="container px-24 py-24">
-          <div className="absolute w-full top-[70px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+          <div className="absolute w-full top-[95px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
             <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
             <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
             <img
@@ -92,7 +92,7 @@ const Logistics = () => {
           <div className="container mx-auto pt-[350px] font-poppins">
             <div className="w-full">      
             <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">Logistics</b>
-            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">Logistic Research is the systemic inquiry and analysis focused on improving the planning, execution, and management
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify transform scale-120">Logistic Research is the systemic inquiry and analysis focused on improving the planning, execution, and management
           of the transportation, storage and distribution of goods and services. It aims to optimize supply chain processes, reduce costs,
           and enhance the overall efficiency of logistic operations. It enhances overall supply chain performance through the application of
           innovative strategies, technologies and methodologies.
@@ -119,11 +119,11 @@ const Logistics = () => {
             </div>
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
-            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] break-all"> 
+            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] transform scale-120"> 
                 Blockchain Technology in Supply Chain
 
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> This research project investigates the application of blockchain technology in supply chain management, specifically within logistics. The focus is on enhancing transparency and traceability to improve efficiency, reduce fraud, and build trust among stakeholders. The approach involves designing a robust blockchain architecture, integrating with IoT devices for real-time data capture, ensuring traceability through provenance tracking.
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> This research project investigates the application of blockchain technology in supply chain management, specifically within logistics. The focus is on enhancing transparency and traceability to improve efficiency, reduce fraud, and build trust among stakeholders. The approach involves designing a robust blockchain architecture, integrating with IoT devices for real-time data capture, ensuring traceability through provenance tracking.
               
             </p>
           </div>
@@ -135,7 +135,7 @@ const Logistics = () => {
           <div className="lg:flex-grow md:w-1/2 lg:pr-14 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font mb-3 font-medium text-blue font-poppins text-29xl md:text-17xl break-keep ">    Optimizing Last-Mile Delivery Routes Using Machine Learning Algorithms
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">The research project aims to revolutionize last-mile delivery operations using machine learning. By optimizing route planning, reducing delivery times, and minimizing operational costs, the study addresses critical challenges in the final leg of the supply chain. The approach includes data collection, route optimization algorithm development, dynamic real-time route adjustment, customer preference consideration, GIS integration, cost-benefit analysis, scalability testing, and an ongoing evaluation feedback loop.
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">The research project aims to revolutionize last-mile delivery operations using machine learning. By optimizing route planning, reducing delivery times, and minimizing operational costs, the study addresses critical challenges in the final leg of the supply chain. The approach includes data collection, route optimization algorithm development, dynamic real-time route adjustment, customer preference consideration, GIS integration, cost-benefit analysis, scalability testing, and an ongoing evaluation feedback loop.
             </p>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

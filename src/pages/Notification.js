@@ -49,7 +49,7 @@ const Notification = () => {
 
       <section className="text-white flex flex-wrap  body-font md:mx-[95px] lg:mx-0">
         <div className="container px-24 py-24 lg:w-[1100px] xl:mx-auto">
-          <div className="absolute w-full top-[70px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+          <div className="absolute w-full top-[95px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
             <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
             <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
             <img
@@ -128,7 +128,7 @@ const Notification = () => {
   
        
         <h3 className="text-17xl text-blue mt-[100px]mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]" >  Benefits:</h3>
-        <ul className="mb-[150px] leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]">
+        <ul className="mb-[150px] leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px]">
             <li className="p-1">Technology</li>
             <li className="p-1">Hands on Project Work</li>
             <li className="p-1">Domain Exposure</li>

@@ -37,7 +37,7 @@ const AgrProject3 = () => {
       <div className="bg-gray py-16 mx-10 font-poppins">
         <div className="container mx-auto">
           <div className="px-4 md:px-0">
-            <div className="absolute w-full top-[70px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
+            <div className="absolute w-full top-[95px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
               <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
               <div className="absolute top-[181px] left-[50%] transform -translate-x-1/2 rounded-full bg-gray-400 w-[686px] h-[686px] overflow-hidden" />
               <img
@@ -53,7 +53,7 @@ const AgrProject3 = () => {
         <b className="text-29xl md:text-29xl m-5 font-bold text-blue flex content-center items-center">AI-Driven Crop Monitoring and Disease Detection in Smart Farming
         </b>
         <h3 className="text-13xl text-blue m-5" >Synopsis:</h3>
-        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base break-all">
+        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base transform scale-120">
           The research project, "Machine Learning for Crop Yield Prediction: A Comprehensive Analysis," aims to delve into the application of machine learning for accurate and reliable crop yield predictions. The comprehensive approach includes a literature review, data collection and preprocessing, model selection, validation, and addressing spatial and temporal dynamics. The project explores uncertainty analysis, interpretability, scalability, and integration with precision agriculture. Stakeholder engagement and adoption strategies will be investigated to ensure the practical applicability of the findings.      </p>
 
 
@@ -61,13 +61,13 @@ const AgrProject3 = () => {
         <h2 className="text-29xl lg:text-17xl text-blue m-5" >AI Tool Name: YieldPredict Pro</h2>
         <h3 className="text-17xl text-blue m-5" >Objective:</h3>
 
-        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> YieldPredict Pro covers all aspects of machine learning-based crop yield prediction, emphasizing a holistic understanding of methodologies and challenges.
+        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> YieldPredict Pro covers all aspects of machine learning-based crop yield prediction, emphasizing a holistic understanding of methodologies and challenges.
 
 
         </p>
 
         <h3 className="text-29xl lg:text-17xl text-blue m-5" >Key Features:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1 "> Multi-Model Comparison: Allows farmers to compare and choose from various machine learning models for crop yield prediction.
           </li>
           <li className="p-1">
@@ -86,7 +86,7 @@ const AgrProject3 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Target Audience:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1">Agricultural Researchers</li>
           <li className="p-1">Data Scientists in Agriculture
 
@@ -99,7 +99,7 @@ const AgrProject3 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Project Impact:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all ">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 ">
           <li className="p-1">Precision Agriculture Integration: Optimizes resource management through the integration of machine learning predictions into precision agriculture practices.
 
           </li>
@@ -113,7 +113,7 @@ const AgrProject3 = () => {
 
         </ul>
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Conclusion:</h3>
-        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           YieldPredict Pro emerges as a versatile tool, aligning with the research project's goals by offering a comprehensive analysis of machine learning for crop yield prediction. Its features empower stakeholders with actionable insights, emphasizing scalability and practical adoption in real-world agricultural scenarios.
 
         </p>

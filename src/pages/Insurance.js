@@ -70,7 +70,7 @@ const Insurance = () => {
 
       <section className="text-white flex flex-wrap  body-font md:mx-[95px] lg:mx-0">
         <div className="container px-24 py-24">
-          <div className="absolute w-full top-[70px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
+          <div className="absolute w-full top-[95px] right-[0px] left-[0px] [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)] h-[466px] overflow-hidden text-29xl">
             <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
             <div className="absolute top-[181px] left-[980.5px] rounded-381xl bg-color w-[686px] h-[686px] overflow-hidden hidden" />
             <img
@@ -84,7 +84,7 @@ const Insurance = () => {
           <div className="container mx-auto pt-[350px] font-poppins">
             <div className="w-full">
             <b className="text-29xl mx-[-30px] md:mx-[-100px] lg:mx-[-60px] xl:mx-[-45px] md:text-29xl font-bold text-white ">Insurance</b>
-            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify break-all">Research in insurance spans various critical areas, reflecting the
+            <p className="mt-4 mx-[-60px] md:mx-[-130px] lg:mx-[-100px] xl:mx-[-80px] pl-10 text-13xl md:text-xl lg:text-base text-white text-justify transform scale-120">Research in insurance spans various critical areas, reflecting the
                 dynamic and complex nature of the insurance industry. One key research
                 area involves risk assessment and management, exploring innovative
                 ways to predict and mitigate risks in different insurance sectors.
@@ -137,11 +137,11 @@ const Insurance = () => {
             </div>
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
-            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] break-all">  Personalized Risk Assessment in Personal Insurance: Integrating
+            <h1 className="title-font mb-4 font-medium text-blue font-poppins md:w-[350px] text-29xl md:text-17xl lg:w-[500px] transform scale-120">  Personalized Risk Assessment in Personal Insurance: Integrating
               AI for Tailored Coverage"
 
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> The research project titled "Personalized Risk Assessment in
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> The research project titled "Personalized Risk Assessment in
               Personal Insurance: Integrating AI for Tailored Coverage"
               endeavors to revolutionize the landscape of personal insurance
               by integrating Artificial Intelligence (AI) to refine risk
@@ -161,7 +161,7 @@ const Insurance = () => {
             <h1 className="title-font mb-3 font-medium text-blue font-poppins text-29xl md:text-17xl break-keep "> Corporate Insurance Efficiency: A Comprehensive Study on Risk
               Mitigation and Cost Optimization
             </h1>
-            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all"> The research project titled "Corporate Insurance Efficiency: A
+            <p className="mb-8 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120"> The research project titled "Corporate Insurance Efficiency: A
               Comprehensive Study on Risk Mitigation and Cost Optimization"
               endeavors to explore and enhance the efficiency of corporate
               insurance processes by delving into advanced strategies for risk

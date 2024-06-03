@@ -38,7 +38,7 @@ const InsProject5 = () => {
         <div className="bg-gray py-16 mx-10 font-poppins">
           <div className="container mx-auto">
             <div className="px-4 md:px-0">
-              <div className="absolute w-full top-[70px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
+              <div className="absolute w-full top-[95px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
                 <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
                 <div className="absolute top-[181px] left-[50%] transform -translate-x-1/2 rounded-full bg-gray-400 w-[686px] h-[686px] overflow-hidden" />
                 <img
@@ -55,7 +55,7 @@ const InsProject5 = () => {
               Balancing Profitability, Patient Welfare, and Privacy
           </b>
           <h3 className="text-13xl text-blue m-5" >Synopsis:</h3>
-          <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base break-all">
+          <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base transform scale-120">
           The research project titled "Ethical Dimensions of Insurance in Healthcare" intricately examines the ethical complexities inherent in the intersection of insurance, healthcare, and patient privacy. By focusing on the delicate balance between profitability, patient welfare, and privacy concerns, the study addresses the multifaceted challenges faced by insurance providers in the healthcare domain. The research scope encompasses an in-depth analysis of ethical dilemmas arising from the use of sensitive health data, the development of robust ethical frameworks to guide industry practices, and a comprehensive assessment of regulatory compliance. The ultimate goal is to offer valuable insights and propose guidelines that strike a harmonious balance, ensuring ethical considerations are at the forefront of insurance practices in healthcare.
            
           </p>
@@ -65,7 +65,7 @@ const InsProject5 = () => {
           </h2>
           <h3 className="text-17xl text-blue m-5" >Objective:</h3>
 
-          <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+          <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           The scope of the AI tool involves offering a proactive solution to
             the ethical challenges faced by insurance providers in healthcare.
             It covers the continuous monitoring of practices, ensuring adherence
@@ -76,7 +76,7 @@ const InsProject5 = () => {
           </p>
 
           <h3 className="text-29xl lg:text-17xl text-blue m-5" >Key Features:</h3>
-          <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+          <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
             <li className="p-1 "> Real-time Monitoring: Provides continuous monitoring of insurance
               practices to identify potential ethical concerns.
             </li>
@@ -93,7 +93,7 @@ const InsProject5 = () => {
           </ul>
 
           <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Target Audience:</h3>
-          <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+          <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
             <li className="p-1">  The target audience includes healthcare insurance providers,
                 regulatory bodies, and policymakers involved in shaping ethical
                 standards in the healthcare and insurance sectors.
@@ -103,7 +103,7 @@ const InsProject5 = () => {
           </ul>
 
           <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Project Impact:</h3>
-          <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all ">
+          <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 ">
 
             <li className="p-1">The AI tool's implementation is expected to enhance
                 transparency, mitigate ethical risks, and foster a culture of
@@ -119,7 +119,7 @@ const InsProject5 = () => {
 
           </ul>
           <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Conclusion:</h3>
-          <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+          <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           In conclusion, the development and implementation of the AI-driven
               Ethical Compliance Assistant stand as a crucial step towards
               aligning healthcare insurance practices with ethical

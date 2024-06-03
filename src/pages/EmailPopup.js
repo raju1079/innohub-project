@@ -111,10 +111,10 @@ const EmailPopup = () => {
               <h1 className="absolute top-15 left-28 text-white text-29xl font-bold items-center justify-center md:top-[20px] md:left-[150px] md:text-18xl lg:top-[10px] lg:left-[20px] lg:text-3xl">
                 Hi, Welcome to IRC!
               </h1>
-              <p className="absolute top-[95px] left-32 text-white text-17xl md:top-[90px] md:left-[170px] md:text-18xl lg:top-[60px] lg:left-[10px] lg:text-xl">
+              <p className="absolute top-[95px] left-32 text-white text-17xl md:top-[90px] md:left-[170px] md:text-18xl lg:top-[60px] lg:left-[10px] lg:text-base">
               snipe.upl@gmail.com
               </p>
-              <p className="absolute top-[170px] left-2 text-white text-17xl md:top-[160px] md:left-[50px] lg:top-[110px] lg:left-[10px] lg:text-xl">
+              <p className="absolute top-[170px] left-2 text-white text-17xl md:top-[160px] md:left-[50px] lg:top-[110px] lg:left-[10px] lg:text-base">
                 Have a problem or just want to chat?<br />We're just a message away!
               </p>
               <form onSubmit={handleSubmit} className="w-full">
@@ -171,7 +171,7 @@ const EmailPopup = () => {
                   </div>
                   <button
                     type="submit"
-                    className="absolute top-[490px] left-20 bg-white text-black text-13xl font-poppins font-bold rounded-lg h-12 w-40 md:top-[390px] md:left-[240px] lg:top-[15px] lg:left-[230px] lg:text-lg"
+                    className="absolute top-[490px] left-20 bg-black text-white text-13xl font-poppins font-bold rounded-lg h-10 w-36 md:top-[390px] md:left-[240px] lg:top-[15px] lg:left-[230px] lg:text-lg"
                   >
                     Submit
                   </button>

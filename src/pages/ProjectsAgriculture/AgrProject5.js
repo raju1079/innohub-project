@@ -37,7 +37,7 @@ const AgrProject5 = () => {
       <div className="bg-gray py-16 mx-10 font-poppins">
         <div className="container mx-auto">
           <div className="px-4 md:px-0">
-            <div className="absolute w-full top-[70px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
+            <div className="absolute w-full top-[95px] right-[0px] left-[0px] bg-gradient-to-b from-black [background:linear-gradient(180deg,_#09011a,_rgba(105,_63,_196,_0.57)_43%,_rgba(163,_134,_223,_0)_91%)]  h-[466px] overflow-hidden text-4xl md:text-5xl lg:text-6xl">
               <div className="absolute top-[111px] left-[910px] rounded-381xl [background:radial-gradient(50%50%_at_50%_50%,_rgba(120,_100,_161,_0.53)_26.5%,#1c054e_39.88%,_rgba(223,_208,_255,_0))] w-[827px] h-[826px] overflow-hidden hidden" />
               <div className="absolute top-[181px] left-[50%] transform -translate-x-1/2 rounded-full bg-gray-400 w-[686px] h-[686px] overflow-hidden" />
               <img
@@ -55,7 +55,7 @@ const AgrProject5 = () => {
 
         </b>
         <h3 className="text-13xl text-blue m-5" >Synopsis:</h3>
-        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base break-all">
+        <p className="mb-10 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl md:mb-5 lg:mb-5 xl:mb-5 lg:text-base transform scale-120">
           The research project, "AI-Based Market Forecasting for Agribusiness: Enhancing Decision Support Systems," aims to leverage artificial intelligence (AI) to revolutionize market predictions in the agribusiness sector. The comprehensive approach involves a literature review, identification of market forecasting challenges, exploration of AI solutions, development of AI models, and integration into decision support systems. The project emphasizes customization, evaluation of external factors, and addresses data security and privacy. It assesses economic and environmental impacts, identifies adoption challenges, and explores future trends.
         </p>
 
@@ -65,14 +65,14 @@ const AgrProject5 = () => {
         </h2>
         <h3 className="text-17xl text-blue m-5" >Objective:</h3>
 
-        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">  AgriForecast Pro covers diverse features for accurate market predictions and decision support tailored for the agribusiness sector.
+        <p className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">  AgriForecast Pro covers diverse features for accurate market predictions and decision support tailored for the agribusiness sector.
 
 
 
         </p>
 
         <h3 className="text-29xl lg:text-17xl text-blue m-5" >Key Features:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1 "> AI-Driven Market Prediction: Utilizes advanced AI models for accurate and timely market forecasts.
           </li>
           <li className="p-1">
@@ -89,7 +89,7 @@ const AgrProject5 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Target Audience:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           <li className="p-1">Agribusiness Executives
           </li>
           <li className="p-1">Market Analysts</li>
@@ -100,7 +100,7 @@ const AgrProject5 = () => {
         </ul>
 
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Project Impact:</h3>
-        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all ">
+        <ul className="mb-5 m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120 ">
           <li className="p-1">Strategic Decision Improvement: Enhances decision-making for agribusinesses through accurate and timely market predictions.
 
           </li>
@@ -112,7 +112,7 @@ const AgrProject5 = () => {
 
         </ul>
         <h3 className="text-29xl lg:text-17xl  text-blue m-5" >Conclusion:</h3>
-        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base break-all">
+        <p className="mb-[200px] m-5 leading-relaxed text-cold-grey-white text-justify font-poppins text-13xl md:text-xl  lg:text-base transform scale-120">
           AgriForecast Pro stands as a cutting-edge AI tool, aligning with the project's goals by offering tailored market forecasting solutions for agribusinesses. Its features empower decision-makers, fostering economic efficiency, risk mitigation, and future-ready market forecasting capabilities. AgriForecast Pro serves as a catalyst for informed and strategic decision-making in the dynamic landscape of agribusiness.
 
         </p>
