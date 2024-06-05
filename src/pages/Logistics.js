@@ -3,17 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-/* import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
- */
-
-
-
 const Logistics = () => {
   const navigate = useNavigate();
 
