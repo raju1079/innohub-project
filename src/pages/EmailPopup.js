@@ -75,16 +75,16 @@ const EmailPopup = () => {
         <div className="fixed inset-0 bg-color bg-opacity-50 z-40"></div>
       )}
       {isMinimized ? (
-        <div className="fixed bottom-[-18px] right-0 m-4 flex items-center justify-between bg-color text-white w-[300px] h-[50px] rounded-lg p-2 z-50">
-          <h1 className="text-white text-xl font-bold">Hi, Welcome to IRC!</h1>
+        <div className="fixed bottom-[-18px] right-0 m-4 flex items-center justify-between bg-color text-white w-[280px] h-[50px] rounded-lg p-1 z-50">
+          <h1 className="text-white text-base font-bold">Hi, Welcome to IRC!</h1>
           <button
-            className="absolute left-[245px]  top-3 text-white bg-color w-8 h-8 flex items-center justify-center rounded-lg text-29xl font-poppins font-bold"
+            className="absolute left-[225px]  top-4 text-white bg-color w-6 h-6 flex items-center justify-center rounded-lg text-13xl font-poppins font-bold"
             onClick={handleMaximize}
           >
             &#9633;
           </button>
           <button
-                className="text-white bg-color w-8 h-8 flex text-29xl items-center justify-center lg:text-29xl lg:font-semi-bold lg:top-[2px]"
+                className="text-white bg-color w-6 h-6 flex text-xl items-center justify-center lg:text-13xl lg:font-semi-bold lg:top-[2px]"
                 onClick={handleClose}
               >
                 &times;
@@ -171,7 +171,7 @@ const EmailPopup = () => {
                   </div>
                   <button
                     type="submit"
-                    className="absolute top-[490px] left-20 bg-black text-white text-13xl font-poppins font-bold rounded-lg h-10 w-36 md:top-[390px] md:left-[240px] lg:top-[15px] lg:left-[230px] lg:text-lg"
+                    className="absolute top-[490px] left-20 bg-black text-white text-lg font-poppins font-bold rounded-lg h-10 w-36 md:top-[390px] md:left-[240px] lg:top-[15px] lg:left-[230px] lg:text-lg"
                   >
                     Submit
                   </button>

@@ -45,7 +45,7 @@ const Header = () => {
   };
  */
   return (
-  <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[90px] overflow-hidden pt-7">
+  <div className="absolute w-full top-[0px] right-[0px] left-[0px] h-[95px] overflow-hidden pt-7">
    <div className="bg-gray text-white font-poppins">
        <img
           className="w-[230px] pt-1 cursor-pointer"

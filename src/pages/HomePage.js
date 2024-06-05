@@ -48,14 +48,14 @@ const HomePage = () => {
   
   // Function to handle mouse enter event
   const onHandleClick = useCallback(() => {
-    setShowPopup(prevState=>!prevState);
-  }, []); 
+    setShowPopup(true);
+  }, []);
 
   return (
 
   <div className="xl:w-full relative bg-gray h-[4276px] lg:h-[3420px] overflow-hidden text-left text-xl text-cold-grey-white font-poppins
     w-[1207px] flex flex-col  items-start justify-start  py-0 px-5">
-      <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[90px] overflow-hidden">
+      <div className="absolute w-[calc(100%_-_3px)] top-[0px] right-[1.6px] left-[1.4px] h-[95px] overflow-hidden">
         <ScrollingText />
          <img
           className="absolute h-[80.56%] top-[21%] bottom-[31.22%] left-[calc(48%_-_596.2px)] max-h-full w-[248.4px] cursor-pointer"
@@ -380,7 +380,7 @@ const HomePage = () => {
         <div className="absolute top-[383px] left-[148.5px] box-border w-[1143px] h-px border-t-[1px] border-solid border-cold-grey-white" />
         <div className="absolute top-[171px] left-[1089px] w-[234px] h-16 font-poppins">
           <div className="absolute top-[26px] left-[37px] w-[197px] h-[38px]">
-            <div className="absolute w-full top-[-60.53%] left-[0%] font-medium flex items-center">
+            <div className="absolute w-full top-[-65.53%] left-[0%] font-medium flex items-center">
               SNIPE TECH PVT LTD #123, 70Th Cross 2Nd Floor,
               <br />
               SVA Arcade 5Th Block,
@@ -395,7 +395,7 @@ const HomePage = () => {
             src="/icon.png"
           />
         </div>
-        <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 font-poppins"
+        <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 mt-2 font-poppins"
         onClick={onHandleClick}>
           <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
             <div className="absolute top-[-5%] left-[0.67%] font-medium">
