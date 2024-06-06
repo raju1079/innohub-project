@@ -3,7 +3,7 @@ import AdminHeader from '../AdminHeader'
 import AdminSidebar from '../Adminsidebar'
 import Table from '../../../../components/tableComponents/Table'
 import { useMemo } from 'react'
-import { fetchQualified, fetchStudents, uploadPayment } from '../../../../redux/actions/action';
+import { fetchQualified, fetchStudents, uploadPayment, deactivateQualifiedStudent } from '../../../../redux/actions/action';
 import { useDispatch, useSelector } from 'react-redux';
 import Dropdown from "../../../../components/dropdown/DropDown";
 import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
@@ -149,18 +149,25 @@ const  QualifiedStudents = () => {
           accessor: 'actions', 
           Cell: ({ row }) => (
             <Dropdown
-              options={['View', 'Edit', 'Deactivate']}
+              options={['View', 'Deactivate']}
               onSelect={(option) => handleOptionSelect(option, row.original)}
             />
           ),
         },
     ]
       
+    const handleDeactivate = (studentId) => {
+      dispatch(deactivateQualifiedStudent(studentId));
+    }; 
+
     const handleOptionSelect = (option, student) => {
       if (option === 'View') {
         const foundStudent = students.find((s) => s.student_id === student.student_id);
         setSelectedStudent(foundStudent);
         setShowPopup(true);
+      }
+      else if  (option === 'Deactivate') {
+        handleDeactivate(student.student_id);
       }
     };
     const handleInstallmentChange = (studentId, installment, value) => {

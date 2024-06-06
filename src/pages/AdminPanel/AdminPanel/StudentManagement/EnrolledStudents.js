@@ -10,7 +10,7 @@ import { CiMenuKebab } from "react-icons/ci";
 import Dropdown from "../../../../components/dropdown/DropDown"
 import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
 import EditStudent from '../../../../components/enrolledstudents/EditStudent';
-import { updateEmailStatus, uploadNewMark, fetchStudentMark, sendEmailMark } from '../../../../redux/actions/action';
+import { updateEmailStatus, uploadNewMark, fetchStudentMark, sendEmailMark, deactivateStudent } from '../../../../redux/actions/action';
 import AddMark from '../../../../components/enrolledstudents/AddMark';
 
 const EnrolledStudents= () => {
@@ -150,6 +150,10 @@ const EnrolledStudents= () => {
     useEffect(() => {
       dispatch(fetchStudents());
     }, [dispatch]);
+
+    const handleDeactivate = (studentId) => {
+      dispatch(deactivateStudent(studentId));
+    };
      
     const handleCheckboxChange = (event, studentId) => {
       const isChecked = event.target.checked;
@@ -176,6 +180,8 @@ const EnrolledStudents= () => {
       else if (option === 'Add Mark') {
         setSelectedStudent(student);  
         setShowAddMarkPopup(true);  
+      }else if (option === 'Deactivate') {
+        handleDeactivate(student.student_id);
       }
       // You can implement other actions for 'Edit' and 'Deactivate' here
     };

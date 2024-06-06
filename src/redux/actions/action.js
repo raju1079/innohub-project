@@ -629,3 +629,38 @@ export const UploadEmailPopup = (popupFields) => async (dispatch) => {
   }
 };
 
+export const deactivateStudent = (studentId) => async (dispatch) => {
+  console.log(studentId, "studentId");
+  try {
+    const response = await axios.put(`/api/students/${studentId}/deactivate`);
+    if (response.status === 200) {
+      toast.success(`You have successfully deactivated Student Id ${studentId}`);
+      dispatch({
+        type: ActionTypes.DEACTIVATE_STUDENT_SUCCESS,
+        payload: studentId,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while deactivating student:', error);
+  }
+};
+
+export const deactivateQualifiedStudent = (studentId) => async (dispatch) => {
+  console.log(studentId, "studentId");
+  try {
+    const response = await axios.put(`/api/marks/${studentId}/deactivate`);
+    if (response.status === 200) {
+      toast.success(`You have successfully deactivated Student Id ${studentId}`);
+      dispatch({
+        type: ActionTypes.DEACTIVATE_QUALIFIED_STUDENT_SUCCESS,
+        payload: studentId,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while deactivating student:', error);
+  }
+};
