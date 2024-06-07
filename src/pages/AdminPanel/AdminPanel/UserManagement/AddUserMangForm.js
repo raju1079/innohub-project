@@ -127,7 +127,7 @@ function AddUserMangForm({ onCloseee }) {
     dispatch(sendLoginCredentials({ first_name: formFieldsss.first_name, email_id: formFieldsss.email_id })); // Dispatch action to send email
 
     setShowSuccessPopup(true);
-    onCloseee();
+    //onCloseee();
     handleReset();
 
   };
@@ -190,7 +190,15 @@ function AddUserMangForm({ onCloseee }) {
     const isValid = /^\d{12}$/.test(value); // Assumes a 12-digit Aadhar number
     return isValid ? "" : "Invalid Aadhar number";
   };
-
+  useEffect(() => {
+    if (showSuccessPopup) {
+      const timeoutId = setTimeout(() => {
+        onCloseee();
+        setShowSuccessPopup(false);
+      }, 2000); // Wait for 2 seconds (2000 milliseconds) before closing the popup
+      return () => clearTimeout(timeoutId);
+    }
+  }, [showSuccessPopup, onCloseee]);
 
   // const validateMarks = (value) => {
   //   const marks = parseFloat(value);

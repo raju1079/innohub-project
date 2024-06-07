@@ -45,7 +45,8 @@ function UserManagement() {
     },
     {
       Header: 'Full Name',
-      accessor: 'first_name',
+      accessor: (row) => `${row.first_name} ${row.last_name}`,
+      //accessor: 'first_name',
     },
     {
       Header: 'Email',
