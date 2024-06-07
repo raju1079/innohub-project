@@ -538,6 +538,7 @@ export const uploadNewMark = (newMarkData) => async (dispatch) => {
     const response = await axios.post('/api/marks', newMarkData);
     const markData = response.data;
     console.error('Mark loaded', markData);
+    toast.success(`Mark Added Successfully`);
     dispatch({
       type: ActionTypes.UPLOAD_MARK,
       payload: markData

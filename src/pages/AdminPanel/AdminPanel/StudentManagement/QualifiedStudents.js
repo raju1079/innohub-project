@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Dropdown from "../../../../components/dropdown/DropDown";
 import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
 import TextField from "../../../../components/formcomponents/TextField";
+import Deactivate from '../../../../components/enrolledstudents/Deactivate';
 
 const  QualifiedStudents = () => {
   const mark = useSelector((state) => state.fetchMark.mark); 
@@ -16,6 +17,7 @@ const  QualifiedStudents = () => {
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [installmentStatus, setInstallmentStatus] = useState({});
   const [selectedDates, setSelectedDates] = useState({});
+  const [showDeactivatePopup, setShowDeactivatePopup] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -166,9 +168,13 @@ const  QualifiedStudents = () => {
         setSelectedStudent(foundStudent);
         setShowPopup(true);
       }
-      else if  (option === 'Deactivate') {
-        handleDeactivate(student.student_id);
+      else if (option === 'Deactivate') {
+        setSelectedStudent(student);  
+        setShowDeactivatePopup(true);  
       }
+      /*else if  (option === 'Deactivate') {
+        handleDeactivate(student.student_id);
+      }*/
     };
     const handleInstallmentChange = (studentId, installment, value) => {
       const updatedStatus = {
@@ -241,6 +247,13 @@ const  QualifiedStudents = () => {
       </div>
       {showPopup && (
         <ViewStudent student={selectedStudent} onClose={() => setShowPopup(false)} />
+      )}
+       {showDeactivatePopup && (
+        <Deactivate
+          student={selectedStudent}
+          onClose={() => setShowDeactivatePopup(false)}
+          onSubmit={handleDeactivate}
+        />
       )}
     </div>
   )

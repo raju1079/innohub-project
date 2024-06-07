@@ -12,6 +12,7 @@ import ViewStudent from '../../../../components/enrolledstudents/ViewStudent';
 import EditStudent from '../../../../components/enrolledstudents/EditStudent';
 import { updateEmailStatus, uploadNewMark, fetchStudentMark, sendEmailMark, deactivateStudent } from '../../../../redux/actions/action';
 import AddMark from '../../../../components/enrolledstudents/AddMark';
+import Deactivate from '../../../../components/enrolledstudents/Deactivate';
 
 const EnrolledStudents= () => {
 
@@ -40,6 +41,7 @@ const EnrolledStudents= () => {
     const [showEditPopup, setShowEditPopup] = useState(false);
     const [editedStudent, setEditedStudent] = useState(null);
     const [showAddMarkPopup, setShowAddMarkPopup] = useState(false);
+    const [showDeactivatePopup, setShowDeactivatePopup] = useState(false);
 
     const navigate = useNavigate();
 
@@ -180,9 +182,14 @@ const EnrolledStudents= () => {
       else if (option === 'Add Mark') {
         setSelectedStudent(student);  
         setShowAddMarkPopup(true);  
-      }else if (option === 'Deactivate') {
-        handleDeactivate(student.student_id);
       }
+      else if (option === 'Deactivate') {
+        setSelectedStudent(student);  
+        setShowDeactivatePopup(true);  
+      }
+      /*else if (option === 'Deactivate') {
+        handleDeactivate(student.student_id);
+      }*/
       // You can implement other actions for 'Edit' and 'Deactivate' here
     };
 
@@ -260,6 +267,13 @@ const EnrolledStudents= () => {
       onClose={() => setShowAddMarkPopup(false)}
       onSubmit={handleAddMarkSubmit}
       />
+      )}
+      {showDeactivatePopup && (
+        <Deactivate
+          student={selectedStudent}
+          onClose={() => setShowDeactivatePopup(false)}
+          onSubmit={handleDeactivate}
+        />
       )}
     </div>
   );
