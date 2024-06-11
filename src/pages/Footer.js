@@ -156,14 +156,14 @@ const Footer = ({
                     className="relative font-medium cursor-pointer"
                     onClick={onProjectsTextClick}
                   >
-                    Projects
+                    Collaborations
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[11px] font-roboto">
                     <div className="h-[21px] relative font-poppins inline-block"onClick={onAboutUsTextClick} >
                       About us
                     </div>
                     <div className="flex flex-row items-start justify-start pt-0 px-0 pb-[5px]">
-                      <div className="relative"onClick={ onProjectsTextClick}>Collaboration</div>
+                      <div className="relative"onClick={ onProjectsTextClick}>Blogs</div>
                     </div>
                     <div className="relative cursor-pointer" onClick={onFAQTextClick}>FAQs</div>
                   </div>

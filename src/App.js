@@ -84,6 +84,7 @@ import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUse
 //  import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
 import EmailPopup from"./pages/EmailPopup";
+import RoleManagement from "./pages/AdminPanel/AdminPanel/UserManagement/RoleManagement/RoleManagement";
 
 function App() {
   const action = useNavigationType();
@@ -220,6 +221,7 @@ function App() {
         <Route path='updateEducation/:degreeId' element={<UpdateEducation />} />
         <Route path="/UserManagement" element={<UserManagement />} />
         <Route path="/AddUserMangForm" element={<AddUserMangForm />} />
+        <Route path="/roleManagement"  element={<RoleManagement/>}/>
         <Route path="faq_page1" element={<FaqPages />} />
         {/* <Route path="email_pop" element={<EmailPopup/>}/>   */}
       </Routes>
