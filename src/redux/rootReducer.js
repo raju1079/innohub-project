@@ -37,6 +37,8 @@ import { FetchStudent } from './reducers/FetchTotalStudents.js';
 import { UploadEmailPopup } from './reducers/UploadEmailPopup.js';
 import DeactivateStudent from './reducers/DeactivateStudent.js';
 import DeactivateQualifiedStudent from './reducers/DeactivateQualifiedStudent.js';
+import DeactivateRole from './reducers/DeactivateRole.js';
+import { UploadRole } from './reducers/UploadRole.js';
 // Combine all the reducers
 
 const rootReducer = combineReducers({
@@ -78,6 +80,8 @@ const rootReducer = combineReducers({
   uploadEmailPopup:UploadEmailPopup,
   deactivateStudent: DeactivateStudent,
   deactivateQualifiedStudent: DeactivateQualifiedStudent,
+  deactivateRole: DeactivateRole,
+  uploadRole: UploadRole,
 });
 
 export default rootReducer;

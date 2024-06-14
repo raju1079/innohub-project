@@ -287,10 +287,17 @@ function AddUserMangForm({ onCloseee }) {
                   value={selectedState}
                   onChange={handleStateChange}>
                   <option value="">Select State</option>
-                  {states.map((state) => (
+                  {/*{states.map((state) => (
                     <option key={state.state_id} value={state.state_id}>
                       {state.state_name}
                     </option>
+                  ))}*/}
+                  {states
+                  .filter(state => state.status === 0) 
+                  .map(state => (
+                  <option key={state.state_id} value={state.state_id}>
+                    {state.state_name}
+                  </option>
                   ))}
                 </select>
 
@@ -308,10 +315,15 @@ function AddUserMangForm({ onCloseee }) {
                     value={selectedCity}
                     onChange={handleCityChange}>
                     <option value="">Select City</option>
-                    {cities.map((city) => (
+                    {/*{cities.map((city) => (
                       <option key={city.city_id} value={city.city_id}>
                         {city.city_name}
                       </option>
+                    ))}*/}
+                    {cities.filter(city => city.status === 0).map(city => (
+                    <option key={city.city_id} value={city.city_id}>
+                      {city.city_name}
+                    </option>
                     ))}
                   </select></div>
               </div>
@@ -359,11 +371,16 @@ function AddUserMangForm({ onCloseee }) {
                   onChange={(e) => setSelectedRoles(e.target.value)}
                 >
                   <option value="">Select Roles</option>
-                  {roles.map((roles) => ( // Change 'roles' to 'role'
-                    <option key={roles.roles_id} value={roles.roles_name}> {/* Change 'roles' to 'role' */}
-                      {roles.roles_name} {/* Change 'roles' to 'role' */}
+                  {/*{roles.map((roles) => ( 
+                    <option key={roles.roles_id} value={roles.roles_name}> 
+                      {roles.roles_name} 
                     </option>
-                  ))}
+                  ))}*/}
+                  {roles.filter(roles => roles.status === 0).map(roles => (
+                    <option key={roles.roles_id} value={roles.roles_id}>
+                      {roles.roles_name}
+                    </option>
+                    ))}
                 </select>
 
               </div>

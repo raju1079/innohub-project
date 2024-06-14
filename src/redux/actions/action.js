@@ -665,3 +665,41 @@ export const deactivateQualifiedStudent = (studentId) => async (dispatch) => {
     console.error('Error while deactivating student:', error);
   }
 };
+
+export const deactivateRole = (rolesId) => async (dispatch) => {
+  console.log(rolesId, "rolesId");
+  try {
+    const response = await axios.put(`/api/roles/${rolesId}/deactivate`);
+    if (response.status === 200) {
+      toast.success(`You have successfully deactivated Role Id ${rolesId}`);
+      dispatch({
+        type: ActionTypes.DEACTIVATE_ROLE_SUCCESS,
+        payload: rolesId,
+      });
+    } else {
+      console.error('Unexpected status code:', response.status);
+    }
+  } catch (error) {
+    console.error('Error while deactivating role:', error);
+  }
+};
+
+export const uploadNewRole = (newRoleData) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/roles', newRoleData);
+    const roleData = response.data;
+    console.error('Role loaded', roleData);
+    toast.success("Role created successfully");
+    dispatch({
+      type: ActionTypes.UPLOAD_ROLE,
+      payload: roleData
+    });
+  } catch (error) {
+    if (error.response && error.response.data && error.response.data.error) {
+      toast.error(error.response.data.error);
+    } else {
+      toast.error("An error occurred while creating the role.");
+    }
+    console.error('Error uploading new role:', error);
+  }
+};

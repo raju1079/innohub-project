@@ -52,7 +52,14 @@ const CityList = () => {
       {
         Header: 'Creation Date',
         accessor: 'creation_date',
-        Cell: ({ value }) => formatDate(value),
+        Cell: ({ value }) => {
+          if (!value) {
+            return ''; 
+          }
+          const date = new Date(value);
+          return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+        },
+        //Cell: ({ value }) => formatDate(value),
       },
       {
         Header: 'Actions',
