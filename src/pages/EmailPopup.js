@@ -5,18 +5,18 @@ import TextArea from "../components/formcomponents/TextArea";
 import { useDispatch } from "react-redux";
 import { UploadEmailPopup } from "../redux/actions/action";
 
-const EmailPopup = () => {
+const EmailPopup = ({ onClose }) => {
   const [popupFields, setPopupFields] = useState({
     firstName: "",
     lastName: "",
-    email:"",
-    query: ""
+    email: "",
+    query: ""
 
   });
   const [showPopup, setShowPopup] = useState(true);
-  const [isMinimized, setIsMinimized] = useState(false);
-  const dispatch= useDispatch();
-  
+  // const [isMinimized, setIsMinimized] = useState(false);
+  const dispatch = useDispatch();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setPopupFields((prevState) => ({
@@ -29,13 +29,13 @@ const EmailPopup = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(value) ? "" : "Invalid email address";
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
       !popupFields.firstName ||
       !popupFields.lastName ||
-      !popupFields.email||
+       !popupFields.email ||
       !popupFields.query
     ) {
       alert("Please fill in all fields");
@@ -49,77 +49,39 @@ const EmailPopup = () => {
     }
 
     dispatch(UploadEmailPopup(popupFields));
-    setShowPopup(false); 
+    onClose(); // Close the popup after submission
   };
 
-  const handleMinimize = () => {
-    setIsMinimized(true);
-    
-  };
-
-  const handleMaximize = () => {
-    setIsMinimized(false);
-  };
-
-  const handleClose = () => {
-    setShowPopup(false);
-  };
-
-  if (!showPopup) {
+  if (!onClose) {
     return null;
   }
 
   return (
     <div>
-      {!isMinimized && (
-        <div className="fixed inset-0 bg-color bg-opacity-50 z-40"></div>
-      )}
-      {isMinimized ? (
-        <div className="fixed bottom-[-18px] right-0 m-4 flex items-center justify-between bg-color text-white w-[280px] h-[50px] rounded-lg p-1 z-50">
-          <h1 className="text-white text-base font-bold">Hi, Welcome to IRC!</h1>
-          <button
-            className="absolute left-[225px]  top-4 text-white bg-color w-6 h-6 flex items-center justify-center rounded-lg text-13xl font-poppins font-bold"
-            onClick={handleMaximize}
-          >
-            &#9633;
-          </button>
-          <button
-                className="text-white bg-color w-6 h-6 flex text-xl items-center justify-center lg:text-13xl lg:font-semi-bold lg:top-[2px]"
-                onClick={handleClose}
-              >
-                &times;
-              </button>
-        </div>
-      ) : (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-color text-white p-20 rounded-lg pl-3 w-[635px] h-[800px] md:w-[720px] md:h-[725px] lg:h-[350px] lg:w-[1110px] relative flex flex-col items-center justify-between">
+        <div className="fixed inset-0 lg:right-[-900px] lg:top-[-100px] flex items-center justify-center z-50">
+          <div className="bg-color text-white p-20 rounded-lg pl-3 w-[600px] h-[800px] md:w-[600px] md:h-[680px] lg:h-[325px] lg:w-[235px] relative flex flex-col items-center justify-between">
             <div className="absolute top-2 right-2 flex space-x-2 md:top-[10px] lg:top-0">
               <button
-                className="text-white bg-color text-17xl w-8 h-8 font-poppins font semi-bold flex items-center justify-center lg:text-8xl lg:font-semi-bold"
-                onClick={handleMinimize}
-              >
-                -
-              </button>
-              <button
                 className="text-white bg-color w-8 h-8 flex text-29xl items-center justify-center lg:text-xl lg:font-semi-bold lg:top-[2px]"
-                onClick={handleClose}
+                onClick={onClose}
               >
                 &times;
               </button>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h1 className="absolute top-15 left-28 text-white text-29xl font-bold items-center justify-center md:top-[20px] md:left-[150px] md:text-18xl lg:top-[10px] lg:left-[20px] lg:text-3xl">
+              <h1 className="absolute top-15 left-28 text-white text-29xl font-bold items-center justify-center md:top-[20px] md:left-[100px] md:text-18xl lg:top-[4px] lg:left-[70px] lg:text-lg">
                 Hi, Welcome to IRC!
               </h1>
-              <p className="absolute top-[95px] left-32 text-white text-17xl md:top-[90px] md:left-[170px] md:text-18xl lg:top-[60px] lg:left-[10px] lg:text-base">
-              snipe.upl@gmail.com
+              <p className="absolute top-[95px] left-5 text-white text-17xl  font-poppins md:top-[90px] md:left-[15px] md:text-18xl lg:top-[30px] lg:left-[10px] lg:text-sm">
+                To: snipe.upl@gmail.com
               </p>
-              <p className="absolute top-[170px] left-2 text-white text-17xl md:top-[160px] md:left-[50px] lg:top-[110px] lg:left-[10px] lg:text-base">
+              <p className="absolute top-[170px] left-5 text-white text-17xl font-poppins md:top-[160px] md:left-[15px] lg:top-[60px] lg:left-[10px] lg:text-sm text-left">
                 Have a problem or just want to chat?<br />We're just a message away!
               </p>
+
               <form onSubmit={handleSubmit} className="w-full">
-                <div className="absolute top-[400px] flex justify-end w-full space-x-10 ml-[50px] md:ml-[-50px] lg:ml-[150px]">
-                  <div className="absolute top-[-80px] left-[-275px] flex flex-col text-13xl space-y-4 mt-4 md:top-[-90px] md:left-[-285px] lg:top-[-400px] lg:text-lg">
+                <div className="absolute top-[405px] flex justify-end w-full space-x-4 ml-[50px] md:ml-[-50px] lg:ml-[150px] lg:space-x-10">
+                  <div className="absolute top-[-80px] left-[-210px] w-[400px]  flex flex-col text-13xl space-y-4 mt-4 md:top-[-100px] md:left-[-200px] md:text-[12xl] md:w-[270px] lg:top-[-290px] lg:left-[-270px] lg:text-sm lg:w-[150px] ">
                     <TextField
                       label="First Name"
                       name="firstName"
@@ -129,10 +91,10 @@ const EmailPopup = () => {
                       onChange={handleChange}
                       required={true}
                       disabled={false}
-                      className="md:w-[1000px] lg:w-[20px]"
+                      className="w-auto"
                     />
                   </div>
-                  <div className="absolute top-[40px] left-[-315px] flex flex-col text-13xl space-y-4 mt-4 md:top-[-90px] md:left-[45px] lg:top-[-400px] lg:text-lg">
+                  <div className="absolute top-[40px] left-[-230px] w-[400px] flex flex-col text-13xl space-y-4 mt-4 md:top-[-100px] md:left-[60px] md:w-[270px] lg:top-[-290px] lg:left-[-155px] lg:text-sm  lg:w-[150px]">
                     <TextField
                       label="Last Name"
                       name="lastName"
@@ -144,20 +106,22 @@ const EmailPopup = () => {
                       disabled={false}
                     />
                   </div>
-                  <div className="absolute top-[160px] left-[-315px] flex flex-col text-13xl space-y-4 mt-4 md:top-[30px] md:left-[-325px] lg:top-[-300px] lg:left-[-328px] lg:text-lg">
+                   <div className="absolute top-[160px] left-[-230px]  w-[400px]  flex flex-col text-13xl space-y-4 mt-4 md:top-[18px] md:left-[-220px] md:w-[550px] lg:top-[-206px] lg:left-[-310px] lg:w-[305px] lg:text-sm">
                     <TextField
                       label="Email"
                       name="email"
-                       type="text"
-                       placeholder="Enter your email id"
-                       value={popupFields.email}
-                       onChange={handleChange}
-                       required={true}
+                      type="text"
+                      placeholder="Enter your email id"
+                      value={popupFields.email}
+                      onChange={handleChange}
+                      required={true}
                       disabled={false}
                       validate={validateEmail}
-                     />
-                   </div>
-                  <div className="absolute top-[275px] left-[-418px] flex flex-col text-13xl space-y-4 mt-4 md:top-[150px] md:left-[-330px] lg:top-[-190px] lg:text-lg">
+                      
+                    /> 
+                  </div>
+            
+                <div className="absolute top-[275px] left-[-230px]  w-[400px] flex flex-col text-13xl space-y-4 mt-4 md:top-[140px] md:left-[-220px] md:w-[550px] lg:top-[-124px] lg:left-[-310px] lg:w-[305px] lg:text-sm">
                     <TextArea
                       label="Message"
                       name="query"
@@ -167,11 +131,13 @@ const EmailPopup = () => {
                       onChange={handleChange}
                       required={true}
                       disabled={false}
+                     
                     />
                   </div>
                   <button
                     type="submit"
-                    className="absolute top-[490px] left-20 bg-black text-white text-lg font-poppins font-bold rounded-lg h-10 w-36 md:top-[390px] md:left-[240px] lg:top-[15px] lg:left-[230px] lg:text-lg"
+  
+                    className="absolute top-[480px] left-[-85px] h-[50px] w-[130px] bg-black text-white text-xl font-poppins font-semi-bold p-0 rounded-lg  md:top-[350px] md:left-[5px] lg:top-[35px] lg:left-[-310px] lg:h-[30px] lg:w-[100px] lg:text-sm"
                   >
                     Submit
                   </button>
@@ -179,12 +145,12 @@ const EmailPopup = () => {
               </form>
             </div>
           </div>
-        </div>
-      )}
+        </div>                                                                                                   
+      
     </div>
   );
 };
 
-export default EmailPopup;
- 
+export default EmailPopup;
+
 

@@ -28,7 +28,9 @@ const TextArea = ({
   return (
     <div>
       {label && (
-        <div className="font-semibold font-poppins text-white whitespace-pre-wrap pb-2">
+        // <div className="font-semibold font-poppins text-white whitespace-pre-wrap pb-2">
+        <div className="flex flex-row items-start justify-start gap-[0px_21px] text-base-2 font-semibold font-poppins text-white whitespace-pre-wrap pb-2">
+
           {label}
         </div>
       )}

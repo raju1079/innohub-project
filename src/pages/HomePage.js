@@ -47,9 +47,15 @@ const HomePage = () => {
    const [showPopup, setShowPopup] = useState(false);
   
   // Function to handle mouse enter event
-  const onHandleClick = useCallback(() => {
+  // const onHandleClick = useCallback(() => {
+  //   setShowPopup(true);
+  // }, []);
+  const handleEmailClick = useCallback(() => {
     setShowPopup(true);
   }, []);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  }
 
   return (
 
@@ -92,7 +98,7 @@ const HomePage = () => {
             About us
           </div>
           <div className="w-[90px] relative rounded-xl bg-cold-grey-white h-6 overflow-hidden shrink-0 text-2xl text-blue">
-            <div className="absolute top-[calc(63%-_18px)] left-[calc(62%-_44px)] capitalize font-semibold " onClick={onLoginClick}>
+            <div className="absolute top-[calc(63%-_18px)] left-[calc(62%-_44px)] capitalize font-semibold cursor-pointer " onClick={onLoginClick}>
               Log In
             </div>
           </div>
@@ -396,11 +402,12 @@ const HomePage = () => {
           />
         </div>
         <div className="absolute top-[277px] left-[1089px] w-[186px] h-6 mt-2 font-poppins"
-        onClick={onHandleClick}>
-          <div className="absolute top-[2px] left-[37px] w-[149px] h-5">
-            <div className="absolute top-[-5%] left-[0.67%] font-medium">
+        onClick={ handleEmailClick }>
+          <div className="absolute top-[2px] left-[37px] w-[149px] h-5 pt-1 ">
+            <div className="absolute top-[-5%] left-[0.67%] font-medium cursor-pointer">
             snipe.upl@gmail.com
-           {showPopup && <EmailPopup />}
+           {/* {showPopup && <EmailPopup
+            />} */}
             </div>
           </div>
           <img
@@ -416,7 +423,7 @@ const HomePage = () => {
             alt=""
             src="/icon.svg"
           />
-          <div className="absolute top-[2px] left-[37px] w-[139px] h-5">
+          <div className="absolute top-[2px] left-[37px] w-[139px] h-5 ">
             <div className="absolute top-[-60%] left-[0%] capitalize font-medium">
               <p className="m-0">+91 080-23100098</p>
               <p className="m-0">+91 63635 07858</p>
@@ -427,6 +434,8 @@ const HomePage = () => {
           <div className="absolute top-[6.25%] left-[0%] font-light">
             © 2017 All Rights Reserved
           </div>
+          {showPopup && <EmailPopup 
+      onClose={handleClosePopup} />}
         </div>
         <div className="absolute top-[128px] left-[853px] w-[203px] h-[197px]">
           <b className="absolute top-[0%] left-[0%] text-lg">Company</b>
@@ -443,13 +452,13 @@ const HomePage = () => {
             Collaborations
           </div>
           <div
-            className="absolute top-[59.39%] left-[0%] font-poppins"
+            className="absolute top-[59.39%] left-[0%] font-poppins cursor-pointer"
             onClick={onAboutUsTextClick}
           >
             About us
           </div>
-          <div className="absolute top-[75.63%] left-[0%]"  onClick={onProjectsTextClick}>Blogs</div>
-          <div className="absolute top-[91.88%] left-[0%]" onClick={onFAQClick}>FAQs</div>
+          <div className="absolute top-[75.63%] left-[0%] cursor-pointer"  onClick={onProjectsTextClick}>Blogs</div>
+          <div className="absolute top-[91.88%] left-[0%] cursor-pointer" onClick={onFAQClick}>FAQs</div>
         </div>
         {/* <div className="absolute top-[153px] left-[852px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" />
         <div className="absolute top-[153px] left-[1087px] box-border w-[50px] h-0.5 border-t-[2px] border-solid border-yellow-50" /> */}

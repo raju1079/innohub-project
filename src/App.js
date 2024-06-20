@@ -81,10 +81,8 @@ import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Mast
 import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserManagement";
 import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
 
-//  import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
+ import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
-import EmailPopup from"./pages/EmailPopup";
-import RoleManagement from "./pages/AdminPanel/AdminPanel/UserManagement/RoleManagement/RoleManagement";
 
 function App() {
   const action = useNavigationType();
@@ -143,7 +141,7 @@ function App() {
   return (
     <div>
       <ToastContainer theme='colored' position='top-center'></ToastContainer>
-      {/* <EmailPopup/> */}
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/eduproject1" element={<EduProject1 />} />
@@ -208,7 +206,7 @@ function App() {
         <Route path="/enrollment_form" element={<PersonalDetailsForm />} />
         <Route path="/Adminhome" element={<AdminHome />} />
         <Route path="/enrolled-students" element={<EnrolledStudents />} />
-         {/* <Route path="access_control" element={<AccessControlHome />} />  */}
+          <Route path="access_control" element={<AccessControlHome />} />  
         <Route path="/qualified-students" element={<QualifiedStudents />} />
 
         <Route path='allState' element={<AllState />} />
@@ -221,9 +219,8 @@ function App() {
         <Route path='updateEducation/:degreeId' element={<UpdateEducation />} />
         <Route path="/UserManagement" element={<UserManagement />} />
         <Route path="/AddUserMangForm" element={<AddUserMangForm />} />
-        <Route path="/roleManagement"  element={<RoleManagement/>}/>
         <Route path="faq_page1" element={<FaqPages />} />
-        {/* <Route path="email_pop" element={<EmailPopup/>}/>   */}
+        
       </Routes>
 
 

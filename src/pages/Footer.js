@@ -34,20 +34,20 @@ const Footer = ({
   }, [navigate]); 
 
   const [showPopup, setShowPopup] = useState(false);
-  
-  // Function to handle mouse enter event
-  const onHandleClick = useCallback(() => {
+ 
+  const handleEmailClick = useCallback(() => {
     setShowPopup(true);
   }, []);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  }
+
 
   // Function to handle mouse leave event
   // const handleMouseLeave = useCallback(() => {
   //   setShowPopup(true);
   // }, []);
-  // const handleMinimize=useCallback(()=>{
-  //   setShowPopup(true)
-  // },[]);
-
+  
   const wisconsinAveSuiteStyle = useMemo(() => {
     return {
       top: propTop,
@@ -153,17 +153,17 @@ const Footer = ({
                     Research area
                   </div>
                   <div
-                    className="relative font-medium cursor-pointer"
+                    className="relative cursor-pointer font-medium cursor-pointer"
                     onClick={onProjectsTextClick}
                   >
-                    Collaborations
+                  Collaborations
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[11px] font-roboto">
-                    <div className="h-[21px] relative font-poppins inline-block"onClick={onAboutUsTextClick} >
+                    <div className="h-[21px] relative cursor-pointer font-poppins inline-block"onClick={onAboutUsTextClick} >
                       About us
                     </div>
                     <div className="flex flex-row items-start justify-start pt-0 px-0 pb-[5px]">
-                      <div className="relative"onClick={ onProjectsTextClick}>Blogs</div>
+                      <div className="relative cursor-pointer"onClick={ onProjectsTextClick}>Blogs</div>
                     </div>
                     <div className="relative cursor-pointer" onClick={onFAQTextClick}>FAQs</div>
                   </div>
@@ -202,13 +202,13 @@ const Footer = ({
                       src="/icon1.png"
                     />
                     <div className="flex flex-row items-center justify-start py-0 pr-[39px] pl-px "
-                     onClick={onHandleClick}
+                     onClick={handleEmailClick}
                     //  onMouseLeave={handleMouseLeave}
                      >
                       <div className="h-5 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
                         <div className="relative font-medium whitespace-nowrap cursor-pointer">
                         snipe.upl@gmail.com
-                          {showPopup && <EmailPopup />}
+                         
                         </div>
                       </div>
                     </div>
@@ -247,6 +247,8 @@ const Footer = ({
           </div>
         </div>
       </div>
+      {showPopup && <EmailPopup 
+      onClose={handleClosePopup} />}
     </footer>
   );
 };

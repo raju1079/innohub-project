@@ -92,8 +92,16 @@ const FaqPages = () => {
   const indexOfFirstQuestion = indexOfLastQuestion - faqPerPage;
   const currentQuestions = faqList.slice(indexOfFirstQuestion, indexOfLastQuestion);
 
+  // const handleOptionChange = (index) => {
+  //   setSelectedOption(selectedOption === index ? "" : index);
+  // };
+
   const handleOptionChange = (index) => {
-    setSelectedOption(selectedOption === index ? "" : index);
+    if (selectedOption === index) {
+      setSelectedOption(null);
+    } else {
+      setSelectedOption(index);
+    }
   };
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -128,18 +136,19 @@ const FaqPages = () => {
           </div>
         </div>
         <div className="container mx-auto pt-[200px] md:pt-[250px] font-poppins ">
-          <b className=" mb-10 m-5 mt-[50px] ml-[40px] text-29xl  md:text-29xl font-semi-bold text-white flex content-center items-center "> Frequently Asked Questions </b>
+          <b className=" mb-10 m-5 mt-[70px] ml-[40px] text-29xl  md:text-29xl lg:text-17xl font-semi-bold text-white flex content-center items-center "> Frequently Asked Questions </b>
           {currentQuestions.map((faq, index) => (
             <div key={index} className="mt-4">
               <p
                 className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins  cursor-pointer hover:underline text-13xl md:text-13xl  lg:text-base"
+
                 onClick={() => handleOptionChange(index)}
-                onMouseLeave={() => handleOptionChange("")}
+                // onMouseLeave={() => handleOptionChange(null)}
               >
                 {faq.question}
               </p>
               {selectedOption === index && (
-                <p className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins hover:underline text-13xl md:text-13xl lg:text-base transform scale-120">
+                <p className="mt-[40px] ml-[75px] leading-relaxed text-cold-grey-white text-justify-center font-poppins  text-13xl md:text-13xl lg:text-base transform scale-120">
                   {faq.answer}
                 </p>
               )}
