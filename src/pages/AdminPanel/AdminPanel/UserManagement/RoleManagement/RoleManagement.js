@@ -20,9 +20,16 @@ const RoleManagement = () => {
   useEffect(() => {
     dispatch(fetchRoles());
   }, [dispatch]);
+  
+  useEffect(() => {
+    console.log("Fetched Roles:", fetchRole); 
+  }, [fetchRole]);
 
   const handleDeactivate = (rolesId) => {
-    dispatch(deactivateRole(rolesId));
+    dispatch(deactivateRole(rolesId)).then(() => {
+      dispatch(fetchRoles()); 
+      setShowDeactivatePopup(false); 
+    });
   };
 
   const toggleAddUserPopup = () => {
@@ -84,7 +91,14 @@ const RoleManagement = () => {
           setShowDeactivatePopup(true);  
         }
       };
-   
+
+      const activeRoles = useMemo(() => {
+        return fetchRole.filter(role => role.status === 0);
+      }, [fetchRole]);
+    
+      useEffect(() => {
+        console.log("Active Roles:", activeRoles); 
+      }, [activeRoles]);
   return (
     
     <div className="flex flex-row w-full h-screen bg-[#090119]  overflow-hidden">
@@ -101,7 +115,7 @@ const RoleManagement = () => {
         
         <Table
           columns={columns}
-          data={fetchRole} 
+          data={activeRoles} //{fetchRole} 
           heading="Role Management"
        />
         

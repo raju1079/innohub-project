@@ -36,13 +36,6 @@ const AddRole = ({ onAddRoleClose }) => {
     console.log('formdata', roleData);
     onAddRoleClose();
   };
-
-  const handleClear = () => {
-    setFormData({
-      ...formData,
-      roles_name: '',
-    });
-  };
   
   return (
     <div>
@@ -57,6 +50,7 @@ const AddRole = ({ onAddRoleClose }) => {
               value={roles_name}
               placeholder="Role Name"
               onChange={handleChange}
+              required
             />
           </div>
           <div className="mr-5 w-60">
@@ -72,8 +66,8 @@ const AddRole = ({ onAddRoleClose }) => {
           </div>
         </div>
         <div className="mt-10 flex justify-center">
-          <button className="mr-5 bg-white py-3 px-10 rounded text-xl" fullWidth type="submit">Save</button>
-          <button type="button" className="bg-white py-3 px-10 rounded text-xl" fullWidth onClick={handleClear}>Clear</button>
+          <button className="mr-5 bg-white py-2 px-7 rounded text-xl" fullWidth type="submit">Save</button>
+          <button type="button" className="bg-white py-2 px-7 rounded text-xl" fullWidth onClick={onAddRoleClose}>Close</button>
         </div>
       </form>
     </div>
