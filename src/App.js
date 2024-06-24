@@ -81,7 +81,7 @@ import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Mast
 import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserManagement";
 import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
 import RoleManagement from "./pages/AdminPanel/AdminPanel/UserManagement/RoleManagement/RoleManagement";
- //import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
+ import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
 
 function App() {
@@ -148,6 +148,7 @@ function App() {
         <Route path="/researcharea" element={<ResearchArea />} />
         <Route path="/education" element={<Education />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="faq_page1" element={<FaqPages />} />
         <Route path="/healthcare" element={<HealthCare />} />
         <Route path="/logistics" element={<Logistics />} />
         <Route path="/agriculture" element={<Agriculture />} />
@@ -204,23 +205,21 @@ function App() {
         <Route path="/eduproject5" element={<EduProject5 />} />
         <Route path="/eduproject6" element={<EduProject6 />} />
         <Route path="/enrollment_form" element={<PersonalDetailsForm />} />
+
         <Route path="/Adminhome" element={<AdminHome />} />
         <Route path="/enrolled-students" element={<EnrolledStudents />} />
-        {/* <Route path="access_control" element={<AccessControlHome />} />  */}
         <Route path="/qualified-students" element={<QualifiedStudents />} />
-
         <Route path='allState' element={<AllState />} />
         <Route path='updateState/:stateId' element={<UpdateState />} />
-
         <Route path='allCity' element={<AllCity />} />
         <Route path='updateCity/:cityId' element={<UpdateCity />} />
-
         <Route path='allEducation' element={<AllEducation />} />
         <Route path='updateEducation/:degreeId' element={<UpdateEducation />} />
         <Route path="/UserManagement" element={<UserManagement />} />
         <Route path="/AddUserMangForm" element={<AddUserMangForm />} />
-        <Route path="faq_page1" element={<FaqPages />} />
         <Route path="/roleManagement"  element={<RoleManagement/>}/>
+        <Route path="accessControl" element={<AccessControlHome />} />  
+
       </Routes>
 
 
