@@ -18,15 +18,11 @@ const Header = () => {
   }, [navigate]);
 
   const onProjectsTextClick = useCallback(() => {
-    navigate("/desktop-3");
+    navigate("/events");
   }, [navigate]);
 
   const onAboutUsTextClick = useCallback(() => {
     navigate("/about-us");
-  }, [navigate]);
-
-  const onAboutUsText2Click = useCallback(() => {
-    navigate("/researcharea");
   }, [navigate]);
 
   const onCareersTextClick = useCallback(() => {
@@ -74,7 +70,7 @@ const Header = () => {
             className="relative mt-[-40px] text-xl mx-0 ml-[-270px] md:ml-0 lg:ml-[-100px] xl:ml-0 capitalize font-medium cursor-pointer transition hover:text-blue duration-300 "
             onClick={onProjectsTextClick}
           >
-            Blogs
+            Events
           </div>
           <div
             className="relative mt-[-40px] text-xl mx-0 ml-[-270px] md:ml-0 lg:ml-[-110px] xl:ml-0 capitalize font-medium cursor-pointer transition hover:text-blue duration-300"

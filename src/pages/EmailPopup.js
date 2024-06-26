@@ -58,8 +58,8 @@ const EmailPopup = ({ onClose }) => {
 
   return (
     <div>
-        <div className="fixed inset-0 lg:right-[-900px] lg:top-[-100px] flex items-center justify-center z-50">
-          <div className="bg-color text-white p-20 rounded-lg pl-3 w-[600px] h-[800px] md:w-[600px] md:h-[680px] lg:h-[325px] lg:w-[235px] relative flex flex-col items-center justify-between">
+        <div className="fixed inset-0 lg:right-[-900px] lg:top-[0px] flex items-center justify-center z-50">
+          <div className="bg-color text-white p-20 rounded-lg pl-3 w-[600px] h-[800px] md:w-[600px] md:h-[680px] lg:h-[325px] lg:w-[265px] relative flex flex-col items-center mr-16 justify-between">
             <div className="absolute top-2 right-2 flex space-x-2 md:top-[10px] lg:top-0">
               <button
                 className="text-white bg-color w-8 h-8 flex text-29xl items-center justify-center lg:text-xl lg:font-semi-bold lg:top-[2px]"
@@ -72,10 +72,10 @@ const EmailPopup = ({ onClose }) => {
               <h1 className="absolute top-15 left-28 text-white text-29xl font-bold items-center justify-center md:top-[20px] md:left-[100px] md:text-18xl lg:top-[4px] lg:left-[70px] lg:text-lg">
                 Hi, Welcome to IRC!
               </h1>
-              <p className="absolute top-[95px] left-5 text-white text-17xl  font-poppins md:top-[90px] md:left-[15px] md:text-18xl lg:top-[30px] lg:left-[10px] lg:text-sm">
+              <p className="absolute top-[95px] left-5 text-white text-17xl  font-poppins md:top-[90px] md:left-[15px] md:text-18xl lg:top-[30px] lg:left-[26px] lg:text-sm">
                 To: snipe.upl@gmail.com
               </p>
-              <p className="absolute top-[170px] left-5 text-white text-17xl font-poppins md:top-[160px] md:left-[15px] lg:top-[60px] lg:left-[10px] lg:text-sm text-left">
+              <p className="absolute top-[170px] left-5 text-white text-17xl font-poppins md:top-[160px] md:left-[15px] lg:top-[60px] lg:left-[26px] lg:text-sm text-left">
                 Have a problem or just want to chat?<br />We're just a message away!
               </p>
 

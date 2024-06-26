@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { adminLogin, fetchStates } from '../../../../redux/actions/action';
 import { fetchCities } from '../../../../redux/actions/action';
 import { fetchRoles } from '../../../../redux/actions/action';
-import { sendUserForm, resetForm, sendLoginCredentials } from '../../../../redux/actions/action';
+import { sendUserForm, resetForm} from '../../../../redux/actions/action';
 import DatePicker from '../../../../components/formcomponents/DatePicker';
 import { useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
@@ -44,7 +44,7 @@ function AddUserMangForm({ onCloseee }) {
   const cities = useSelector((state) => state.cities.cities);
   const roles = useSelector((state) => state.roles.roles);
   const email = useSelector((state) => state.userEmail)
-  // console.log("hello", roles)
+   console.log("hello", roles)
 
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [selectedState, setSelectedState] = useState('');
@@ -124,7 +124,7 @@ function AddUserMangForm({ onCloseee }) {
 
     dispatch(sendUserForm(updatedFormFields));
 
-    dispatch(sendLoginCredentials({ first_name: formFieldsss.first_name, email_id: formFieldsss.email_id })); // Dispatch action to send email
+//    dispatch(sendLoginCredentials({ first_name: formFieldsss.first_name, email_id: formFieldsss.email_id })); // Dispatch action to send email
 
     setShowSuccessPopup(true);
     //onCloseee();
@@ -213,12 +213,12 @@ function AddUserMangForm({ onCloseee }) {
 
   return (
 
-    <div className='relative bg-custom-color ml-[-320px] w-screen-full  md:ml-[-500px] lg:ml-[-770px] xl:ml-[-950px]  border-2 border-black popup-content grid justify-items-start'>
+    <div className='relative bg-custom-color mt-5 ml-[-320px] w-screen-full  md:ml-[-500px] lg:ml-[-770px] mr-16 xl:ml-[-950px]  rounded-lg border-4 border-white popup-content grid justify-items-start'>
       <div className="self-stretch flex flex-col bg-color items-start justify-start max-w-full text-start text-xl text-black font-poppins">
 
 
         <form onSubmit={handleUserSubmit}
-          className="w-[280px]   mx-0 mt-4 m-0 md:mx-0 md:px-3  md:mt-8  lg:mx-0 lg:mt-10 lg:justify-center md:pt-4 lg:pr-24" >
+          className="w-[280px]   mx-0 mt-4 m-0 md:mx-0 md:px-3  md:mt-8  lg:mx-0 lg:mt-5 lg:justify-center md:pt-4 lg:pr-24" >
            <div className="flex flex-col mx-2  lg:flex-row space-y-4 lg:space-y-0 pb-3 ">
             <TextField
               label="First Name"
@@ -377,7 +377,7 @@ function AddUserMangForm({ onCloseee }) {
                     </option>
                   ))}*/}
                   {roles.filter(roles => roles.status === 0).map(roles => (
-                    <option key={roles.roles_id} value={roles.roles_id}>
+                    <option key={roles.roles_id} value={roles.roles_name}>
                       {roles.roles_name}
                     </option>
                     ))}
@@ -450,7 +450,7 @@ function AddUserMangForm({ onCloseee }) {
 
           {error && <div className="text-red-500">Error: {error.message}</div>}
           <div className="md:grid grid-flow-col  ">
-            <div className="w-[453px] mx-5 lg:mx-[300px] flex flex-row items-start justify-start py-0 pr-0 pt-12 pb-20 box-border max-w-full">
+            <div className="w-[453px] mx-5 lg:mx-[300px] flex flex-row items-start justify-start py-0 pr-0 pt-12 pb-10 box-border max-w-full">
               <div className="flex-1 flex flex-row flex-wrap items-start justify-center gap-[0px_39px] max-w-full mq450:gap-[0px_39px]">
                 <button type='submit' className="cursor-pointer my-2 [border:none] pt-[13px] px-[13px] pb-3.5 bg-white flex-1 rounded-lg shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-center justify-center box-border min-w-[130px] hover:bg-darkslategray">
                   <b className="w-[152px] relative text-base-2 inline-block font-poppins text-black text-center shrink-0">

@@ -21,20 +21,12 @@ const HomePage = () => {
   }, [navigate]);
 
   const onProjectsTextClick = useCallback(() => {
-    navigate("/desktop-3");
+    navigate("/events");
   }, [navigate]);
 
   const onAboutUsTextClick = useCallback(() => {
     navigate("/about-us");
   }, [navigate]);
-
-  // const onAboutUsText2Click = useCallback(() => {
-  //   navigate("/researcharea");
-  // }, [navigate]);
-
-  // const onCareersTextClick = useCallback(() => {
-  //   navigate("/desktop-3");
-  // }, [navigate]);
 
    const onLoginClick = useCallback(() => {
     navigate("/Login");
@@ -89,7 +81,7 @@ const HomePage = () => {
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "
           onClick={onProjectsTextClick}
           >
-            Blogs
+            Events
           </div>
           <div
             className="relative capitalize font-medium cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 "

@@ -81,8 +81,23 @@ import UpdateEducation from "./pages/AdminPanel/Area Management/Educational Mast
 import UserManagement from "./pages/AdminPanel/AdminPanel/UserManagement/UserManagement";
 import AddUserMangForm from "./pages/AdminPanel/AdminPanel/UserManagement/AddUserMangForm";
 import RoleManagement from "./pages/AdminPanel/AdminPanel/UserManagement/RoleManagement/RoleManagement";
- import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
+import AccessControlHome from "./pages/adminmasteraccess/AccessControlHome";
 import FaqPages from "./pages/FaqPages";
+
+
+
+import HrHome from "./pages/HrPanel/Hrdashboard/HrHome";
+import Enrolledstudents from "./pages/HrPanel/StudentManagement/Enrolledstudents";
+import Qualifiedstudents from "./pages/HrPanel/StudentManagement/Qualifiedstudents";
+import RoleManagementHR from "./pages/HrPanel/AdminMaster/RoleManagementHR";
+import AllStateHr from "./pages/HrPanel/AdminMaster/MasterModules/AllStateHr";
+import UpdateStateHr from "./pages/HrPanel/AdminMaster/MasterModules/UpdateStateHr";
+import AllCityHr from "./pages/HrPanel/AdminMaster/MasterModules/CityMaster/AllCityHr";
+import UpdateCityHr from "./pages/HrPanel/AdminMaster/MasterModules/CityMaster/UpdateCityHr";
+import AllEducationHr from "./pages/HrPanel/AdminMaster/MasterModules/EducationMaster/AllEducationHr";
+import UpdateEducationHr from "./pages/HrPanel/AdminMaster/MasterModules/EducationMaster/UpdateEducationHr";
+
+import EventHomePage from "./pages/Events/EventHomePage";
 
 function App() {
   const action = useNavigationType();
@@ -219,6 +234,21 @@ function App() {
         <Route path="/AddUserMangForm" element={<AddUserMangForm />} />
         <Route path="/roleManagement"  element={<RoleManagement/>}/>
         <Route path="accessControl" element={<AccessControlHome />} />  
+
+
+        <Route path="/hrDashboard" element={<HrHome />} />
+        <Route path="/enrolledstudents" element={<Enrolledstudents />} />
+        <Route path="/qualifiedstudents" element={<Qualifiedstudents/>}/>
+        <Route path="/RoleManagementHR" element={<RoleManagementHR/>}/>
+        <Route path='/allStateHR' element={<AllStateHr />} />
+        <Route path="/updateStateHR" element={<UpdateStateHr/>} />
+        <Route path="/allCityHR" element={<AllCityHr/>} />
+        <Route path="/updateCityHR" element={<UpdateCityHr/>} />
+        <Route path="/allEducationHR" element={<AllEducationHr/>} />
+        <Route path="/updateEducationHR" element={<UpdateEducationHr/>} />
+
+
+        <Route path="/events" element={<EventHomePage />} />
 
       </Routes>
 

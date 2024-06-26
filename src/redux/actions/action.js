@@ -77,39 +77,47 @@ export const setCities = (cities) => ({
   
   export const adminLogin = (username, password) => async (dispatch) => {
     try {
-      // Make HTTP POST request to login endpoint
-      const response = await axios.post('/api/login', { username, password });
-  
-      // Extract message and token from response data
-      const { message, token } = response.data;
-      console.log('Token:', token);
-      
-      // Check if login was successful
-      if (message === 'Login successful') {
-        // Store token in localStorage
-        localStorage.setItem('token', token);
+        // Make HTTP POST request to login endpoint
+        const response = await axios.post('/api/login', { username, password });
         
-        // Dispatch action to update Redux state with token
-        dispatch({
-          type: 'ADMIN_LOGIN_SUCCESS',
-          payload: token // Store token in the Redux state
-        });
-      } else {
+        // Log the entire response for debugging
+        console.log('Response:', response.data);
+
+        // Extract message, token, and role from response data
+        const { message, token, role } = response.data;
+
+        // Log token and role for debugging
+        console.log('Token:', token);
+        console.log('Role:', role);
+
+        // Check if login was successful
+        if (message === 'Superadmin login successful' || message === 'Login successful') {
+            // Store token in localStorage
+            if (token) {
+                localStorage.setItem('token', token);
+            }
+
+            // Dispatch action to update Redux state with token and role
+            dispatch({
+                type: 'ADMIN_LOGIN_SUCCESS',
+                payload: { token, role: role || 'user', isSuperadmin: message === 'Superadmin login successful' }
+            });
+        } else {
+            // Dispatch action for login error
+            dispatch({
+                type: 'ADMIN_LOGIN_ERROR',
+                payload: 'Invalid username or password'
+            });
+        }
+    } catch (error) {
+        console.error('Error occurred while logging in:', error);
         // Dispatch action for login error
         dispatch({
-          type: 'ADMIN_LOGIN_ERROR',
-          payload: 'Invalid username or password'
+            type: 'ADMIN_LOGIN_ERROR',
+            payload: 'Error occurred while logging in'
         });
-      }
-    } catch (error) {
-      console.error('Error occurred while logging in:', error);
-      // Dispatch action for login error
-      dispatch({
-        type: 'ADMIN_LOGIN_ERROR',
-        payload: 'Error occurred while logging in'
-      });
     }
-  };
+};
 
 export const fetchStudents = () => async (dispatch) => {
   try {
@@ -446,7 +454,7 @@ export const sendUserForm = (userFormData) => async (dispatch) => {
   }
 };
 
-export const sendLoginCredentials = (userData) => async (dispatch) => {
+/* export const sendLoginCredentials = (userData) => async (dispatch) => {
   try {
     // Retrieve token from local storage
     const token = localStorage.getItem('token');
@@ -478,7 +486,7 @@ export const sendLoginCredentials = (userData) => async (dispatch) => {
   }
 };
 
-
+ */
 
 
 

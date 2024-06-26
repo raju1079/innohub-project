@@ -1,13 +1,14 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MdAdminPanelSettings, MdDashboard, MdContentCopy } from "react-icons/md";
+import { MdAdminPanelSettings, MdDashboard, MdContentCopy , MdPolicy} from "react-icons/md";
 import { IoIosPerson, IoMdArrowDropdown } from "react-icons/io";
+import { HiDocumentReport} from "react-icons/hi";
 import { PiStudentBold } from "react-icons/pi";
 import { HiOutlineViewList } from 'react-icons/hi';
 import { RxDropdownMenu } from "react-icons/rx";
-import "./home.css";
+//import "./home.css";
 
-const AdminSidebar = () => {
+const HrSidebar = () => {
   const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -47,28 +48,28 @@ const AdminSidebar = () => {
 
   const handleDashboardClick = () => {
     setIsDashboardClicked(true);
-    navigate("/Adminhome");
+    navigate("/hrDashboard");
   };
 
   const handleStudentManagementClick = () => {
     setDown(!isDown);
   };
 
+  const navigateToRoleManagement = () => {
+    navigate("/RoleManagementHR");
+  };
   const navigateToEnrolledStudents = () => {
-    navigate("/enrolled-students");
+    navigate("/enrolledstudents");
   };
 
   const navigateToQualifiedStudents = () => {
-    navigate("/qualified-students");
+    navigate("/qualifiedstudents");
   };
 
   const navigateToAreaManagement = () => {
-    navigate("/allState");
+    navigate("/allStateHR");
   };
 
-  const navigateToAccessManagement = () => {
-    navigate("/accessControl");
-  };
   return (
     <div>
       <button
@@ -98,9 +99,9 @@ const AdminSidebar = () => {
               data-collapse-toggle="dropdown-example"
               onClick={profilePicDown}
             >
-              <img src="/admin_profile.PNG" alt="" style={{ width: "50px", height: "50px", backgroundColor: "black", borderRadius: "50%", marginLeft: "20px" }} />
+              <img src="/hr_profile.PNG" alt="" style={{ width: "50px", height: "50px", backgroundColor: "black", borderRadius: "50%", marginLeft: "20px" }} />
               <p style={{ color: "black", marginTop: "-40px", paddingLeft: "10px" }} className="dropdown-toggle pt-[50px] font-bold">
-                Admin
+                HR
               </p>
               <IoMdArrowDropdown className="w-5 h-5 text-black" />
             </button>
@@ -109,12 +110,12 @@ const AdminSidebar = () => {
               className={`py-2 space-y-2 ${profileDown ? "" : "hidden"}`}
             >
               <a href="#" className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
-                Update Profile
+                Update profile 
               </a>
               <a href="#" className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 Change Password
               </a>
-             
+              
               <a href="#" className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 Logout
               </a>
@@ -134,23 +135,25 @@ const AdminSidebar = () => {
               data-collapse-toggle="dropdown-example"
               onClick={toggleDropdown}
             >
+              
               <MdAdminPanelSettings className="ml-[-60px] cursor-pointer" />
               <span className="ms-3 ml-[-20px] cursor-pointer">Admin Master</span>
               <IoMdArrowDropdown className="w-5 h-5" />
             </button>
             <ul id="dropdown-example" className={`py-2 space-y-2 ${isOpen ? "" : "hidden"}`}>
-              <a href="/usermanagement" className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
+             {/*  <a href="/usermanagement" className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 User Management
-              </a>
-              <a href="/roleManagement" className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
+              </a> */}
+              <a href=" " onClick={navigateToRoleManagement} className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 Role Management
               </a>
-              <a className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline" onClick={navigateToAreaManagement}>
+              <a className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline" 
+               onClick={navigateToAreaManagement}> 
                 Master Modules
               </a>
-              <a href="#" className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline"onClick={navigateToAccessManagement }>
+              {/* <a href="#" className="flex items-center w-full p-1 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 Access Control
-              </a>
+              </a> */}
             </ul>
             <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
               <IoIosPerson className="ml-[-60px] cursor-pointer" />
@@ -171,13 +174,26 @@ const AdminSidebar = () => {
               <a href="#" onClick={navigateToEnrolledStudents} className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 Enrolled Students
               </a>
-              <a href="" onClick={navigateToQualifiedStudents} className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
+              <a href="#" onClick={navigateToQualifiedStudents} className="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 whitespace-nowrap ml-[-70px] no-underline">
                 Qualified Students
               </a>
             </ul>
             <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
               <MdContentCopy className="ml-[-60px] cursor-pointer" />
               <span className="ms-3 ml-[-20px] cursor-pointer">Content Management</span>
+            </a>
+            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
+              <IoIosPerson className="ml-[-60px] cursor-pointer" />
+              <span className="ms-3 ml-[-20px] cursor-pointer">Attendance</span>
+            </a>
+            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
+              <MdPolicy className="ml-[-60px] cursor-pointer" />
+              <span className="ms-3 ml-[-20px] cursor-pointer">Policies & Guidelines </span>
+            </a>
+
+            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
+              <HiDocumentReport className="ml-[-60px] cursor-pointer" />
+              <span className="ms-3 ml-[-20px] cursor-pointer">Reports</span>
             </a>
           </ul>
         </div>
@@ -186,4 +202,4 @@ const AdminSidebar = () => {
   );
 };
 
-export default AdminSidebar;
+export default HrSidebar;
