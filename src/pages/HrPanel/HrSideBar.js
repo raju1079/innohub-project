@@ -155,7 +155,7 @@ const HrSidebar = () => {
                 Access Control
               </a> */}
             </ul>
-            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
+            <a href="/eventmanagementHR" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group no-underline pl-[15px]">
               <IoIosPerson className="ml-[-60px] cursor-pointer" />
               <span className="ms-3 ml-[-20px] cursor-pointer">Event Management</span>
             </a>

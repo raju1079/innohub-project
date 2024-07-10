@@ -39,7 +39,7 @@ const TextArea = ({
 
         <textarea
           style={{ width: width || '700px', wordWrap: 'break-word' }}
-          className="w-full px-0 py-0 rounded-lg h-[65px] bg-transparent text-gray-300 resize-none outline-none placeholder-gray-300 font-poppins relative-mt-[-40px]"
+          className=" px-0 py-0 rounded-lg h-[65px] bg-transparent text-gray-300 resize-none outline-none placeholder-gray-300 font-poppins relative-mt-[-40px]"
           placeholder={placeholder}
           name={name}
           value={value}

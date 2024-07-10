@@ -39,6 +39,7 @@ import DeactivateStudent from './reducers/DeactivateStudent.js';
 import DeactivateQualifiedStudent from './reducers/DeactivateQualifiedStudent.js';
 import DeactivateRole from './reducers/DeactivateRole.js';
 import { UploadRole } from './reducers/UploadRole.js';
+import eventReducer from './reducers/eventReducer.js';
 // Combine all the reducers
 
 const rootReducer = combineReducers({
@@ -82,6 +83,7 @@ const rootReducer = combineReducers({
   deactivateQualifiedStudent: DeactivateQualifiedStudent,
   deactivateRole: DeactivateRole,
   uploadRole: UploadRole,
+  events:eventReducer
 });
 
 export default rootReducer;

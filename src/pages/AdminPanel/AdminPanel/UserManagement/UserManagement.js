@@ -178,7 +178,7 @@ const onHomeClick = useCallback(() => {
                                  
                 />
               ) : (
-                <p>loading........</p>
+                <p>No records to display........</p>
               )}
             </div>
           </div>

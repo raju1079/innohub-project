@@ -98,6 +98,7 @@ import AllEducationHr from "./pages/HrPanel/AdminMaster/MasterModules/EducationM
 import UpdateEducationHr from "./pages/HrPanel/AdminMaster/MasterModules/EducationMaster/UpdateEducationHr";
 
 import EventHomePage from "./pages/Events/EventHomePage";
+import EventHr from "./pages/HrPanel/EventManagement/EventHR/EventHr";
 
 function App() {
   const action = useNavigationType();
@@ -246,6 +247,7 @@ function App() {
         <Route path="/updateCityHR" element={<UpdateCityHr/>} />
         <Route path="/allEducationHR" element={<AllEducationHr/>} />
         <Route path="/updateEducationHR" element={<UpdateEducationHr/>} />
+        <Route path="/eventmanagementHR" element={<EventHr/>} />
 
 
         <Route path="/events" element={<EventHomePage />} />

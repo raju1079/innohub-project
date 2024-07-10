@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 //import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { fetchStudents, fetchTotalStudents } from "../../../../redux/actions/action"
 import "../home.css";
 import AdminSidebar from "../Adminsidebar";
@@ -26,6 +27,14 @@ function AdminHome() {
 }
 
 function WelcomeToDash() {
+
+  const navigate = useNavigate();
+    
+  const handleAdminPortalClick = () => {
+    navigate('/hrDashboard');
+  };
+
+  
   return (
     <div>
       <div className="p-4 mt-24 sm:ml-64 ">
@@ -37,7 +46,9 @@ function WelcomeToDash() {
             <div className="grow justify-center items-center px-10 pt-4 text-white  text-center bg-violet-900 rounded-l-lg h-[60px]  w-[250px] max-md:px-5">
               Admin portal
             </div>
-            <div className="grow justify-center items-center px-6 pt-4 bg-white  rounded-r-lg text-slate-950 w-[250px] h-[60px] max-md:px-5">
+            <div className="grow justify-center items-center px-6 pt-4 bg-white  rounded-r-lg text-slate-950 w-[250px] h-[60px] max-md:px-5"
+            onClick={handleAdminPortalClick}
+            >
               HR portal
             </div>
           </div>

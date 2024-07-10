@@ -711,3 +711,57 @@ export const uploadNewRole = (newRoleData) => async (dispatch) => {
     console.error('Error uploading new role:', error);
   }
 };
+
+
+export const addEvent = (eventData) => async dispatch => {
+  dispatch({ type:ActionTypes.ADD_EVENT_REQUEST });
+  try {
+    const response = await axios.post('api/events', eventData);
+    
+    toast.success("form submitted successfully");
+    dispatch({
+       type:ActionTypes. ADD_EVENT_SUCCESS, 
+       payload: response.data
+           });
+  } catch (error) {
+    dispatch({
+       type:ActionTypes.ADD_EVENT_FAILURE, 
+       payload:error.message
+          });
+  }
+};
+
+export const fetchEvents = () => async dispatch => {
+  dispatch({ 
+    type:ActionTypes.FETCH_EVENTS_REQUEST });
+  try {
+    const response = await axios.get('api/events');
+    dispatch({ 
+      type:ActionTypes.FETCH_EVENTS_SUCCESS,
+      payload:response.data 
+    });
+  } catch (error) {
+    dispatch({ type:ActionTypes.FETCH_EVENTS_FAILURE, 
+      payload:error.message });
+  }
+};
+
+export const deleteEvent = (id) => async dispatch => {
+  dispatch({ type: ActionTypes.DELETE_EVENT_REQUEST });
+  try {
+    await axios.delete(`/api/events/${id}`);
+    dispatch({ type: ActionTypes.DELETE_EVENT_SUCCESS, payload: id });
+  } catch (error) {
+    dispatch({ type: ActionTypes.DELETE_EVENT_FAILURE, payload: error.message });
+  }
+};
+
+export const updateEvent = (event) => async dispatch => {
+  dispatch({ type: ActionTypes.UPDATE_EVENT_REQUEST });
+  try {
+    const response = await axios.put(`/api/events/${event.id}`, event);
+    dispatch({ type: ActionTypes.UPDATE_EVENT_SUCCESS, payload: response.data });
+  } catch (error) {
+    dispatch({ type: ActionTypes.UPDATE_EVENT_FAILURE, payload: error.message });
+  }
+};
