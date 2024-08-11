@@ -22,8 +22,8 @@ FROM nginx:alpine
 # Copy the build output to nginx's html directory
 COPY --from=0 /app/build /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
+# Expose port 3000
+EXPOSE 3000
 
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]
